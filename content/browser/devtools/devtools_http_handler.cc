@@ -725,6 +725,7 @@ DevToolsHttpHandler::DevToolsHttpHandler(
     const base::FilePath& output_directory,
     const base::FilePath& debug_frontend_dir)
     : frontend_url_(frontend_url), delegate_(delegate), weak_factory_(this) {
+#if defined(NWJS_SDK)
   browser_guid_ = delegate_->IsBrowserTargetDiscoverable()
                       ? kBrowserUrlPrefix
                       : base::StringPrintf("%s/%s", kBrowserUrlPrefix,
@@ -746,6 +747,7 @@ DevToolsHttpHandler::DevToolsHttpHandler(
                        output_directory, debug_frontend_dir, browser_guid_,
                        bundles_resources));
   }
+#endif
 }
 
 void DevToolsHttpHandler::ServerStarted(
