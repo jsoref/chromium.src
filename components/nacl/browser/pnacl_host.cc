@@ -246,7 +246,7 @@ void PnaclHost::GetNexeFd(int render_process_id,
   TranslationID id(render_process_id, pp_instance);
   PendingTranslationMap::iterator entry = pending_translations_.find(id);
   if (entry != pending_translations_.end()) {
-    // Existing translation must have been abandonded. Clean it up.
+    // Existing translation must have been abandoned. Clean it up.
     LOG(ERROR) << "GetNexeFd for already-pending translation";
     pending_translations_.erase(entry);
   }
