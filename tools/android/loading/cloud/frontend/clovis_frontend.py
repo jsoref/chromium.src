@@ -569,7 +569,7 @@ def ShowJobList():
 
 @app.route(FrontendJob.SHOW_JOB_URL)
 def ShowJob():
-  """Shows basic information abour a job."""
+  """Shows basic information about a job."""
   tag = flask.request.args.get('tag')
   page_title = 'Job Information'
   if not tag:
