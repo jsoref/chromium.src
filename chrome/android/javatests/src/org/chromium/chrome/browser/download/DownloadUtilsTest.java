@@ -25,12 +25,12 @@ public class DownloadUtilsTest {
     private static final int MILLIS_PER_SECOND = 1000;
 
     /**
-     * Test {@link DownloadUtils#getAbbrieviatedFileName()} method.
+     * Test {@link DownloadUtils#getAbbreviatedFileName()} method.
      */
     @Test
     @SmallTest
     @Feature({"Download"})
-    public void testGetAbbrieviatedFileName() {
+    public void testGetAbbreviatedFileName() {
         Assert.assertEquals("123.pdf", DownloadUtils.getAbbreviatedFileName("123.pdf", 10));
         Assert.assertEquals(
                 "1" + DownloadUtils.ELLIPSIS, DownloadUtils.getAbbreviatedFileName("123.pdf", 1));

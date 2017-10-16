@@ -69,9 +69,9 @@ TEST_F(BluetoothBlocklistTest, InvalidUUID) {
                             "");
 }
 
-// Abreviated UUIDs used to create, or test against, the blocklist work
+// Abbreviated UUIDs used to create, or test against, the blocklist work
 // correctly compared to full UUIDs.
-TEST_F(BluetoothBlocklistTest, AbreviatedUUIDs) {
+TEST_F(BluetoothBlocklistTest, AbbreviatedUUIDs) {
   list_.Add(BluetoothUUID("aaaa"), BluetoothBlocklist::Value::EXCLUDE);
   EXPECT_TRUE(
       list_.IsExcluded(BluetoothUUID("0000aaaa-0000-1000-8000-00805f9b34fb")));
