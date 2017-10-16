@@ -333,7 +333,7 @@ TEST(ExternalMountPointsTest, CreateCrackedFileSystemURL) {
     {FPL("cc"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL(""), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL(".."), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
-    // Absolte paths.
+    // Absolute paths.
     {FPL("/c/d/e"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL("/c(1)/d/e"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL("/empty_path"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
@@ -427,7 +427,7 @@ TEST(ExternalMountPointsTest, CrackVirtualPath) {
     {FPL("cc"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL(""), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL(".."), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
-    // Absolte paths.
+    // Absolute paths.
     {FPL("/c/d/e"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL("/c(1)/d/e"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},
     {FPL("/empty_path"), false, storage::kFileSystemTypeUnknown, FPL(""), ""},

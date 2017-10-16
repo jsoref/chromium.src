@@ -19,7 +19,7 @@ namespace chromeos {
 
 namespace {
 
-std::set<base::FilePath> MakeAbsoutePathSet(
+std::set<base::FilePath> MakeAbsolutePathSet(
     const base::FilePath& base,
     const std::vector<base::FilePath>& paths) {
   std::set<base::FilePath> result;
@@ -82,7 +82,7 @@ FileFlusher::Job::Job(const base::WeakPtr<FileFlusher>& master,
                       const base::Closure& callback)
     : master_(master),
       path_(path),
-      excludes_(MakeAbsoutePathSet(path, excludes)),
+      excludes_(MakeAbsolutePathSet(path, excludes)),
       on_flush_callback_(on_flush_callback),
       callback_(callback) {}
 

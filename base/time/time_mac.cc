@@ -189,7 +189,7 @@ bool Time::FromExploded(bool is_local, const Exploded& exploded, Time* time) {
       exploded.millisecond);
   CFAbsoluteTime seconds = absolute_time + kCFAbsoluteTimeIntervalSince1970;
 
-  // CFAbsolutTime is typedef of double. Convert seconds to
+  // CFAbsoluteTime is typedef of double. Convert seconds to
   // microseconds and then cast to int64. If
   // it cannot be suited to int64, then fail to avoid overflows.
   double microseconds =

@@ -425,7 +425,7 @@ NSRect GetFirstButtonFrameForHeight(CGFloat height) {
   CGFloat desired = [cell cellSize].width + 2;
   // The width is determined from the maximum of the proposed width
   // (provided in |frame|) or the natural width of the title, then
-  // limited by the abolute minimum and maximum allowable widths.
+  // limited by the absolute minimum and maximum allowable widths.
   frame.size.width =
       std::min(std::max(bookmarks::kBookmarkMenuButtonMinimumWidth,
                         std::max(frame.size.width, desired)),
