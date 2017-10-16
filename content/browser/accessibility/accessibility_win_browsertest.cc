@@ -1576,7 +1576,7 @@ IN_PROC_BROWSER_TEST_F(AccessibilityWinBrowserTest,
       9, 12, L"ST ");
 
   // Numbers separated from letters with trailing punctuation should
-  // be split into two words. Same for abreviations like "i.e.".
+  // be split into two words. Same for abbreviations like "i.e.".
   CheckTextAtOffset(input_text, 12, IA2_TEXT_BOUNDARY_WORD,
       12, 14, L"6.");
   CheckTextAtOffset(input_text, 15, IA2_TEXT_BOUNDARY_WORD,
@@ -1648,7 +1648,7 @@ IN_PROC_BROWSER_TEST_F(AccessibilityWinBrowserTest,
       9, 12, L"ST ");
 
   // Numbers separated from letters with trailing punctuation should
-  // be split into two words. Same for abreviations like "i.e.".
+  // be split into two words. Same for abbreviations like "i.e.".
   CheckTextAtOffset(textarea_text, 12, IA2_TEXT_BOUNDARY_WORD,
       12, 14, L"6.");
   CheckTextAtOffset(textarea_text, 15, IA2_TEXT_BOUNDARY_WORD,
