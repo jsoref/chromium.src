@@ -990,7 +990,7 @@ IN_PROC_BROWSER_TEST_F(NavigatingExtensionPopupBrowserTest,
 // Note - there is no "...ViaGet" flavour of this test, because we don't care
 // (yet) if GET succeeds with the download or not (it probably should succeed
 // for consistency with POST, but it always failed in M54 and before).  After
-// abandoing ShouldFork/OpenURL for all methods (not just for POST) [see comment
+// abandoning ShouldFork/OpenURL for all methods (not just for POST) [see comment
 // about https://crbug.com/646261 in ChromeContentRendererClient::ShouldFork]
 // GET should automagically start working for downloads.
 // TODO(lukasza): https://crbug.com/650694: Add a "Get" flavour of the test once
