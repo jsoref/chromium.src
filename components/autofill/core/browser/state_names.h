@@ -10,11 +10,11 @@
 namespace autofill {
 namespace state_names {
 
-// Returns the abbrevation corresponding to the state named |name|, or the empty
+// Returns the abbreviation corresponding to the state named |name|, or the empty
 // string if there is no such state.
 base::string16 GetAbbreviationForName(const base::string16& name);
 
-// Returns the full state name corresponding to the |abbrevation|, or the empty
+// Returns the full state name corresponding to the |abbreviation|, or the empty
 // string if there is no such state.
 base::string16 GetNameForAbbreviation(const base::string16& abbreviation);
 
