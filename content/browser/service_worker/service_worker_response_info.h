@@ -60,7 +60,7 @@ class CONTENT_EXPORT ServiceWorkerResponseInfo
 
   // Returns true if "fallback to renderer" was required. This happens when a
   // request was directed to a service worker but it did not call respondWith()
-  // or was bypassed due to absense of a fetch event handler, and the browser
+  // or was bypassed due to absence of a fetch event handler, and the browser
   // could not directly fall back to network because the CORS algorithm must be
   // run, which is implemented in the renderer.
   bool was_fallback_required() const { return was_fallback_required_; }
