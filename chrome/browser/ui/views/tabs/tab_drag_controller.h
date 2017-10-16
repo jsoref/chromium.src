@@ -508,7 +508,7 @@ class TabDragController : public views::WidgetObserver,
   // brought to front.
   base::OneShotTimer bring_to_front_timer_;
 
-  // Timer used to move the stacked tabs. See comment aboue
+  // Timer used to move the stacked tabs. See comment above
   // StartMoveStackedTimerIfNecessary().
   base::OneShotTimer move_stacked_timer_;
 
