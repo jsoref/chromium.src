@@ -396,7 +396,7 @@ FileTransferController.prototype.attachDragSource_ = function(list) {
  *                          be drop target.
  * @param {boolean=} opt_onlyIntoDirectories If true only directory list
  *     items could be drop targets. Otherwise any other place of the list
- *     accetps files (putting it into the current directory).
+ *     accepts files (putting it into the current directory).
  * @private
  */
 FileTransferController.prototype.attachFileListDropTarget_ =
