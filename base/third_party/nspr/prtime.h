@@ -146,7 +146,7 @@ typedef struct PRTimeParameters {
 
 typedef struct PRExplodedTime {
     PRInt32 tm_usec;		    /* microseconds past tm_sec (0-99999)  */
-    PRInt32 tm_sec;             /* seconds past tm_min (0-61, accomodating
+    PRInt32 tm_sec;             /* seconds past tm_min (0-61, accommodating
                                    up to two leap seconds) */	
     PRInt32 tm_min;             /* minutes past tm_hour (0-59) */
     PRInt32 tm_hour;            /* hours past tm_day (0-23) */
