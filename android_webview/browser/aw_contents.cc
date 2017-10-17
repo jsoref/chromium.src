@@ -1282,7 +1282,7 @@ void AwContents::TrimMemory(JNIEnv* env,
   browser_view_renderer_.TrimMemory();
 }
 
-void AwContents::GrantFileSchemeAccesstoChildProcess(
+void AwContents::GrantFileSchemeAccessToChildProcess(
     JNIEnv* env,
     const JavaParamRef<jobject>& obj) {
   content::ChildProcessSecurityPolicy::GetInstance()->GrantScheme(

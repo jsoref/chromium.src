@@ -1609,7 +1609,7 @@ public class AwContents implements SmartClipProvider {
             // file:///android_res/ URLs. If AwSettings.getAllowFileAccess permits, it will also
             // allow access to file:// URLs (subject to OS level permission checks).
             params.setCanLoadLocalResources(true);
-            nativeGrantFileSchemeAccesstoChildProcess(mNativeAwContents);
+            nativeGrantFileSchemeAccessToChildProcess(mNativeAwContents);
         }
 
         // If we are reloading the same url, then set transition type as reload.
@@ -3560,6 +3560,6 @@ public class AwContents implements SmartClipProvider {
     private native void nativePreauthorizePermission(long nativeAwContents, String origin,
             long resources);
 
-    private native void nativeGrantFileSchemeAccesstoChildProcess(long nativeAwContents);
+    private native void nativeGrantFileSchemeAccessToChildProcess(long nativeAwContents);
     private native void nativeResumeLoadingCreatedPopupWebContents(long nativeAwContents);
 }

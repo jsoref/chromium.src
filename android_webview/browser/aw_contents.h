@@ -326,7 +326,7 @@ class AwContents : public FindHelper::Listener,
                   jint level,
                   jboolean visible);
 
-  void GrantFileSchemeAccesstoChildProcess(
+  void GrantFileSchemeAccessToChildProcess(
       JNIEnv* env,
       const base::android::JavaParamRef<jobject>& obj);
 
