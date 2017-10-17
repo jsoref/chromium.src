@@ -131,7 +131,7 @@ class RawDeltaSink {
   std::vector<uint8_t> raw_delta_diff_;  // Bytewise difference.
 
   // We keep track of the compensation needed for next copy offset, taking into
-  // accound delta encoding and bias of -1. Stored delta are biased by -1, so a
+  // account delta encoding and bias of -1. Stored delta are biased by -1, so a
   // sequence of single byte deltas is represented as a string of 0's.
   offset_t copy_offset_compensation_ = 0;
 };
@@ -172,7 +172,7 @@ class TargetSink {
   std::vector<uint8_t> extra_targets_;
 
   // We keep track of the compensation needed for next target, taking into
-  // accound delta encoding and bias of -1.
+  // account delta encoding and bias of -1.
   offset_t target_compensation_ = 0;
 };
 

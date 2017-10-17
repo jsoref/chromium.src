@@ -155,7 +155,7 @@ class UserSelectionScreen
   // Set of Users that are visible.
   user_manager::UserList users_;
 
-  // Map of accounnt ids to their current authentication type. If a user is not
+  // Map of account ids to their current authentication type. If a user is not
   // contained in the map, it is using the default authentication type.
   std::map<AccountId, proximity_auth::mojom::AuthType> user_auth_type_map_;
 

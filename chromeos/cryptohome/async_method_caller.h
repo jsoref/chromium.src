@@ -162,7 +162,7 @@ class CHROMEOS_EXPORT AsyncMethodCaller {
   // a valid enterprise challenge.  On success, the data sent to |callback| is
   // the challenge response.  If |key_type| is KEY_USER, a |user_id| must be
   // provided.  Otherwise |user_id| is ignored.  For normal GAIA users the
-  // |user_id| is an AccountaId-derived string (see AccountId::GetAccountIdKey).
+  // |user_id| is an AccountId-derived string (see AccountId::GetAccountIdKey).
   virtual void TpmAttestationSignEnterpriseChallenge(
       chromeos::attestation::AttestationKeyType key_type,
       const Identification& user_id,

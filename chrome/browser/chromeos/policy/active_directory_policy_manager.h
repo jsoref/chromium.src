@@ -35,7 +35,7 @@ class ActiveDirectoryPolicyManager : public ConfigurationPolicyProvider,
   static std::unique_ptr<ActiveDirectoryPolicyManager> CreateForDevicePolicy(
       std::unique_ptr<CloudPolicyStore> store);
 
-  // Create manager for |accound_id| user policy.
+  // Create manager for |account_id| user policy.
   static std::unique_ptr<ActiveDirectoryPolicyManager> CreateForUserPolicy(
       const AccountId& account_id,
       base::TimeDelta initial_policy_fetch_timeout,

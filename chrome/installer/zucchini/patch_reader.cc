@@ -152,7 +152,7 @@ base::Optional<RawDeltaUnit> RawDeltaSource::GetNext() {
     return base::nullopt;
 
   // We keep track of the compensation needed for next offset, taking into
-  // accound delta encoding and bias of -1.
+  // account delta encoding and bias of -1.
   copy_offset_compensation_ = copy_offset + 1;
   if (!copy_offset_compensation_.IsValid())
     return base::nullopt;
@@ -201,7 +201,7 @@ base::Optional<offset_t> TargetSource::GetNext() {
     return base::nullopt;
 
   // We keep track of the compensation needed for next target, taking into
-  // accound delta encoding and bias of -1.
+  // account delta encoding and bias of -1.
   target_compensation_ = target + 1;
   if (!target_compensation_.IsValid())
     return base::nullopt;

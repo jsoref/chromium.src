@@ -41,7 +41,7 @@ class NetworkingPrivateDelegate : public KeyedService {
     UIDelegate();
     virtual ~UIDelegate();
 
-    // Navigate to the acoount details page for the cellular network associated
+    // Navigate to the account details page for the cellular network associated
     // with |guid|.
     virtual void ShowAccountDetails(const std::string& guid) const = 0;
 

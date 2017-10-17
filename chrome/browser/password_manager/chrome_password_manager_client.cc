@@ -343,10 +343,10 @@ bool ChromePasswordManagerClient::PromptUserToChooseCredentials(
 #if defined(OS_ANDROID)
   // Deletes itself on the event from Java counterpart, when user interacts with
   // dialog.
-  AccountChooserDialogAndroid* acccount_chooser_dialog =
+  AccountChooserDialogAndroid* account_chooser_dialog =
       new AccountChooserDialogAndroid(web_contents(), std::move(local_forms),
                                       origin, intercept);
-  acccount_chooser_dialog->ShowDialog();
+  account_chooser_dialog->ShowDialog();
   return true;
 #else
   return PasswordsClientUIDelegateFromWebContents(web_contents())
