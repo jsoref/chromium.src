@@ -1155,7 +1155,7 @@ class BASE_EXPORT GlobalActivityTracker {
   // Records exception information.
   void RecordExceptionImpl(const void* pc, const void* origin, uint32_t code);
 
-  // Releases the activity-tracker associcated with thread. It is called
+  // Releases the activity-tracker associated with thread. It is called
   // automatically when a thread is joined and thus there is nothing more to
   // be tracked. |value| is a pointer to a ManagedActivityTracker.
   static void OnTLSDestroy(void* value);

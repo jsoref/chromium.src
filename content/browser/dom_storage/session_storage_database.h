@@ -125,7 +125,7 @@ class CONTENT_EXPORT SessionStorageDatabase :
                        bool ok_if_exists,
                        leveldb::WriteBatch* batch);
 
-  // Reads the areas assoiated with |namespace_id| and puts the (origin, map_id)
+  // Reads the areas associated with |namespace_id| and puts the (origin, map_id)
   // pairs into |areas|.
   bool GetAreasInNamespace(const std::string& namespace_id,
                            std::map<std::string, std::string>* areas);

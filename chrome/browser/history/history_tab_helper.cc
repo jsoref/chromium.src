@@ -152,7 +152,7 @@ void HistoryTabHelper::DidFinishNavigation(
     return;
   }
 #else
-  // Don't update history if this web contents isn't associatd with a tab.
+  // Don't update history if this web contents isn't associated with a tab.
   Browser* browser = chrome::FindBrowserWithWebContents(web_contents());
   if (!browser || browser->is_app())
     return;

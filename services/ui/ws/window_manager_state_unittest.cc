@@ -42,7 +42,7 @@ class WindowManagerStateTest : public testing::Test {
 
   std::unique_ptr<Accelerator> CreateAccelerator();
 
-  // Creates a child |server_window| with associataed |window_tree| and
+  // Creates a child |server_window| with associated |window_tree| and
   // |test_client|. The window is setup for processing input.
   void CreateSecondaryTree(TestWindowTreeClient** test_client,
                            WindowTree** window_tree,

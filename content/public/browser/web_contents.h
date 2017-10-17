@@ -701,7 +701,7 @@ class WebContents : public PageNavigator,
   // otherwise.
   virtual RenderFrameHost* GetOriginalOpener() const = 0;
 
-  // Returns the WakeLockContext accociated with this WebContents.
+  // Returns the WakeLockContext associated with this WebContents.
   virtual device::mojom::WakeLockContext* GetWakeLockContext() = 0;
 
   typedef base::Callback<void(

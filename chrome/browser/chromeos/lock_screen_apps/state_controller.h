@@ -159,7 +159,7 @@ class StateController : public ash::mojom::TrayActionClient,
   // from and give focus to the active lock screen app window.
   void SetFocusCyclerDelegate(FocusCyclerDelegate* delegate);
 
-  // Gets current state assiciated with the lock screen note action.
+  // Gets current state associated with the lock screen note action.
   ash::mojom::TrayActionState GetLockScreenNoteState() const;
 
   // ash::mojom::TrayActionClient:
@@ -255,7 +255,7 @@ class StateController : public ash::mojom::TrayActionClient,
   // Notifies observers that the lock screen note action state changed.
   void NotifyLockScreenNoteStateChanged();
 
-  // Passed as a focus handler to |focus_cycler_delegate_| when the assiciated
+  // Passed as a focus handler to |focus_cycler_delegate_| when the associated
   // app window is visible (active or in background).
   // It focuses the app window.
   void FocusAppWindow(bool reverse);

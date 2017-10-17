@@ -635,7 +635,7 @@ bool AndroidProviderBackend::UpdateSearchTerms(
       return false;
 
     // Actually only search_time update. As there might multiple URLs
-    // asocciated with the keyword, Just update the first one's last_visit_time.
+    // associated with the keyword, Just update the first one's last_visit_time.
     URLRow url_row;
     if (!history_db_->GetURLRow(search_term_rows[0].url_id, &url_row))
       return false;

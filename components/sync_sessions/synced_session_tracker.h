@@ -55,7 +55,7 @@ class SyncedSessionTracker {
   void LookupForeignTabNodeIds(const std::string& session_tag,
                                std::set<int>* tab_node_ids) const;
 
-  // Attempts to look up the session windows associatd with the session given
+  // Attempts to look up the session windows associated with the session given
   // by |session_tag|. Ownership of SessionWindows stays within the
   // SyncedSessionTracker.
   // If lookup succeeds:

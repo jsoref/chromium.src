@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, SessionErrorCode) {
 @property(nonatomic) HostInfo* hostInfo;
 // The current state of the session.
 @property(nonatomic, assign) SessionState state;
-// The error assoiciated to the current state.
+// The error associated to the current state.
 @property(nonatomic, assign) SessionErrorCode error;
 
 @end

@@ -71,7 +71,7 @@ class RequestTrackerDataMemoizingStore {
     return true;
   }
 
-  // Removes any items associtated only with |request_tracker_id|.
+  // Removes any items associated only with |request_tracker_id|.
   void RemoveForRequestTracker(int request_tracker_id) {
     RemoveRequestTrackerItems(request_tracker_id);
   }

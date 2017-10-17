@@ -50,7 +50,7 @@ class FrontendJob(ndb.Model):
 
   @classmethod
   def DeleteForTag(cls, tag):
-    """Deletes the frontend job assowiated with tag."""
+    """Deletes the frontend job associated with tag."""
     parent_key = cls._GetParentKeyFromTag(tag)
     frontend_job = cls.query(ancestor=parent_key).get(keys_only=True)
     if frontend_job:
