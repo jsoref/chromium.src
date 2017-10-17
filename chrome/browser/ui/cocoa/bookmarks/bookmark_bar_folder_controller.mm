@@ -1263,7 +1263,7 @@ static BOOL ValueInRangeInclusive(CGFloat low, CGFloat value, CGFloat high) {
 
 // TODO(jrg): again we have code dup, sort of, with
 // bookmark_bar_controller.mm, but the axis is changed.  One minor
-// difference is accomodation for the "empty" button (which may not
+// difference is accommodation for the "empty" button (which may not
 // exist in the future).
 // http://crbug.com/35966
 - (int)indexForDragToPoint:(NSPoint)point {

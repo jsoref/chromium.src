@@ -63663,12 +63663,12 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <summary>Number of unlimited origins using temporary storage.</summary>
 </histogram>
 
-<histogram name="Quota.OSAccomodationDelta" units="MB">
+<histogram name="Quota.OSAccommodationDelta" units="MB">
   <owner>michaeln@chromium.org</owner>
   <summary>
-    If our hardcoded OS accomodation is too large for the volume size, we define
+    If our hardcoded OS accommodation is too large for the volume size, we define
     the value as a fraction of the total volume size instead. The
-    OSAccomodationDelta is the difference between the hardcoded and computed
+    OSAccommodationDelta is the difference between the hardcoded and computed
     values.
   </summary>
 </histogram>
