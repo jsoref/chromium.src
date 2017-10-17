@@ -380,7 +380,7 @@ class BASE_EXPORT ActivityUserData {
 
     // These methods return references to process memory as originally provided
     // to corresponding Set calls. USE WITH CAUTION! There is no guarantee that
-    // the referenced memory is assessible or useful.  It's possible that:
+    // the referenced memory is accessible or useful.  It's possible that:
     //  - the memory was free'd and reallocated for a different purpose
     //  - the memory has been released back to the OS
     //  - the memory belongs to a different process's address space

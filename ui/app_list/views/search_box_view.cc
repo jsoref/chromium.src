@@ -509,7 +509,7 @@ void SearchBoxView::SetBackButtonLabel(bool folder) {
     return;
 
   base::string16 back_button_label(l10n_util::GetStringUTF16(
-      folder ? IDS_APP_LIST_FOLDER_CLOSE_FOLDER_ACCESSIBILE_NAME
+      folder ? IDS_APP_LIST_FOLDER_CLOSE_FOLDER_ACCESSIBLE_NAME
              : IDS_APP_LIST_BACK));
   back_button_->SetAccessibleName(back_button_label);
   back_button_->SetTooltipText(back_button_label);

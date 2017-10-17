@@ -441,7 +441,7 @@ TEST_F(ExtensionProtocolsTest, AllowFrameRequests) {
                                     false);
 
   // All MAIN_FRAME requests should succeed. SUB_FRAME requests that are not
-  // explicitly listed in web_accesible_resources or same-origin to the parent
+  // explicitly listed in web_accessible_resources or same-origin to the parent
   // should not succeed.
   {
     std::unique_ptr<net::URLRequest> request(

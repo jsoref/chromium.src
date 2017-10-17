@@ -18,7 +18,7 @@ namespace test {
 // Test API to provide internal access to an InkDropHostView instance.
 class InkDropHostViewTestApi {
  public:
-  // Make the protected enum accessbile.
+  // Make the protected enum accessible.
   using InkDropMode = InkDropHostView::InkDropMode;
 
   explicit InkDropHostViewTestApi(InkDropHostView* host_view);

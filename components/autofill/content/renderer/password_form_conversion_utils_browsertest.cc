@@ -1341,7 +1341,7 @@ TEST_F(MAYBE_PasswordFormConversionUtilsTest, IsGaiaReauthFormIgnored) {
                            "https://passwords.google.com/path?param=val#frag"),
         TestCase::KeyValue("rart", "")},
        true},
-      // Password site is inaccesible via HTTP, but because of HSTS the
+      // Password site is inaccessible via HTTP, but because of HSTS the
       // following link should still continue to https://passwords.google.com.
       {"https://accounts.google.com",
        {TestCase::KeyValue("continue", "http://passwords.google.com"),

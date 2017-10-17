@@ -90,7 +90,7 @@ class MojoAsyncResourceHandler::WriterIOBuffer final
     : public net::IOBufferWithSize {
  public:
   // |data| and |size| should be gotten from |writer| via BeginWriteData.
-  // They will be accesible via IOBuffer methods. As |writer| is stored in this
+  // They will be accessible via IOBuffer methods. As |writer| is stored in this
   // instance, |data| will be kept valid as long as the following conditions
   // hold:
   //  1. |data| is not invalidated via EndWriteDataRaw.

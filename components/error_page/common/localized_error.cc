@@ -724,7 +724,7 @@ void GetSuggestionsSummaryList(int error_code,
 #endif
   }
 
-// If the current platform has a directly accesible network diagnostics tool and
+// If the current platform has a directly accessible network diagnostics tool and
 // the URL is valid add a suggestion.
 #if defined(OS_CHROMEOS) || defined(OS_WIN) || \
     (defined(OS_MACOSX) && !defined(OS_IOS))

@@ -79,7 +79,7 @@ AppListFolderView::~AppListFolderView() {
 
 void AppListFolderView::SetAppListFolderItem(AppListFolderItem* folder) {
   accessible_name_ = ui::ResourceBundle::GetSharedInstance().GetLocalizedString(
-      IDS_APP_LIST_FOLDER_OPEN_FOLDER_ACCESSIBILE_NAME);
+      IDS_APP_LIST_FOLDER_OPEN_FOLDER_ACCESSIBLE_NAME);
   NotifyAccessibilityEvent(ui::AX_EVENT_ALERT, true);
 
   folder_item_ = folder;
@@ -313,7 +313,7 @@ void AppListFolderView::HideViewImmediately() {
 
 void AppListFolderView::CloseFolderPage() {
   accessible_name_ = ui::ResourceBundle::GetSharedInstance().GetLocalizedString(
-      IDS_APP_LIST_FOLDER_CLOSE_FOLDER_ACCESSIBILE_NAME);
+      IDS_APP_LIST_FOLDER_CLOSE_FOLDER_ACCESSIBLE_NAME);
   NotifyAccessibilityEvent(ui::AX_EVENT_ALERT, true);
 
   GiveBackFocusToSearchBox();

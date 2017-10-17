@@ -85,7 +85,7 @@ TEST_F(ManifestUnitTest, Extension) {
   EXPECT_TRUE(manifest->GetString(keys::kBackgroundPageLegacy, &value));
   EXPECT_EQ("bg.html", value);
 
-  // The unknown key 'unknown_key' should be accesible.
+  // The unknown key 'unknown_key' should be accessible.
   value.clear();
   EXPECT_TRUE(manifest->GetString("unknown_key", &value));
   EXPECT_EQ("foo", value);

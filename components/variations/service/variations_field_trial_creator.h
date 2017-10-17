@@ -56,7 +56,7 @@ class VariationsFieldTrialCreator {
 
   // Sets up field trials based on stored variations seed data.
   // |kEnableGpuBenchmarking|, |kEnableFeatures|, |kDisableFeatures| are
-  // feature controlling flags not directly accesible from variations.
+  // feature controlling flags not directly accessible from variations.
   // |unforcable_field_trials| contains the list of trials that can not be
   // overridden.
   // |low_entropy_provider| allows for field trial randomization.

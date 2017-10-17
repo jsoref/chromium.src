@@ -42,7 +42,7 @@ TEST_F('SettingsIdleLoadBrowserTest', 'All', function() {
           '  <div></div>' +
           '</template>';
       document.body.innerHTML = template;
-      // The div should not be initially accesible.
+      // The div should not be initially accessible.
       assertFalse(!!document.body.querySelector('div'));
     });
 
@@ -57,7 +57,7 @@ TEST_F('SettingsIdleLoadBrowserTest', 'All', function() {
 
     test('stamps after idle', function(done) {
       requestIdleCallback(function() {
-        // After JS calls idle-callbacks, this should be accesible.
+        // After JS calls idle-callbacks, this should be accessible.
         assertTrue(!!document.body.querySelector('div'));
         done();
       });

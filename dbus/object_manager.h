@@ -146,7 +146,7 @@ public:
     virtual ~Interface() {}
 
     // Called by ObjectManager to create a Properties structure for the remote
-    // D-Bus object identified by |object_path| and accessibile through
+    // D-Bus object identified by |object_path| and accessible through
     // |object_proxy|. The D-Bus interface name |interface_name| is that passed
     // to RegisterInterface() by the implementation class.
     //

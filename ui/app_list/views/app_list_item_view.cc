@@ -227,7 +227,7 @@ void AppListItemView::SetItemName(const base::string16& display_name,
   // Use full name for accessibility.
   SetAccessibleName(
       is_folder_ ? l10n_util::GetStringFUTF16(
-                       IDS_APP_LIST_FOLDER_BUTTON_ACCESSIBILE_NAME, full_name)
+                       IDS_APP_LIST_FOLDER_BUTTON_ACCESSIBLE_NAME, full_name)
                  : full_name);
   Layout();
 }

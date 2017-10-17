@@ -328,7 +328,7 @@ class VIEWS_EXPORT FocusManager : public ViewObserver {
   bool ProcessArrowKeyTraversal(const ui::KeyEvent& event);
 
   // Whether |view| is currently focusable as per the platform's interpretation
-  // of |keyboard_accesible_|.
+  // of |keyboard_accessible_|.
   bool IsFocusable(View* view) const;
 
   // ViewObserver:
