@@ -42,7 +42,7 @@ public class MediaUrlResolver extends AsyncTask<Void, Void, MediaUrlResolver.Res
     // Range of histogram.
     private static final int HISTOGRAM_RESULT_COUNT = 8;
 
-    // Acceptal response codes for URL resolving request.
+    // Acceptable response codes for URL resolving request.
     private static final Integer[] SUCCESS_RESPONSE_CODES = {
         // Request succeeded.
         HttpURLConnection.HTTP_OK,
