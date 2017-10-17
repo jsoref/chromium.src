@@ -37,7 +37,7 @@ enum class BufferFormat {
 // by the CPU. *_CPU_READ_WRITE_PERSISTENT adds the additional condition that
 // successive Map() calls (with Unmap() calls between) will return a pointer to
 // the same memory contents. SCANOUT implies GPU_READ_WRITE.
-// *_VDA_WRITE is for cases where a video decode accellerator writes into
+// *_VDA_WRITE is for cases where a video decode accelerator writes into
 // the buffers.
 
 // TODO(reveman): Add GPU_READ_WRITE for use-cases where SCANOUT is not

@@ -168,7 +168,7 @@ class ASH_EXPORT SystemTray : public TrayBackgroundView {
   // Specify |change_tray_status| to true if want to change the tray background
   // status. The bubble will be opened in inactive state. If |can_activate| is
   // true, the bubble will be activated by one of following means.
-  // * When alt/alt-tab acclerator is used to start navigation.
+  // * When alt/alt-tab accelerator is used to start navigation.
   // * When the bubble is opened by accelerator.
   // * When the tray item is set to be focused.
   void ShowItems(const std::vector<SystemTrayItem*>& items,
