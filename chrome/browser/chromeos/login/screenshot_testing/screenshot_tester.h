@@ -105,7 +105,7 @@ class ScreenshotTester {
   // Returns true if image was saved successfully.
   bool SaveImage(const base::FilePath& image_path, PNGFile png_data);
 
-  // Logs results of comparison accordint to information in |result|.
+  // Logs results of comparison according to information in |result|.
   void LogComparisonResults(const ScreenshotTester::Result& result);
 
   // Saves |png_data| as a current screenshot.

@@ -90,7 +90,7 @@ void TerminateSelf() {
 }
 #endif  // NDEBUG
 
-// Generates a crash on debug builds, acording to the value of g_rankings_crash.
+// Generates a crash on debug builds, according to the value of g_rankings_crash.
 // This used by crash_cache.exe to generate unit-test files.
 void GenerateCrash(CrashLocation location) {
 #ifndef NDEBUG

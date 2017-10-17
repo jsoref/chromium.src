@@ -130,7 +130,7 @@ gfx::Transform GetUncalibratedTransform(const gfx::Transform& tm,
   // Take care of panel fitting only if supported. Panel fitting is emulated
   // in software mirroring mode (display != touch_display).
   // If panel fitting is enabled then the aspect ratio is preserved and the
-  // display is scaled acordingly. In this case blank regions would be present
+  // display is scaled accordingly. In this case blank regions would be present
   // in order to center the displayed area.
   if (display.is_aspect_preserving_scaling() ||
       display.id() != touch_display.id()) {
