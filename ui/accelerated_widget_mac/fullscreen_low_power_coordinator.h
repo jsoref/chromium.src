@@ -20,7 +20,7 @@ class ACCELERATED_WIDGET_MAC_EXPORT FullscreenLowPowerCoordinator {
 
   // This is to be called if the AcceleratedWidget is going to be deactivated
   // or destroyed. In this call, the coordinator must call back into the
-  // AccleratedWidgetMac to reset its FullscreenLowPowerCoordinator.
+  // AcceleratedWidgetMac to reset its FullscreenLowPowerCoordinator.
   virtual void WillLoseAcceleratedWidget() = 0;
 };
 

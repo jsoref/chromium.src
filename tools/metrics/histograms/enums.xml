@@ -18774,7 +18774,7 @@ uploading your change for review.  These are checked by presubmit scripts.
       label="Linux/NVIDIA/Quadro FX 3450/4000, FX 1400/Driver 195.36.24"/>
   <int value="22" label="Linux/NVIDIA/Drivers older than 195.36.24"/>
   <int value="23" label="Linux/Mesa/Drivers older than 7.11"/>
-  <int value="24" label="Linux/accelrated 2d-canvas"/>
+  <int value="24" label="Linux/accelerated 2d-canvas"/>
   <int value="25"
       label="Win7/GMA X4500/HD (2a42, 2a43)/Driver older than 15.17.11.2202"/>
   <int value="26"
