@@ -37,7 +37,7 @@ class URLRequestContext;
 class NET_EXPORT SdchOwner : public SdchObserver,
                              public base::MemoryCoordinatorClient {
  public:
-  // Abstact storage interface for storing settings that allows the embedder
+  // Abstract storage interface for storing settings that allows the embedder
   // to provide the appropriate storage backend.
   class NET_EXPORT PrefStorage {
    public:
