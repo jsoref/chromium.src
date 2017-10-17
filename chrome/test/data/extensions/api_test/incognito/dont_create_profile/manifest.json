@@ -2,7 +2,7 @@
   "name": "incognito apitest",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "test that an incognito extension can't accidentially create an OTR profile",
+  "description": "test that an incognito extension can't accidentally create an OTR profile",
   "background": {
     "scripts": ["background.js"]
   },

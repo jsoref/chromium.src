@@ -93,7 +93,7 @@ IN_PROC_BROWSER_TEST_F(IncognitoApiTest, MAYBE_IncognitoYesScript) {
 }
 
 // Tests that an extension which is enabled for incognito mode doesn't
-// accidentially create and incognito profile.
+// accidentally create and incognito profile.
 // Test disabled due to http://crbug.com/89054.
 IN_PROC_BROWSER_TEST_F(IncognitoApiTest, DISABLED_DontCreateIncognitoProfile) {
   ASSERT_FALSE(browser()->profile()->HasOffTheRecordProfile());

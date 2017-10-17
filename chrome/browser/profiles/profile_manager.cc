@@ -923,7 +923,7 @@ void ProfileManager::CleanUpDeletedProfiles() {
         base::GetValueAsFilePath(value, &profile_path) &&
         profile_path.DirName() == user_data_dir();
     // Although it should never happen, make sure this is a valid path in the
-    // user_data_dir, so we don't accidentially delete something else.
+    // user_data_dir, so we don't accidentally delete something else.
     if (is_valid_profile_path) {
       if (base::PathExists(profile_path)) {
         LOG(WARNING) << "Files of a deleted profile still exist after restart. "
