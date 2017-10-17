@@ -127,7 +127,7 @@ function testCreateAndGetTrackCapabilities() {
       })
       .then(capturer => {
         imageCapturer = capturer;
-        // TODO(mcasas): Before accesing synchronous track APIs we need a delay,
+        // TODO(mcasas): Before accessing synchronous track APIs we need a delay,
         // use instead a round trip of capabilities: https://crbug.com/711524.
         return capturer.getPhotoCapabilities();
       })
@@ -151,7 +151,7 @@ function testCreateAndGetTrackSettings() {
       })
       .then(capturer => {
         imageCapturer = capturer;
-        // TODO(mcasas): Before accesing synchronous track APIs we need a delay,
+        // TODO(mcasas): Before accessing synchronous track APIs we need a delay,
         // use instead a round trip of capabilities: https://crbug.com/711524.
         return capturer.getPhotoCapabilities();
       })
@@ -177,7 +177,7 @@ function testManipulateZoom() {
       })
       .then(capturer => {
         imageCapturer = capturer;
-        // TODO(mcasas): Before accesing synchronous track APIs we need a delay,
+        // TODO(mcasas): Before accessing synchronous track APIs we need a delay,
         // use instead a round trip of capabilities: https://crbug.com/711524.
         return capturer.getPhotoCapabilities();
       })

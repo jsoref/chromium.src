@@ -67,7 +67,7 @@ class SpellingMenuObserver : public RenderViewContextMenuObserver {
   void OnAnimationTimerExpired();
 
   // The interface to add a context-menu item and update it. This class uses
-  // this interface to avoid accesing context-menu items directly.
+  // this interface to avoid accessing context-menu items directly.
   RenderViewContextMenuProxy* proxy_;
 
   // Suggested words from the local spellchecker. If the spelling service

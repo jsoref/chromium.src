@@ -133,7 +133,7 @@ struct ThreadInfo {
   PlatformThreadId thread_id;
 };
 
-// Used for accesing |thread_info|.
+// Used for accessing |thread_info|.
 static LazyInstance<Lock>::Leaky thread_info_lock = LAZY_INSTANCE_INITIALIZER;
 
 // If non-NULL it means a MessagePumpGlib exists and has been Run. This is
