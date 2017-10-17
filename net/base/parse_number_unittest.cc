@@ -152,7 +152,7 @@ void TestParseIntUsingFormat(ParseFunc func, ParseIntFormat format) {
     ExpectParseIntSuccess<T>(func, ToString(value), format, value);
   }
 
-  // Test parsing a number one larger than the output type can accomodate
+  // Test parsing a number one larger than the output type can accommodate
   // (overflow).
   ExpectParseIntFailure<T>(func, CreateOverflowString<T>(), format,
                            ParseIntError::FAILED_OVERFLOW);
@@ -183,7 +183,7 @@ void TestParseIntUsingFormat(ParseFunc func, ParseIntFormat format) {
     }
   }
 
-  // Test parsing a number one less than the output type can accomodate
+  // Test parsing a number one less than the output type can accommodate
   // (underflow).
   if (format == ParseIntFormat::OPTIONALLY_NEGATIVE) {
     ExpectParseIntFailure<T>(func, CreateUnderflowString<T>(),

@@ -453,7 +453,7 @@ TEST(AppCacheDatabaseTest, GroupAccessAndEvictionTimes) {
   const base::Time kDayTwo = kDayOne + base::TimeDelta::FromDays(1);
 
   // See that the methods behave as expected with an empty db.
-  // To accomodate lazy updating, for consistency, none of them fail
+  // To accommodate lazy updating, for consistency, none of them fail
   // given ids not found in the db.
   EXPECT_TRUE(db.UpdateEvictionTimes(1, kDayOne, kDayTwo));
   EXPECT_TRUE(db.UpdateLastAccessTime(1, kDayOne));

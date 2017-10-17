@@ -33,7 +33,7 @@ content::WebContents* GetAuthFrameWebContents(
 Browser* GetDesktopBrowser(content::WebUI* web_ui);
 
 // Sets the height of the WebUI modal dialog after its initialization. This is
-// needed to better accomodate different locales' text heights.
+// needed to better accommodate different locales' text heights.
 void SetInitializedModalHeight(Browser* browser,
                                content::WebUI* web_ui,
                                const base::ListValue* args);

@@ -132,7 +132,7 @@ void DOMStorageCachedArea::ApplyMutation(
   }
 
   // It's a set item event.
-  // We turn off quota checking here to accomodate the over budget
+  // We turn off quota checking here to accommodate the over budget
   // allowance that's provided in the browser process.
   base::NullableString16 unused;
   map_->set_quota(std::numeric_limits<int32_t>::max());

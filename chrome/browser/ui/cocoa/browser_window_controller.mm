@@ -161,7 +161,7 @@ using bookmarks::BookmarkNode;
 // entirely on-screen, we don't grow/shrink the window.
 //
 // The complications come in when there isn't enough room (on screen) below the
-// window to accomodate the growth. In this case, we grow the window first
+// window to accommodate the growth. In this case, we grow the window first
 // downwards, and then upwards. So, when it comes to shrinking, we do the
 // opposite: shrink from the top by the amount by which we grew at the top, and
 // then from the bottom -- unless the user moved/resized/zoomed the window, in

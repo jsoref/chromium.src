@@ -43,7 +43,7 @@ namespace {
 const NSTimeInterval kBookmarkBarFolderScrollInterval = 0.1;
 
 // Amount to scroll by per timer fire.  We scroll rather slowly; to
-// accomodate we do several at a time.
+// accommodate we do several at a time.
 const CGFloat kBookmarkBarFolderScrollAmount =
     3 * bookmarks::kBookmarkFolderButtonHeight;
 

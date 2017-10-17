@@ -1755,21 +1755,21 @@ void Program::GetProgramiv(GLenum pname, GLint* params) {
       *params = attrib_infos_.size();
       break;
     case GL_ACTIVE_ATTRIBUTE_MAX_LENGTH:
-      // Notice +1 to accomodate NULL terminator.
+      // Notice +1 to accommodate NULL terminator.
       *params = max_attrib_name_length_ + 1;
       break;
     case GL_ACTIVE_UNIFORMS:
       *params = uniform_infos_.size();
       break;
     case GL_ACTIVE_UNIFORM_MAX_LENGTH:
-      // Notice +1 to accomodate NULL terminator.
+      // Notice +1 to accommodate NULL terminator.
       *params = max_uniform_name_length_ + 1;
       break;
     case GL_LINK_STATUS:
       *params = link_status_;
       break;
     case GL_INFO_LOG_LENGTH:
-      // Notice +1 to accomodate NULL terminator.
+      // Notice +1 to accommodate NULL terminator.
       *params = log_info_.get() ? (log_info_->size() + 1) : 0;
       break;
     case GL_DELETE_STATUS:

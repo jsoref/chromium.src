@@ -24,7 +24,7 @@
 namespace {
 
 // Limit of memory segment size. It has to fit in an unsigned 32-bit number
-// and should be a power of 2 in order to accomodate almost any page size.
+// and should be a power of 2 in order to accommodate almost any page size.
 const uint32_t kSegmentMaxSize = 1 << 30;  // 1 GiB
 
 // A constant (random) value placed in the shared metadata to identify

@@ -183,7 +183,7 @@ ct::CertPolicyCompliance CheckCertPolicyCompliance(
   //
   // Note: Because SCTs embedded via TLS or OCSP can be updated on the fly,
   // the issuance date is irrelevant, as any policy changes can be
-  // accomodated.
+  // accommodated.
   if (has_valid_nonembedded_sct && has_valid_google_sct &&
       has_valid_nongoogle_sct) {
     return ct::CertPolicyCompliance::CERT_POLICY_COMPLIES_VIA_SCTS;

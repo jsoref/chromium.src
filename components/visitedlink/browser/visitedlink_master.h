@@ -346,7 +346,7 @@ class VisitedLinkMaster : public VisitedLinkCommon {
   // we decided to resize the table.
   bool ResizeTableIfNecessary();
 
-  // Resizes the table (growing or shrinking) as necessary to accomodate the
+  // Resizes the table (growing or shrinking) as necessary to accommodate the
   // current count.
   void ResizeTable(int32_t new_size);
 

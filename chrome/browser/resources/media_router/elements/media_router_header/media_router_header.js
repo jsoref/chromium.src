@@ -189,7 +189,7 @@ Polymer({
   },
 
   /**
-   * Updates header height to accomodate email text. This is called on changes
+   * Updates header height to accommodate email text. This is called on changes
    * to |showEmail| and will return early if the value has not changed.
    *
    * @param {boolean} newValue The new value of |showEmail|.

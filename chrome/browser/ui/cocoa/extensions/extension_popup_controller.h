@@ -24,7 +24,7 @@ class ExtensionViewHost;
 
 // This controller manages a single browser action popup that can appear once a
 // user has clicked on a browser action button. It instantiates the extension
-// popup view showing the content and resizes the window to accomodate any size
+// popup view showing the content and resizes the window to accommodate any size
 // changes as they occur.
 //
 // There can only be one browser action popup open at a time, so a static

@@ -91,7 +91,7 @@ TEST_F(BrowserWindowLayoutTest, TestAllViewsFullscreen) {
 }
 
 // In fullscreen mode for Yosemite, the tab strip's left indent should be
-// sufficiently large to accomodate the addition of traffic light buttons.
+// sufficiently large to accommodate the addition of traffic light buttons.
 TEST_F(BrowserWindowLayoutTest, TestYosemiteFullscreenTrafficLights) {
   ApplyStandardFullscreenLayoutParameters();
   [layout setOSYosemiteOrLater:YES];

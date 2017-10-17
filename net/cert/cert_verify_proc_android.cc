@@ -200,7 +200,7 @@ android::CertVerifyStatusAndroid TryVerifyWithAIAFetching(
     // TODO(estark): Instead of giving up at this point, it would be more robust
     // to go back to the certificate before |last_cert| in the chain and attempt
     // an AIA fetch from that point (if one hasn't already been done). This
-    // would accomodate chains where the server serves Leaf -> I1 signed by a
+    // would accommodate chains where the server serves Leaf -> I1 signed by a
     // root not in the client's trust store, but AIA fetching would yield an
     // intermediate I2 signed by a root that *is* in the client's trust store.
     if (!last_cert_with_unknown_issuer->has_authority_info_access())

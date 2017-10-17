@@ -94,7 +94,7 @@ const CGFloat kWarningsSeparatorPadding = 14;
 // The left padding for the link cell.
 const CGFloat kLinkCellPaddingLeft = 3;
 
-// Maximum height we will adjust controls to when trying to accomodate their
+// Maximum height we will adjust controls to when trying to accommodate their
 // contents.
 const CGFloat kMaxControlHeight = 250;
 

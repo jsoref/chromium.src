@@ -280,7 +280,7 @@ gfx::Vector2dF RenderWidgetHostViewChildFrame::GetLastScrollOffset() const {
 }
 
 gfx::NativeView RenderWidgetHostViewChildFrame::GetNativeView() const {
-  // TODO(ekaramad): To accomodate MimeHandlerViewGuest while embedded inside
+  // TODO(ekaramad): To accommodate MimeHandlerViewGuest while embedded inside
   // OOPIF-webview, we need to return the native view to be used by
   // RenderWidgetHostViewGuest. Remove this once https://crbug.com/642826 is
   // fixed.

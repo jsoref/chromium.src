@@ -162,7 +162,7 @@ FileTableColumnModel.prototype.setVisible = function(index, visible) {
 
   column.visible = visible;
 
-  // Keep the current column width, but adjust the other columns to accomodate
+  // Keep the current column width, but adjust the other columns to accommodate
   // the new column.
   snapshot.setWidth(index, column.width);
   this.applyColumnPositions_(snapshot.newPos);

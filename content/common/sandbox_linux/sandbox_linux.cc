@@ -401,12 +401,12 @@ bool LinuxSandbox::LimitAddressSpace(const std::string& process_type) {
   // On the GPU process, irrespective of V8, we can exhaust a 4GB address space
   // under normal usage, see crbug.com/271119
   // For now, increase limit to 16GB for renderer and worker and GPU processes
-  // to accomodate.
+  // to accommodate.
   if (process_type == switches::kRendererProcess ||
       process_type == switches::kGpuProcess) {
     address_space_limit = 1L << 34;
     // WebAssembly memory objects use a large amount of address space when
-    // trap-based bounds checks are enabled. To accomodate this, we allow the
+    // trap-based bounds checks are enabled. To accommodate this, we allow the
     // address space limit to adjust dynamically up to a certain limit. The
     // limit is currently 4TiB, which should allow enough address space for any
     // reasonable page. See https://crbug.com/750378

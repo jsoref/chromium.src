@@ -24,7 +24,7 @@ typedef std::map<base::string16, base::NullableString16> DOMStorageValuesMap;
 const size_t kPerStorageAreaQuota = std::numeric_limits<int32_t>::max();
 
 // In the browser process we allow some overage to
-// accomodate concurrent writes from different renderers
+// accommodate concurrent writes from different renderers
 // that were allowed because the limit imposed in the renderer
 // wasn't exceeded.
 const size_t kPerStorageAreaOverQuotaAllowance = 0;

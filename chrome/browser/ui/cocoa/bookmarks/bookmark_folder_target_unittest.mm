@@ -83,7 +83,7 @@ TEST_F(BookmarkFolderTargetTest, ReopenSameFolder) {
                                                class]];
   // YES a current folder.  Self-mock that as well, so "same" will be
   // true.  Note this creates a retain cycle in OCMockObject; we
-  // accomodate at the end of this function.
+  // accommodate at the end of this function.
   [[[controller stub] andReturn:controller] folderController];
   [[[controller stub] andReturn:button_] parentButton];
 

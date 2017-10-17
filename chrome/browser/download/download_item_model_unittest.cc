@@ -278,7 +278,7 @@ TEST_F(DownloadItemModelTest, InterruptTooltip) {
 
     // GetTooltipText() elides the tooltip so that the text would fit within a
     // given width. The following test would fail if kLargeTooltipWidth isn't
-    // large enough to accomodate all the strings.
+    // large enough to accommodate all the strings.
     EXPECT_STREQ(
         test_case.expected_tooltip,
         base::UTF16ToUTF8(model().GetTooltipText(font_list,

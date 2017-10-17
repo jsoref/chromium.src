@@ -71,7 +71,7 @@ using GetQuotaSettingsFunc =
 // Posts a background task to calculate and report quota settings to the
 // |callback| function based on the size of the volume containing the storage
 // partition and a guestimate of the size required for the OS. The refresh
-// interval is 60 seconds to accomodate changes to the size of the volume.
+// interval is 60 seconds to accommodate changes to the size of the volume.
 // Except, in the case of incognito, the poolize and quota values are based
 // on the amount of physical memory and the rerfresh interval is max'd out.
 STORAGE_EXPORT

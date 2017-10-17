@@ -197,7 +197,7 @@ bool ConvertSignatureAlgorithm(
 
 // Writes a TLS-encoded variable length unsigned integer to |output|.
 // |length| indicates the size (in bytes) of the integer. This must be able to
-// accomodate |value|.
+// accommodate |value|.
 // |value| the value itself to be written.
 void WriteUint(size_t length, uint64_t value, std::string* output) {
   // Check that |value| fits into |length| bytes.

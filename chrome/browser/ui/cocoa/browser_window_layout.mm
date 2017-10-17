@@ -337,7 +337,7 @@ const CGFloat kLocationBarRightOffset = 35;
     CGFloat infoBarMinY = maxY - parameters_.infoBarHeight;
 
     // If there's a toolbar, then the frame needs to be high enough to
-    // accomodate the top arrow, which might stretch all the way to the page
+    // accommodate the top arrow, which might stretch all the way to the page
     // info bubble icon.
     if (parameters_.hasToolbar) {
       infoBarMaxY =

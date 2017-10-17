@@ -76,7 +76,7 @@ public class SelectionPopupController extends ActionModeCallbackHelper {
     // hidden. This avoids flickering issues if there are trailing rect
     // invalidations after the ActionMode is shown. For example, after the user
     // stops dragging a selection handle, in turn showing the ActionMode, the
-    // selection change response will be asynchronous. 300ms should accomodate
+    // selection change response will be asynchronous. 300ms should accommodate
     // most such trailing, async delays.
     private static final int SHOW_DELAY_MS = 300;
 

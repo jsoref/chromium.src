@@ -66,7 +66,7 @@ const double kMinBoostTouchScrollSpeedSquare = 150 * 150.;
 // Timeout window after which the active fling will be cancelled if no animation
 // ticks, scrolls or flings of sufficient velocity relative to the current fling
 // are received. The default value on Android native views is 40ms, but we use a
-// slightly increased value to accomodate small IPC message delays.
+// slightly increased value to accommodate small IPC message delays.
 const double kFlingBoostTimeoutDelaySeconds = 0.05;
 
 const size_t kTenSeconds = 10 * 1000 * 1000;

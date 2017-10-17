@@ -50,7 +50,7 @@ const CGFloat kInset = 8.0f;
 
 // The logic in textRectForBounds:limitedToNumberOfLines: and drawTextInRect:
 // adds an inset. Based on
-// http://stackoverflow.com/questions/21167226/resizing-a-uilabel-to-accomodate-insets/21267507#21267507
+// http://stackoverflow.com/questions/21167226/resizing-a-uilabel-to-accommodate-insets/21267507#21267507
 - (CGRect)textRectForBounds:(CGRect)bounds
      limitedToNumberOfLines:(NSInteger)numberOfLines {
   UIEdgeInsets insets = {kInset, kInset, kInset, kInset};

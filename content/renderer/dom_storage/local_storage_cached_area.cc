@@ -314,7 +314,7 @@ void LocalStorageCachedArea::KeyAddedOrChanged(
     // for the confirmation callback. In the latter case, we won't do anything
     // because ignore_key_mutations_ won't be updated until the callback runs.
     if (ignore_key_mutations_.find(key_string) == ignore_key_mutations_.end()) {
-      // We turn off quota checking here to accomodate the over budget allowance
+      // We turn off quota checking here to accommodate the over budget allowance
       // that's provided in the browser process.
       base::NullableString16 unused;
       map_->set_quota(std::numeric_limits<int32_t>::max());

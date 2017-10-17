@@ -8,7 +8,7 @@
 
 namespace {
 
-// Used to accomodate finite precision when comparing scaled viewport and
+// Used to accommodate finite precision when comparing scaled viewport and
 // content widths. While this value may seem large, width=device-width on an N7
 // V1 saw errors of ~0.065 between computed window and content widths.
 const float kMobileViewportWidthEpsilon = 0.15f;

@@ -30,7 +30,7 @@ MemlogSenderPipe* g_sender_pipe = nullptr;
 constexpr int kSendBufferSize = 65536;
 #else
 // Writes on Posix greater than PIPE_BUF are not guaranteed to be atomic, but
-// PIPE_BUF is potentially as low as 512, which isn't large enough to accomodate
+// PIPE_BUF is potentially as low as 512, which isn't large enough to accommodate
 // a message with 256 stack frames. Instead, we use a large value [artifically
 // chosen to match that of Windows], and make the Send() method of the
 // MemlogSenderPipe a critical section.

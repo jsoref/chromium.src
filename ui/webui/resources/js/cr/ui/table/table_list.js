@@ -147,7 +147,7 @@ cr.define('cr.ui.table', function() {
 
     /**
      * @param {number} visibleHeight Height in pixels.
-     * @return {boolean} True if all rows could be accomodiated in
+     * @return {boolean} True if all rows could be accommodated in
      *                   visibleHeight pixels.
      */
     areAllItemsVisible_: function(visibleHeight) {

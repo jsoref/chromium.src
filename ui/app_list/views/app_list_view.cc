@@ -1363,7 +1363,7 @@ void AppListView::OnDisplayMetricsChanged(const display::Display& display,
   gfx::Size size = GetDisplayNearestView().size();
   fullscreen_widget_->SetSize(size);
 
-  // Update the |fullscreen_widget_| bounds to accomodate the new work
+  // Update the |fullscreen_widget_| bounds to accommodate the new work
   // area.
   SetState(app_list_state_);
 }

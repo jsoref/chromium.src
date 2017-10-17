@@ -322,7 +322,7 @@ MojoAttachSerializedMessageBuffer(MojoMessageHandle message,
 
 // Extends the contents of a partially serialized message with additional
 // payload bytes and/or handle attachments. If the underlying message buffer is
-// not large enough to accomodate the additional payload size, this will attempt
+// not large enough to accommodate the additional payload size, this will attempt
 // to expand the buffer before returning.
 //
 // May only be called on partially serialized messages, i.e. between a call

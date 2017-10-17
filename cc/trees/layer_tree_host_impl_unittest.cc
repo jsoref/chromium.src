@@ -4984,7 +4984,7 @@ TEST_F(LayerTreeHostImplBrowserControlsTest,
       UpdateState(gfx::Point(), gfx::Vector2dF(0.f, -50.f)).get());
 
   // The entire scroll delta should have been used to show the browser controls.
-  // The outer viewport should be resized to accomodate and scrolled to the
+  // The outer viewport should be resized to accommodate and scrolled to the
   // bottom of the document to keep the viewport in place.
   EXPECT_EQ(1.f, host_impl_->active_tree()->CurrentBrowserControlsShownRatio());
   EXPECT_EQ(50.f, outer_container->BoundsForScrolling().height());

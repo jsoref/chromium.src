@@ -161,7 +161,7 @@ TryChromeDialog::Result TryChromeDialog::ShowDialog(
   views::ColumnSet* columns;
 
   // Note the right padding is smaller than other dimensions,
-  // to acommodate the close 'x' button.
+  // to accommodate the close 'x' button.
   static constexpr gfx::Insets kInsets(10, 10, 12, 3);
   root_view->SetBorder(views::CreatePaddedBorder(
       views::CreateSolidBorder(1, kBorderColor), kInsets));

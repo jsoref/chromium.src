@@ -114,7 +114,7 @@ cr.define('mobile', function() {
           $('locked-puk-overlay').hidden = false;
           $('puk-input').focus();
 
-          // Resize the dialog to accomodate the PUK contents.
+          // Resize the dialog to accommodate the PUK contents.
           this.updateDialogSize_(0, 45);
           break;
         case SimUnlock.SIM_LOCKED_NO_PUK_TRIES_LEFT:

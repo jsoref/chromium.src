@@ -9271,7 +9271,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 <histogram name="Compositing.Browser.RasterTask.RasterPixelsPerMs"
     units="pixels/ms">
   <obsolete>
-    Deprecated 11/2016. Increased the max tracking range to accomendate GPU
+    Deprecated 11/2016. Increased the max tracking range to accommodate GPU
     raster, and will require new baskets.
   </obsolete>
   <owner>paint-dev@chromium.org</owner>
@@ -9612,7 +9612,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 <histogram name="Compositing.Renderer.RasterTask.RasterPixelsPerMs"
     units="pixels/ms">
   <obsolete>
-    Deprecated 11/2016. Increased the max tracking range to accomendate GPU
+    Deprecated 11/2016. Increased the max tracking range to accommodate GPU
     raster, and will require new baskets.
   </obsolete>
   <owner>paint-dev@chromium.org</owner>

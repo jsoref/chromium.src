@@ -12,7 +12,7 @@ namespace content {
 const int64_t kHungRendererDelayMs = 5000;
 #else
 // TODO(jdduke): Consider shortening this delay on desktop. It was originally
-// set to 5 seconds but was extended to accomodate less responsive plugins.
+// set to 5 seconds but was extended to accommodate less responsive plugins.
 const int64_t kHungRendererDelayMs = 30000;
 #endif
 

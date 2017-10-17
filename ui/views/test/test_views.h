@@ -40,7 +40,7 @@ class StaticSizedView : public View {
   DISALLOW_COPY_AND_ASSIGN(StaticSizedView);
 };
 
-// A view that accomodates testing layouts that use GetHeightForWidth.
+// A view that accommodates testing layouts that use GetHeightForWidth.
 class ProportionallySizedView : public View {
  public:
   explicit ProportionallySizedView(int factor);

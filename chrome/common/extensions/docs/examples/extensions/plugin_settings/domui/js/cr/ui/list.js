@@ -128,7 +128,7 @@ cr.define('cr.ui', function() {
 
     /**
      * Whether or not the list is autoexpanding. If true, the list resizes
-     * its height to accomadate all children.
+     * its height to accommodate all children.
      * @type {boolean}
      * @private
      */

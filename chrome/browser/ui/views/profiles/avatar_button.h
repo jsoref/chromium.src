@@ -74,7 +74,7 @@ class AvatarButton : public views::LabelButton,
   // Sets generic_avatar_ to the image with the specified IDR.
   void SetButtonAvatar(int avatar_idr);
 
-  // Returns true when the button can get smaller to accomodate a more crowded
+  // Returns true when the button can get smaller to accommodate a more crowded
   // browser frame.
   bool IsCondensible() const;
 
