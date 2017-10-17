@@ -588,7 +588,7 @@ TEST_F(PlatformSensorAndProviderLinuxTest, CheckLinearAcceleration) {
   PlatformSensorConfiguration configuration(10);
   EXPECT_TRUE(sensor->StartListening(client.get(), configuration));
 
-  // The actual accceration is around 0 but the algorithm needs several
+  // The actual acceleration is around 0 but the algorithm needs several
   // iterations to isolate gravity properly.
   int kApproximateExpectedAcceleration = 6;
   WaitOnSensorReadingChangedEvent(client.get(), sensor->GetType());
