@@ -20,7 +20,7 @@ Polymer({
     },
 
     /**
-     * "Accepot and continue" button is disabled until content is loaded.
+     * "Accept and continue" button is disabled until content is loaded.
      */
     acceptButtonDisabled: {
       type: Boolean,

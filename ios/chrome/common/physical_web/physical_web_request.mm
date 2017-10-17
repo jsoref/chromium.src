@@ -118,7 +118,7 @@ std::string GetUserAgent() {
   // TODO(mattreynolds): Use the same Accept-Language string as WKWebView.
   NSString* acceptLanguage =
       [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
-  [request_ setValue:acceptLanguage forHTTPHeaderField:@"Acccept-Language"];
+  [request_ setValue:acceptLanguage forHTTPHeaderField:@"Accept-Language"];
 
   startDate_.reset([NSDate date]);
   // Starts the request.

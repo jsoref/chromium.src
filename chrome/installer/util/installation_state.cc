@@ -110,7 +110,7 @@ bool ProductState::Initialize(bool system_install) {
     has_oem_install_ = (key.ReadValue(google_update::kRegOemInstallField,
                                       &oem_install_) == ERROR_SUCCESS);
     // "eulaaccepted" may be absent, 0 or 1.
-    has_eula_accepted_ = (key.ReadValueDW(google_update::kRegEULAAceptedField,
+    has_eula_accepted_ = (key.ReadValueDW(google_update::kRegEULAAcceptedField,
                                           &eula_accepted_) == ERROR_SUCCESS);
     // "msi" may be absent, 0 or 1
     DWORD dw_value = 0;
@@ -134,7 +134,7 @@ bool ProductState::Initialize(bool system_install) {
       usagestats_ = dword_value;
     }
 
-    if (key.ReadValueDW(google_update::kRegEULAAceptedField,
+    if (key.ReadValueDW(google_update::kRegEULAAcceptedField,
                         &dword_value) == ERROR_SUCCESS) {
       has_eula_accepted_ = true;
       eula_accepted_ = dword_value;

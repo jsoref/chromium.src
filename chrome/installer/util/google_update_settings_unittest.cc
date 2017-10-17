@@ -428,7 +428,7 @@ TEST_F(GoogleUpdateSettingsTest, SetEULAConsent) {
       key.Open(HKEY_LOCAL_MACHINE, chrome->GetStateMediumKey().c_str(),
                KEY_QUERY_VALUE));
   EXPECT_EQ(ERROR_SUCCESS,
-      key.ReadValueDW(google_update::kRegEULAAceptedField, &value));
+      key.ReadValueDW(google_update::kRegEULAAcceptedField, &value));
   EXPECT_EQ(1U, value);
 }
 

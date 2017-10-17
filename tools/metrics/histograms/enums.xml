@@ -40497,7 +40497,7 @@ Called by update_traffic_annotation_histograms.py.-->
   <int value="68" label="TOO_MANY_NAMES"/>
   <int value="69" label="TOO_MANY_SESS"/>
   <int value="70" label="SHARING_PAUSED"/>
-  <int value="71" label="REQ_NOT_ACCEP"/>
+  <int value="71" label="REQ_NOT_ACCEPT"/>
   <int value="72" label="REDIR_PAUSED"/>
   <int value="80" label="FILE_EXISTS"/>
   <int value="82" label="CANNOT_MAKE"/>

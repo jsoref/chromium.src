@@ -353,7 +353,7 @@ bool GoogleUpdateSettings::SetEULAConsent(
   // Write the consent value into the product's ClientStateMedium key.
   return key.Create(HKEY_LOCAL_MACHINE, dist->GetStateMediumKey().c_str(),
                     kAccess) == ERROR_SUCCESS &&
-         key.WriteValue(google_update::kRegEULAAceptedField, eula_accepted) ==
+         key.WriteValue(google_update::kRegEULAAcceptedField, eula_accepted) ==
              ERROR_SUCCESS;
 }
 
