@@ -18,7 +18,7 @@ namespace cast {
 // RawEventSubscriber implementation that records all incoming raw events
 // in std::vector's.
 // The user of this class can call the GetXXXEventsAndReset functions to get
-// list of events that have acccumulated since last inovcation.
+// list of events that have accumulated since last inovcation.
 class SimpleEventSubscriber : public RawEventSubscriber {
  public:
   SimpleEventSubscriber();
