@@ -16,7 +16,7 @@ extern NSString* const kWebViewShellForwardButtonAccessibilityLabel;
 extern NSString* const kWebViewShellAddressFieldAccessibilityLabel;
 // Accessibility identifier added to the text field of JavaScript prompts.
 extern NSString* const
-    kWebViewShellJavaScriptDialogTextFieldAccessibiltyIdentifier;
+    kWebViewShellJavaScriptDialogTextFieldAccessibilityIdentifier;
 
 // Implements the main UI for web_view_shell, including the toolbar and web
 // view.

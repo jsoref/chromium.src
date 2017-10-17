@@ -1477,7 +1477,7 @@ NSString* const kDummyToolbarBackgroundViewAnimationKey =
 
   [_activeCardSet.currentCard setIsActiveTab:YES];
 
-  // When in accessbility mode, fan out cards from the start, announce open tabs
+  // When in accessibility mode, fan out cards from the start, announce open tabs
   // and move the VoiceOver cursor to the New Tab button. Fanning out the cards
   // from the start eliminates the screen change that would otherwise occur when
   // moving the VoiceOver cursor from the Show Tabs button to the card stack.

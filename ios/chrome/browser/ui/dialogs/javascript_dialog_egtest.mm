@@ -252,11 +252,11 @@ void AssertJavaScriptAlertNotPresent() {
 void TypeInPrompt(NSString* input) {
   [[[EarlGrey selectElementWithMatcher:
                   grey_accessibilityID(
-                      kJavaScriptDialogTextFieldAccessibiltyIdentifier)]
+                      kJavaScriptDialogTextFieldAccessibilityIdentifier)]
       assertWithMatcher:grey_sufficientlyVisible()] performAction:grey_tap()];
   [[EarlGrey selectElementWithMatcher:
                  grey_accessibilityID(
-                     kJavaScriptDialogTextFieldAccessibiltyIdentifier)]
+                     kJavaScriptDialogTextFieldAccessibilityIdentifier)]
       performAction:grey_typeText(input)];
 }
 

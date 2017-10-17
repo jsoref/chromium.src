@@ -7615,7 +7615,7 @@ I don't think this site should be blocked!
         Reload
       </message>
 
-      <!-- Accessiblility strings for Inforbars in Views -->
+      <!-- Accessibility strings for Inforbars in Views -->
       <if expr="toolkit_views">
         <message name="IDS_ACCNAME_INFOBAR_CONTAINER" desc="The accessible name for the infobar container.">
           Infobar Container

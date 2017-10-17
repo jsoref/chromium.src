@@ -51,7 +51,7 @@ NSSecureTextField* PasswordLabel(const base::string16& text);
 NSButton* DialogButton(NSString* title);
 
 // Returns a NSRegularControlSize button. It's used for improving the contrast
-// due to Accessabilty standards.
+// due to Accessibility standards.
 NSButton* BiggerDialogButton(NSString* title);
 
 // Returns a title label with |text| for a bubble. Nonempty |range| may specify

@@ -838,7 +838,7 @@ TEST_F(SystemTrayTest, PersistentBubble) {
 // With a system modal dialog, the bubble should be created with a LOCKED login
 // status.
 TEST_F(SystemTrayTest, WithSystemModal) {
-  // The accessiblity item is created and is visible either way.
+  // The accessibility item is created and is visible either way.
   Shell::Get()->accessibility_delegate()->SetVirtualKeyboardEnabled(true);
   std::unique_ptr<views::Widget> widget(CreateTestWidget(
       new ModalWidgetDelegate, kShellWindowId_SystemModalContainer,

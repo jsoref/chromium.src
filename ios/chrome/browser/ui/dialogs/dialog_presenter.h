@@ -14,7 +14,7 @@ class GURL;
 @class AlertCoordinator;
 
 // Accessibility identifier added to the text field of JavaScript prompts.
-extern NSString* const kJavaScriptDialogTextFieldAccessibiltyIdentifier;
+extern NSString* const kJavaScriptDialogTextFieldAccessibilityIdentifier;
 
 namespace web {
 class WebState;

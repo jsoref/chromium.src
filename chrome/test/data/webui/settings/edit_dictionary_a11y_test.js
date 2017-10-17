@@ -14,7 +14,7 @@ var ROOT_PATH = '../../../../../';
 
 // SettingsAccessibilityTest fixture.
 GEN_INCLUDE([
-  ROOT_PATH + 'chrome/test/data/webui/settings/settings_accessiblity_test.js',
+  ROOT_PATH + 'chrome/test/data/webui/settings/settings_accessibility_test.js',
 ]);
 
 AccessibilityTest.define('SettingsAccessibilityTest', {

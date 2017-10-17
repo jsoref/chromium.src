@@ -3048,7 +3048,7 @@ public class ContextualSearchManagerTest {
     @Test
     @SmallTest
     @Feature({"ContextualSearch"})
-    public void testAccesibilityMode() throws InterruptedException, TimeoutException {
+    public void testAccessibilityMode() throws InterruptedException, TimeoutException {
         mManager.onAccessibilityModeChanged(true);
 
         // Simulate a tap that resolves to show the Bar.

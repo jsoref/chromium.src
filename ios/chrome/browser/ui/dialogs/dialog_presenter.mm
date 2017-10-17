@@ -28,8 +28,8 @@
 #endif
 
 // Externed accessibility identifier.
-NSString* const kJavaScriptDialogTextFieldAccessibiltyIdentifier =
-    @"JavaScriptDialogTextFieldAccessibiltyIdentifier";
+NSString* const kJavaScriptDialogTextFieldAccessibilityIdentifier =
+    @"JavaScriptDialogTextFieldAccessibilityIdentifier";
 
 @interface DialogPresenter () {
   // Queue of WebStates which correspond to the keys in
@@ -252,7 +252,7 @@ NSString* const kJavaScriptDialogTextFieldAccessibiltyIdentifier =
       addTextFieldWithConfigurationHandler:^(UITextField* textField) {
         textField.text = defaultText;
         textField.accessibilityIdentifier =
-            kJavaScriptDialogTextFieldAccessibiltyIdentifier;
+            kJavaScriptDialogTextFieldAccessibilityIdentifier;
       }];
 
   [self addDialogCoordinator:alertCoordinator forWebState:webState];
