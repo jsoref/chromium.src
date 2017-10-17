@@ -1301,7 +1301,7 @@ uploading your change for review.  These are checked by presubmit scripts.
 <enum name="ArcOptInResult">
   <summary>
     Defines Arc OptIn flow states. Normally each OptIn flow reports 2-3 states;
-    Started should be accompined with Succeeded or Canceled. Optionally
+    Started should be accompanied with Succeeded or Canceled. Optionally
     Succeeded after retry or Canceled after error may be provided.
   </summary>
   <int value="0" label="Started"/>
