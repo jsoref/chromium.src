@@ -60,7 +60,7 @@ enum UMAPairingResult {
   UMA_PAIRING_RESULT_UNSUPPORTED_DEVICE,
   UMA_PAIRING_RESULT_UNKNOWN_ERROR,
   // NOTE: Add new pairing results immediately above this line. Make sure to
-  // update the enum list in tools/histogram/histograms.xml accordinly.
+  // update the enum list in tools/histogram/histograms.xml accordingly.
   UMA_PAIRING_RESULT_COUNT
 };
 
