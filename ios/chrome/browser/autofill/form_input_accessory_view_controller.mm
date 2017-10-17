@@ -135,7 +135,7 @@ bool ComputeFramesOfKeyboardParts(UIView* inputAccessoryView,
                                   CGRect* rightFrame) {
   // It is observed (on iOS 6) there are always two subviews in the original
   // input accessory view. When the keyboard is split, each subview represents
-  // one part of the accesssary view of the keyboard. When the keyboard is
+  // one part of the accessory view of the keyboard. When the keyboard is
   // merged, one subview has the same frame as that of the whole accessory view
   // and the other has zero size with the screen width as origin.x.
   // The computation here is based on this observation.
