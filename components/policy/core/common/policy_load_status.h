@@ -24,7 +24,7 @@ enum PolicyLoadStatus {
   // No policy present.
   POLICY_LOAD_STATUS_NO_POLICY = 2,
   // Data inaccessible, such as non-local policy file.
-  POLICY_LOAD_STATUS_INACCCESSIBLE = 3,
+  POLICY_LOAD_STATUS_INACCESSIBLE = 3,
   // Data missing, such as policy file not present.
   POLICY_LOAD_STATUS_MISSING = 4,
   // Trying with Wow64 redirection disabled.

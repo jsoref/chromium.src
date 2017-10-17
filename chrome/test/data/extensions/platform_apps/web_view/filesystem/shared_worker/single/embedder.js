@@ -117,7 +117,7 @@ embedder.assertCorrectEvent_ = function(e) {
 // reference to embedder to send the reply back.
 
 // Loads a guest which create a shared worker to request filesystem. The
-// embedder explicitly allows acccess to filesystem for the guest.
+// embedder explicitly allows access to filesystem for the guest.
 function testAllow() {
   var webview = embedder.setUpGuest_();
 

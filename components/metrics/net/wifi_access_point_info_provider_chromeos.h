@@ -16,7 +16,7 @@
 namespace metrics {
 
 // WifiAccessPointInfoProviderChromeos provides the connected wifi
-// acccess point information for chromeos.
+// access point information for chromeos.
 class WifiAccessPointInfoProviderChromeos
     : public WifiAccessPointInfoProvider,
       public chromeos::NetworkStateHandlerObserver,

@@ -18,7 +18,7 @@ struct TraceCategory;
 class TraceCategoryTest;
 class TraceLog;
 
-// Allows fast and thread-safe acces to the state of all tracing categories.
+// Allows fast and thread-safe access to the state of all tracing categories.
 // All the methods in this class can be concurrently called on multiple threads,
 // unless otherwise noted (e.g., GetOrCreateCategoryLocked).
 // The reason why this is a fully static class with global state is to allow to

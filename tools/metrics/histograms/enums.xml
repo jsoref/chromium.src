@@ -11371,7 +11371,7 @@ uploading your change for review.  These are checked by presubmit scripts.
     System failed to determine whether there's policy.
   </int>
   <int value="2" label="NO_POLICY">No policy present.</int>
-  <int value="3" label="INACCCESSIBLE">
+  <int value="3" label="INACCESSIBLE">
     Data inaccessible, such as non-local policy file.
   </int>
   <int value="4" label="MISSING">

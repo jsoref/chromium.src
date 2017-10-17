@@ -118,7 +118,7 @@ class TabModalConfirmDialogDelegate : public content::NotificationObserver {
   // Called when the dialog is closed.
   virtual void OnClosed();
 
-  // Called when the link is clicked. Acces to the method is controlled by
+  // Called when the link is clicked. Access to the method is controlled by
   // LinkClicked(), which checks that the dialog is not in the process of
   // closing. It's correct to close the dialog by calling Accept(), Cancel()
   // or Close() from this callback.

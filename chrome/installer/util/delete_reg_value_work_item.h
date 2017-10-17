@@ -36,7 +36,7 @@ class DeleteRegValueWorkItem : public WorkItem {
 
   DeleteRegValueWorkItem(HKEY predefined_root,
                          const std::wstring& key_path,
-                         REGSAM wow64_acccess,
+                         REGSAM wow64_access,
                          const std::wstring& value_name);
 
   // WorkItem:

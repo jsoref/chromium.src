@@ -131,7 +131,7 @@ embedder.assertCorrectEvent_ = function(e) {
 // RunExtensionSubtest() for platform apps.
 
 // Loads a guest which requests geolocation. The embedder (platform app) has
-// acccess to geolocation and allows geolocation for the guest.
+// access to geolocation and allows geolocation for the guest.
 function testAllow() {
   var webview = embedder.setUpGuest_();
 
@@ -149,7 +149,7 @@ function testAllow() {
 }
 
 // Loads a guest which requests geolocation. The embedder (platform app) has
-// acccess to geolocation, but denies geolocation for the guest.
+// access to geolocation, but denies geolocation for the guest.
 function testDeny() {
   var webview = embedder.setUpGuest_();
 

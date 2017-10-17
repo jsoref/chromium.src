@@ -17598,7 +17598,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 <histogram name="Enterprise.UserPolicyChromeOS.InitialFetch.DelayOAuth2Token"
     units="ms">
   <owner>mnissler@chromium.org</owner>
-  <summary>Delay for minting an OAuth2 acccess token.</summary>
+  <summary>Delay for minting an OAuth2 access token.</summary>
 </histogram>
 
 <histogram name="Enterprise.UserPolicyChromeOS.InitialFetch.DelayPolicyFetch"

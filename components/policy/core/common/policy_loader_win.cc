@@ -471,7 +471,7 @@ bool PolicyLoaderWin::LoadGPOPolicy(PolicyScope scope,
       // UNC path: Assume this is an AD-managed machine, which updates the
       // registry via GPO's standard registry CSE periodically. Fall back to
       // reading from the registry in this case.
-      status->Add(POLICY_LOAD_STATUS_INACCCESSIBLE);
+      status->Add(POLICY_LOAD_STATUS_INACCESSIBLE);
       return false;
     }
 

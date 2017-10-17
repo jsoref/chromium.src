@@ -106,7 +106,7 @@ void PolicyValueStore::DeleteStorage() {
 
 size_t PolicyValueStore::GetBytesInUse(const std::string& key) {
   // LeveldbValueStore doesn't implement this; and the underlying database
-  // isn't acccessible to the extension in any case; from the extension's
+  // isn't accessible to the extension in any case; from the extension's
   // perspective this is a read-only store.
   return 0;
 }

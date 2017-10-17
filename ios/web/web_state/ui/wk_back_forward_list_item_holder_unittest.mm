@@ -48,7 +48,7 @@ TEST_F(WKBackForwardListItemHolderTest, GetHolderFromDifferentNavigationItem) {
   EXPECT_NE(holder1, holder2);
 }
 
-// Tests that acessors for the WKBackForwardListItem object work as
+// Tests that accessors for the WKBackForwardListItem object work as
 // expected. The test bellow uses NSObject instead of WKBackForwardListItem
 // because WKBackForwardListItem alloc/release is not designed to be called
 // directly and will crash.
@@ -63,7 +63,7 @@ TEST_F(WKBackForwardListItemHolderTest, GetBackForwardListItemFromHolder) {
   EXPECT_EQ(input, result);
 }
 
-// Tests that acessors for navigation type work as expected.
+// Tests that accessors for navigation type work as expected.
 TEST_F(WKBackForwardListItemHolderTest, GetNavigationTypeFromHolder) {
   std::unique_ptr<web::NavigationItem> item(NavigationItem::Create());
   WKBackForwardListItemHolder* holder =

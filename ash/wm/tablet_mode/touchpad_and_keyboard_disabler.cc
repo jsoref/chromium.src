@@ -38,7 +38,7 @@ class DefaultDelegateImpl : public TouchpadAndKeyboardDisabler::Delegate {
     GetInputDeviceControllerClient()->SetInternalTouchpadEnabled(
         false, std::move(callback));
 
-    // Allow the acccessible keys present on the side of some devices to
+    // Allow the accessible keys present on the side of some devices to
     // continue working.
     std::vector<ui::DomCode> allowed_keys;
     allowed_keys.push_back(ui::DomCode::VOLUME_DOWN);

@@ -116,7 +116,7 @@ TEST_F(DownloadResourceThrottleTest, StartDownloadThrottle_Basic) {
 }
 
 #if defined(OS_ANDROID)
-TEST_F(DownloadResourceThrottleTest, DownloadWithFailedFileAcecssRequest) {
+TEST_F(DownloadResourceThrottleTest, DownloadWithFailedFileAccessRequest) {
   DownloadControllerBase::Get()
       ->SetApproveFileAccessRequestForTesting(false);
   EXPECT_CALL(resource_throttle_delegate_, Cancel())

@@ -90,7 +90,7 @@ class VerifiedRulesetDealer::Handle {
   DISALLOW_COPY_AND_ASSIGN(Handle);
 };
 
-// Holds a strong reference to MemoryMappedRuleset, and provides acceess to it.
+// Holds a strong reference to MemoryMappedRuleset, and provides access to it.
 //
 // Initially holds an empty reference, allowing this object to be created on the
 // UI-thread synchronously, hence letting the Handle to be created synchronously

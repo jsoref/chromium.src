@@ -1868,7 +1868,7 @@ TEST_F(TemplateURLServiceSyncTest, ExtensionAndNormalEngineConflict) {
   EXPECT_TRUE(model()->IsExtensionControlledDefaultSearch());
   EXPECT_EQ(extension_turl, model()->GetTemplateURLForKeyword(kCommonKeyword));
 
-  // Remove extension engine and expect that normal engine can be acessed by
+  // Remove extension engine and expect that normal engine can be accessed by
   // keyword.
   test_util_a_->RemoveExtensionControlledTURL("ext");
   EXPECT_EQ(model()->GetTemplateURLForGUID("normal_guid"),

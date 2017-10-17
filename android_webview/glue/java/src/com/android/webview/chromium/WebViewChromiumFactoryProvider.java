@@ -157,7 +157,7 @@ public class WebViewChromiumFactoryProvider implements WebViewFactoryProvider {
         mRunQueue.addTask(task);
     }
 
-    // Guards accees to the other members, and is notifyAll() signalled on the UI thread
+    // Guards access to the other members, and is notifyAll() signalled on the UI thread
     // when the chromium process has been started.
     private final Object mLock = new Object();
 
