@@ -194,7 +194,7 @@ void ChromeNativeAppWindowViews::InitializeDefaultWindow(
     return;
 #endif
 
-  // Register accelarators supported by app windows.
+  // Register accelerators supported by app windows.
   // TODO(jeremya/stevenjb): should these be registered for panels too?
   views::FocusManager* focus_manager = GetFocusManager();
   const std::map<ui::Accelerator, int>& accelerator_table =
