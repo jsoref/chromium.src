@@ -137,7 +137,7 @@ std::string UIThreadSearchTermsData::ForceInstantResultsParam(
   return search::ForceInstantResultsParam(for_prerender);
 }
 
-// It's acutally OK to call this method on any thread, but it's currently placed
+// It's actually OK to call this method on any thread, but it's currently placed
 // in UIThreadSearchTermsData since SearchTermsData cannot depend on src/chrome
 // as it is shared with iOS.
 std::string UIThreadSearchTermsData::GoogleImageSearchSource() const {

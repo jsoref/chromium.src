@@ -37,7 +37,7 @@ namespace internal {
 //  FunctorTraits<> -- Type traits used to determine the correct RunType and
 //                     invocation manner for a Functor.  This is where function
 //                     signature adapters are applied.
-//  InvokeHelper<> -- Take a Functor + arguments and actully invokes it.
+//  InvokeHelper<> -- Take a Functor + arguments and actually invokes it.
 //                    Handle the differing syntaxes needed for WeakPtr<>
 //                    support.  This is separate from Invoker to avoid creating
 //                    multiple version of Invoker<>.

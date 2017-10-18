@@ -493,7 +493,7 @@ class PopupZoomer extends View {
             invalidate();
         }
 
-        // Fraction of the animation to actally show.
+        // Fraction of the animation to actually show.
         float fractionAnimation;
         if (mShowing) {
             fractionAnimation = mShowInterpolator.getInterpolation(time);

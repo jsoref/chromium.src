@@ -1879,7 +1879,7 @@ TEST_F(TextureTest, AddToSignature) {
   manager_->AddToSignature(texture_ref_.get(), GL_TEXTURE_2D, 1, &signature2);
   EXPECT_EQ(signature1, signature2);
 
-  // Check the set was acutally getting different signatures.
+  // Check the set was actually getting different signatures.
   EXPECT_EQ(11u, string_set.size());
 }
 

@@ -76,7 +76,7 @@ class StartWithUrlWarmTBM(_StartupPerfBenchmark):
   @classmethod
   def ValueCanBeAddedPredicate(cls, value, is_first_result):
     del value  # unused
-    # Ignores first results because the first invocation is actualy cold since
+    # Ignores first results because the first invocation is actually cold since
     # we are loading the profile for the first time.
     return not is_first_result
 

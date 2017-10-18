@@ -80,7 +80,7 @@ class HTTPResponse(object):
     if not body:
       return 0
     # The binary data like images, etc is base64_encoded. Decode it to get
-    # the actualy content length.
+    # the actually content length.
     if base64_encoded:
       decoded = base64.b64decode(body)
       return len(decoded)

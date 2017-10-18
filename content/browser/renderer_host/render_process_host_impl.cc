@@ -3628,7 +3628,7 @@ void RenderProcessHostImpl::CreateSharedRendererHistogramAllocator() {
   // already exists. Don't recreate it.
   if (!metrics_allocator_) {
     // Create persistent/shared memory and allow histograms to be stored in
-    // it. Memory that is not actualy used won't be physically mapped by the
+    // it. Memory that is not actually used won't be physically mapped by the
     // system. RendererMetrics usage, as reported in UMA, peaked around 0.7MiB
     // as of 2016-12-20.
     std::unique_ptr<base::SharedMemory> shm(new base::SharedMemory());

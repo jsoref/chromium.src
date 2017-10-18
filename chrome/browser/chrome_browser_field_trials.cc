@@ -113,7 +113,7 @@ void InstantiatePersistentHistograms() {
   InitResult result;
 
   // Create persistent/shared memory and allow histograms to be stored in
-  // it. Memory that is not actualy used won't be physically mapped by the
+  // it. Memory that is not actually used won't be physically mapped by the
   // system. BrowserMetrics usage, as reported in UMA, has the 99.9 percentile
   // around 4MiB as of 2017-02-16.
   const size_t kAllocSize = 8 << 20;     // 8 MiB

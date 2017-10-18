@@ -91,7 +91,7 @@ def _CategorizeByChromeComponent(symbols):
 def _CategorizeGenerated(symbols):
   g = _Grouper()
 
-  # JNI is generated into .h files then #included, so the symbols don't actaully
+  # JNI is generated into .h files then #included, so the symbols don't actually
   # appear as "SourceIsGenerated".
   # Note: String literals within symbols like "kBaseRegisteredMethods" are not
   #     being accounted for here because they end up within "** merge strings".

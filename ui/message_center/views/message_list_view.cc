@@ -109,7 +109,7 @@ void MessageListView::RemoveNotification(MessageView* view) {
       deleting_views_.find(view) != deleting_views_.end() ||
       deleted_when_done_.find(view) != deleted_when_done_.end()) {
     // Let's skip deleting the view if it's already scheduled for deleting.
-    // Even if we check clearing_all_views_ here, we actualy have no idea
+    // Even if we check clearing_all_views_ here, we actually have no idea
     // whether the view is due to be removed or not because it could be in its
     // animation before removal.
     // In short, we could delete the view twice even if we check these three

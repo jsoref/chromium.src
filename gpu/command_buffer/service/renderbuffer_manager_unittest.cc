@@ -303,7 +303,7 @@ TEST_F(RenderbufferManagerTest, AddToSignature) {
   renderbuffer1->AddToSignature(&signature2);
   EXPECT_EQ(signature1, signature2);
 
-  // Check the set was acutally getting different signatures.
+  // Check the set was actually getting different signatures.
   EXPECT_EQ(5u, string_set.size());
 
   EXPECT_CALL(*gl_, DeleteRenderbuffersEXT(1, ::testing::Pointee(kService1Id)))
