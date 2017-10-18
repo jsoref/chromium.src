@@ -202,7 +202,7 @@ void MidiMessageFilter::OnDataReceived(uint32_t port,
 void MidiMessageFilter::OnAcknowledgeSentData(size_t bytes_sent) {
   DCHECK(io_task_runner_->BelongsToCurrentThread());
   main_task_runner_->PostTask(
-      FROM_HERE, base::BindOnce(&MidiMessageFilter::HandleAckknowledgeSentData,
+      FROM_HERE, base::BindOnce(&MidiMessageFilter::HandleAcknowledgeSentData,
                                 this, bytes_sent));
 }
 
@@ -270,7 +270,7 @@ void MidiMessageFilter::HandleDataReceived(uint32_t port,
     client->DidReceiveMIDIData(port, &data[0], data.size(), timestamp);
 }
 
-void MidiMessageFilter::HandleAckknowledgeSentData(size_t bytes_sent) {
+void MidiMessageFilter::HandleAcknowledgeSentData(size_t bytes_sent) {
   DCHECK(main_task_runner_->BelongsToCurrentThread());
   DCHECK_GE(unacknowledged_bytes_sent_, bytes_sent);
   if (unacknowledged_bytes_sent_ >= bytes_sent)

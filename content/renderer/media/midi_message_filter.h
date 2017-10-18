@@ -116,7 +116,7 @@ class CONTENT_EXPORT MidiMessageFilter : public IPC::MessageFilter {
                           const std::vector<uint8_t>& data,
                           double timestamp);
 
-  void HandleAckknowledgeSentData(size_t bytes_sent);
+  void HandleAcknowledgeSentData(size_t bytes_sent);
 
   // IPC sender for Send(); must only be accessed on |io_task_runner_|.
   IPC::Sender* sender_;
