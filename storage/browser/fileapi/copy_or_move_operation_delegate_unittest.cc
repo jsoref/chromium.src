@@ -711,7 +711,7 @@ TEST(LocalFileSystemCopyOrMoveOperationTest, ProgressCallback) {
       // For directory copy, the progress shouldn't be interlaced.
       EXPECT_EQ(begin_index + 1, end_index);
     } else {
-      // PROGRESS event's size should be assending order.
+      // PROGRESS event's size should be ascending order.
       int64_t current_size = 0;
       for (size_t j = begin_index + 1; j < end_index; ++j) {
         if (records[j].source_url == src_url) {

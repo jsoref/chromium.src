@@ -93,7 +93,7 @@ class UI_BASE_EXPORT ListSelectionModel {
   // selected indices.
   void Clear();
 
-  // Returns the selected indices. The selection is always ordered in acending
+  // Returns the selected indices. The selection is always ordered in ascending
   // order.
   const SelectedIndices& selected_indices() const { return selected_indices_; }
 
