@@ -239,9 +239,9 @@ const IDNTestCase idn_cases[] = {
     // Invisibility check
     // Thai tone mark malek(U+0E48) repeated
     {"xn--03c0b3ca.th", L"\x0e23\x0e35\x0e48\x0e48.th", false},
-    // Accute accent repeated
+    // Acute accent repeated
     {"xn--a-xbba.com", L"a\x0301\x0301.com", false},
-    // 'a' with acuted accent + another acute accent
+    // 'a' with acute accent + another acute accent
     {"xn--1ca20i.com", L"\x00e1\x0301.com", false},
     // Combining mark at the beginning
     {"xn--abc-fdc.jp",
