@@ -2045,7 +2045,7 @@ DistanceMeter.prototype = {
    * Update the distance meter.
    * @param {number} distance
    * @param {number} deltaTime
-   * @return {boolean} Whether the acheivement sound fx should be played.
+   * @return {boolean} Whether the achievement sound fx should be played.
    */
   update: function(deltaTime, distance) {
     var paint = true;
@@ -2063,7 +2063,7 @@ DistanceMeter.prototype = {
       }
 
       if (distance > 0) {
-        // Acheivement unlocked
+        // Achievement unlocked
         if (distance % this.config.ACHIEVEMENT_DISTANCE == 0) {
           // Flash score and play sound.
           this.achievement = true;
@@ -2079,7 +2079,7 @@ DistanceMeter.prototype = {
         this.digits = this.defaultString.split('');
       }
     } else {
-      // Control flashing of the score on reaching acheivement.
+      // Control flashing of the score on reaching achievement.
       if (this.flashIterations <= this.config.FLASH_ITERATIONS) {
         this.flashTimer += deltaTime;
 
