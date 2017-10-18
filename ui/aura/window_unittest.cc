@@ -1966,7 +1966,7 @@ TEST_P(WindowTest, AcquireLayer) {
   EXPECT_FALSE(window1_test_api.OwnsLayer());
   EXPECT_TRUE(window1_layer.get() == window1->layer());
 
-  // The acquired layer's owner should be set NULL and re-acquring
+  // The acquired layer's owner should be set NULL and re-acquiring
   // should return NULL.
   EXPECT_FALSE(window1_layer->owner());
   std::unique_ptr<ui::Layer> window1_layer_reacquired(window1->AcquireLayer());
