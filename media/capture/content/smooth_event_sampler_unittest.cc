@@ -482,7 +482,7 @@ TEST(SmoothEventSamplerTest, DrawingAt30FpsWith60HzVsyncSampledAt30Hertz) {
 }
 
 TEST(SmoothEventSamplerTest, DrawingAt60FpsWith60HzVsyncSampledAt30Hertz) {
-  // Actual capturing of timing data: WebGL Acquarium demo
+  // Actual capturing of timing data: WebGL Aquarium demo
   // (http://webglsamples.googlecode.com/hg/aquarium/aquarium.html) which ran
   // between 55-60 FPS in the steady-state.
   static const DataPoint data_points[] = {{true, 16.72},
