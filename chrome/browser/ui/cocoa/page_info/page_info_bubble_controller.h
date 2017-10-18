@@ -56,7 +56,7 @@ class X509Certificate;
   // Displays a paragraph to accompany the reset decisions button, explaining
   // that the user has made a decision to trust an invalid security certificate
   // for the current site.
-  // This field only shows when there is an acrive certificate exception.
+  // This field only shows when there is an active certificate exception.
   NSTextField* resetDecisionsField_;
 
   // The link button for revoking certificate decisions.

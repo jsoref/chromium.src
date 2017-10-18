@@ -4033,7 +4033,7 @@ TEST_P(CrasAudioHandlerTest, FrontRearCameraBothOn) {
 
   // Stop the rear mic.
   StopRearFacingCamera();
-  // Verify the actice mic changes to front mic after both cameras stop.
+  // Verify the active mic changes to front mic after both cameras stop.
   EXPECT_EQ(kFrontMicId, cras_audio_handler_->GetPrimaryActiveInputNode());
 }
 

@@ -235,14 +235,14 @@ class CHROMEOS_EXPORT CrasAudioHandler : public CrasAudioClient::Observer,
   // input devices.
   // |node_ids| is expected to contain only existing input node IDs - the
   // method will fail if this is not the case.
-  // Returns whether the acive nodes were successfully set.
+  // Returns whether the active nodes were successfully set.
   bool SetActiveInputNodes(const NodeIdList& node_ids);
 
   // Sets the set of active output nodes. Empty |node_ids| will deactivate all
   // output devices.
   // |node_ids| is expected to contain only existing output node IDs - the
   // method will fail if this is not the case.
-  // Returns whether the acive nodes were successfully set.
+  // Returns whether the active nodes were successfully set.
   bool SetActiveOutputNodes(const NodeIdList& node_ids);
 
   // Swaps the left and right channel of the internal speaker.

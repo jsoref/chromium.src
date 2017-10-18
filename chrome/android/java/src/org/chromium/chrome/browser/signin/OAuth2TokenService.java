@@ -103,7 +103,7 @@ public final class OAuth2TokenService
     }
 
     /**
-     * Called by native to list the activite account names in the OS.
+     * Called by native to list the active account names in the OS.
      */
     @VisibleForTesting
     @CalledByNative

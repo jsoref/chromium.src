@@ -31,7 +31,7 @@ class IOSPaymentInstrumentLauncher : public KeyedService {
   ~IOSPaymentInstrumentLauncher() override;
 
   // Attempts to launch a third party iOS payment app. Uses |payment_request|
-  // and |acitive_web_state| to build numerous parameters that get seraliazed
+  // and |active_web_state| to build numerous parameters that get seraliazed
   // into a JSON string and then encoded into base-64. |universal_link| is then
   // invoked with the built parameters passed in as a query string. If the class
   // fails to open the universal link the error callback of |delegate| will
