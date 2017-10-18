@@ -2307,7 +2307,7 @@ TEST_P(ChromeLauncherControllerWithArcTest, ArcCustomAppIcon) {
       model_->GetShelfItemDelegate(ash::ShelfID(arc_app_id));
   ASSERT_TRUE(item_delegate);
 
-  // No custom icon set. Acitivating windows should not change icon.
+  // No custom icon set. Activating windows should not change icon.
   EXPECT_FALSE(item_delegate->image_set_by_controller());
   window1->Activate();
   EXPECT_FALSE(item_delegate->image_set_by_controller());
