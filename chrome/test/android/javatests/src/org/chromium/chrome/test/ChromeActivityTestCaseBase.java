@@ -65,7 +65,7 @@ public abstract class ChromeActivityTestCaseBase<T extends ChromeActivity>
     public abstract void startMainActivity() throws InterruptedException;
 
     /**
-     * Return the timeout limit for Chrome activty start in tests
+     * Return the timeout limit for Chrome activity start in tests
      */
     protected static int getActivityStartTimeoutMs() {
         return ChromeActivityTestCommon.ACTIVITY_START_TIMEOUT_MS;

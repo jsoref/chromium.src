@@ -15,7 +15,7 @@ namespace media {
 namespace {
 
 // Period of inactivity after which we stop listening for MediaServer crashes.
-// NOTE: Server crashes don't count as acticity. Only calls to
+// NOTE: Server crashes don't count as activity. Only calls to
 // GetDelayForClientCreation() do.
 constexpr base::TimeDelta kReleaseInactivityDelay =
     base::TimeDelta::FromMinutes(1);

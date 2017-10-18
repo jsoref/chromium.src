@@ -69,7 +69,7 @@ public class ChromeActivityTestRule<T extends ChromeActivity>
     }
 
     /**
-     * Return the timeout limit for Chrome activty start in tests
+     * Return the timeout limit for Chrome activity start in tests
      */
     public static int getActivityStartTimeoutMs() {
         return ChromeActivityTestCommon.ACTIVITY_START_TIMEOUT_MS;
@@ -381,7 +381,7 @@ public class ChromeActivityTestRule<T extends ChromeActivity>
     }
 
     /**
-     * ActitivityTestRule already set initial touch mode in constructor.
+     * ActivityTestRule already set initial touch mode in constructor.
      */
     @Override
     public void setActivityInitialTouchMode(boolean touchMode) {}

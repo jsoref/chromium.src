@@ -228,7 +228,7 @@ public class ChromeTabCreator extends TabCreatorManager.TabCreator {
 
         // If an external app sends an intent for a Weblite URL and the Data Reduction Proxy is
         // using Weblite mode, then use the URL in the lite_url parameter if its scheme is HTTP.
-        // This is used by ChromeTabbedActvity intents so that the user does not receive Weblite
+        // This is used by ChromeTabbedActivity intents so that the user does not receive Weblite
         // pages when they could be served a Data Reduction Proxy preview page.
         if (url != null) url = DataReductionProxySettings.getInstance().maybeRewriteWebliteUrl(url);
 

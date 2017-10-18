@@ -49,7 +49,7 @@ static const double kWeightingForOldConnectsExpectedValue = 0.66;
 // Each time we navigate to the refererrer but never end up needing this
 // subresource, the value will decrease.
 // Very conservative is 0.0, which will mean that we have to wait for a while
-// before doing much speculative acvtivity.  We do persist results, so we'll
+// before doing much speculative activity.  We do persist results, so we'll
 // save the asymptotic (correct?) learned answer in the long run.
 // Some browsers blindly make 2 connections all the time, so we'll use that as
 // a starting point.

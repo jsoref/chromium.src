@@ -13,7 +13,7 @@ import org.chromium.content_public.browser.WebContents;
 import org.chromium.content_public.browser.WebContentsObserver;
 import org.chromium.ui.base.WindowAndroid;
 
-/** Tracks the Activiy for a given WebContents on behalf of a NFC instance that cannot talk
+/** Tracks the Activity for a given WebContents on behalf of a NFC instance that cannot talk
  * directly to WebContents.
  */
 class NfcHost extends WebContentsObserver implements WindowAndroidChangedObserver {

@@ -263,7 +263,7 @@ class BASE_EXPORT HistogramBase {
 
   // Update report with an |activity| that occurred for |histogram|.
   static void ReportHistogramActivity(const HistogramBase& histogram,
-                                      ReportActivity activicty);
+                                      ReportActivity activity);
 
   // Retrieves the global histogram reporting what histograms are created.
   static HistogramBase* report_histogram_;
