@@ -924,7 +924,7 @@ TEST_F(RlzLibTest, ConcurrentStoreAccessWithProcessExitsWhileLockHeld) {
       rlz_lib::IE_DEFAULT_SEARCH, rlz_lib::INSTALL));
 }
 
-TEST_F(RlzLibTest, LockAcquistionSucceedsButStoreFileCannotBeCreated) {
+TEST_F(RlzLibTest, LockAcquisitionSucceedsButStoreFileCannotBeCreated) {
   // See the comment at the top of WriteFails.
   if (!rlz_lib::SupplementaryBranding::GetBrand().empty())
     return;
