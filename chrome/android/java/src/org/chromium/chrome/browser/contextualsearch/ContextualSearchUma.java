@@ -1253,7 +1253,7 @@ public class ContextualSearchUma {
     }
 
     /**
-     * Logs whether a quick action was shown, and the quick aciton category if a quick action was
+     * Logs whether a quick action was shown, and the quick action category if a quick action was
      * shown. Should be logged on tap if Contextual Search single actions are enabled.
      * @param quickActionShown Whether a quick action was shown.
      * @param quickActionCategory The {@link QuickActionCategory} for the quick action.
