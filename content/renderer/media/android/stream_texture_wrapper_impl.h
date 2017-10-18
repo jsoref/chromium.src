@@ -32,7 +32,7 @@ namespace content {
 // texture ID is looked up in the TextureManager. A StreamTexture is then
 // created, wrapping a SurfaceTexture created from the texture reference. The
 // SurfaceTexture's OnFrameAvailable() callback is tied to StreamTexture's
-// OnFrameAvailable(), which fires an IPC accross the GPU channel.
+// OnFrameAvailable(), which fires an IPC across the GPU channel.
 // - We create a StreamTextureProxy in the Renderer process which listens for
 // the IPC fired by the StreamTexture's OnFrameAvailable() callback.
 // - We bind the StreamTextureProxy's lifetime to the |compositor_task_runner_|.

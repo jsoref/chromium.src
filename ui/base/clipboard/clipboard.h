@@ -141,7 +141,7 @@ class UI_BASE_EXPORT Clipboard : public base::ThreadChecker {
   static Clipboard* GetForCurrentThread();
 
   // Does any work necessary prior to Chrome shutdown for the current thread.
-  // All platforms but Windows have a single clipboard shared accross all
+  // All platforms but Windows have a single clipboard shared across all
   // threads. This function is a no-op on Windows. On Desktop Linux, if Chrome
   // has ownership of the clipboard selection this function transfers the
   // clipboard selection to the clipboard manager.

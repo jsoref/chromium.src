@@ -30,7 +30,7 @@ namespace media {
 // There are several assumptions of the config file:
 //  1. One camera ID has exactly one lens_facing attribute, at root level.
 //  2. usb_path is specified at module level. usb_path may not present at all,
-//  but if it presents, the same usb_path does not appear accross different
+//  but if it presents, the same usb_path does not appear across different
 //  camera IDs.
 //  3. usb_vid_pid is specified at module level. If usb_path does not present,
 //  each module needs to have one unique usb_vid_pid.

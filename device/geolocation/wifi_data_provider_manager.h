@@ -41,7 +41,7 @@ class DEVICE_GEOLOCATION_EXPORT WifiDataProviderManager {
 
   // Sets the factory function which will be used by Register to create the
   // implementation used by the singleton instance. This factory approach is
-  // used both to abstract accross platform-specific implementations and to
+  // used both to abstract across platform-specific implementations and to
   // inject mock implementations for testing.
   static void SetFactoryForTesting(ImplFactoryFunction factory_function_in);
 

@@ -398,7 +398,7 @@ TEST_F(TouchSelectionControllerImplTest, SelectionInBidiTextfieldTest) {
   textfield_->SelectRange(gfx::Range(6, 3));
   VerifyHandlePositions(false, false, FROM_HERE);
 
-  // Test selection range accross runs.
+  // Test selection range across runs.
   textfield_->SelectRange(gfx::Range(0, 6));
   VerifyHandlePositions(false, true, FROM_HERE);
 

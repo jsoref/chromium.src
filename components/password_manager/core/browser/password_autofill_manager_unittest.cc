@@ -530,7 +530,7 @@ TEST_F(PasswordAutofillManagerTest, NoSuggestionForNonPrefixTokenMatch) {
 }
 
 // Verify that typing "foo@exam" into the username field will match username
-// "bar.foo@example.com" even if the field contents span accross multiple
+// "bar.foo@example.com" even if the field contents span across multiple
 // tokens.
 TEST_F(PasswordAutofillManagerTest,
        MatchingContentsWithSuggestionTokenSeparator) {

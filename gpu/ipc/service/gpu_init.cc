@@ -163,7 +163,7 @@ bool GpuInit::InitializeAndStartSandbox(base::CommandLine* command_line,
     // __acrt_thread_attach() and current thread in std::setlocale(...)
     // (during InitializeGLOneOff()). Source of the deadlock looks like an old
     // UCRT bug that was supposed to be fixed in 10.0.10586 release of UCRT,
-    // but we might have come accross a not-yet-covered scenario.
+    // but we might have come across a not-yet-covered scenario.
     // References:
     // https://bugs.python.org/issue26624
     // http://stackoverflow.com/questions/35572792/setlocale-stuck-on-windows

@@ -38,7 +38,7 @@ namespace {
 // between multiple devices with the same name, comparing devices with different
 // names is a secondary goal. It is important that a user is able to move closer
 // and farther away from a device and have it transition between two different
-// signal strength levels, thus we want to spread RSSI values out evenly accross
+// signal strength levels, thus we want to spread RSSI values out evenly across
 // displayed levels.
 //
 // RSSI values from UMA in RecordRSSISignalStrength are charted here:
