@@ -1755,7 +1755,7 @@ class WidgetInputMethodInteractiveTest : public WidgetTestInteractive {
   DISALLOW_COPY_AND_ASSIGN(WidgetInputMethodInteractiveTest);
 };
 
-// Test input method focus changes affected by top window activaction.
+// Test input method focus changes affected by top window activation.
 TEST_F(WidgetInputMethodInteractiveTest, Activation) {
   if (IsMus())
     return;

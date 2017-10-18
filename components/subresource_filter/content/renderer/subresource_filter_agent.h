@@ -69,7 +69,7 @@ class SubresourceFilterAgent
   void OnActivateForNextCommittedLoad(const ActivationState& activation_state);
   void RecordHistogramsOnLoadCommitted(const ActivationState& activation_state);
   void RecordHistogramsOnLoadFinished();
-  void ResetActivatonStateForNextCommit();
+  void ResetActivationStateForNextCommit();
 
   // content::RenderFrameObserver:
   void OnDestruct() override;

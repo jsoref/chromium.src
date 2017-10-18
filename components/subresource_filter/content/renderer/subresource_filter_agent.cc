@@ -147,7 +147,7 @@ void SubresourceFilterAgent::RecordHistogramsOnLoadFinished() {
   SendDocumentLoadStatistics(statistics);
 }
 
-void SubresourceFilterAgent::ResetActivatonStateForNextCommit() {
+void SubresourceFilterAgent::ResetActivationStateForNextCommit() {
   activation_state_for_next_commit_ =
       ActivationState(ActivationLevel::DISABLED);
 }
@@ -174,7 +174,7 @@ void SubresourceFilterAgent::DidCommitProvisionalLoad(
       use_parent_activation ? GetParentActivationState(render_frame())
                             : activation_state_for_next_commit_;
 
-  ResetActivatonStateForNextCommit();
+  ResetActivationStateForNextCommit();
 
   // Do not pollute the histograms for empty main frame documents.
   if (IsMainFrame() && !url.SchemeIsHTTPOrHTTPS() && !url.SchemeIsFile())
@@ -207,7 +207,7 @@ void SubresourceFilterAgent::DidCommitProvisionalLoad(
 void SubresourceFilterAgent::DidFailProvisionalLoad(
     const blink::WebURLError& error) {
   // TODO(engedy): Add a test with `frame-ancestor` violation to exercise this.
-  ResetActivatonStateForNextCommit();
+  ResetActivationStateForNextCommit();
 }
 
 void SubresourceFilterAgent::DidFinishLoad() {

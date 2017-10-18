@@ -20,7 +20,7 @@ using BrowserNonClientFrameViewBrowserTest = ExtensionBrowserTest;
 
 // Tests that the color returned by
 // BrowserNonClientFrameView::GetToolbarTopSeparatorColor() tracks the window
-// actiavtion state.
+// activation state.
 IN_PROC_BROWSER_TEST_F(BrowserNonClientFrameViewBrowserTest,
                        MAYBE_InactiveSeparatorColor) {
   // In the default theme, the active and inactive separator colors may be the
