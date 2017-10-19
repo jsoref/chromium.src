@@ -1323,7 +1323,7 @@ void ArcBluetoothBridge::OnStartLEListenDone(
     const StartLEListenCallback& callback,
     scoped_refptr<BluetoothAdvertisement> advertisement) {
   DCHECK_CALLED_ON_VALID_THREAD(thread_checker_);
-  advertisment_ = advertisement;
+  advertisement_ = advertisement;
   callback.Run(mojom::BluetoothGattStatus::GATT_SUCCESS);
 }
 
@@ -1331,7 +1331,7 @@ void ArcBluetoothBridge::OnStartLEListenError(
     const StartLEListenCallback& callback,
     BluetoothAdvertisement::ErrorCode error_code) {
   DCHECK_CALLED_ON_VALID_THREAD(thread_checker_);
-  advertisment_ = nullptr;
+  advertisement_ = nullptr;
   callback.Run(mojom::BluetoothGattStatus::GATT_FAILURE);
 }
 
@@ -1351,7 +1351,7 @@ void ArcBluetoothBridge::StartLEListen(const StartLEListenCallback& callback) {
 void ArcBluetoothBridge::OnStopLEListenDone(
     const StopLEListenCallback& callback) {
   DCHECK_CALLED_ON_VALID_THREAD(thread_checker_);
-  advertisment_ = nullptr;
+  advertisement_ = nullptr;
   callback.Run(mojom::BluetoothGattStatus::GATT_SUCCESS);
 }
 
@@ -1359,18 +1359,18 @@ void ArcBluetoothBridge::OnStopLEListenError(
     const StopLEListenCallback& callback,
     BluetoothAdvertisement::ErrorCode error_code) {
   DCHECK_CALLED_ON_VALID_THREAD(thread_checker_);
-  advertisment_ = nullptr;
+  advertisement_ = nullptr;
   callback.Run(mojom::BluetoothGattStatus::GATT_FAILURE);
 }
 
 void ArcBluetoothBridge::StopLEListen(const StopLEListenCallback& callback) {
-  if (!advertisment_) {
+  if (!advertisement_) {
     OnStopLEListenError(
         callback,
         BluetoothAdvertisement::ErrorCode::ERROR_ADVERTISEMENT_DOES_NOT_EXIST);
     return;
   }
-  advertisment_->Unregister(base::Bind(&ArcBluetoothBridge::OnStopLEListenDone,
+  advertisement_->Unregister(base::Bind(&ArcBluetoothBridge::OnStopLEListenDone,
                                        weak_factory_.GetWeakPtr(), callback),
                             base::Bind(&ArcBluetoothBridge::OnStopLEListenError,
                                        weak_factory_.GetWeakPtr(), callback));

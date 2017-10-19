@@ -480,9 +480,9 @@ namespace bluetoothLowEnergy {
     // from the requested intervals. On some hardware, there is a minimum
     // interval of 100ms. The minimum and maximum values cannot exceed the
     // the range allowed by the Bluetooth 4.2 specification.
-    // |minInterval|: Minimum interval between advertisments (in
+    // |minInterval|: Minimum interval between advertisements (in
     // milliseconds). This cannot be lower than 20ms (as per the spec).
-    // |maxInterval|: Maximum interval between advertisments (in
+    // |maxInterval|: Maximum interval between advertisements (in
     // milliseconds). This cannot be more than 10240ms (as per the spec).
     // |callback|: Called once the interval has been set.
     static void setAdvertisingInterval(long minInterval, long maxInterval,

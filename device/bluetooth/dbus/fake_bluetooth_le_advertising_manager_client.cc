@@ -43,7 +43,7 @@ void FakeBluetoothLEAdvertisingManagerClient::RegisterAdvertisement(
     const dbus::ObjectPath& advertisement_object_path,
     const base::Closure& callback,
     const ErrorCallback& error_callback) {
-  VLOG(1) << "RegisterAdvertisment: " << advertisement_object_path.value();
+  VLOG(1) << "RegisterAdvertisement: " << advertisement_object_path.value();
 
   if (manager_object_path != dbus::ObjectPath(kAdvertisingManagerPath)) {
     error_callback.Run(kNoResponseError, "Invalid Advertising Manager path.");
@@ -69,7 +69,7 @@ void FakeBluetoothLEAdvertisingManagerClient::UnregisterAdvertisement(
     const dbus::ObjectPath& advertisement_object_path,
     const base::Closure& callback,
     const ErrorCallback& error_callback) {
-  VLOG(1) << "UnregisterAdvertisment: " << advertisement_object_path.value();
+  VLOG(1) << "UnregisterAdvertisement: " << advertisement_object_path.value();
 
   if (manager_object_path != dbus::ObjectPath(kAdvertisingManagerPath)) {
     error_callback.Run(kNoResponseError, "Invalid Advertising Manager path.");

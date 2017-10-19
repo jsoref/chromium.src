@@ -7198,9 +7198,9 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <owner>mcchou@chromium.org</owner>
   <summary>
     This is specific to Chrome OS. Records the duration when the local device is
-    performing Bluetooth advertisment and discoverable as a Bluetooth Low Energy
+    performing Bluetooth advertisement and discoverable as a Bluetooth Low Energy
     device by other devices. This helps us better understand the amount of
-    successful advertisment sessions and the duration.
+    successful advertisement sessions and the duration.
   </summary>
 </histogram>
 

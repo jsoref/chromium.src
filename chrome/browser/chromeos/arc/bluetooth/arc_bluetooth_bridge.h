@@ -484,7 +484,7 @@ class ArcBluetoothBridge
   mojo::Binding<mojom::BluetoothHost> binding_;
 
   scoped_refptr<bluez::BluetoothAdapterBlueZ> bluetooth_adapter_;
-  scoped_refptr<device::BluetoothAdvertisement> advertisment_;
+  scoped_refptr<device::BluetoothAdvertisement> advertisement_;
   std::unique_ptr<device::BluetoothDiscoverySession> discovery_session_;
   std::unordered_map<std::string,
                      std::unique_ptr<device::BluetoothGattNotifySession>>

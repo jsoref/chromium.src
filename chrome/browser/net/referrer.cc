@@ -59,7 +59,7 @@ Referrer::Referrer() : use_count_(1) {}
 
 void Referrer::SuggestHost(const GURL& url) {
   // Limit how large our list can get, in case we make mistakes about what
-  // hostnames are in sub-resources (example: Some advertisments have a link to
+  // hostnames are in sub-resources (example: Some advertisements have a link to
   // the ad agency, and then provide a "surprising" redirect to the advertised
   // entity, which then (mistakenly) appears to be a subresource on the page
   // hosting the ad).
