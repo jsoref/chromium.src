@@ -335,7 +335,7 @@ TEST(ContentSettingsPatternTest, FromString_SearchPatterns) {
                   .Matches(GURL("chrome-search://local-ntp/")));
 }
 
-TEST(ContentSettingsPatternTest, FromString_WithIPAdresses) {
+TEST(ContentSettingsPatternTest, FromString_WithIPAddresses) {
   // IPv4
   EXPECT_TRUE(Pattern("192.168.0.1").IsValid());
   EXPECT_STREQ("192.168.1.1", Pattern("192.168.1.1").ToString().c_str());
@@ -544,7 +544,7 @@ TEST(ContentSettingsPatternTest, Compare) {
             invalid_pattern1.Compare(invalid_pattern2));
   EXPECT_TRUE(invalid_pattern1 == invalid_pattern2);
 
-  // Compare a pattern with an IPv4 addresse to a pattern with a domain name.
+  // Compare a pattern with an IPv4 address to a pattern with a domain name.
   EXPECT_EQ(ContentSettingsPattern::DISJOINT_ORDER_POST,
             Pattern("http://www.google.com").Compare(
                 Pattern("127.0.0.1")));
@@ -564,7 +564,7 @@ TEST(ContentSettingsPatternTest, Compare) {
   EXPECT_TRUE(Pattern("[::1]") > Pattern("http://www.google.com"));
   EXPECT_TRUE(Pattern("http://www.google.com") < Pattern("[::1]"));
 
-  // Compare a pattern with an IPv6 addresse to a pattern with an IPv4 addresse.
+  // Compare a pattern with an IPv6 address to a pattern with an IPv4 address.
   EXPECT_EQ(ContentSettingsPattern::DISJOINT_ORDER_PRE,
             Pattern("127.0.0.1").Compare(
                 Pattern("[::1]")));

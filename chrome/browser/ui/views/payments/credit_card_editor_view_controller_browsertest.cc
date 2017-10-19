@@ -854,7 +854,7 @@ IN_PROC_BROWSER_TEST_F(PaymentRequestCreditCardEditorTest,
 }
 
 IN_PROC_BROWSER_TEST_F(PaymentRequestCreditCardEditorTest,
-                       NonexistentBillingAddres) {
+                       NonexistentBillingAddress) {
   autofill::CreditCard card = autofill::test::GetCreditCard();
   // Set a billing address that is not yet added to the personal data.
   autofill::AutofillProfile billing_profile(autofill::test::GetFullProfile());

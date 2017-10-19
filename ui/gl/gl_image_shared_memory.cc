@@ -42,7 +42,7 @@ bool GLImageSharedMemory::Initialize(
   if (!checked_size.IsValid())
     return false;
 
-  // Minimize the amount of adress space we use but make sure offset is a
+  // Minimize the amount of address space we use but make sure offset is a
   // multiple of page size as required by MapAt().
   size_t memory_offset = offset % base::SysInfo::VMAllocationGranularity();
   size_t map_offset = base::SysInfo::VMAllocationGranularity() *

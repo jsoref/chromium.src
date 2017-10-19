@@ -42,7 +42,7 @@ enum Operation {
 // data on the file header) can be used to finish the operation.
 class Transaction {
  public:
-  // addr is the cache addres of the node being inserted or removed. We want to
+  // addr is the cache address of the node being inserted or removed. We want to
   // avoid having the compiler doing optimizations on when to read or write
   // from user_data because it is the basis of the crash detection. Maybe
   // volatile is not enough for that, but it should be a good hint.

@@ -27,7 +27,7 @@ namespace net {
 //
 // Server form:
 // In this case, we want to read/write to many clients which are connecting
-// to this server.  First the server 'binds' to an addres, then we read from
+// to this server.  First the server 'binds' to an address, then we read from
 // clients and write responses to them.
 // Example:
 //       Open(address_family)  // Open a socket.

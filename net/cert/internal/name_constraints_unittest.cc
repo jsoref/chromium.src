@@ -448,7 +448,7 @@ TEST_P(ParseNameConstraints, DirectoryNamesExcludeAll) {
       SequenceValueFromString(&name_jp)));
 }
 
-TEST_P(ParseNameConstraints, IPAdresses) {
+TEST_P(ParseNameConstraints, IPAddresses) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress.pem", &a));
 
@@ -564,7 +564,7 @@ TEST_P(ParseNameConstraints, IPAdresses) {
   EXPECT_FALSE(name_constraints->IsPermittedCert(der::Input(), san.get()));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesExcludeOnly) {
+TEST_P(ParseNameConstraints, IPAddressesExcludeOnly) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress-excluded.pem", &a));
 
@@ -581,7 +581,7 @@ TEST_P(ParseNameConstraints, IPAdressesExcludeOnly) {
       IPAddress(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 0, 0, 0, 1)));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesExcludeAll) {
+TEST_P(ParseNameConstraints, IPAddressesExcludeAll) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress-excludeall.pem", &a));
 
@@ -601,7 +601,7 @@ TEST_P(ParseNameConstraints, IPAdressesExcludeAll) {
       IPAddress(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 0, 0, 0, 1)));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitSingleHost) {
+TEST_P(ParseNameConstraints, IPAddressesNetmaskPermitSingleHost) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress-permit_singlehost.pem", &a));
 
@@ -618,7 +618,7 @@ TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitSingleHost) {
   EXPECT_FALSE(name_constraints->IsPermittedIP(IPAddress(255, 255, 255, 255)));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitPrefixLen31) {
+TEST_P(ParseNameConstraints, IPAddressesNetmaskPermitPrefixLen31) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress-permit_prefix31.pem", &a));
 
@@ -636,7 +636,7 @@ TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitPrefixLen31) {
   EXPECT_FALSE(name_constraints->IsPermittedIP(IPAddress(255, 255, 255, 255)));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitPrefixLen1) {
+TEST_P(ParseNameConstraints, IPAddressesNetmaskPermitPrefixLen1) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress-permit_prefix1.pem", &a));
 
@@ -653,7 +653,7 @@ TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitPrefixLen1) {
       name_constraints->IsPermittedIP(IPAddress(0xFF, 0xFF, 0xFF, 0xFF)));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitAll) {
+TEST_P(ParseNameConstraints, IPAddressesNetmaskPermitAll) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress-permit_all.pem", &a));
 
@@ -667,7 +667,7 @@ TEST_P(ParseNameConstraints, IPAdressesNetmaskPermitAll) {
   EXPECT_TRUE(name_constraints->IsPermittedIP(IPAddress(255, 255, 255, 255)));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesFailOnInvalidAddr) {
+TEST_P(ParseNameConstraints, IPAddressesFailOnInvalidAddr) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint("ipaddress-invalid_addr.pem", &a));
 
@@ -675,7 +675,7 @@ TEST_P(ParseNameConstraints, IPAdressesFailOnInvalidAddr) {
   EXPECT_FALSE(NameConstraints::Create(der::Input(&a), is_critical(), &errors));
 }
 
-TEST_P(ParseNameConstraints, IPAdressesFailOnInvalidMaskNotContiguous) {
+TEST_P(ParseNameConstraints, IPAddressesFailOnInvalidMaskNotContiguous) {
   std::string a;
   ASSERT_TRUE(LoadTestNameConstraint(
       "ipaddress-invalid_mask_not_contiguous_1.pem", &a));

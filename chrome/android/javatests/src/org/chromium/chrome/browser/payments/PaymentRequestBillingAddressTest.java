@@ -436,7 +436,7 @@ public class PaymentRequestBillingAddressTest implements MainActivityStartCallba
                         .getSpinnerTextAtPositionInCardEditor(BILLING_ADDRESS_DROPDOWN_INDEX, 6)
                         .endsWith("Enter a valid address"));
 
-        // Selects the fourth billing addresss that misses recipient name brings up the address
+        // Selects the fourth billing address that misses recipient name brings up the address
         // editor.
         mPaymentRequestTestRule.setSpinnerSelectionsInCardEditorAndWait(
                 new int[] {DECEMBER, NEXT_YEAR, 4}, mPaymentRequestTestRule.getReadyToEdit());
@@ -490,7 +490,7 @@ public class PaymentRequestBillingAddressTest implements MainActivityStartCallba
                         .getSpinnerTextAtPositionInCardEditor(BILLING_ADDRESS_DROPDOWN_INDEX, 6)
                         .endsWith("Enter a valid address"));
 
-        // Selects the fifth billing addresss that misses recipient name brings up the address
+        // Selects the fifth billing address that misses recipient name brings up the address
         // editor.
         mPaymentRequestTestRule.setSpinnerSelectionsInCardEditorAndWait(
                 new int[] {DECEMBER, NEXT_YEAR, 4}, mPaymentRequestTestRule.getReadyToEdit());

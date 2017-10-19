@@ -437,7 +437,7 @@ void TabHelper::DoInlineInstall(
         base::Bind(&TabHelper::OnReenableComplete,
                    weak_ptr_factory_.GetWeakPtr(), webstore_item_id));
   } else {
-    // TODO(devlin): We should adddress the case of the extension already
+    // TODO(devlin): We should address the case of the extension already
     // being installed and enabled.
     bool observe_download_progress =
         (listeners_mask & api::webstore::DOWNLOAD_PROGRESS_LISTENER) != 0;

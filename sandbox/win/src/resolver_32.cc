@@ -19,7 +19,7 @@ struct InternalThunk {
   // This struct contains roughly the following code:
   // sub esp, 8                             // Create working space
   // push edx                               // Save register
-  // mov edx, [esp + 0xc]                   // Get return adddress
+  // mov edx, [esp + 0xc]                   // Get return address
   // mov [esp + 8], edx                     // Store return address
   // mov dword ptr [esp + 0xc], 0x7c401200  // Store extra argument
   // mov dword ptr [esp + 4], 0x40010203    // Store address to jump to

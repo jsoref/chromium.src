@@ -139,7 +139,7 @@ function onGetInfo(result) {
     // NOTE: We're always called with 'localhost', but getInfo will only return
     // IPs, not names.
     chrome.test.assertEq(result.peerAddress, "127.0.0.1",
-                         "Peer addresss should be the listen server");
+                         "Peer address should be the listen server");
     chrome.test.assertEq(result.peerPort, port,
                          "Peer port should be the listen server");
     chrome.test.assertTrue(result.connected, "Socket should be connected");
