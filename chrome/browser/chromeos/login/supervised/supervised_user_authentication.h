@@ -21,8 +21,7 @@ class SupervisedUserManager;
 // Main property is the schema used to handle password. For now it can be either
 // plain password schema, when plain text password is passed to standard
 // cryprohome authentication algorithm without modification, or hashed password
-// schema, when password is additioUpdateContextToChecknally hashed with
-// user-specific salt.
+// schema, when password is additionally hashed with user-specific salt.
 // Second schema is required to allow password syncing across devices for
 // supervised users.
 class SupervisedUserAuthentication {
