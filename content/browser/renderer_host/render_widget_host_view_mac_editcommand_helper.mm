@@ -191,7 +191,7 @@ RenderWidgetHostViewMacEditCommandHelper::
 RenderWidgetHostViewMacEditCommandHelper::
     ~RenderWidgetHostViewMacEditCommandHelper() {}
 
-// Dynamically adds Selectors to the aformentioned class.
+// Dynamically adds Selectors to the aforementioned class.
 void RenderWidgetHostViewMacEditCommandHelper::AddEditingSelectorsToClass(
     Class klass) {
   for (size_t i = 0; i < arraysize(kEditCommands); ++i) {
