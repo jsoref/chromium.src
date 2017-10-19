@@ -296,7 +296,7 @@ cr.define('cr.ui', function() {
     },
 
     /**
-     * Helper method that adjustes a value before assiging it to leadIndex or
+     * Helper method that adjusts a value before assiging it to leadIndex or
      * anchorIndex.
      * @param {number} index New value for leadIndex or anchorIndex.
      * @return {number} Corrected value.
