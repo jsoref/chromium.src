@@ -19,7 +19,7 @@ ScopedFakeAffiliationAPI::~ScopedFakeAffiliationAPI() {
   // Note that trying to provide details of dangling fetchers would be unwise,
   // as it is quite possible that they have been destroyed already.
   EXPECT_FALSE(HasPendingRequest())
-      << "Pending AffilitionFetcher on shutdown.\n"
+      << "Pending AffiliationFetcher on shutdown.\n"
       << "Call IgnoreNextRequest() if this is intended.";
 }
 
