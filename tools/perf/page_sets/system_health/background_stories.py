@@ -32,7 +32,7 @@ class BackgroundGoogleStory(_BackgroundStory):
   URL = 'https://www.google.co.uk/#q=tom+cruise+movies'
 
   def _DidLoadDocument(self, action_runner):
-    # Activte the immersive movie browsing experience
+    # Activate the immersive movie browsing experience
     action_runner.WaitForElement(selector='g-fab')
     action_runner.ScrollPageToElement(selector='g-fab')
     action_runner.TapElement(selector='g-fab')

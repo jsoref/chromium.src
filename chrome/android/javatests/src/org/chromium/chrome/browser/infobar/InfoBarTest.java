@@ -538,7 +538,7 @@ public class InfoBarTest {
         Assert.assertTrue(InfoBarUtil.hasPrimaryButton(infoBars.get(0)));
         Assert.assertTrue(InfoBarUtil.hasSecondaryButton(infoBars.get(0)));
 
-        // Activite the Kill button.
+        // Activate the Kill button.
         ThreadUtils.runOnUiThread(new Runnable() {
             @Override
             public void run() {
