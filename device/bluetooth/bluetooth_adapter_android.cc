@@ -28,7 +28,7 @@ using base::android::JavaRef;
 
 namespace {
 // The poll interval in ms when there is no active discovery. This
-// matches the max allowed advertisting interval for connectable
+// matches the max allowed advertising interval for connectable
 // devices.
 enum { kPassivePollInterval = 11000 };
 // The poll interval in ms when there is an active discovery.

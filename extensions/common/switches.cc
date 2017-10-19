@@ -20,7 +20,7 @@ const char kAllowLegacyExtensionManifests[] =
 // a new tab.
 const char kEmbeddedExtensionOptions[] = "embedded-extension-options";
 
-// Enable BLE Advertisiing in apps.
+// Enable BLE Advertising in apps.
 const char kEnableBLEAdvertising[] = "enable-ble-advertising-in-apps";
 
 const char kDisableDesktopCaptureAudio[] =
