@@ -546,7 +546,7 @@ public class ChromeTabbedActivity
         // In this case, we have tabbed mode activities listed in recents that do not have an
         // active running activity associated with them.  We can not accurately get an incognito
         // tab count as we do not know if any incognito tabs are associated with the yet unrestored
-        // tabbed mode.  Thus we do not proactivitely destroy the incognito profile.
+        // tabbed mode.  Thus we do not proactively destroy the incognito profile.
         return false;
     }
 
