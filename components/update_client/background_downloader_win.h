@@ -34,7 +34,7 @@ namespace update_client {
 //
 // This class manages a COM client for Windows BITS. The client uses polling,
 // triggered by an one-shot timer, to get state updates from BITS. Since the
-// timer has thread afinity, the callbacks from the timer are delegated to
+// timer has thread affinity, the callbacks from the timer are delegated to
 // a sequenced task runner, which handles all client COM interaction with
 // the BITS service.
 class BackgroundDownloader : public CrxDownloader {
