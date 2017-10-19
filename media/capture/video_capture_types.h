@@ -31,7 +31,7 @@ enum VideoPixelStorage {
 // Policies for capture devices that have source content that varies in size.
 // It is up to the implementation how the captured content will be transformed
 // (e.g., scaling and/or letterboxing) in order to produce video frames that
-// strictly adheree to one of these policies.
+// strictly adhere to one of these policies.
 enum ResolutionChangePolicy {
   // Capture device outputs a fixed resolution all the time. The resolution of
   // the first frame is the resolution for all frames.
