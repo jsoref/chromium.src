@@ -46,7 +46,7 @@ class MEDIA_EXPORT AudioRendererAlgorithm {
 
   // Allows clients to specify which channels will be considered by the
   // algorithm when adapting for playback rate, other channels will be muted.
-  // Useful to avoid performance overhead of the adapatation algorithm. Must
+  // Useful to avoid performance overhead of the adaptation algorithm. Must
   // only be called after Initialize(); may be called multiple times if the
   // mask changes.
   //
