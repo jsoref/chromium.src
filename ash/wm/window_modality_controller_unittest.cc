@@ -238,7 +238,7 @@ TEST_F(WindowModalityControllerTest, EventsForEclipsedWindows) {
   }
 }
 
-// Creates windows w1 and non activatiable child w11. Creates transient window
+// Creates windows w1 and non activatable child w11. Creates transient window
 // w2 and adds it as a transeint child of w1. Ensures that w2 is parented to
 // the parent of w1, and that GetModalTransient(w11) returns w2.
 TEST_F(WindowModalityControllerTest, GetModalTransient) {
