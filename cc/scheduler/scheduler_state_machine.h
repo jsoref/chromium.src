@@ -33,7 +33,7 @@ enum class ScrollHandlerState {
 };
 const char* ScrollHandlerStateToString(ScrollHandlerState state);
 
-// The SchedulerStateMachine decides how to coordinate main thread activites
+// The SchedulerStateMachine decides how to coordinate main thread activities
 // like painting/running javascript with rendering and input activities on the
 // impl thread.
 //

@@ -72,7 +72,7 @@ public class PackageManagerDelegate {
 
     /**
      * Retrieves the list of activities that can respond to the given intent. And returns the
-     * activites' meta data in ResolveInfo.
+     * activities' meta data in ResolveInfo.
      *
      * @param intent The intent to query.
      * @return The list of activities that can respond to the intent.
