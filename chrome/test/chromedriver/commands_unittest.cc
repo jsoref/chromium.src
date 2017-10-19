@@ -384,7 +384,7 @@ class FindElementWebView : public StubWebView {
 
   void Verify(const std::string& expected_frame,
               const base::ListValue* expected_args,
-              const base::Value* actrual_result) {
+              const base::Value* actual_result) {
     EXPECT_EQ(expected_frame, frame_);
     std::string function;
     if (only_one_)
@@ -394,8 +394,8 @@ class FindElementWebView : public StubWebView {
     EXPECT_EQ(function, function_);
     ASSERT_TRUE(args_.get());
     EXPECT_TRUE(expected_args->Equals(args_.get()));
-    ASSERT_TRUE(actrual_result);
-    EXPECT_TRUE(result_->Equals(actrual_result));
+    ASSERT_TRUE(actual_result);
+    EXPECT_TRUE(result_->Equals(actual_result));
   }
 
   // Overridden from WebView:

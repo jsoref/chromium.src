@@ -20,7 +20,7 @@ class OverscrollRefreshHandler;
 //      offset and 2) lacks the overflow-y:hidden property.
 //   2) The page doesn't consume the initial scroll events.
 //   3) The initial scroll direction is upward.
-// The actuall pull response, animation and action are delegated to the
+// The actualpull response, animation and action are delegated to the
 // provided refresh handler.
 class UI_ANDROID_EXPORT OverscrollRefresh {
  public:

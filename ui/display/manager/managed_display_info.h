@@ -346,7 +346,7 @@ class DISPLAY_MANAGER_EXPORT ManagedDisplayInfo {
   // shrink) the desktop over the native display resolution (useful in
   // HighDPI display).  Note that this should not be confused with the
   // device scale factor, which specifies the pixel density of the
-  // display. The actuall scale value to be used depends on the device
+  // display. The actualscale value to be used depends on the device
   // scale factor.  See |GetEffectiveScaleFactor()|.
   float configured_ui_scale_;
 
