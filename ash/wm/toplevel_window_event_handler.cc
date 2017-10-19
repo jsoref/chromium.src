@@ -87,7 +87,7 @@ void ToplevelWindowEventHandler::OnGestureEvent(ui::GestureEvent* event) {
   base::MessageLoop::ScopedNestableTaskAllower allow_nested(loop);
 
   // Disable window position auto management while dragging and restore it
-  // aftrewards.
+  // afterwards.
   wm::WindowState* window_state = wm::GetWindowState(source);
   const bool window_position_managed = window_state->window_position_managed();
   window_state->set_window_position_managed(false);

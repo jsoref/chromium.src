@@ -97440,7 +97440,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 <histogram_suffixes name="NetConnectivity4a" separator=".">
   <suffix name="NATBind.Sent2"
       label="Two packets were sent spreading over a random period, to test if
-             the NAT dropped the binding. Afterwords, an extra (short) packet
+             the NAT dropped the binding. Afterwards, an extra (short) packet
              was sent with renewed NAT binding to test whether the network
              that was used to deliver the first packet is still connected.
              Results are only shown in this histogram if at least ten packets
