@@ -188,7 +188,7 @@ void CastMediaSinkServiceImpl::OnChannelOpened(
     extra_data.capabilities |= cast_channel::CastDeviceCapability::VIDEO_OUT;
   extra_data.cast_channel_id = socket->id();
   MediaSinkInternal updated_sink(cast_sink.sink(), extra_data);
-  DVLOG(2) << "Ading sink to current_sinks_ [name]: "
+  DVLOG(2) << "Adding sink to current_sinks_ [name]: "
            << updated_sink.sink().name();
 
   auto& ip_address = cast_sink.cast_data().ip_endpoint.address();

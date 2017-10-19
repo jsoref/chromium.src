@@ -59,7 +59,7 @@ class WifiCredentialSyncableService : public syncer::SyncableService,
   // error to call this method before MergeDataAndStartSyncing(), or
   // after StopSyncing().
   //
-  // TODO(quiche): Allow changing a credential, by addding it again.
+  // TODO(quiche): Allow changing a credential, by adding it again.
   // crbug.com/431436
   bool AddToSyncedNetworks(const std::string& item_id,
                            const WifiCredential& credential);
