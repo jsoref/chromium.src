@@ -38,12 +38,12 @@ def Classify(mmap, rule_tree):
     rule_tree: the user-defined rules that define the filtering categories.
 
   Returns:
-    An instance of |AggreatedResults|.
+    An instance of |AggregatedResults|.
   """
   assert(isinstance(mmap, memory_map.Map))
   assert(isinstance(rule_tree, rules.Rule))
 
-  res = results.AggreatedResults(rule_tree, _RESULT_KEYS)
+  res = results.AggregatedResults(rule_tree, _RESULT_KEYS)
   for map_entry in mmap.entries:
     values = [0, map_entry.priv_dirty_bytes, map_entry.priv_clean_bytes,
               map_entry.shared_dirty_bytes, map_entry.shared_clean_bytes]

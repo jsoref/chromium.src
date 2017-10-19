@@ -21,7 +21,7 @@ import graph
 import user_satisfied_lens
 
 class GraphSack(object):
-  """Aggreate of RequestDependencyGraphs.
+  """Aggregate of RequestDependencyGraphs.
 
   Collects RequestDependencyGraph nodes into bags, where each bag contains the
   nodes with common urls. Dependency edges are tracked between bags (so that

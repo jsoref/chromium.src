@@ -46,7 +46,7 @@ A typical result tree looks like this (each node has two values in the example):
 from memory_inspector.classification import rules
 
 
-class AggreatedResults(object):
+class AggregatedResults(object):
   """A tree of results, where each node is a bucket (root: 'Total' bucket)."""
 
   def __init__(self, rule_tree, keys):
@@ -57,7 +57,7 @@ class AggreatedResults(object):
     assert(isinstance(rule_tree, rules.Rule))
     assert(isinstance(keys, list))
     self.keys = keys
-    self.total = AggreatedResults._MakeBucketNodeFromRule(rule_tree, len(keys))
+    self.total = AggregatedResults._MakeBucketNodeFromRule(rule_tree, len(keys))
 
   def AddToMatchingNodes(self, trace_record, values):
     """Adds the provided |values| to the nodes that match the |trace_record|.
@@ -77,7 +77,7 @@ class AggreatedResults(object):
           cardinality of the initial keys.
     """
     assert(len(values) == len(self.keys))
-    AggreatedResults._AddToMatchingNodes(
+    AggregatedResults._AddToMatchingNodes(
         trace_record, values, self.total, len(self.keys))
 
   @staticmethod
@@ -87,7 +87,7 @@ class AggreatedResults(object):
     for i in xrange(num_keys):
       bucket.values[i] += values[i]
     for child_bucket in bucket.children:
-      if AggreatedResults._AddToMatchingNodes(
+      if AggregatedResults._AddToMatchingNodes(
           trace_record, values, child_bucket, num_keys):
         break
     return True
@@ -98,7 +98,7 @@ class AggreatedResults(object):
     bucket = Bucket(rule, num_keys)
     for child_rule in rule.children:
       bucket.children.append(
-          AggreatedResults._MakeBucketNodeFromRule(child_rule, num_keys))
+          AggregatedResults._MakeBucketNodeFromRule(child_rule, num_keys))
     return bucket
 
 

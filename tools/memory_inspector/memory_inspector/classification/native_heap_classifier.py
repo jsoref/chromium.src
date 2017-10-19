@@ -54,12 +54,12 @@ def Classify(nativeheap, rule_tree):
     rule_tree: the user-defined rules that define the filtering categories.
 
   Returns:
-    An instance of |AggreatedResults|.
+    An instance of |AggregatedResults|.
   """
   assert(isinstance(nativeheap, native_heap.NativeHeap))
   assert(isinstance(rule_tree, rules.Rule))
 
-  res = results.AggreatedResults(rule_tree, _RESULT_KEYS)
+  res = results.AggregatedResults(rule_tree, _RESULT_KEYS)
   for allocation in nativeheap.allocations:
     res.AddToMatchingNodes(allocation,
                            [allocation.size, allocation.resident_size])

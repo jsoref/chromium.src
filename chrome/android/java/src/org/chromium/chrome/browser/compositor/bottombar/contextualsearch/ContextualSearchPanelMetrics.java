@@ -165,7 +165,7 @@ public class ContextualSearchPanelMetrics {
             mWasActivatedByTap = reason == StateChangeReason.TEXT_SELECT_TAP;
             if (mWasActivatedByTap && mResultsSeenExperiments != null) {
                 mWasAnyHeuristicSatisfiedOnPanelShow =
-                        mResultsSeenExperiments.isAnyConditionSatisfiedForAggregrateLogging();
+                        mResultsSeenExperiments.isAnyConditionSatisfiedForAggregateLogging();
             } else {
                 mWasAnyHeuristicSatisfiedOnPanelShow = false;
             }

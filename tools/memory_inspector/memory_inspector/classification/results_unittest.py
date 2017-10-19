@@ -29,7 +29,7 @@ class ResultsTest(unittest.TestCase):
     ]
 
     rule = rules.Load(str(rules_dict), MockRegexMatchingRule)
-    result = results.AggreatedResults(rule, keys=['X', 'Y'])
+    result = results.AggregatedResults(rule, keys=['X', 'Y'])
     self.assertEqual(result.total.name, 'Total')
     self.assertEqual(len(result.total.children), 3)
     self.assertEqual(result.total.children[0].name, 'a*')

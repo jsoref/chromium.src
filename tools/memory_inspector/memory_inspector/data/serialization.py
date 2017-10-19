@@ -60,7 +60,7 @@ class Encoder(json.JSONEncoder):
     if isinstance(obj, (backends.DeviceStats, backends.ProcessStats)):
       return obj.__dict__
 
-    if isinstance(obj, results.AggreatedResults):
+    if isinstance(obj, results.AggregatedResults):
       return {'keys': obj.keys, 'buckets': obj.total}
 
     if isinstance(obj, results.Bucket):
