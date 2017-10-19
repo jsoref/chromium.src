@@ -461,7 +461,7 @@ public class ContextualSearchManagerTest {
 
         public FakeResponseOnMainThread(boolean isNetworkUnavailable, int responseCode,
                 String searchTerm, String displayText, String alternateTerm, String mid,
-                boolean doPreventPreload, int startAdjust, int endAdjudst, String contextLanguage,
+                boolean doPreventPreload, int startAdjust, int endAdjust, String contextLanguage,
                 String thumbnailUrl, String caption, String quickActionUri,
                 int quickActionCategory) {
             mIsNetworkUnavailable = isNetworkUnavailable;
@@ -472,7 +472,7 @@ public class ContextualSearchManagerTest {
             mMid = mid;
             mDoPreventPreload = doPreventPreload;
             mStartAdjust = startAdjust;
-            mEndAdjust = endAdjudst;
+            mEndAdjust = endAdjust;
             mContextLanguage = contextLanguage;
             mThumbnailUrl = thumbnailUrl;
             mCaption = caption;
