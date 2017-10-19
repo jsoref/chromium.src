@@ -645,7 +645,7 @@ class OpenInControllerBridge
   return ![[self openInToolbar] pointInside:location withEvent:nil];
 }
 
-#pragma mark - TestingAditions
+#pragma mark - TestingAdditions
 
 - (void)setDocumentInteractionController:
     (UIDocumentInteractionController*)controller {

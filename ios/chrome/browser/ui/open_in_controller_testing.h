@@ -5,7 +5,7 @@
 #ifndef IOS_CHROME_BROWSER_UI_OPEN_IN_CONTROLLER_TESTING_H_
 #define IOS_CHROME_BROWSER_UI_OPEN_IN_CONTROLLER_TESTING_H_
 
-@interface OpenInController (TestingAditions)
+@interface OpenInController (TestingAdditions)
 - (NSString*)suggestedFilename;
 - (void)startDownload;
 - (void)setDocumentInteractionController:
