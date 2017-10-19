@@ -30,7 +30,7 @@ namespace policy {
 
 class PolicyService;
 
-// Implements addtional special handling of ONC device policies, which requires
+// Implements additional special handling of ONC device policies, which requires
 // listening for notifications from CrosSettings.
 class DeviceNetworkConfigurationUpdater : public NetworkConfigurationUpdater {
  public:

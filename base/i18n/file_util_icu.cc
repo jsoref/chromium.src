@@ -87,7 +87,7 @@ IllegalCharacters::IllegalCharacters() {
 
   // Add non-characters. If this becomes a performance bottleneck by
   // any chance, do not add these to |set| and change IsFilenameLegal()
-  // to check |ucs4 & 0xFFFEu == 0xFFFEu|, in addiition to calling
+  // to check |ucs4 & 0xFFFEu == 0xFFFEu|, in addition to calling
   // IsAllowedName().
   illegal_anywhere_->add(0xFDD0, 0xFDEF);
   for (int i = 0; i <= 0x10; ++i) {

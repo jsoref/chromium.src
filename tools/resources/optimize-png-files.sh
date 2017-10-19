@@ -408,9 +408,9 @@ Options:
       0  Just run pngcrush. It removes unnecessary chunks and perform basic
          optimization on the encoded data.
       1  Optimize png files using pngout/optipng and advdef. This can further
-         reduce addtional 5~30%. This is the default level.
+         reduce additional 5~30%. This is the default level.
       2  Aggressively optimize the size of png files. This may produce
-         addtional 1%~5% reduction.  Warning: this is *VERY*
+         additional 1%~5% reduction.  Warning: this is *VERY*
          slow and can take hours to process all files.
   -r<revision> If this is specified, the script processes only png files
                changed since this revision. The <dir> options will be used
