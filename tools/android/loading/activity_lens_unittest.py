@@ -142,7 +142,7 @@ class ActivityLensTestCase(unittest.TestCase):
         350, ActivityLens._ScriptsExecuting(events, 0, 1000)[None])
     self.assertTrue(url in ActivityLens._ScriptsExecuting(events, 0, 1000))
     self.assertEquals(250, ActivityLens._ScriptsExecuting(events, 0, 1000)[url])
-    # Aggreagates events.
+    # Aggregates events.
     raw_events.append({u'args': {u'data': {}},
                        u'cat': u'devtools.timeline,v8',
                        u'dur': 50 * 1000,
