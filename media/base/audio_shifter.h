@@ -44,7 +44,7 @@ class MEDIA_EXPORT AudioShifter {
   // |clock_accuracy| is used to determine if a skip has occured
   // in the audio (as opposed to an inaccuracy in the timestamp.)
   // It also limits the smallest amount of buffering allowed.
-  // |adjustement_time| specifies how long time should be used
+  // |adjustment_time| specifies how long time should be used
   // to adjust the audio. This should normally at least a few
   // seconds. The larger the value, the smoother and less audible
   // the transitions will be. (But it means that perfect audio

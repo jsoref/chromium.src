@@ -320,7 +320,7 @@ const CGFloat kNewTabButtonBottomOffsetHighRes = 2.0;
 
 // Updates the content offset of the tab strip view in order to keep the
 // selected tab view visible.
-// Content offset adjustement is only needed/performed in compact mode or
+// Content offset adjustment is only needed/performed in compact mode or
 // regular mode for newly opened tabs.
 // This method must be called with a valid |tabIndex|.
 - (void)updateContentOffsetForTabIndex:(NSUInteger)tabIndex

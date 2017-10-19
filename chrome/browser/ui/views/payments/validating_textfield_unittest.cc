@@ -75,7 +75,7 @@ TEST_F(ValidatingTextfieldTest, Validation) {
   textfield->OnBlur();
   EXPECT_TRUE(textfield->invalid());
 
-  // On further text adjustements, the validation runs now. Set a valid string
+  // On further text adjustments, the validation runs now. Set a valid string
   // (<=5 characters).
   textfield->SetText(base::ASCIIToUTF16("good"));
   textfield->OnContentsChanged();

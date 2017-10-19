@@ -298,7 +298,7 @@ bool IsURLAllowedInIncognito(const GURL& url) {
 // How to place the view, and its behaviour when the headers move.
 @property(nonatomic, assign) HeaderBehaviour behaviour;
 // Reduces the height of a header to adjust for shadows.
-@property(nonatomic, assign) CGFloat heightAdjustement;
+@property(nonatomic, assign) CGFloat heightAdjustment;
 // Nudges that particular header up by this number of points.
 @property(nonatomic, assign) CGFloat inset;
 
@@ -317,7 +317,7 @@ bool IsURLAllowedInIncognito(const GURL& url) {
 @implementation HeaderDefinition
 @synthesize view = _view;
 @synthesize behaviour = _behaviour;
-@synthesize heightAdjustement = _heightAdjustement;
+@synthesize heightAdjustment = _heightAdjustment;
 @synthesize inset = _inset;
 
 + (instancetype)definitionWithView:(UIView*)view
@@ -338,7 +338,7 @@ bool IsURLAllowedInIncognito(const GURL& url) {
   if (self) {
     _view = view;
     _behaviour = behaviour;
-    _heightAdjustement = heightAdjustment;
+    _heightAdjustment = heightAdjustment;
     _inset = inset;
   }
   return self;
@@ -2981,7 +2981,7 @@ bubblePresenterForFeature:(const base::Feature&)feature
   for (HeaderDefinition* header in views) {
     if (header.view && header.behaviour == Hideable) {
       height += CGRectGetHeight([header.view frame]) -
-                header.heightAdjustement - header.inset;
+                header.heightAdjustment - header.inset;
     }
   }
 

@@ -136,7 +136,7 @@ void ScrollOffsetAnimationsImpl::ScrollAnimationApplyAdjustment(
   // Abort the old animation.
   ScrollAnimationAbort(/* needs_completion */ false);
 
-  // Start a new one with the adjusment.
+  // Start a new one with the adjustment.
   scroll_offset_animation_player_->AddAnimation(std::move(new_animation));
 }
 

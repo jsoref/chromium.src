@@ -20,7 +20,7 @@ class AdjustmentMethod {
     return MakeShingleAdjustmentMethod();
   }
 
-  // Returns and adjustement method that makes no adjustments.
+  // Returns and adjustment method that makes no adjustments.
   static AdjustmentMethod* MakeNullAdjustmentMethod();
 
   // Returns the original adjustment method.
