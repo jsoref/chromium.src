@@ -26,7 +26,7 @@ class SuffixNameEmptyError(Error):
   pass
 
 
-class InvalidAffecteddActionNameError(Error):
+class InvalidAffectedActionNameError(Error):
   pass
 
 
@@ -206,14 +206,14 @@ def _CreateActionFromSuffix(actions_dict, action, suffix):
     None.
 
   Raises:
-    InvalidAffecteddActionNameError: if the action name does not contain a dot
+    InvalidAffectedActionNameError: if the action name does not contain a dot
   """
   if suffix.ordering == 'suffix':
     new_action_name = action.name + suffix.separator + suffix.name
   else:
     (before, dot, after) = action.name.partition('.')
     if not after:
-      raise InvalidAffecteddActionNameError("Action name '%s' must contain a "
+      raise InvalidAffectedActionNameError("Action name '%s' must contain a "
                                             "'.'.", action.name)
     new_action_name = before + dot + suffix.name + suffix.separator + after
 

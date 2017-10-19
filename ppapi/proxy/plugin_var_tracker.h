@@ -50,7 +50,7 @@ class PPAPI_PROXY_EXPORT PluginVarTracker : public VarTracker {
   void StopTrackingObjectWithNoReference(const PP_Var& plugin_var);
 
   // Returns the host var for the corresponding plugin object var. The object
-  // should be a VARTYPE_OBJECT. The reference count is not affeceted.
+  // should be a VARTYPE_OBJECT. The reference count is not affected.
   PP_Var GetHostObject(const PP_Var& plugin_object) const;
 
   PluginDispatcher* DispatcherForPluginObject(
