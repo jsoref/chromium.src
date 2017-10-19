@@ -195,7 +195,7 @@ public class SignInPreference
     }
 
     // This just changes visual representation. Actual enabled flag in preference stays
-    // always true to receive clicks (necessary to show "Managed by administator" toast).
+    // always true to receive clicks (necessary to show "Managed by administrator" toast).
     private void setViewEnabled(boolean enabled) {
         if (mViewEnabled == enabled) {
             return;
