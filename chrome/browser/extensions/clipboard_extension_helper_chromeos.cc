@@ -95,8 +95,8 @@ void ClipboardExtensionHelper::DecodeAndSaveImageData(
   if (clipboard_image_data_decoder_->has_request_pending())
     clipboard_image_data_decoder_->Cancel();
 
-  // Cache additonal items.
-  additonal_items_ = std::move(additional_items);
+  // Cache additional items.
+  additional_items_ = std::move(additional_items);
 
   image_save_success_callback_ = success_callback;
   image_save_error_callback_ = error_callback;
@@ -115,7 +115,7 @@ void ClipboardExtensionHelper::OnImageDecoded(const SkBitmap& bitmap) {
     if (!bitmap.empty() && !bitmap.isNull())
       scw.WriteImage(bitmap);
 
-    for (const clipboard::AdditionalDataItem& item : additonal_items_) {
+    for (const clipboard::AdditionalDataItem& item : additional_items_) {
       if (item.type == clipboard::DATA_ITEM_TYPE_TEXTPLAIN)
         scw.WriteText(base::UTF8ToUTF16(item.data));
       else if (item.type == clipboard::DATA_ITEM_TYPE_TEXTHTML)

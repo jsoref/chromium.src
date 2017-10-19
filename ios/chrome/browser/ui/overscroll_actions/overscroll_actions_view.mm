@@ -117,7 +117,7 @@ enum class OverscrollViewState {
   BOOL _didTransitionToReadyState;
   // True if the view is directly touched.
   BOOL _viewTouched;
-  // An additionnal offset added to the horizontalOffset value in order to take
+  // An additional offset added to the horizontalOffset value in order to take
   // into account snapping.
   CGFloat _snappingOffset;
   // The offset of the currently snapped action.

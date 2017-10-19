@@ -135,7 +135,7 @@ class CHROMEOS_EXPORT LoginPerformer : public AuthStatusConsumer {
   // PolicyLoadFailed() or |callback| will be called upon actual check.
   virtual bool RunTrustedCheck(const base::Closure& callback) = 0;
 
-  // This method should run addional online check if user can sign in on device.
+  // This method should run additional online check if user can sign in on device.
   // Either |success_callback| or |failure_callback| should be called upon this
   // check.
   virtual void RunOnlineWhitelistCheck(

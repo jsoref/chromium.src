@@ -66,7 +66,7 @@
 - (void)shutdown;
 @end
 
-// Additionnal methods that should only be used for tests.
+// Additional methods that should only be used for tests.
 @interface SnapshotCache (TestingAdditions)
 - (BOOL)hasImageInMemory:(NSString*)sessionID;
 - (BOOL)hasGreyImageInMemory:(NSString*)sessionID;

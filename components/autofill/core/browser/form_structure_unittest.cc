@@ -2269,7 +2269,7 @@ TEST_F(FormStructureTest, EncodeUploadRequest) {
   // Adjust the expected proto string.
   upload.set_form_signature(7816485729218079147U);
   upload.set_autofill_used(false);
-  // Create an additonal 8 fields (total of 13).
+  // Create an additional 8 fields (total of 13).
   for (int i = 0; i < 8; ++i) {
     test::FillUploadField(upload.add_field(), 509334676U, "address", "text",
                           nullptr, 30U);

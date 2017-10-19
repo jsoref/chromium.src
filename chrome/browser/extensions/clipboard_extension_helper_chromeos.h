@@ -45,7 +45,7 @@ class ClipboardExtensionHelper {
   std::unique_ptr<ClipboardImageDataDecoder> clipboard_image_data_decoder_;
   base::Closure image_save_success_callback_;
   base::Callback<void(const std::string&)> image_save_error_callback_;
-  AdditionalDataItemList additonal_items_;
+  AdditionalDataItemList additional_items_;
 
   DISALLOW_COPY_AND_ASSIGN(ClipboardExtensionHelper);
 };

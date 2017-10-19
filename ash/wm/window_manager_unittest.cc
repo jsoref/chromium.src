@@ -731,7 +731,7 @@ TEST_F(WindowManagerTest, AdditionalFilters) {
   f1->Reset();
   f2->Reset();
 
-  // Remove f1 from additonal filters list.
+  // Remove f1 from additional filters list.
   env_filter->RemoveHandler(f1.get());
 
   // Dispatches events.

@@ -3028,7 +3028,7 @@ TEST_F(BluetoothBlueZTest, PairDisplayPasskey) {
 
   base::RunLoop().Run();
 
-  // 8 KeysEntered notifications (0 to 7, inclusive) and one aditional call for
+  // 8 KeysEntered notifications (0 to 7, inclusive) and one additional call for
   // DisplayPasskey().
   EXPECT_EQ(9, pairing_delegate.call_count_);
   EXPECT_EQ(8, pairing_delegate.keys_entered_count_);

@@ -187,7 +187,7 @@ html[dir=rtl] .mv-title[style*='direction: rtl'] {
   background-color: rgb(245,245,245);
 }
 
-/* We use ::after without content to provide an aditional element on top of the
+/* We use ::after without content to provide an additional element on top of the
  * thumbnail. */
 .mv-thumb.failed-img::after {
   border: 8px solid rgb(215,215,215);

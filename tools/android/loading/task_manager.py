@@ -402,14 +402,14 @@ class _ResumingFileBuilder(object):
 
   def OnScenarioFinish(
       self, scenario, final_tasks, failed_tasks, skipped_tasks):
-    resume_additonal_arguments = []
+    resume_additional_arguments = []
     for task in ListResumingTasksToFreeze(
         scenario, final_tasks, skipped_tasks):
-      resume_additonal_arguments.extend(
+      resume_additional_arguments.extend(
           ['-f', '^{}$'.format(re.escape(task.name))])
     self._resume_output.seek(0)
     self._resume_output.truncate()
-    self._resume_output.write('\n'.join(resume_additonal_arguments))
+    self._resume_output.write('\n'.join(resume_additional_arguments))
     print '# Looks like something went wrong in tasks:'
     for failed_task in failed_tasks:
       print '#   {}'.format(failed_task.name)
