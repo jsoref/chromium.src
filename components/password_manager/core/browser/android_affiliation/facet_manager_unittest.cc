@@ -1465,7 +1465,7 @@ TEST_F(FacetManagerTest, StaleCachedDataBeCanDiscardedWhilePendingFetch) {
   fake_facet_manager_host()->reset_need_network_request();
 }
 
-TEST_F(FacetManagerTest, CachedDataBeCanDiscardedAfterOnDemandGetAffiliatons) {
+TEST_F(FacetManagerTest, CachedDataBeCanDiscardedAfterOnDemandGetAffiliations) {
   CreateFacetManager();
   ASSERT_FALSE(facet_manager()->IsCachedDataFresh());
 
