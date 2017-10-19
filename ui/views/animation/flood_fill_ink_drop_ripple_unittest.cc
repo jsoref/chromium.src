@@ -70,7 +70,7 @@ TEST(FloodFillInkDropRippleTest, MaxDistanceToCorners) {
 }
 
 // Verifies that both going directly from HIDDEN to ACTIVATED state and going
-// through PENDING to ACTIVAED state lead to the same final opacity and
+// through PENDING to ACTIVATED state lead to the same final opacity and
 // transform values.
 TEST(FloodFillInkDropRippleTest, ActivatedFinalState) {
   const float kAbsError = 0.01f;
