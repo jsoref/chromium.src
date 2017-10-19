@@ -47516,7 +47516,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
     Android: The time since the last fetch, recorded upon the first on-shown
     fetch trigger. The first on-shown trigger does not necessarily cause a fetch
     (if it comes before the end of the respective scheduling interval). This
-    metric is recorded at most once after each fetch (and additionaly at most
+    metric is recorded at most once after each fetch (and additionally at most
     once after each startup of Chrome before the next fetch). This is used to
     understand how changing scheduling intervals will impact traffic of
     background fetches.
@@ -47535,7 +47535,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
     Android: The time since the last fetch, recorded upon the first soft fetch
     trigger. The first soft trigger does not necessarily cause a fetch (if it
     comes before the end of the respective scheduling interval). This metric is
-    recorded at most once after each fetch (and additionaly at most once after
+    recorded at most once after each fetch (and additionally at most once after
     each startup of Chrome before the next fetch). This is used to understand
     how changing scheduling intervals will impact traffic of background fetches.
   </summary>
@@ -47549,7 +47549,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
     Android: The time since the last fetch, recorded upon the first startup
     fetch trigger. The first startup trigger does not necessarily cause a fetch
     (if it comes before the end of the respective scheduling interval). This
-    metric is recorded at most once after each fetch (and additionaly at most
+    metric is recorded at most once after each fetch (and additionally at most
     once after each startup of Chrome before the next fetch). This is used to
     understand how changing scheduling intervals will impact traffic of
     background fetches.

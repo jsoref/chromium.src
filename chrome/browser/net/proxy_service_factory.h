@@ -24,7 +24,7 @@ class ProxyServiceFactory {
       PrefProxyConfigTracker* tracker);
 
   // Creates a PrefProxyConfigTracker that tracks preferences of a
-  // profile. On ChromeOS it additionaly tracks local state for shared proxy
+  // profile. On ChromeOS it additionally tracks local state for shared proxy
   // settings. This tracker should be used if the profile's preferences should
   // be respected. On ChromeOS's signin screen this is for example not the case.
   static PrefProxyConfigTracker* CreatePrefProxyConfigTrackerOfProfile(

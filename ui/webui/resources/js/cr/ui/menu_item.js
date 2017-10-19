@@ -41,7 +41,7 @@ cr.define('cr.ui', function() {
       // the appearance of this element.
       this.classList.add('custom-appearance');
 
-      // Enable Text to Speech on the menu. Additionaly, ID has to be set, since
+      // Enable Text to Speech on the menu. Additionally, ID has to be set, since
       // it is used in element's aria-activedescendant attribute.
       if (!this.isSeparator())
         this.setAttribute('role', 'menuitem');
