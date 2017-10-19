@@ -132,7 +132,7 @@ const base::FilePath::CharType kTrashDirname[] =
 //
 // Analysis:
 // We assume that all partition names within one partition domain are
-// controlled by the the same entity. Thus there is no chance for adverserial
+// controlled by the the same entity. Thus there is no chance for adversarial
 // attack and all we care about is accidental collision. To get 5 9s over
 // 1 million domains, we need the probability of a collision in any one domain
 // to be
