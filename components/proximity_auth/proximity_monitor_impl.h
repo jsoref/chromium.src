@@ -47,7 +47,7 @@ class ProximityMonitorImpl : public ProximityMonitor {
   void RemoveObserver(ProximityMonitorObserver* observer) override;
 
  private:
-  // Callback for asynchronous initialization of the Bluetooth adpater.
+  // Callback for asynchronous initialization of the Bluetooth adapter.
   void OnAdapterInitialized(scoped_refptr<device::BluetoothAdapter> adapter);
 
   // Ensures that the app is periodically polling for the proximity status

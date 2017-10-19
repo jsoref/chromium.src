@@ -67,7 +67,7 @@ class NetworkManagerWlanApi : public WifiDataProviderCommon::WlanApiInterface {
   // NetworkManager. Return true on success.
   bool GetAdapterDeviceList(std::vector<dbus::ObjectPath>* device_paths);
 
-  // Given the NetworkManager path to a wireless adapater, dumps the wifi scan
+  // Given the NetworkManager path to a wireless adapter, dumps the wifi scan
   // results and appends them to |data|. Returns false if a fatal error is
   // encountered such that the data set could not be populated.
   bool GetAccessPointsForAdapter(const dbus::ObjectPath& adapter_path,

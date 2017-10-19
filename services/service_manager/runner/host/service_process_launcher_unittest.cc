@@ -31,7 +31,7 @@ const base::FilePath::CharType kServiceExtension[] =
     FILE_PATH_LITERAL(".service");
 #endif
 
-void ProcessReadyCallbackAdapater(const base::Closure& callback,
+void ProcessReadyCallbackAdapter(const base::Closure& callback,
                                   base::ProcessId process_id) {
   callback.Run();
 }
@@ -88,7 +88,7 @@ TEST(ServiceProcessLauncherTest, MAYBE_StartJoin) {
   launcher.Start(
       Identity(),
       false,
-      base::Bind(&ProcessReadyCallbackAdapater, run_loop.QuitClosure()));
+      base::Bind(&ProcessReadyCallbackAdapter, run_loop.QuitClosure()));
   run_loop.Run();
 
   launcher.Join();

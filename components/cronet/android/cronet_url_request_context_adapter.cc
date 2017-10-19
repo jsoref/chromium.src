@@ -867,7 +867,7 @@ static void AddPkp(JNIEnv* env,
   config->pkp_list.push_back(std::move(pkp));
 }
 
-// Creates RequestContextAdater if config is valid URLRequestContextConfig,
+// Creates RequestContextAdapter if config is valid URLRequestContextConfig,
 // returns 0 otherwise.
 static jlong CreateRequestContextAdapter(JNIEnv* env,
                                          const JavaParamRef<jclass>& jcaller,

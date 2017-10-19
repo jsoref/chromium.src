@@ -4363,7 +4363,7 @@ TEST_F(BluetoothBlueZTest, Shutdown) {
 
   adapter_bluez->ProcessQueuedDiscoveryRequests();
 
-  // From BluetoothAdapater:
+  // From BluetoothAdapter:
 
   adapter_->StartDiscoverySession(
       base::Bind(&BluetoothBlueZTest::DiscoverySessionCallback,

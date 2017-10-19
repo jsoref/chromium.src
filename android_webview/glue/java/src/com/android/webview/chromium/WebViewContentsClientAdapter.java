@@ -770,7 +770,7 @@ class WebViewContentsClientAdapter extends AwContentsClient {
                 if (TRACE) Log.d(TAG, "onPermissionRequestCanceled");
                 WeakReference<PermissionRequestAdapter> weakRef =
                         mOngoingPermissionRequests.get(permissionRequest);
-                // We don't hold strong reference to PermissionRequestAdpater and don't expect the
+                // We don't hold strong reference to PermissionRequestAdapter and don't expect the
                 // user only holds weak reference to it either, if so, user has no way to call
                 // grant()/deny(), and no need to be notified the cancellation of request.
                 if (weakRef != null) {

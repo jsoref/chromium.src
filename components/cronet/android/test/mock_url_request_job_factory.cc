@@ -25,7 +25,7 @@ namespace cronet {
 // libcronet_tests.so
 class UrlInterceptorJobFactoryHandle {
  public:
-  // |jcontext_adapter| points to a URLRequestContextAdapater.
+  // |jcontext_adapter| points to a URLRequestContextAdapter.
   UrlInterceptorJobFactoryHandle(jlong jcontext_adapter)
       : jcontext_adapter_(jcontext_adapter) {
     TestUtil::RunAfterContextInit(
@@ -62,7 +62,7 @@ class UrlInterceptorJobFactoryHandle {
 
   void ShutdownOnNetworkThread() { delete this; }
 
-  // The URLRequestContextAdapater this object intercepts from.
+  // The URLRequestContextAdapter this object intercepts from.
   const jlong jcontext_adapter_;
   // URLRequestJobFactory previously used in URLRequestContext.
   const net::URLRequestJobFactory* old_job_factory_;

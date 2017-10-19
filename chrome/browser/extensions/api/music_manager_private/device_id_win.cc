@@ -114,7 +114,7 @@ std::string GetMacAddressFromGetAdaptersAddresses(
   }
 
   if (result != NO_ERROR) {
-    VLOG(ERROR) << "GetAdapatersAddresses failed with error " << result;
+    VLOG(ERROR) << "GetAdaptersAddresses failed with error " << result;
     return "";
   }
 

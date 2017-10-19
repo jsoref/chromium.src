@@ -317,7 +317,7 @@ public class DownloadManagerUi implements OnMenuItemClickListener, SearchDelegat
             return true;
         } else if (item.getItemId() == R.id.search_menu_id) {
             // The header should be removed as soon as a search is started. It will be added back in
-            // DownloadHistoryAdatper#filter() when the search is ended.
+            // DownloadHistoryAdapter#filter() when the search is ended.
             mHistoryAdapter.removeHeader();
             mSelectableListLayout.onStartSearch();
             mToolbar.showSearchView();
