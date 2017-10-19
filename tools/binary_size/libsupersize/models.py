@@ -708,7 +708,7 @@ class SymbolGroup(BaseSymbol):
         s.full_name is not s.name and regex.search(s.name)))
 
   def WhereAddressInRange(self, start, end=None):
-    """Searches for addesses within [start, end).
+    """Searches for addresses within [start, end).
 
     Args may be ints or hex strings. Default value for |end| is |start| + 1.
     """

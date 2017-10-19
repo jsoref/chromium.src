@@ -94715,7 +94715,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
     separator="_">
   <suffix name="Identical" label="Same addresses, in the same order."/>
   <suffix name="Reordered" label="Same addresses, in a different order."/>
-  <suffix name="Overlap" label="Some same addreses, some different."/>
+  <suffix name="Overlap" label="Some same addresses, some different."/>
   <suffix name="Disjoint" label="All different addresses."/>
   <affected-histogram name="DNS.HostCache.UpdateStale.ExpiredBy"/>
   <affected-histogram name="DNS.HostCache.UpdateStale.NetworkChanges"/>
