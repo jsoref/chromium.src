@@ -170,7 +170,7 @@ function jsExec(stmt) {
  * deprecates eval, so this is the exception that proves the
  * rule. Notice also that since the value of the expression is
  * returned rather than assigned to a local variable, one major
- * objection aganist the use of the with() statement, namely that
+ * objection against the use of the with() statement, namely that
  * properties of the with() target override local variables of the
  * same name, is void here.
  *
