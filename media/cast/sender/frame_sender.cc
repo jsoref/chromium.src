@@ -371,7 +371,7 @@ void FrameSender::OnReceivedCastFeedback(const RtcpCastMessage& cast_feedback) {
     }
   } else {
     // Only count duplicated ACKs if there is no NACK request in between.
-    // This is to avoid aggresive resend.
+    // This is to avoid aggressive resend.
     duplicate_ack_counter_ = 0;
   }
 

@@ -628,7 +628,7 @@ void GpuImageDecodeCache::SetShouldAggressivelyFreeResources(
     bool aggressively_free_resources) {
   TRACE_EVENT1(TRACE_DISABLED_BY_DEFAULT("cc.debug"),
                "GpuImageDecodeCache::SetShouldAggressivelyFreeResources",
-               "agressive_free_resources", aggressively_free_resources);
+               "aggressive_free_resources", aggressively_free_resources);
   if (aggressively_free_resources) {
     viz::ContextProvider::ScopedContextLock context_lock(context_);
     base::AutoLock lock(lock_);
