@@ -562,7 +562,7 @@ TEST_F(LeakDetectorImplTest, SimpleLeakyFunctionWithLeak) {
   //   call sites |kStack3| and |kStack4|. The formula is |(i + 1) * 32 + 2|,
   //   where |i| is the iteration index.
   // - It takes |kMinNumAnalysesToGenerateReport| analyses for the first report
-  //   to be generated. Subsequent analyises do not generate reports due to the
+  //   to be generated. Subsequent analyses do not generate reports due to the
   //   cooldown mechanism.
 
   const auto& report1_history = report1.alloc_breakdown_history();
