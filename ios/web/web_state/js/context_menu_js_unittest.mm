@@ -301,10 +301,10 @@ TEST_F(ContextMenuJsTest, LinkOfTextWithCalloutNone) {
   EXPECT_NSEQ(@{}, result);
 }
 
-// Tests that -webkit-touch-callout property can be inherited from ancester if
+// Tests that -webkit-touch-callout property can be inherited from ancestor if
 // it's not specified. Please see:
 // https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-touch-callout
-TEST_F(ContextMenuJsTest, LinkOfTextWithCalloutFromAncester) {
+TEST_F(ContextMenuJsTest, LinkOfTextWithCalloutFromAncestor) {
   if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
     // TODO(crbug.com/758735): enable this test on iPad.
     return;
@@ -320,7 +320,7 @@ TEST_F(ContextMenuJsTest, LinkOfTextWithCalloutFromAncester) {
 }
 
 // Tests that setting -webkit-touch-callout property can override the value
-// inherited from ancester. Please see:
+// inherited from ancestor. Please see:
 // https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-touch-callout
 TEST_F(ContextMenuJsTest, LinkOfTextWithCalloutOverride) {
   if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
