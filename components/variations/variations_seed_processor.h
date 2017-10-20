@@ -50,7 +50,7 @@ class VariationsSeedProcessor {
       const base::FieldTrial::EntropyProvider* low_entropy_provider,
       base::FeatureList* feature_list);
 
-  // If the given |study| should alwoys use low entropy. This is true for any
+  // If the given |study| should always use low entropy. This is true for any
   // study that can send data to other Google properties.
   static bool ShouldStudyUseLowEntropy(const Study& study);
 

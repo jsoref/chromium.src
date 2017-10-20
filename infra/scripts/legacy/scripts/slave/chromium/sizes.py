@@ -299,7 +299,7 @@ def check_linux_binary(target_dir, binary_name, options):
   if has_init_array:
     si_count = init_array_size / word_size
     # In newer versions of gcc crtbegin.o inserts frame_dummy into .init_array
-    # but we don't want to count this entry, since its alwasys present and not
+    # but we don't want to count this entry, since its always present and not
     # related to our code.
     assert(si_count > 0)
     si_count -= 1
