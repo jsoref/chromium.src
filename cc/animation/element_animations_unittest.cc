@@ -418,7 +418,7 @@ TEST_F(ElementAnimationsTest, UseSpecifiedStartTimes) {
             player_impl_->GetAnimationById(animation_id)->start_time());
 }
 
-// Tests that animationss activate and deactivate as expected.
+// Tests that animations activate and deactivate as expected.
 TEST_F(ElementAnimationsTest, Activation) {
   CreateTestLayer(true, false);
   AttachTimelinePlayerLayer();
@@ -432,7 +432,7 @@ TEST_F(ElementAnimationsTest, Activation) {
   EXPECT_EQ(1u, host->element_animations_for_testing().size());
   EXPECT_EQ(1u, host_impl->element_animations_for_testing().size());
 
-  // Initially, both animationss should be inactive.
+  // Initially, both animations should be inactive.
   EXPECT_EQ(0u, host->ticking_players_for_testing().size());
   EXPECT_EQ(0u, host_impl->ticking_players_for_testing().size());
 
@@ -442,7 +442,7 @@ TEST_F(ElementAnimationsTest, Activation) {
 
   PushProperties();
   player_impl_->ActivateAnimations();
-  // Both animationss should now be active.
+  // Both animations should now be active.
   EXPECT_EQ(1u, host->ticking_players_for_testing().size());
   EXPECT_EQ(1u, host_impl->ticking_players_for_testing().size());
 
@@ -612,7 +612,7 @@ TEST_F(ElementAnimationsTest, DoNotSyncFinishedAnimation) {
 }
 
 // Ensure that a finished animation is eventually deleted by both the
-// main-thread and the impl-thread animationss.
+// main-thread and the impl-thread animations.
 TEST_F(ElementAnimationsTest, AnimationsAreDeleted) {
   CreateTestLayer(true, false);
   AttachTimelinePlayerLayer();
@@ -669,7 +669,7 @@ TEST_F(ElementAnimationsTest, AnimationsAreDeleted) {
 
   PushProperties();
 
-  // Both animationss should now have deleted the animation. The impl animations
+  // Both animations should now have deleted the animation. The impl animations
   // should have deleted the animation even though activation has not occurred,
   // since the animation was already waiting for deletion when
   // PushPropertiesTo was called.
