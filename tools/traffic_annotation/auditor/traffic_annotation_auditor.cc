@@ -477,7 +477,7 @@ bool TrafficAnnotationAuditor::CheckIfCallCanBeUnannotated(
   // Unittests should be all annotated. Although this can be detected using gn,
   // doing that would be very slow. The alternative solution would be to bypass
   // every file including test or unittest, but in this case there might be some
-  // ambiguety in what should be annotated and what not.
+  // ambiguity in what should be annotated and what not.
   if (call.file_path.find("unittest") != std::string::npos)
     return false;
 
