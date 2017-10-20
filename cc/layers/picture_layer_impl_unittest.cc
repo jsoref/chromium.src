@@ -4770,7 +4770,7 @@ TEST_F(TileSizeTest, TileSizes) {
   layer->set_gpu_raster_max_texture_size(host_impl()->device_viewport_size());
   result = layer->CalculateTileSize(gfx::Size(447, 10000));
   EXPECT_EQ(result.width(), 448);
-  EXPECT_EQ(result.height(), 512);  // 500 + 2, 32-byte aliged.
+  EXPECT_EQ(result.height(), 512);  // 500 + 2, 32-byte aligned.
 
   // Largest layer is 50% of viewport width (rounded up), and
   // 50% of viewport in height.

@@ -34,7 +34,7 @@ namespace {
 
 // Creates a view for a line item to be displayed in the Order Summary Sheet.
 // |label| is the text in the left-aligned label and |amount| is the text of the
-// right-aliged label in the row. The |amount| and |label| texts are emphasized
+// right-aligned label in the row. The |amount| and |label| texts are emphasized
 // if |emphasize| is true, which is only the case for the last row containing
 // the total of the order. |amount_label_id| is specified to recall the view
 // later, e.g. in tests.

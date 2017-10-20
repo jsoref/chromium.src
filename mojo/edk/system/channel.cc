@@ -105,7 +105,7 @@ Channel::Message::Message(size_t capacity,
         sizeof(MachPortsExtraHeader) + (max_handles * sizeof(MachPortsEntry));
   }
 #endif
-  // Pad extra header data to be aliged to |kChannelMessageAlignment| bytes.
+  // Pad extra header data to be aligned to |kChannelMessageAlignment| bytes.
   if (!IsAlignedForChannelMessage(extra_header_size)) {
     extra_header_size += kChannelMessageAlignment -
                          (extra_header_size % kChannelMessageAlignment);
