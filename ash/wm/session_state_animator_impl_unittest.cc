@@ -29,9 +29,9 @@ bool ContainersHaveWindowWithId(const aura::Window::Windows windows, int id) {
 
 }  // namespace
 
-using SessionStateAnimatiorImplContainersTest = AshTestBase;
+using SessionStateAnimatorImplContainersTest = AshTestBase;
 
-TEST_F(SessionStateAnimatiorImplContainersTest, ContainersHaveIdTest) {
+TEST_F(SessionStateAnimatorImplContainersTest, ContainersHaveIdTest) {
   aura::Window::Windows containers;
 
   // Test ROOT_CONTAINER mask.
@@ -86,7 +86,7 @@ TEST_F(SessionStateAnimatiorImplContainersTest, ContainersHaveIdTest) {
 // Test that SessionStateAnimatorImpl invokes the callback only once on
 // multi-display env, where it needs to run multiple animations on multiple
 // containers. See http://crbug.com/712422 for details.
-TEST_F(SessionStateAnimatiorImplContainersTest,
+TEST_F(SessionStateAnimatorImplContainersTest,
        AnimationCallbackOnMultiDisplay) {
   UpdateDisplay("200x200,400x400");
 
