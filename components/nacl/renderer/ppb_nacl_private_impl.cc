@@ -599,7 +599,7 @@ PP_Bool StartPpapiProxy(PP_Instance instance) {
       instance_info->plugin_child_id);
 
   if (result == PP_EXTERNAL_PLUGIN_OK) {
-    // Log the amound of time that has passed between the trusted plugin being
+    // Log the amount of time that has passed between the trusted plugin being
     // initialized and the untrusted plugin being initialized.  This is
     // (roughly) the cost of using NaCl, in terms of startup time.
     load_manager->ReportStartupOverhead();

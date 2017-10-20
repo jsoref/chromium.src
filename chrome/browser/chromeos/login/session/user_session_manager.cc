@@ -138,7 +138,7 @@ namespace {
 // account service.
 static const int kFlagsFetchingLoginTimeoutMs = 1000;
 
-// The maximum ammount of time that we are willing to delay a browser restart
+// The maximum amount of time that we are willing to delay a browser restart
 // for, waiting for a session restore to finish.
 static const int kMaxRestartDelaySeconds = 10;
 

@@ -523,7 +523,7 @@ class ToolbarActionsBarObserverHelper : public ToolbarActionsBarObserver {
     [button setFrame:frame];
   }
 
-  // Resize the menu item by the total amound the buttons changed so that the
+  // Resize the menu item by the total amount the buttons changed so that the
   // spacing between the buttons and the title remains the same.
   NSRect itemFrame = [[buttonViewController_ editItem] frame];
   itemFrame.size.width += delta;

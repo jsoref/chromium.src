@@ -76,7 +76,7 @@ class ExtensionUnpackerImpl : public extensions::mojom::ExtensionUnpacker {
              const base::FilePath& path,
              UnzipCallback callback) override {
     // Move unzip operation to background thread to avoid blocking the main
-    // utility thread for extended amont of time. For example, this prevents
+    // utility thread for extended amount of time. For example, this prevents
     // extension unzipping block receipt of the connection complete
     // notification for the utility process channel to the browser process,
     // which could cause the utility process to terminate itself due to browser

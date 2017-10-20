@@ -83,7 +83,7 @@ extern "C" BYTE __safe_se_handler_count;
 //
 // Set at 2 MiB what this does is prevent a lot of VirtualFree plus the
 // following VirtualAlloc because the default value makes the heap too
-// conservative on the ammount of memory it keeps for future allocations.
+// conservative on the amount of memory it keeps for future allocations.
 
 extern "C"
 const IMAGE_LOAD_CONFIG_DIRECTORY_2  _load_config_used = {

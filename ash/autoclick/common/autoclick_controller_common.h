@@ -24,7 +24,7 @@ class AutoclickControllerCommonDelegate;
 
 // Autoclick is one of the accessibility features. If enabled, two circles will
 // animate at the mouse event location and an automatic click event will happen
-// after a certain amout of time at that location.
+// after a certain amount of time at that location.
 // AutoclickControllerCommon is the common code for both ash and mus to handle
 // events and to manage autoclick time delay and timer.
 class AutoclickControllerCommon {
