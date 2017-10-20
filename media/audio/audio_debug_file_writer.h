@@ -48,7 +48,7 @@ class MEDIA_EXPORT AudioDebugFileWriter {
 
   // Returns true if Write() call scheduled at this point will most likely write
   // data to the file, and false if it most likely will be a no-op. The result
-  // may be ambigulous if Start() or Stop() is executed at the moment. Can be
+  // may be ambiguous if Start() or Stop() is executed at the moment. Can be
   // called from any sequence.
   virtual bool WillWrite();
 

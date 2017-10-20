@@ -201,7 +201,7 @@ class PasswordManager : public LoginModel {
       ShouldBlockPasswordForSameOriginButDifferentSchemeTest);
 
   // Returns true if we can show possible usernames to users in cases where
-  // the username for the form is ambigious.
+  // the username for the form is ambiguous.
   bool OtherPossibleUsernamesEnabled() const;
 
   // Clones |matched_manager| and keeps it as |provisional_save_manager_|.

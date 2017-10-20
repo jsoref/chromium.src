@@ -185,7 +185,7 @@ void CredentialManagerPendingRequestTask::ProcessForms(
                                    &has_duplicates);
 
   // We only perform zero-click sign-in when it is not forbidden via the
-  // mediation requirement and the result is completely unambigious.
+  // mediation requirement and the result is completely unambiguous.
   // If there is one and only one entry, and zero-click is
   // enabled for that entry, return it.
   //

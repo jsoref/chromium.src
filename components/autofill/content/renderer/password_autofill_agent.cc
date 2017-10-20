@@ -143,10 +143,10 @@ bool FindFormInputElement(
   // Match the first input element, if any.
   bool found_input = false;
   bool is_password_field = IsPasswordField(field);
-  bool does_password_field_has_ambigous_or_empty_name =
+  bool does_password_field_has_ambiguous_or_empty_name =
       ambiguous_or_empty_names && is_password_field;
   bool ambiguous_and_multiple_password_fields_with_autocomplete =
-      does_password_field_has_ambigous_or_empty_name &&
+      does_password_field_has_ambiguous_or_empty_name &&
       HasPasswordWithAutocompleteAttribute(control_elements);
   base::string16 field_name = FieldName(field, ambiguous_or_empty_names);
   for (const blink::WebFormControlElement& control_element : control_elements) {
@@ -178,7 +178,7 @@ bool FindFormInputElement(
     // Check for a non-unique match.
     if (found_input) {
       // For change password form keep only the first password field entry.
-      if (does_password_field_has_ambigous_or_empty_name) {
+      if (does_password_field_has_ambiguous_or_empty_name) {
         if (!form_util::IsWebElementVisible((*result)[field_name])) {
           // If a previously chosen field was invisible then take the current
           // one.

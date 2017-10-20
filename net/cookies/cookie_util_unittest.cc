@@ -108,7 +108,7 @@ TEST(CookieUtilTest, TestCookieDateParsing) {
       {"Thu Apr 18 22:50:12 2007 GMT", true, 1176936612},
       {"Thu Apr 18 2007 22:50:12 GMT", true, 1176936612},
       {"Thu Apr 18 2007 GMT 22:50:12", true, 1176936612},
-      // Test that the day and year can be anywhere if they are unambigious.
+      // Test that the day and year can be anywhere if they are unambiguous.
       {"Sat, 15-Apr-17 21:01:22 GMT", true, 1492290082},
       {"15-Sat, Apr-17 21:01:22 GMT", true, 1492290082},
       {"15-Sat, Apr 21:01:22 GMT 17", true, 1492290082},
