@@ -158,7 +158,7 @@ public class ImeAdapter {
         // Deep copy newConfig so that we can notice the difference.
         mCurrentConfig = new Configuration(mContainerView.getResources().getConfiguration());
 
-        // CursorAnchroInfo is supported only after L.
+        // CursorAnchorInfo is supported only after L.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             mCursorAnchorInfoController = CursorAnchorInfoController.create(wrapper,
                     new CursorAnchorInfoController.ComposingTextDelegate() {
