@@ -102,7 +102,7 @@ typedef enum {
 // specified by |tabAnimationStyle|:
 //   - CardTabAnimationStyleNone: Animate frames of tab subviews
 //   - CardTabAnimationStyleFadeIn: Animate frames and fade in tab subviews
-//   - CardTabAnimationStyleFadeOut: Aniamte frames and fade out tab subviews
+//   - CardTabAnimationStyleFadeOut: Animate frames and fade out tab subviews
 - (void)animateFromBeginFrame:(CGRect)beginFrame
                    toEndFrame:(CGRect)endFrame
             tabAnimationStyle:(CardTabAnimationStyle)tabAnimationStyle;
