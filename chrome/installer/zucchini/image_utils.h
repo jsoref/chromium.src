@@ -23,7 +23,7 @@ constexpr offset_t kOffsetBound = static_cast<offset_t>(-1) / 2;
 constexpr offset_t kInvalidOffset = static_cast<offset_t>(-1);
 
 // Used to uniquely identify a reference type.
-// Strongly typed objects are used to avoid ambiguitees with PoolTag.
+// Strongly typed objects are used to avoid ambiguities with PoolTag.
 struct TypeTag : public TypedValue<TypeTag, uint8_t> {
   // inheriting constructor:
   using TypedValue<TypeTag, uint8_t>::TypedValue;
