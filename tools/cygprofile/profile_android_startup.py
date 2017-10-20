@@ -192,7 +192,7 @@ class WprManager(object):
 
 
 class AndroidProfileTool(object):
-  """A utility for generating cygprofile data for chrome on andorid.
+  """A utility for generating cygprofile data for chrome on android.
 
   Runs cygprofile_unittest found in output_directory, does profiling runs,
   and pulls the data to the local machine in output_directory/cyglog_data.

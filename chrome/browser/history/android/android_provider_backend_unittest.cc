@@ -1408,7 +1408,7 @@ TEST_F(AndroidProviderBackendTest, UpdateSearchTerms) {
   // The new URL is inserted.
   ASSERT_TRUE(history_db_.GetRowForURL(search_row.url(), NULL));
 
-  // Verfiy the AndoridSearchID isn't changed.
+  // Verfiy the AndroidSearchID isn't changed.
   args.clear();
   args.push_back(update_term);
   statement.reset(backend->QuerySearchTerms(projections, "search = ?", args,

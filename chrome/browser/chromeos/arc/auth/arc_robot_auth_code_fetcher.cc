@@ -17,7 +17,7 @@
 namespace {
 
 // OAuth2 Client id of Android.
-constexpr char kAndoidClientId[] =
+constexpr char kAndroidClientId[] =
     "1070009224336-sdh77n7uot3oc99ais00jmuft6sk2fg9.apps.googleusercontent.com";
 
 policy::DeviceManagementService* GetDeviceManagementService() {
@@ -56,7 +56,7 @@ void ArcRobotAuthCodeFetcher::Fetch(const FetchCallback& callback) {
 
   enterprise_management::DeviceServiceApiAccessRequest* request =
       fetch_request_job_->GetRequest()->mutable_service_api_access_request();
-  request->set_oauth2_client_id(kAndoidClientId);
+  request->set_oauth2_client_id(kAndroidClientId);
   request->add_auth_scope(GaiaConstants::kAnyApiOAuth2Scope);
   request->set_device_type(
       enterprise_management::DeviceServiceApiAccessRequest::ANDROID_OS);

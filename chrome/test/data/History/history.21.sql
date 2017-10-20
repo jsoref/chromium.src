@@ -4,7 +4,7 @@ CREATE TABLE meta(key LONGVARCHAR NOT NULL UNIQUE PRIMARY KEY,value LONGVARCHAR)
 INSERT INTO "meta" VALUES('version','21');
 INSERT INTO "meta" VALUES('last_compatible_version','16');
 
--- Create old androi_urls table
+-- Create old android_urls table
 CREATE TABLE android_urls(id INTEGER PRIMARY KEY, raw_url LONGVARCHAR, created_time INTEGER NOT NULL, last_visit_time INTEGER NOT NULL, url_id INTEGER NOT NULL,favicon_id INTEGER DEFAULT NULL, bookmark INTEGER DEFAULT 0);
 CREATE INDEX android_urls_raw_url_idx ON android_urls(raw_url);
 CREATE INDEX android_urls_url_id_idx ON android_urls(url_id);

@@ -269,7 +269,7 @@ AndroidMergeResult Perform4WayMergeAndroidCredentials(
         correct_tag, correct_tag, password_data);
   }
 
-  // Set the Andoroid Autofill Sync entry if needed.
+  // Set the Android Autofill Sync entry if needed.
   if (newest_data != incorrect_android &&
       (!incorrect_android ||
        !AreNonSyncTagFieldsEqual(*incorrect_android, *newest_data))) {
