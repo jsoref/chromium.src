@@ -218,7 +218,7 @@ class MultiUserWindowManagerChromeOS
   // Animate a |window| to be |visible| in |animation_time_in_ms|.
   void SetWindowVisible(aura::Window* window,
                         bool visible,
-                        int aimation_time_in_ms);
+                        int animation_time_in_ms);
 
   // Get the animation time in milliseconds dependent on the |AnimationSpeed|
   // from the passed |default_time_in_ms|.

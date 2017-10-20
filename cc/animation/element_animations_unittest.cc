@@ -3532,7 +3532,7 @@ TEST_F(ElementAnimationsTest, TestIsAnimatingPropertyTimeOffsetFillMode) {
   EXPECT_TRUE(player_->IsCurrentlyAnimatingProperty(TargetProperty::OPACITY,
                                                     ElementListType::ACTIVE));
 
-  // After the animaton finishes, the elements it affects have neither a
+  // After the animation finishes, the elements it affects have neither a
   // potentially running transform animation nor a currently running transform
   // animation.
   player_->Tick(kInitialTickTime + TimeDelta::FromMilliseconds(4000));

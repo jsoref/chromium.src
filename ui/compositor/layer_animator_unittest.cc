@@ -2207,7 +2207,7 @@ TEST(LayerAnimatorTest, CallbackDeletesAnimationInProgress) {
   ASSERT_TRUE(animator->IsAnimatingProperty(LayerAnimationElement::BOUNDS));
 
   // The next step should change the animated bounds past the threshold and
-  // cause the animaton to stop.
+  // cause the animation to stop.
   ASSERT_NO_FATAL_FAILURE(animator->Step(start_time + bounds_delta2));
   ASSERT_FALSE(animator->IsAnimatingProperty(LayerAnimationElement::BOUNDS));
   ASSERT_NO_FATAL_FAILURE(animator->Step(start_time + final_delta));

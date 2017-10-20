@@ -19,7 +19,7 @@
 // This is useful when debugging with the simulator because when
 // "slow animation" mode is toggled, it only impacts UIKit animations not
 // CoreAnimation animations. By reading the value of that
-// UIAnimatonDragCoefficient API we can also slow down Core Animation animations
+// UIAnimationDragCoefficient API we can also slow down Core Animation animations
 // with the right value.
 // On device we always return 1.0 because it's using private API.
 #if TARGET_IPHONE_SIMULATOR
@@ -48,7 +48,7 @@ float animationDragCoefficient() {
                                   to:(CATransform3D)to
                              reverse:(BOOL)reverse;
 
-// Triggers a fold animation if |fold| is true and an unfold aniamtion if |fold|
+// Triggers a fold animation if |fold| is true and an unfold animation if |fold|
 // is false. The |completion| block is called at the end of the animation.
 - (void)animateFold:(BOOL)fold withCompletion:(ProceduralBlock)completion;
 

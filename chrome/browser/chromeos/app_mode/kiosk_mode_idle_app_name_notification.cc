@@ -28,7 +28,7 @@ const int kIdleAppNameNotificationTimeoutMs = 20 * 60 * 1000;
 // The duration of visibility for the message.
 const int kMessageVisibilityTimeMs = 3000;
 
-// The anomation time to show / hide the message.
+// The animation time to show / hide the message.
 const int kMessageAnimationTimeMs = 200;
 
 // Our global instance of the Kiosk mode message.

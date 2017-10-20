@@ -504,7 +504,7 @@ class PopupZoomer extends View {
         // Draw a faded color over the entire view to fade out the original content, increasing
         // the alpha value as fractionAnimation increases.
         // TODO(nileshagrawal): We should use time here instead of fractionAnimation
-        // as fractionAnimaton is interpolated and can go over 1.
+        // as fractionAnimation is interpolated and can go over 1.
         canvas.drawARGB((int) (80 * fractionAnimation), 0, 0, 0);
         canvas.save();
 
@@ -540,7 +540,7 @@ class PopupZoomer extends View {
                 (int) mDrawRect.right + sOverlayPadding.right,
                 (int) mDrawRect.bottom + sOverlayPadding.bottom);
         // TODO(nileshagrawal): We should use time here instead of fractionAnimation
-        // as fractionAnimaton is interpolated and can go over 1.
+        // as fractionAnimation is interpolated and can go over 1.
         int alpha = constrain((int) (fractionAnimation * 255), 0, 255);
         overlayNineTile.setAlpha(alpha);
         overlayNineTile.draw(canvas);

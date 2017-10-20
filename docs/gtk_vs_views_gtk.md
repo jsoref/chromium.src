@@ -6,7 +6,7 @@
     bookmark bar layout code.
     *   Tab Strip
         *   Drawing
-        *   All the animationy bits
+        *   All the animation bits
         *   Subtle click selection behavior (curved corners)
         *   Drag behavior, including dropping of files onto the URL bar
         *   Closing behavior

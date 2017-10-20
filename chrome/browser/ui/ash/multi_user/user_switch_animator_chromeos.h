@@ -77,10 +77,10 @@ class UserSwitchAnimatorChromeOS {
   void FinalizeAnimation();
 
   // Execute the user wallpaper animations for |animation_step|.
-  void TransitionWallpaper(AnimationStep animtion_step);
+  void TransitionWallpaper(AnimationStep animation_step);
 
   // Execute the user shelf animations for |animation_step|.
-  void TransitionUserShelf(AnimationStep animtion_step);
+  void TransitionUserShelf(AnimationStep animation_step);
 
   // Execute the window animations for |animation_step|.
   void TransitionWindows(AnimationStep animation_step);

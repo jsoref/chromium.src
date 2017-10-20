@@ -128,7 +128,7 @@ class TouchCalibratorView : public views::View,
   float start_opacity_value_;
   float end_opacity_value_;
 
-  // Linear animation used for various aniations including fade-in, fade out,
+  // Linear animation used for various animations including fade-in, fade out,
   // and view translation.
   std::unique_ptr<gfx::LinearAnimation> animator_;
 

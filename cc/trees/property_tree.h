@@ -488,7 +488,7 @@ struct AnimationScaleData {
   float local_maximum_animation_target_scale;
 
   // The maximum scale that this node's |local| transform will have during
-  // current animatons, considering only the starting scale of each animation.
+  // current animations, considering only the starting scale of each animation.
   float local_starting_animation_scale;
 
   // The maximum scale that this node's |to_target| transform will have during

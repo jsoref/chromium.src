@@ -93,7 +93,7 @@ enum AnimationState {
 @interface ContentSettingAnimationState : NSObject {
  @private
   ContentSettingDecoration* owner_;  // Weak, owns this.
-  double progress_;  // Counter, [0..1], with aninmation progress.
+  double progress_;  // Counter, [0..1], with animation progress.
   NSTimer* timer_;  // Animation timer. Owns this, owned by the run loop.
 }
 

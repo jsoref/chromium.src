@@ -685,7 +685,7 @@ public abstract class PaymentRequestSection extends LinearLayout implements View
          * Starts the animation to make the update text view fade in then fade out.
          */
         private void startUpdateViewAnimation() {
-            // Create and start a fade in anmiation for the mUpdatedView. Re-use the current alpha
+            // Create and start a fade in animation for the mUpdatedView. Re-use the current alpha
             // to avoid restarting a previous or current fade in animation.
             Animation in = new AlphaAnimation(mUpdatedView.getAlpha(), 1.0f);
             in.setDuration(UPDATE_TEXT_ANIMATION_DURATION_MS);
