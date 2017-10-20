@@ -569,7 +569,7 @@ TEST(MathUtilTest, MapClippedQuadDuplicateTriangle) {
   transform.MakeIdentity();
   transform.ApplyPerspectiveDepth(50.0);
   transform.RotateAboutYAxis(89.0);
-  // We are amost looking along the X-Y plane from (-50, almost 0)
+  // We are almost looking along the X-Y plane from (-50, almost 0)
 
   gfx::QuadF src_quad(gfx::PointF(0.0f, 100.0f), gfx::PointF(0.0f, -100.0f),
                       gfx::PointF(-99.0f, -300.0f),
