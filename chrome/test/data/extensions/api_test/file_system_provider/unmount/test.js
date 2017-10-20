@@ -97,7 +97,7 @@ function runTests() {
 
     // End to end test with a failure. Invokes fileSystemProvider.removeMount()
     // on a provided file system, and verifies (1) if the onMountRequested()
-    // event is called with correct aguments, and (2) if calling onError(),
+    // event is called with correct arguments, and (2) if calling onError(),
     // results in an unmount event fired from the VolumeManager instance.
     function requestUnmountError() {
       var unmountRequested = false;

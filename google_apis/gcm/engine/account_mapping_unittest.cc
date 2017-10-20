@@ -123,7 +123,7 @@ TEST(AccountMappingTest, DeserializeAccountMapping) {
 TEST(AccountMappingTest, DeserializeAccountMappingInvalidInput) {
   AccountMapping account_mapping;
   account_mapping.account_id = "acc_id";
-  // Too many agruments.
+  // Too many arguments.
   EXPECT_FALSE(account_mapping.ParseFromString(
       "test@example.com&adding&1305797421259935&last_message_id_1&stuff_here"));
   // Too few arguments.

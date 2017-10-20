@@ -337,7 +337,7 @@ void ExtractBaseAddressAndLength(char** base_address,
       [captureVideoDataOutput_ connectionWithMediaType:AVMediaTypeVideo];
   // Check selector existence, related to bugs http://crbug.com/327532 and
   // http://crbug.com/328096.
-  // CMTimeMake accepts integer argumenst but |frameRate| is float, round it.
+  // CMTimeMake accepts integer arguments but |frameRate| is float, round it.
   if ([captureConnection
           respondsToSelector:@selector(isVideoMinFrameDurationSupported)] &&
       [captureConnection isVideoMinFrameDurationSupported]) {

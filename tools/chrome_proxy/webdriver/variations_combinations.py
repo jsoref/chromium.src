@@ -74,7 +74,7 @@ def ParseFlagsWithExtraBrowserArgs(extra_args):
   adds on additional browser_args.
 
   Args:
-    extra_args: The extra browser agruments to add.
+    extra_args: The extra browser arguments to add.
   Returns:
     A function to override common.ParseFlags with additional browser_args.
   """
