@@ -210,7 +210,7 @@ TEST_F(TabStripTest, RemoveTab) {
   EXPECT_EQ(0, observer.last_tab_removed());
   // When removing a tab the tabcount should immediately decrement.
   EXPECT_EQ(1, tab_strip_->tab_count());
-  // But the number of views should remain the same (it's animatining closed).
+  // But the number of views should remain the same (it's animating closed).
   EXPECT_EQ(child_view_count, tab_strip_->child_count());
   tab_strip_->SetBounds(0, 0, 200, 20);
   // Layout at a different size should force the animation to end and delete

@@ -22,7 +22,7 @@ class ChromeBrowserState;
 @property(nonatomic, readonly) UIView* view;
 
 // The view (if any) containing the tab strip. This may be used for height
-// calculations for positioning or aninmating the contextual search view.
+// calculations for positioning or animating the contextual search view.
 @property(nonatomic, readonly) UIView* tabStripView;
 
 // The view containing the toolbar. This should be a subview of the view
