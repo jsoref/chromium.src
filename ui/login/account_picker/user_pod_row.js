@@ -38,7 +38,7 @@ cr.define('login', function() {
   var MAX_NUMBER_OF_COLUMNS = 6;
 
   /**
-   * Maximal number of rows if sign-in banner is displayed alonside.
+   * Maximal number of rows if sign-in banner is displayed alongside.
    * @type {number}
    * @const
    */
