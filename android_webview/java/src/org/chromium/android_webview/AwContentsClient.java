@@ -61,7 +61,7 @@ public abstract class AwContentsClient {
         this(Looper.myLooper());
     }
 
-    // Alllow injection of the callback thread, for testing.
+    // Allow injection of the callback thread, for testing.
     public AwContentsClient(Looper looper) {
         mCallbackHelper = new AwContentsClientCallbackHelper(looper, this);
     }
