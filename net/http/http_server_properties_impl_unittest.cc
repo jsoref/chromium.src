@@ -706,7 +706,7 @@ TEST_F(AlternateProtocolServerPropertiesTest, MaxAge) {
       AlternativeServiceInfo::CreateHttp2AlternativeServiceInfo(
           alternative_service1, now - one_day));
 
-  // Second alterrnative service will expire one day from now, should be
+  // Second alternative service will expire one day from now, should be
   // returned by GetAlternativeSerices().
   const AlternativeService alternative_service2(kProtoHTTP2, "bar", 1234);
   alternative_service_info_vector.push_back(
@@ -735,7 +735,7 @@ TEST_F(AlternateProtocolServerPropertiesTest, MaxAgeCanonical) {
       AlternativeServiceInfo::CreateHttp2AlternativeServiceInfo(
           alternative_service1, now - one_day));
 
-  // Second alterrnative service will expire one day from now, should be
+  // Second alternative service will expire one day from now, should be
   // returned by GetAlternativeSerices().
   const AlternativeService alternative_service2(kProtoHTTP2, "bar", 1234);
   alternative_service_info_vector.push_back(

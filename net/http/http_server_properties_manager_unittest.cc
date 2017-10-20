@@ -1767,7 +1767,7 @@ TEST_P(HttpServerPropertiesManagerTest, ReadAdvertisedVersionsFromPref) {
   EXPECT_GE(now + base::TimeDelta::FromDays(1), expiration);
   EXPECT_TRUE(alternative_service_info_vector[0].advertised_versions().empty());
 
-  // Verify the second alterntaive service with two advertised versions.
+  // Verify the second alternative service with two advertised versions.
   EXPECT_EQ(kProtoQUIC,
             alternative_service_info_vector[1].alternative_service().protocol);
   EXPECT_EQ("", alternative_service_info_vector[1].alternative_service().host);

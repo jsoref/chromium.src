@@ -604,7 +604,7 @@ void HttpServerPropertiesManager::UpdateCacheFromPrefsOnPrefSequence() {
       --it;
       const base::DictionaryValue* entry_dict;
       if (!it->GetAsDictionary(&entry_dict)) {
-        DVLOG(1) << "Malformed broken alterantive service entry.";
+        DVLOG(1) << "Malformed broken alternative service entry.";
         detected_corrupted_prefs = true;
         continue;
       }

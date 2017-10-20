@@ -622,7 +622,7 @@ void CrasAudioHandler::LogErrors() {
 // docking mode, or HDMI display changes resolution, or chromeos device
 // suspends/resumes, cras will lose the HDMI output node for a short period of
 // time, then rediscover it. This hotplug behavior will cause the audio output
-// be leaked to the alternatvie active audio output during HDMI re-discovering
+// be leaked to the alternative active audio output during HDMI re-discovering
 // period. See crbug.com/503667.
 void CrasAudioHandler::SetActiveHDMIOutoutRediscoveringIfNecessary(
     bool force_rediscovering) {
