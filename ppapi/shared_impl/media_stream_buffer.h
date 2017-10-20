@@ -57,7 +57,7 @@ union MediaStreamBuffer {
   };
 
   // Because these structs are written and read in shared memory, we need
-  // the size and alighment to be consistent between NaCl and its host trusted
+  // the size and alignment to be consistent between NaCl and its host trusted
   // platform.
   PP_COMPILE_ASSERT_SIZE_IN_BYTES(Header, 8);
   PP_COMPILE_ASSERT_SIZE_IN_BYTES(Audio, 40);

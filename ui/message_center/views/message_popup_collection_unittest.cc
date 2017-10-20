@@ -173,7 +173,7 @@ class MessagePopupCollectionTest : public views::ViewsTestBase {
   // Checks:
   //  1) sizes of toast and corresponding widget are equal;
   //  2) widgets do not owerlap;
-  //  3) after animation is done, aligment is propper;
+  //  3) after animation is done, alignment is propper;
   class CheckedAnimationDelegate : public gfx::AnimationDelegate {
    public:
     explicit CheckedAnimationDelegate(MessagePopupCollectionTest* test);

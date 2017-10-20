@@ -1587,7 +1587,7 @@ TEST(HttpStreamParser, ReceivedBytesChunkedTransferExcludesNextResponse) {
 
 // Test that data transfered in multiple reads is correctly processed.
 // We feed data into 4-bytes reads. Also we set length of read
-// buffer to 5-bytes to test all possible buffer misaligments.
+// buffer to 5-bytes to test all possible buffer misalignments.
 TEST(HttpStreamParser, ReceivedBytesMultipleReads) {
   std::string headers = "HTTP/1.1 200 OK\r\n"
       "Content-Length: 33\r\n\r\n";

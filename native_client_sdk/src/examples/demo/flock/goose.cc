@@ -9,7 +9,7 @@ namespace {
 const double kMaxSpeed = 2.0;
 
 // The maximum force that can be applied to turn a goose when computing the
-// aligment.  Measured in meters/second/second.
+// alignment.  Measured in meters/second/second.
 const double kMaxTurningForce = 0.05;
 
 // The neighbour radius of a goose.  Only geese within this radius will affect

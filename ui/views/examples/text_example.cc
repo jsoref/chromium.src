@@ -49,7 +49,7 @@ const wchar_t kRightToLeftText[] =
 const char* kTextExamples[] = { "Short", "Long", "Ampersands", "RTL Hebrew", };
 const char* kElideBehaviors[] = { "Elide", "No Elide", "Fade", };
 const char* kPrefixOptions[] = { "Default", "Show", "Hide", };
-const char* kHorizontalAligments[] = { "Default", "Left", "Center", "Right", };
+const char* kHorizontalAlignments[] = { "Default", "Left", "Center", "Right", };
 constexpr const char* kWeightLabels[] = {
     "Thin",     "Extra Light", "Light",      "Normal", "Medium",
     "Semibold", "Bold",        "Extra Bold", "Black",
@@ -173,8 +173,8 @@ void TextExample::CreateExampleView(View* container) {
                           0.1f, GridLayout::USE_PREF, 0, 0);
   column_set->AddPaddingColumn(0, 8);
 
-  h_align_cb_ = AddCombobox(layout, "H-Align", kHorizontalAligments,
-                            arraysize(kHorizontalAligments));
+  h_align_cb_ = AddCombobox(layout, "H-Align", kHorizontalAlignments,
+                            arraysize(kHorizontalAlignments));
   eliding_cb_ = AddCombobox(layout, "Eliding", kElideBehaviors,
                             arraysize(kElideBehaviors));
   prefix_cb_ = AddCombobox(layout, "Prefix", kPrefixOptions,

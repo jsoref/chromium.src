@@ -165,7 +165,7 @@ class BASE_EXPORT SharedMemory {
 
   // Same as above, but with |offset| to specify from begining of the shared
   // memory block to map.
-  // |offset| must be alignent to value of |SysInfo::VMAllocationGranularity()|.
+  // |offset| must be alignment to value of |SysInfo::VMAllocationGranularity()|.
   bool MapAt(off_t offset, size_t bytes);
   enum { MAP_MINIMUM_ALIGNMENT = 32 };
 
