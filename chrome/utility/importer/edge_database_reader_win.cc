@@ -14,7 +14,7 @@
 
 namespace {
 
-// This is an arbitary size chosen for the database error message buffer.
+// This is an arbitrary size chosen for the database error message buffer.
 const size_t kErrorMessageSize = 1024;
 // This is the page size of the Edge data. It's unlikely to change.
 const JET_API_PTR kEdgeDatabasePageSize = 8192;

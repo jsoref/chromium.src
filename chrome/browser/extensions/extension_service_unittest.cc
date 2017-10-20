@@ -4133,7 +4133,7 @@ TEST_F(ExtensionServiceTest, PolicyBlockedPermissionPolicyUpdate) {
 
   PackCRX(path2, pem_path, crx_path);
 
-  // Install two arbitary extensions with specified manifest.
+  // Install two arbitrary extensions with specified manifest.
   std::string ext1 = PackAndInstallCRX(path, INSTALL_NEW)->id();
   std::string ext2 = PackAndInstallCRX(path2, INSTALL_NEW)->id();
   ASSERT_NE(ext1, permissions_blocklist);

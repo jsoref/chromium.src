@@ -246,7 +246,7 @@ TEST_F(KernelWrapTest, dup) {
 }
 
 TEST_F(KernelWrapTest, dup2) {
-  // The way we wrap dup2 does not support returning aribtrary values, only -1
+  // The way we wrap dup2 does not support returning arbitrary values, only -1
   // or the value of the new fd.
   EXPECT_CALL(mock, dup2(kDummyInt, kDummyInt2))
       .WillOnce(Return(kDummyInt2))
@@ -298,7 +298,7 @@ TEST_F(KernelWrapTest, fdatasync) {
 }
 
 TEST_F(KernelWrapTest, fstat) {
-  // The way we wrap fstat does not support returning aribtrary values, only 0
+  // The way we wrap fstat does not support returning arbitrary values, only 0
   // or -1.
   struct stat in_statbuf;
   MakeDummyStatbuf(&in_statbuf);
@@ -568,7 +568,7 @@ TEST_F(KernelWrapTest, signal) {
 }
 
 TEST_F(KernelWrapTest, stat) {
-  // The way we wrap stat does not support returning aribtrary values, only 0
+  // The way we wrap stat does not support returning arbitrary values, only 0
   // or -1.
   struct stat in_statbuf;
   MakeDummyStatbuf(&in_statbuf);

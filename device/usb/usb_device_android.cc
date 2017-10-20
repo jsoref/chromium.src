@@ -131,8 +131,8 @@ UsbDeviceAndroid::UsbDeviceAndroid(
     // configuration out of the available interfaces.
     UsbConfigDescriptor config(1,      // Configuration value, reasonable guess.
                                false,  // Self powered, arbitrary default.
-                               false,  // Remote wakeup, rbitrary default.
-                               0);     // Maximum power, aitrary default.
+                               false,  // Remote wakeup, arbitrary default.
+                               0);     // Maximum power, arbitrary default.
 
     ScopedJavaLocalRef<jobjectArray> interfaces =
         Java_ChromeUsbDevice_getInterfaces(env, wrapper);

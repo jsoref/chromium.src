@@ -869,7 +869,7 @@ void VrShellGl::DrawFrame(int16_t frame_index) {
   frame.Unbind();
 
   if (!scene_->GetViewportAwareElements().empty() && ShouldDrawWebVr()) {
-    // WebVR content may use an arbitray size buffer. We need to draw browser UI
+    // WebVR content may use an arbitrary size buffer. We need to draw browser UI
     // on a different buffer to make sure that our UI has enough resolution.
     frame.BindBuffer(kFrameWebVrBrowserUiBuffer);
 

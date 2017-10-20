@@ -1200,7 +1200,7 @@ void TabInfoBarObserver::OnInfoBarReplaced(infobars::InfoBar* old_infobar,
 // change, or immediately after any unexpected change of the URL. The apparent
 // destination URL is included in the |url| parameter.
 // Warning: because of the present design it is possible for malicious websites
-// to invoke superflous instances of this delegate with artibrary URLs.
+// to invoke superflous instances of this delegate with arbitrary URLs.
 // Ensure there is nothing here that could be a risk to the user beyond mild
 // confusion in that event (e.g. progress bar starting unexpectedly).
 - (void)webWillAddPendingURL:(const GURL&)url

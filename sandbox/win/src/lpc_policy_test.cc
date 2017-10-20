@@ -212,7 +212,7 @@ TEST(LpcPolicyTest, TestHeapFlags) {
     // This functionality has not been verified on versions before Win10.
     return;
   }
-  // Windows does not support callers supplying arbritary flag values. So we
+  // Windows does not support callers supplying arbitrary flag values. So we
   // write some non-trivial value to reduce the chance we match this in random
   // data.
   DWORD flags = 0x41007;

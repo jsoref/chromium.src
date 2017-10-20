@@ -313,7 +313,7 @@ IN_PROC_BROWSER_TEST_F(ContentScriptCssInjectionTest,
   ASSERT_TRUE(LoadExtension(test_data_dir_.AppendASCII("content_scripts")
                                           .AppendASCII("css_injection")));
 
-  // CSS injection should be allowed on an aribitrary web page.
+  // CSS injection should be allowed on an arbitrary web page.
   GURL url =
       embedded_test_server()->GetURL("/extensions/test_file_with_body.html");
   EXPECT_TRUE(CheckStyleInjection(browser(), url, true));

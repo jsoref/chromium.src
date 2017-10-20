@@ -53,7 +53,7 @@ class GPU_EXPORT CommonDecoder {
   // similar to glBufferSubData.
   //
   // Buckets also help pass strings to/from the service. To return a string of
-  // arbitary size, the service puts the string in a bucket. The client can
+  // arbitrary size, the service puts the string in a bucket. The client can
   // then query the size of a bucket and request sections of the bucket to
   // be passed across shared memory.
   class GPU_EXPORT Bucket {

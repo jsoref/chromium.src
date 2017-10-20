@@ -107,7 +107,7 @@ class HEADLESS_EXPORT HeadlessBrowserContext::Builder {
   Builder& AddTabSocketMojoBindings();
 
   // By default if you add mojo bindings, http and https are disabled because
-  // its almost certinly unsafe for arbitary sites on the internet to have
+  // its almost certinly unsafe for arbitrary sites on the internet to have
   // access to these bindings.  If you know what you're doing it may be OK to
   // turn them back on. E.g. if headless_lib is being used in a testing
   // framework which serves the web content from disk that's likely ok.

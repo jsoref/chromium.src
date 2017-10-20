@@ -458,7 +458,7 @@ class CachingPolicy(object):
     return not self.request.HasResponseHeaderValue('Cache-Control', 'no-store')
 
   def PolicyAtDate(self, timestamp):
-    """Returns the caching policy at an aribitrary timestamp.
+    """Returns the caching policy at an arbitrary timestamp.
 
     Args:
       timestamp: (float) Seconds since Epoch.

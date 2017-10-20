@@ -103,7 +103,7 @@ uint32_t BufferFormatToVARTFormat(gfx::BufferFormat fmt) {
 
 namespace media {
 
-// Maximum framerate of encoded profile. This value is an arbitary limit
+// Maximum framerate of encoded profile. This value is an arbitrary limit
 // and not taken from HW documentation.
 const int kMaxEncoderFramerate = 30;
 

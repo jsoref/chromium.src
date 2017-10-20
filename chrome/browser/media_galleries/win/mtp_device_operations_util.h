@@ -4,7 +4,7 @@
 
 // This file has several utility functions to open a media transfer protocol
 // (MTP) device for communication, to enumerate the device contents, to read the
-// device file object, etc. All these tasks may take an arbitary long time
+// device file object, etc. All these tasks may take an arbitrary long time
 // to complete. This file segregates those functionalities and runs them
 // in the blocking pool thread rather than in the UI thread.
 

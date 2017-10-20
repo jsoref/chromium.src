@@ -54,7 +54,7 @@ class RlzValueStore {
   // Product events.
   // Stores |event_rlz| for product |product| as product event.
   virtual bool AddProductEvent(Product product, const char* event_rlz) = 0;
-  // Appends all events for |product| to |events|, in arbirtrary order.
+  // Appends all events for |product| to |events|, in arbitrary order.
   virtual bool ReadProductEvents(Product product,
                                  std::vector<std::string>* events) = 0;
   // Removes the stored event |event_rlz| for |product| if it exists.

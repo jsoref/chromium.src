@@ -33,7 +33,7 @@ class MockCrashServerCallbacks {
   MockCrashServerCallbacks();
   virtual ~MockCrashServerCallbacks();
 
-  // |google_breakpad::CrashGenerationServer| invokes callbacks from artitrary
+  // |google_breakpad::CrashGenerationServer| invokes callbacks from arbitrary
   // thread pool threads. |OnClientDumpRequested| is the only one that happened
   // to be called in synchronous manner. While it is still called on
   // a thread pool thread, the crashing process will wait until the server

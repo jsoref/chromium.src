@@ -1385,7 +1385,7 @@ RenderFrameHostManager::DetermineSiteInstanceForURL(
   // One exception to this is when these URLs are
   // reached via a server redirect.  Normally, redirects to data: or about:
   // URLs are disallowed as net::ERR_UNSAFE_REDIRECT, but extensions can still
-  // redirect arbitary requests to those URLs using webRequest or
+  // redirect arbitrary requests to those URLs using webRequest or
   // declarativeWebRequest API.  For these cases, the content isn't controlled
   // by the source SiteInstance, so it need not use it.
   GURL about_blank(url::kAboutBlankURL);
@@ -2685,7 +2685,7 @@ bool RenderFrameHostManager::CanSubframeSwapProcess(
       // (1) If there was a server redirect, allow a process swap.  Normally,
       // redirects to data: or about: URLs are disallowed as
       // net::ERR_UNSAFE_REDIRECT. However, extensions can still redirect
-      // arbitary requests to those URLs using the chrome.webRequest or
+      // arbitrary requests to those URLs using the chrome.webRequest or
       // chrome.declarativeWebRequest API, which will end up here (for an
       // example, see ExtensionWebRequestApiTest.WebRequestDeclarative1).  It's
       // safest to swap processes for those redirects if we are in an

@@ -14,7 +14,7 @@ function FileOperationManager() {
   this.volumeManager_ = null;
 
   /**
-   * List of pending copy tasks. The manager can execute tasks in arbitary
+   * List of pending copy tasks. The manager can execute tasks in arbitrary
    * order.
    * @private {!Array<!fileOperationUtil.Task>}
    */
