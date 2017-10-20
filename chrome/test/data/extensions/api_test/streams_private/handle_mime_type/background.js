@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// True iff the notifyFail has alerady been called.
+// True iff the notifyFail has already been called.
 var hasFailed = false;
 
 chrome.streamsPrivate.onExecuteMimeTypeHandler.addListener(

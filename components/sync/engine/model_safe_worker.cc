@@ -81,7 +81,7 @@ void ModelSafeWorker::RequestStop() {
   base::AutoLock auto_lock(lock_);
 
   // Set stop flag to prevent any *further* WorkCallback from starting to run
-  // (note that one may alreay be running).
+  // (note that one may already be running).
   stopped_ = true;
 
   // If no work is running, unblock DoWorkAndWaitUntilDone(). If work is

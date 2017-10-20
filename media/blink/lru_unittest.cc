@@ -166,7 +166,7 @@ TEST_F(LRUTest, UseTest) {
   Use(7);  // 3 5 7
   EXPECT_EQ(3, Peek());
   EXPECT_TRUE(Contains(7));
-  // Using a value that's alraedy on the LRU moves it to the top.
+  // Using a value that's already on the LRU moves it to the top.
   Use(3);  // 5 7 3
   EXPECT_EQ(5, Peek());
   EXPECT_TRUE(Contains(5));

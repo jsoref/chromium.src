@@ -54,7 +54,7 @@
       // CASE D: We have a hoverButton_ but we've moved onto an area that
       // requires no hover.  We close the hoverButton_ in this case.  This
       // means cancelling if the open is pending (i.e. |kHoverStateOpening|)
-      // or closing if we don't alrealy have once in progress.
+      // or closing if we don't already have once in progress.
 
       // Intiate close only if we have not already done so.
       if (hoverState_ == kHoverStateOpening) {

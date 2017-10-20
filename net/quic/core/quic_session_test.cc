@@ -549,7 +549,7 @@ TEST_P(QuicSessionTestServer, TestBatchedWrites) {
                           base::Unretained(&session_), stream4, 6000)))));
   session_.OnCanWrite();
 
-  // Stream4 alread did 6k worth of writes, so after doing another 12k it should
+  // Stream4 already did 6k worth of writes, so after doing another 12k it should
   // cede and 2 should resume.
   EXPECT_CALL(*stream4, OnCanWrite())
       .WillOnce(DoAll(testing::IgnoreResult(Invoke(CreateFunctor(

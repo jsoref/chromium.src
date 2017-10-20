@@ -29,7 +29,7 @@ bool IsParallelizableDownload(const DownloadCreateInfo& create_info,
   // 3. Accept-Ranges or Content-Range header.
   // 4. Content-Length header.
   // 5. Content-Length is no less than the minimum slice size configuration, or
-  // persisted slices alreay exist.
+  // persisted slices already exist.
   // 6. HTTP/1.1 protocol, not QUIC nor HTTP/1.0.
   // 7. HTTP or HTTPS scheme with GET method in the initial request.
 

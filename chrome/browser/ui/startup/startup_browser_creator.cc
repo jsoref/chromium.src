@@ -277,7 +277,7 @@ void DumpBrowserHistograms(const base::FilePath& output_file) {
 // explicit user action.
 bool ProfileCanBeAutoOpened(Profile* profile) {
 #if defined(OS_CHROMEOS)
-  // On ChromeOS, ther user has alrady chosen and logged into the profile
+  // On ChromeOS, ther user has already chosen and logged into the profile
   // before Chrome starts up.
   return true;
 #else

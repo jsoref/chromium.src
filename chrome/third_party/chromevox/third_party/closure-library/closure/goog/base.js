@@ -1025,7 +1025,7 @@ goog.getUid = function(obj) {
 
 
 /**
- * Whether the given object is alreay assigned a unique ID.
+ * Whether the given object is already assigned a unique ID.
  *
  * This does not modify the object.
  *

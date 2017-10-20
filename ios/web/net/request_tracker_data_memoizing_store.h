@@ -35,7 +35,7 @@ class RequestTrackerDataMemoizingStore {
 
     int item_id = 0;
 
-    // Is this item alread known?
+    // Is this item already known?
     typename ReverseItemMap::iterator item_iter = item_to_id_.find(item);
     if (item_iter == item_to_id_.end()) {
       item_id = next_item_id_++;

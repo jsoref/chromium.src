@@ -3219,7 +3219,7 @@ TEST_F(DisplayManagerOrientationTest, LockToSpecificOrientation) {
   EXPECT_EQ(blink::kWebScreenOrientationLockPortraitPrimary,
             test_api.GetCurrentOrientation());
 
-  // The orientation has alraedy been locked to secondary once, so
+  // The orientation has already been locked to secondary once, so
   // it should swtich back to the portrait secondary.
   wm::ActivateWindow(window_ps);
   EXPECT_EQ(blink::kWebScreenOrientationLockPortraitSecondary,

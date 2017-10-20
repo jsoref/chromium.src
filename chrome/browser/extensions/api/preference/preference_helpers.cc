@@ -116,7 +116,7 @@ void DispatchEventToExtensions(Profile* profile,
       // If the extension is in incognito split mode,
       // a) incognito pref changes are visible only to the incognito tabs
       // b) regular pref changes are visible only to the incognito tabs if the
-      //    incognito pref has not alredy been set
+      //    incognito pref has not already been set
       Profile* restrict_to_profile = NULL;
       bool from_incognito = false;
       if (IncognitoInfo::IsSplitMode(extension.get())) {

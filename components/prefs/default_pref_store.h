@@ -36,7 +36,7 @@ class COMPONENTS_PREFS_EXPORT DefaultPrefStore : public PrefStore {
                        std::unique_ptr<base::Value> value);
 
   // Replaces the the value for |key| with a new value. Should only be called
-  // if a value has alreday been set; otherwise call SetDefaultValue().
+  // if a value has already been set; otherwise call SetDefaultValue().
   void ReplaceDefaultValue(const std::string& key,
                            std::unique_ptr<base::Value> value);
 

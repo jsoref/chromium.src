@@ -743,7 +743,7 @@ TEST_F(CryptAuthBluetoothLowEnergyWeaveClientConnectionTest,
   NotifySessionStarted(connection.get());
 
   // |connection| will call WriteRemoteCharacteristics(_,_) to try to send the
-  // message |kMaxNumberOfTries| times. There is alredy one EXPECT_CALL for
+  // message |kMaxNumberOfTries| times. There is already one EXPECT_CALL for
   // WriteRemoteCharacteristic(_,_,_) in NotifySessionStated, that's why we use
   // |kMaxNumberOfTries-1| in the EXPECT_CALL statement.
   EXPECT_EQ(0, connection_observer_->GetNumSendCompleted());

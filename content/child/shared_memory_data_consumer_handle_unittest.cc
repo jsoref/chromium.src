@@ -647,7 +647,7 @@ TEST_P(SharedMemoryDataConsumerHandleTest, CallOnClearWhenDestructed1) {
 }
 
 TEST_P(SharedMemoryDataConsumerHandleTest, CallOnClearWhenDestructed2) {
-  // Call |on_clear| when the reader is gone if the handle is alredy gone.
+  // Call |on_clear| when the reader is gone if the handle is already gone.
   Checkpoint checkpoint;
   scoped_refptr<DestructionTrackingFunction> on_clear(
       new StrictMock<DestructionTrackingFunction>);
