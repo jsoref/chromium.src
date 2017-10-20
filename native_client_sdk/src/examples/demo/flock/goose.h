@@ -11,7 +11,7 @@
 #include "vector2.h"
 
 // A Goose.  Each goose has a location and a velocity.  Implements the
-// flocking algortihm described here:
+// flocking algorithm described here:
 // http://processingjs.org/learning/topic/flocking with references to
 // http://harry.me/2011/02/17/neat-algorithms---flocking.
 class Goose {

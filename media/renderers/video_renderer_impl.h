@@ -127,7 +127,7 @@ class MEDIA_EXPORT VideoRendererImpl
                   VideoFrameStream::Status status,
                   const scoped_refptr<VideoFrame>& frame);
 
-  // Helper method for enqueueing a frame to |alogorithm_|.
+  // Helper method for enqueueing a frame to |algorithm_|.
   void AddReadyFrame_Locked(const scoped_refptr<VideoFrame>& frame);
 
   // Helper method that schedules an asynchronous read from the

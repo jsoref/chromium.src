@@ -2978,7 +2978,7 @@ TYPED_TEST(SoftwareRendererPixelTest, TextureDrawQuadLinear) {
   RenderPassList pass_list;
   pass_list.push_back(std::move(pass));
 
-  // Allow for a small amount of error as the blending alogrithm used by Skia is
+  // Allow for a small amount of error as the blending algorithm used by Skia is
   // affected by the offset in the expanded rect.
   EXPECT_TRUE(this->RunPixelTest(
       &pass_list,

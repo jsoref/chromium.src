@@ -97,7 +97,7 @@ class Status {
   static Status ErrorJwkUnexpectedKty(const std::string& expected);
 
   // The amount of key data provided was incompatible with the selected
-  // algorithm. For instance if the algorith name was A128CBC then EXACTLY
+  // algorithm. For instance if the algorithm name was A128CBC then EXACTLY
   // 128-bits of key data must have been provided. If 192-bits of key data were
   // given that is an error.
   static Status ErrorJwkIncorrectKeyLength();

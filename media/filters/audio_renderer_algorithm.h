@@ -13,7 +13,7 @@
 // algorithm to stretch or compress audio data to meet playback speeds less than
 // or greater than the natural playback of the audio stream. The algorithm
 // preserves local properties of the audio, therefore, pitch and harmonics are
-// are preserved. See audio_renderer_algorith.cc for a more elaborate
+// are preserved. See audio_renderer_algorithm.cc for a more elaborate
 // description of the algorithm.
 //
 // Audio at very low or very high playback rates are muted to preserve quality.
