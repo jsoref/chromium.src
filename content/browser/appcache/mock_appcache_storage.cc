@@ -343,7 +343,7 @@ void MockAppCacheStorage::ProcessFindResponseForMainRequest(
   if (!delegate_ref->delegate)
     return;
 
-  // TODO(michaeln): The heuristics around choosing amoungst
+  // TODO(michaeln): The heuristics around choosing amongst
   // multiple candidates is under specified, and just plain
   // not fully understood. Refine these over time. In particular,
   // * prefer candidates from newer caches

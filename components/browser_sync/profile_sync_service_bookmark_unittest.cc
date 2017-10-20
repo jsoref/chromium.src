@@ -936,7 +936,7 @@ TEST_F(ProfileSyncServiceBookmarkTest, InitialModelAssociateWithDeleteJournal) {
   EXPECT_EQ(0, folder->child_count());
 }
 
-// Tests that the external ID is used to match the right folder amoung
+// Tests that the external ID is used to match the right folder among
 // multiple folders with the same name during the native model traversal.
 // Also tests that the external ID is used to match the right bookmark
 // among multiple identical bookmarks when dealing with the delete journal.

@@ -961,7 +961,7 @@ void AppCacheStorageImpl::FindMainResponseTask::Run() {
   tracked_objects::ScopedTracker tracking_profile(
       FROM_HERE_WITH_EXPLICIT_FUNCTION(
           "AppCacheStorageImpl::FindMainResponseTask"));
-  // NOTE: The heuristics around choosing amoungst multiple candidates
+  // NOTE: The heuristics around choosing amongst multiple candidates
   // is underspecified, and just plain not fully understood. This needs
   // to be refined.
 

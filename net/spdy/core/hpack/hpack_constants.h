@@ -76,12 +76,12 @@ SPDY_EXPORT_PRIVATE std::vector<HpackHuffmanSymbol> HpackHuffmanCode();
 SPDY_EXPORT_PRIVATE std::vector<HpackStaticEntry> HpackStaticTableVector();
 
 // Returns a HpackHuffmanTable instance initialized with |kHpackHuffmanCode|.
-// The instance is read-only, has static lifetime, and is safe to share amoung
+// The instance is read-only, has static lifetime, and is safe to share among
 // threads. This function is thread-safe.
 SPDY_EXPORT_PRIVATE const HpackHuffmanTable& ObtainHpackHuffmanTable();
 
 // Returns a HpackStaticTable instance initialized with |kHpackStaticTable|.
-// The instance is read-only, has static lifetime, and is safe to share amoung
+// The instance is read-only, has static lifetime, and is safe to share among
 // threads. This function is thread-safe.
 SPDY_EXPORT_PRIVATE const HpackStaticTable& ObtainHpackStaticTable();
 
