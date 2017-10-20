@@ -412,7 +412,7 @@ class ArcAppModelBuilderTest : public extensions::ExtensionServiceTestBase,
     }
   }
 
-  // Removes icon request record and allowd re-sending icon request.
+  // Removes icon request record and allowed re-sending icon request.
   void MaybeRemoveIconRequestRecord(const std::string& app_id) {
     ArcAppListPrefs* prefs = ArcAppListPrefs::Get(profile_.get());
     ASSERT_NE(nullptr, prefs);

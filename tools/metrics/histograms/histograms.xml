@@ -102139,7 +102139,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
              available disk space"/>
   <suffix name="SizeExceededInMemoryLimit"
       label="Eviction was triggered because the total size exceeded maximum
-             in memory size allwed"/>
+             in memory size allowed"/>
   <affected-histogram name="Storage.Blob.SizeEvictedToDiskInKB"/>
 </histogram_suffixes>
 

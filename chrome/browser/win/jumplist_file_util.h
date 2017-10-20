@@ -14,7 +14,7 @@ const int kFileDeleteLimit = 30;
 // This method is similar to base::DeleteFileRecursive in
 // file_util_win.cc with the following differences.
 // 1) It has an input parameter |max_file_deleted| to specify the maximum files
-//    allowed to delete as well as the maximum attempt failures allowd per run.
+//    allowed to delete as well as the maximum attempt failures allowed per run.
 // 2) It deletes only the files in |path|. All subdirectories in |path| are
 //    untouched but are considered as attempt failures.
 void DeleteFiles(const base::FilePath& path,
@@ -24,7 +24,7 @@ void DeleteFiles(const base::FilePath& path,
 // This method is similar to base::DeleteFile in file_util_win.cc
 // with the following differences.
 // 1) It has an input parameter |max_file_deleted| to specify the maximum files
-//    allowed to delete as well as the maximum attempt failures allowd per run.
+//    allowed to delete as well as the maximum attempt failures allowed per run.
 // 2) It deletes only the files in |path|. All subdirectories in |path| are
 //    untouched but are considered as attempt failures.
 // 3) |path| won't be removed even if all its contents are deleted successfully.

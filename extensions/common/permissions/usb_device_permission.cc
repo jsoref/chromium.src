@@ -31,7 +31,7 @@ namespace {
 
 const int kHidInterfaceClass = 3;
 
-bool IsInterfaceClassPermissionAlowed(const Extension* extension) {
+bool IsInterfaceClassPermissionAllowed(const Extension* extension) {
   const Feature* feature = FeatureProvider::GetBehaviorFeature(
       behavior_feature::kAllowUsbDevicesPermissionInterfaceClass);
   if (!feature)
@@ -108,7 +108,7 @@ UsbDevicePermission::CheckParam::CheckParam(
       product_id(product_id),
       interface_classes(std::move(interface_classes)),
       interface_id(interface_id),
-      interface_class_allowed(IsInterfaceClassPermissionAlowed(extension)) {}
+      interface_class_allowed(IsInterfaceClassPermissionAllowed(extension)) {}
 
 UsbDevicePermission::CheckParam::~CheckParam() {}
 

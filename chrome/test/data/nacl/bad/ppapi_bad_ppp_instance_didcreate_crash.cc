@@ -41,7 +41,7 @@ PP_Bool DidCreate(PP_Instance /*instance*/,
 
 const PPP_Instance instance_interface = {
   DidCreate,
-  // Normally one is not alowed to register NULLs for functions, but
+  // Normally one is not allowed to register NULLs for functions, but
   // since DidCreate is going to crash, these will never be called.
   NULL,
   NULL,

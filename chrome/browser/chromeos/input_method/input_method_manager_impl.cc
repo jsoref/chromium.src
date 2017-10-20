@@ -259,7 +259,7 @@ void InputMethodManagerImpl::StateImpl::EnableLoginLayouts(
         if (IsInputMethodAllowed(initial_layouts[i])) {
           layouts.push_back(initial_layouts[i]);
         } else {
-          DVLOG(1) << "EnableLoginLayouts: ignoring layout disallowd by policy:"
+          DVLOG(1) << "EnableLoginLayouts: ignoring layout disallowed by policy:"
                    << initial_layouts[i];
         }
       } else {
