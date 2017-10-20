@@ -52,7 +52,7 @@ class FileSystemURLParser {
 };
 
 // Finds a file system, which is responsible for handling the specified
-// |local_path| by analysing the mount point name. Alsoo, extract the file path
+// |local_path| by analysing the mount point name. Also, extract the file path
 // from the local path to be used by the file system operations.
 class LocalPathParser {
  public:
