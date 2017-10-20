@@ -383,7 +383,7 @@ public class ChromeAnimation<T> {
     }
 
     /**
-     * Provides a interface for updating animatible properties.
+     * Provides a interface for updating animatable properties.
      *
      * @param <T> The {@link Enum} of animatable properties.
      */
