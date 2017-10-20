@@ -118,7 +118,7 @@ class PPAPI_PROXY_EXPORT PluginGlobals : public PpapiGlobals {
     return msg_loop_slot_.get();
   }
 
-  // Sets the message loop slot, takes ownership of the given heap-alloated
+  // Sets the message loop slot, takes ownership of the given heap-allocated
   // pointer.
   void set_msg_loop_slot(base::ThreadLocalStorage::Slot* slot) {
     msg_loop_slot_.reset(slot);
