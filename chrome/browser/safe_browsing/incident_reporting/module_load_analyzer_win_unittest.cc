@@ -47,9 +47,9 @@ class MockSafeBrowsingDatabaseManager : public TestSafeBrowsingDatabaseManager {
   DISALLOW_COPY_AND_ASSIGN(MockSafeBrowsingDatabaseManager);
 };
 
-class ModuleLoadAnalayzerTest : public testing::Test {
+class ModuleLoadAnalyzerTest : public testing::Test {
  protected:
-  ModuleLoadAnalayzerTest()
+  ModuleLoadAnalyzerTest()
       : mock_incident_receiver_(
             new StrictMock<safe_browsing::MockIncidentReceiver>()),
         mock_safe_browsing_database_manager_(
@@ -108,11 +108,11 @@ class ModuleLoadAnalayzerTest : public testing::Test {
 
 }  // namespace
 
-TEST_F(ModuleLoadAnalayzerTest, TestWhitelistedDLLs) {
+TEST_F(ModuleLoadAnalyzerTest, TestWhitelistedDLLs) {
   ExpectNoIncident(kWhitelistedModuleName);
 }
 
-TEST_F(ModuleLoadAnalayzerTest, TestNonWhitelistedDLLs) {
+TEST_F(ModuleLoadAnalyzerTest, TestNonWhitelistedDLLs) {
   EXPECT_CALL(*mock_safe_browsing_database_manager_,
               MatchModuleWhitelistString(kNonWhitelistedModuleName))
       .WillOnce(Return(false));
