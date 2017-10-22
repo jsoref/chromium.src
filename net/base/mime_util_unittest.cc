@@ -106,7 +106,7 @@ TEST(MimeUtilTest, MatchesMimeType) {
   EXPECT_FALSE(MatchesMimeType("application/*+xml",
                                     "application/html+xmlz"));
   EXPECT_FALSE(MatchesMimeType("application/*+xml",
-                                    "applcation/html+xml"));
+                                    "application/html+xml"));
   EXPECT_FALSE(MatchesMimeType("aaa*aaa", "aaaaa"));
 
   EXPECT_TRUE(MatchesMimeType("*", "video/x-mpeg;param=val"));

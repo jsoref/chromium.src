@@ -33,7 +33,7 @@ class Event;
 
 class IntentPickerLabelButton;
 
-// A bubble that displays a list of aplications (icons and names), after the
+// A bubble that displays a list of applications (icons and names), after the
 // list we show a pair of buttons which allow the user to remember the selection
 // or not. This class comunicates the user's selection with a callback used by
 // ArcNavigationThrottle.

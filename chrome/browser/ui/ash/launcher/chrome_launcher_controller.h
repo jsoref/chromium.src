@@ -200,7 +200,7 @@ class ChromeLauncherController
   // If |web_contents| has not loaded, returns the default favicon.
   gfx::Image GetAppListIcon(content::WebContents* web_contents) const;
 
-  // Get the title for the applicatoin list entry for |web_contents|.
+  // Get the title for the application list entry for |web_contents|.
   // If |web_contents| has not loaded, returns "Net Tab".
   base::string16 GetAppListTitle(content::WebContents* web_contents) const;
 

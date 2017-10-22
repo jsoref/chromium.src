@@ -18,7 +18,7 @@ namespace chromeos {
 
 class IdleAppNameNotificationDelegateView;
 
-// A class which creates a message which shows the currently running applicaion
+// A class which creates a message which shows the currently running application
 // name and its creator.
 class IdleAppNameNotificationView {
  public:

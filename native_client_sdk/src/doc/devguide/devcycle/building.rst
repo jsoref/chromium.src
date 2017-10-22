@@ -351,7 +351,7 @@ decompressed on the client's side. All costs are upfront when you call
 
 Currently, this tool will compress **pexe** files by about 25%. However,
 it is somewhat slow (can take from seconds to minutes on large
-appications). Hence, this step is optional.
+applications). Hence, this step is optional.
 
 .. naclcode::
   :prettyprint: 0

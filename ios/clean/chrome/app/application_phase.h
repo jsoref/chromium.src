@@ -12,7 +12,7 @@ typedef NS_ENUM(NSUInteger, ApplicationPhase) {
   APPLICATION_COLD = 0,
   // The minimal initialization that must be completed before any further
   // startup can happen. |applicationDidFinishLaunching:withOptions:| must
-  // bring the appication to at least this phase before returning.
+  // bring the application to at least this phase before returning.
   APPLICATION_BASIC,
   // The phase required for any background handling.
   APPLICATION_BACKGROUNDED,

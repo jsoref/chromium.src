@@ -86,7 +86,7 @@ public class GSAServiceClient {
     /**
      * Constructs an instance of this class.
      *
-     * @param context Appliation context.
+     * @param context Application context.
      * @param onMessageReceived optional callback when a message is received.
      */
     GSAServiceClient(Context context, Callback<Bundle> onMessageReceived) {
