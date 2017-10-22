@@ -890,7 +890,7 @@ class ChromeAppSortingDefaultOrdinalNoCollision
     app_sorting()->SetAppLaunchOrdinal(other_app_->id(),
                                        default_app_launch_ordinal_);
 
-    yet_another_app_ = prefs_.AddApp("yet_aother_app");
+    yet_another_app_ = prefs_.AddApp("yet_another_app");
     app_sorting()->SetPageOrdinal(yet_another_app_->id(),
                                   default_page_ordinal_);
     app_sorting()->SetAppLaunchOrdinal(yet_another_app_->id(),

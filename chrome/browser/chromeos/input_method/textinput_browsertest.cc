@@ -117,7 +117,7 @@ IN_PROC_BROWSER_TEST_F(TextInput_TextInputStateChangedTest,
 
   GURL url = ui_test_utils::GetTestUrl(
       base::FilePath(FILE_PATH_LITERAL("textinput")),
-      base::FilePath(FILE_PATH_LITERAL("focus_input_on_anothor_focus.html")));
+      base::FilePath(FILE_PATH_LITERAL("focus_input_on_another_focus.html")));
   ui_test_utils::NavigateToURL(browser(), url);
 
   EXPECT_EQ(ui::TEXT_INPUT_TYPE_NONE, helper.GetTextInputType());

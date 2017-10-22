@@ -73,7 +73,7 @@ TEST_F(NotificationSystemObserverTest, MultiProfileExtensionUnloaded) {
       profile_manager()->CreateTestingProfile("test-profile2");
   scoped_refptr<const extensions::Extension> extension2 =
       CreateGoodExtension("bar");
-  // Claim the extension has been unloaded with anoter profile.
+  // Claim the extension has been unloaded with another profile.
   extensions::ExtensionRegistry::Get(profile2)->TriggerOnUnloaded(
       extension2.get(), extensions::UnloadedExtensionReason::UNINSTALL);
   EXPECT_EQ(extension2->url(), ui_manager()->last_canceled_source());

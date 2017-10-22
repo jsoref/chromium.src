@@ -180,7 +180,7 @@ IN_PROC_BROWSER_TEST_F(SyncFileSystemTest, AuthorizationTest) {
 
   ASSERT_TRUE(bar_created.WaitUntilSatisfied());
 
-  // The app creates anohter file "/bar".  Since the user signed out from chrome
+  // The app creates another file "/bar".  Since the user signed out from chrome
   // The synchronization should fail and the service state should be
   // AUTHENTICATION_REQUIRED.
 
