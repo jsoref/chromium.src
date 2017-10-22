@@ -239,7 +239,7 @@ cr.define('cr.ui', function() {
           newIndex = leadIndex == -1 ?
               this.getFirstIndex() : this.getIndexBelow(leadIndex);
           break;
-        case 'ArrrowLeft':
+        case 'ArrowLeft':
           newIndex = leadIndex == -1 ?
               this.getLastIndex() : this.getIndexBefore(leadIndex);
           break;
