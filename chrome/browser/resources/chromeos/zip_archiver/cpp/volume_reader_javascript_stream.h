@@ -108,7 +108,7 @@ class VolumeReaderJavaScriptStream : public VolumeReader {
   pp::VarArrayBuffer first_array_buffer_;
   pp::VarArrayBuffer second_array_buffer_;
 
-  // A pointer to first_arrray_buffer_ or second_array_buffer_. This is used in
+  // A pointer to first_array_buffer_ or second_array_buffer_. This is used in
   // order to avoid an extra copy from the second buffer to the first buffer
   // when data is available for VolumeReaderJavaScriptStream::Read method.
   // It points to the array buffer used for reading ahead when data is received
