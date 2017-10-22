@@ -99,7 +99,7 @@ def MakeRelativePath(base_path, path_to_make_relative):
       assert len(path) >= len(prefix)
       # If the prefix the same length as the path,
       # then the prefix must be a directory (since one
-      # of the arguements should be a directory).
+      # of the arguments should be a directory).
       if path == prefix:
         continue
       # if the character after the prefix in the path

@@ -136,7 +136,7 @@ public abstract class CommandLine {
     public static void initFromFile(String file) {
         // Just field trials can take upto 10K of command line.
         char[] buffer = readUtf8FileFullyCrashIfTooBig(file, 64 * 1024);
-        init(buffer == null ? null : tokenizeQuotedAruments(buffer));
+        init(buffer == null ? null : tokenizeQuotedArguments(buffer));
     }
 
     /**
@@ -171,7 +171,7 @@ public abstract class CommandLine {
      * @param buffer A command line in command line file format as described above.
      * @return the tokenized arguments, suitable for passing to init().
      */
-    public static String[] tokenizeQuotedAruments(char[] buffer) {
+    public static String[] tokenizeQuotedArguments(char[] buffer) {
         ArrayList<String> args = new ArrayList<String>();
         StringBuilder arg = null;
         final char noQuote = '\0';

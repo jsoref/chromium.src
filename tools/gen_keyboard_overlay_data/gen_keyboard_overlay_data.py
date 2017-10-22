@@ -227,7 +227,7 @@ def ToKeys(hotkey):
 
 
 def ParseOptions():
-  """Parses the input arguemnts and returns options."""
+  """Parses the input arguments and returns options."""
   # default_username = os.getusername() + '@google.com';
   default_username = '%s@google.com' % os.environ.get('USER')
   parser = optparse.OptionParser()

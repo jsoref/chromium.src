@@ -32,7 +32,7 @@ class XmlWriterBaseTest(unittest.TestCase):
     return text_re.sub('>\g<1></', raw_pretty_xml)
 
   def AssertXMLEquals(self, output, expected_output):
-    '''Asserts if the passed XML arguements are equal.
+    '''Asserts if the passed XML arguments are equal.
     Args:
       output: Actual XML text.
       expected_output: Expected XML text.

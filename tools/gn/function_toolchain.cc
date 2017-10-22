@@ -323,7 +323,7 @@ Toolchain overview
   When a target has a dependency on a target using different toolchain (see "gn
   help labels" for how to specify this), GN will start a build using that
   secondary toolchain to resolve the target. GN will load the build config file
-  with the build arguements overridden as specified in the toolchain_args.
+  with the build arguments overridden as specified in the toolchain_args.
   Because the default toolchain is already known, calls to
   set_default_toolchain() are ignored.
 

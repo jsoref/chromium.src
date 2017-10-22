@@ -812,7 +812,7 @@ if (!YAHOO.util.Event) {
              *
              * <p>The callback is a CustomEvent, so the signature is:</p>
              * <p>type &lt;string&gt;, args &lt;array&gt;, customobject &lt;object&gt;</p>
-             * <p>For DOMReady events, there are no fire argments, so the
+             * <p>For DOMReady events, there are no fire arguments, so the
              * signature is:</p>
              * <p>"DOMReady", [], obj</p>
              *

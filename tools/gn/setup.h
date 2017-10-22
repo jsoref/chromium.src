@@ -86,7 +86,7 @@ class Setup {
   LoaderImpl* loader() { return loader_.get(); }
 
   // Name of the file in the root build directory that contains the build
-  // arguements.
+  // arguments.
   static const char kBuildArgFileName[];
 
  private:

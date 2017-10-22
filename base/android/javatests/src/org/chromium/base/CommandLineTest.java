@@ -80,7 +80,7 @@ public class CommandLineTest {
     }
 
     void checkTokenizer(String[] expected, String toParse) {
-        String[] actual = CommandLine.tokenizeQuotedAruments(toParse.toCharArray());
+        String[] actual = CommandLine.tokenizeQuotedArguments(toParse.toCharArray());
         Assert.assertEquals(expected.length, actual.length);
         for (int i = 0; i < expected.length; ++i) {
             Assert.assertEquals("comparing element " + i, expected[i], actual[i]);
@@ -100,7 +100,7 @@ public class CommandLineTest {
     @SmallTest
     @Feature({"Android-AppBase"})
     public void testBufferInitialization() {
-        CommandLine.init(CommandLine.tokenizeQuotedAruments(INIT_SWITCHES_BUFFER));
+        CommandLine.init(CommandLine.tokenizeQuotedArguments(INIT_SWITCHES_BUFFER));
         checkInitSwitches();
         checkSettingThenGetting();
     }

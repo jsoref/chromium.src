@@ -92,7 +92,7 @@ class CONTENT_EXPORT OneShotAccessibilityTreeSearch {
 
   // Sets the node where the search starts. The first potential match will
   // be the one immediately following this one. This node will be used as
-  // the first arguement to any predicates.
+  // the first argument to any predicates.
   //
   // If not specified, |scope| will be used.
   void SetStartNode(BrowserAccessibility* start_node);

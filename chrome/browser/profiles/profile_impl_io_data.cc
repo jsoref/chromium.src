@@ -628,7 +628,7 @@ net::URLRequestContext* ProfileImplIOData::InitializeAppRequestContext(
 
   // Build a new HttpNetworkSession that uses the new ChannelIDService.
   // TODO(mmenke):  It's weird to combine state from
-  // main_request_context_storage() objects and the argumet to this method,
+  // main_request_context_storage() objects and the argument to this method,
   // |main_context|.  Remove |main_context| as an argument, and just use
   // main_context() instead.
   net::HttpNetworkSession* network_session =

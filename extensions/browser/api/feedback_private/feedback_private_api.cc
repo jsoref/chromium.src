@@ -332,7 +332,7 @@ FeedbackPrivateLogSrtPromptResultFunction::Run() {
       base::RecordAction(base::UserMetricsAction("Feedback.SrtPromptClosed"));
       break;
     default:
-      return RespondNow(Error("Invalid arugment."));
+      return RespondNow(Error("Invalid argument."));
   }
   return RespondNow(NoArguments());
 }

@@ -544,7 +544,7 @@ E.g.,
 
     Args:
       options: Command line arguments to run benchmark.
-      extra_args: Extra arugments to run benchmark.
+      extra_args: Extra arguments to run benchmark.
 
     Returns:
      If successful returns 0, otherwise 1.

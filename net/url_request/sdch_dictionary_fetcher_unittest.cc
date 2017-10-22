@@ -234,7 +234,7 @@ class SDCHTestRequestInterceptor : public URLRequestInterceptor {
 //   url requests in this file).  This class is initialized with
 //   the HttpResponseInfo to return (if any), as well as a callback
 //   that is called when the class is destroyed.  That callback
-//   takes as arguemnt the load flags used for the request the
+//   takes as argument the load flags used for the request the
 //   job was created for.
 // * SDCHTestRequestInterceptor: This class is a
 //   URLRequestInterceptor that generates either the class above or an

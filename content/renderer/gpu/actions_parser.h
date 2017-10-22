@@ -18,7 +18,7 @@ class ListValue;
 
 namespace content {
 
-// This class takes the arugment of json format from
+// This class takes the argument of json format from
 // GpuBenchmarking::PointerActionSequence, parses it and warps
 // it into a SyntheticPointerActionListParams object.
 class ActionsParser {

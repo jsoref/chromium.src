@@ -654,7 +654,7 @@ class PosixStubWriter(object):
       arg_list = ''
 
     if arg_list != '' and len(arguments) > 1 and arguments[-1] == '...':
-      # If the last argment is ... then this is a variadic function.
+      # If the last argument is ... then this is a variadic function.
       if return_prefix != '':
         return VARIADIC_STUB_FUNCTION_DEFINITION % {
             'return_type': signature['return_type'],

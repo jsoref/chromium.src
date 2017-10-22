@@ -75,7 +75,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothMediaEndpointServiceProvider {
     virtual ~Delegate() {}
 
     // SelectConfigurationCallback is used for the SelectConfiguration() method,
-    // it should be called with two arguements, the |configuration| which is
+    // it should be called with two arguments, the |configuration| which is
     // agreed by the application and the |length| of |configuration|.
     typedef base::Callback<void(const std::vector<uint8_t>&)>
         SelectConfigurationCallback;
