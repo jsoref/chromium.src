@@ -74,7 +74,7 @@ bool g_url_requests_started = false;
 // True if cookies are accepted by default.
 bool g_default_can_use_cookies = true;
 
-// When the URLRequest first assempts load timing information, it has the times
+// When the URLRequest first attempts load timing information, it has the times
 // at which each event occurred.  The API requires the time which the request
 // was blocked on each phase.  This function handles the conversion.
 //
