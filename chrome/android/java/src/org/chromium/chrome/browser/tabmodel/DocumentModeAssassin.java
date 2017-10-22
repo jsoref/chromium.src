@@ -68,7 +68,7 @@ public class DocumentModeAssassin {
     public static class DocumentModeAssassinObserver {
         /**
          * Called on the UI thread when the DocumentModeAssassin has progressed along its pipeline,
-         * and when the DocumentModeAssasssinObserver is first added to the DocumentModeAssassin.
+         * and when the DocumentModeAssassinObserver is first added to the DocumentModeAssassin.
          *
          * @param newStage New stage of the pipeline.
          */
