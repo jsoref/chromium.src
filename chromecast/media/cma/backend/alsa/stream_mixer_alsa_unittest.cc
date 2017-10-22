@@ -126,7 +126,7 @@ const int32_t kTestData[NUM_DATA_SETS][NUM_SAMPLES] = {
   }
 };
 
-// Compensate for integer arithmatic errors.
+// Compensate for integer arithmetic errors.
 const int kMaxDelayErrorUs = 2;
 
 const char kDelayModuleSolib[] = "delay.so";

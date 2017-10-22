@@ -36,7 +36,7 @@ class BASE_EXPORT SampleMap : public HistogramSamples {
   std::unique_ptr<SampleCountIterator> Iterator() const override;
 
  protected:
-  // Performs arithemetic. |op| is ADD or SUBTRACT.
+  // Performs arithmetic. |op| is ADD or SUBTRACT.
   bool AddSubtractImpl(SampleCountIterator* iter, Operator op) override;
 
  private:

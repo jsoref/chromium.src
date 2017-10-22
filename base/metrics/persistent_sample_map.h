@@ -59,7 +59,7 @@ class BASE_EXPORT PersistentSampleMap : public HistogramSamples {
       HistogramBase::Sample value);
 
  protected:
-  // Performs arithemetic. |op| is ADD or SUBTRACT.
+  // Performs arithmetic. |op| is ADD or SUBTRACT.
   bool AddSubtractImpl(SampleCountIterator* iter, Operator op) override;
 
   // Gets a pointer to a "count" corresponding to a given |value|. Returns NULL
