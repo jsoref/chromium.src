@@ -15,7 +15,7 @@
 //
 // [1]
 // On iPhone the assistive view is a keyboard accessory view.
-// On iPad, the assitive view is an inputAssistantItem to handle split
+// On iPad, the assistive view is an inputAssistantItem to handle split
 // keyboards.
 void ConfigureAssistiveKeyboardViews(
     UITextField* textField,
