@@ -3294,7 +3294,7 @@ TEST_F(SchedulerTest, AbortedCommitsTriggerImplSideInvalidations) {
   EXPECT_ACTIONS("ScheduledActionDrawIfPossible");
 }
 
-// The three letters appeneded to each version of this test mean the following:s
+// The three letters appended to each version of this test mean the following:s
 // tree_priority: B = both trees same priority; A = active tree priority;
 // scroll_handler_state: H = affects scroll handler; N = does not affect scroll
 // handler;
