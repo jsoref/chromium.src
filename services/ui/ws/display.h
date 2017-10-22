@@ -180,7 +180,7 @@ class Display : public PlatformDisplayDelegate,
   // pixels.
   void CreateRootWindow(const gfx::Size& size);
 
-  // Applyes the cursor scale and rotation to the PlatformDisplay.
+  // Applies the cursor scale and rotation to the PlatformDisplay.
   void UpdateCursorConfig();
 
   // PlatformDisplayDelegate:
