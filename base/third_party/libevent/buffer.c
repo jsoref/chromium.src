@@ -471,7 +471,7 @@ evbuffer_read(struct evbuffer *buf, int fd, int howmuch)
 		 * reading.  We do not want to exhaust resources
 		 * before the reader has a chance to do something
 		 * about it.  If the reader does not tell us how much
-		 * data we should read, we artifically limit it.
+		 * data we should read, we artificially limit it.
 		 */
 		if ((size_t)n > buf->totallen << 2)
 			n = buf->totallen << 2;

@@ -170,7 +170,7 @@ public class InstalledAppProviderImpl implements InstalledAppProvider {
     }
 
     /**
-     * Determines how long to artifically delay for, for a particular package name.
+     * Determines how long to artificially delay for, for a particular package name.
      */
     private int calculateDelayForPackageMs(String packageName) {
         // Important timing-attack prevention measure: delay by a pseudo-random amount of time, to

@@ -50,7 +50,7 @@ class OneWayLink : public Actor, public ConstrainedPortInterface {
   void ScheduleNextPacketDeparture();
 
   // Get the value of a random delay imposed on each packet in order to avoid
-  // artifical synchronization artifacts during the simulation.
+  // artificial synchronization artifacts during the simulation.
   QuicTime::Delta GetRandomDelay(QuicTime::Delta transfer_time);
 
   UnconstrainedPortInterface* sink_;

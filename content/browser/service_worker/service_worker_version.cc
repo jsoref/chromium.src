@@ -1735,7 +1735,7 @@ void ServiceWorkerVersion::RecordStartWorkerResult(
   EmbeddedWorkerInstance::StartingPhase phase =
       EmbeddedWorkerInstance::NOT_STARTING;
   EmbeddedWorkerStatus running_status = embedded_worker_->status();
-  // Build an artifical JavaScript exception to show in the ServiceWorker
+  // Build an artificial JavaScript exception to show in the ServiceWorker
   // log for developers; it's not user-facing so it's not a localized resource.
   std::string message = "ServiceWorker startup timed out. ";
   if (running_status != EmbeddedWorkerStatus::STARTING) {

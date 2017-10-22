@@ -5855,7 +5855,7 @@ TEST_F(SpdyNetworkTransactionTest, WindowUpdateOverflow) {
 // callback would block.  Therefore we call MessageLoop::RunUntilIdle()
 // which returns after performing all possible writes.  We use DCHECKS to
 // ensure that last data frame is still there and stream has stalled.
-// After that, next read is artifically enforced, which causes a
+// After that, next read is artificially enforced, which causes a
 // WINDOW_UPDATE to be read and I/O process resumes.
 TEST_F(SpdyNetworkTransactionTest, FlowControlStallResume) {
   const int32_t initial_window_size = kDefaultInitialWindowSize;

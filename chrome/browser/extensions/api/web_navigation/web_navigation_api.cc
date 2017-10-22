@@ -310,7 +310,7 @@ void WebNavigationTabObserver::DocumentLoadedInFrame(
     return;
 
   // The load might already have finished by the time we finished parsing. For
-  // compatibility reasons, we artifically delay the load completed signal until
+  // compatibility reasons, we artificially delay the load completed signal until
   // after parsing was completed.
   helpers::DispatchOnCompleted(web_contents(),
                                render_frame_host,
@@ -335,7 +335,7 @@ void WebNavigationTabObserver::DidFinishLoad(
     return;
 
   // The load might already have finished by the time we finished parsing. For
-  // compatibility reasons, we artifically delay the load completed signal until
+  // compatibility reasons, we artificially delay the load completed signal until
   // after parsing was completed.
   if (!navigation_state_.GetParsingFinished(render_frame_host))
     return;
