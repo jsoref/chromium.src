@@ -34,7 +34,7 @@ import java.util.Set;
  * Similarly, uses of these annotations on a test method will take precedence over uses on the
  * containing class.
  * <p>
- * These annonations may also be used on Junit4 Rule classes and on their base classes. Note,
+ * These annotations may also be used on Junit4 Rule classes and on their base classes. Note,
  * however that the annotation processor only looks at the declared type of the Rule, not its actual
  * type, so in, for example:
  *

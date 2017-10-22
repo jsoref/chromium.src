@@ -18,7 +18,7 @@ namespace {
 
 const char* HELP_TEXT = R"(
 Traffic Annotation Auditor
-Extracts network traffic annotaions from the repository, audits them for errors
+Extracts network traffic annotations from the repository, audits them for errors
 and coverage, and produces reports.
 
 Usage: traffic_annotation_auditor [OPTION]... [path_filters]

@@ -1,5 +1,5 @@
 # This is a comma separated file, specifying the safe list for network traffic
-# anntotation auditor. Refer to AuditorException::ExceptionType in
+# annotation auditor. Refer to AuditorException::ExceptionType in
 # 'tools/traffic_annotation/auditor/traffic_annotation_auditor.h' for types of
 # exceptions.
 all,tools

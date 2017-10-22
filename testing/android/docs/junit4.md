@@ -163,7 +163,7 @@ command line flags propogate through the hierarchy of rules. See, for example, [
 
 Note:- This has only recently been implemented, so is not yet used in all tests. See [this bug][12]
 
-The CommandLineFlags annonations are more fully documented in the [CommandLineFlags class][13]
+The CommandLineFlags annotations are more fully documented in the [CommandLineFlags class][13]
 
 ## Common Errors
 

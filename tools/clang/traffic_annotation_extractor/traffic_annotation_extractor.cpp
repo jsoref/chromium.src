@@ -230,7 +230,7 @@ class NetworkAnnotationTagCallback : public MatchFinder::MatchCallback {
       collector_->assignments.push_back(instance);
   }
 
-  // Stores a value assignment to |unique_id_hash_code| of a mutable annotaton.
+  // Stores a value assignment to |unique_id_hash_code| of a mutable annotation.
   void AddAssignment(const clang::MemberExpr* member_expr,
                      const MatchFinder::MatchResult& result) {
     Location instance;

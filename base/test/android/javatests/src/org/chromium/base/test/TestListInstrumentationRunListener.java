@@ -89,7 +89,7 @@ public class TestListInstrumentationRunListener extends InstrumentationRunListen
     }
 
     /**
-     * Create a JSONObject that represent a collection of anntations.
+     * Create a JSONObject that represent a collection of annotations.
      *
      * For example, for the following group of annotations for ExampleClass
      * <code>

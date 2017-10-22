@@ -765,12 +765,12 @@ IN_PROC_BROWSER_TEST_P(InputMethodEngineBrowserTest,
         "    candidate: 'CANDIDATE_3',"
         "    id: 3,"
         "    label: 'LABEL_3',"
-        "    annotation: 'ANNOTACTION_3'"
+        "    annotation: 'ANNOTATION_3'"
         "    },{"
         "    candidate: 'CANDIDATE_4',"
         "    id: 4,"
         "    label: 'LABEL_4',"
-        "    annotation: 'ANNOTACTION_4',"
+        "    annotation: 'ANNOTATION_4',"
         "    usage: {"
         "      title: 'TITLE_4',"
         "      body: 'BODY_4'"
@@ -808,13 +808,13 @@ IN_PROC_BROWSER_TEST_P(InputMethodEngineBrowserTest,
     EXPECT_EQ(base::UTF8ToUTF16("CANDIDATE_3"),
               table.candidates().at(2).value);
     EXPECT_EQ(base::UTF8ToUTF16("LABEL_3"), table.candidates().at(2).label);
-    EXPECT_EQ(base::UTF8ToUTF16("ANNOTACTION_3"),
+    EXPECT_EQ(base::UTF8ToUTF16("ANNOTATION_3"),
               table.candidates().at(2).annotation);
 
     EXPECT_EQ(base::UTF8ToUTF16("CANDIDATE_4"),
               table.candidates().at(3).value);
     EXPECT_EQ(base::UTF8ToUTF16("LABEL_4"), table.candidates().at(3).label);
-    EXPECT_EQ(base::UTF8ToUTF16("ANNOTACTION_4"),
+    EXPECT_EQ(base::UTF8ToUTF16("ANNOTATION_4"),
               table.candidates().at(3).annotation);
     EXPECT_EQ(base::UTF8ToUTF16("TITLE_4"),
               table.candidates().at(3).description_title);

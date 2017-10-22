@@ -35,7 +35,7 @@ _GIT_TIME_FORMAT = '%Y-%m-%dT%H:%M:%S'
 
 
 def _GetBugId(test_annotations):
-  """Find and return the test bug id from its annoation message elements"""
+  """Find and return the test bug id from its annotation message elements"""
   # TODO(yolandyan): currently the script only supports on bug id per method,
   # add support for multiple bug id
   for content in test_annotations.itervalues():

@@ -165,7 +165,7 @@ void GetBitmap(
   ...
 }
 
-// Example for 1xN partial annoations where the partial annotation is defined in
+// Example for 1xN partial annotations where the partial annotation is defined in
 // UploadLog and two completing annotations are defined
 // in GetNetworkTrafficAnnotation. The partial annotation is missing |sender|
 // and |description| fields and is completed in GetNetworkTrafficAnnotation.
