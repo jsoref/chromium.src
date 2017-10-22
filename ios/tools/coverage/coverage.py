@@ -277,7 +277,7 @@ def _ParseCommandArguments():
                                'to specific directories, and the default value '
                                'is \'ios/\'. \n'
                                'NOTE: if this value is defined, it will '
-                               'override instead of appeding to the defaults.')
+                               'override instead of appending to the defaults.')
 
   arg_parser.add_argument('-j', '--jobs', type=int, default=None,
                           help='Run N jobs to build in parallel. If not '
