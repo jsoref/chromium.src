@@ -257,7 +257,7 @@ class BookmarkModelAssociator : public syncer::AssociatorInterface {
   void ApplyDeletesFromSyncJournal(syncer::BaseTransaction* trans,
                                    Context* context);
 
-  // The main part of the association process that associatiates
+  // The main part of the association process that associates
   // native nodes that are children of |parent_node| with sync nodes with IDs
   // from |sync_ids|.
   syncer::SyncError BuildAssociations(

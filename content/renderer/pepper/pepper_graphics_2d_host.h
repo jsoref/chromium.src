@@ -62,7 +62,7 @@ class CONTENT_EXPORT PepperGraphics2DHost
   bool IsGraphics2DHost() override;
 
   bool ReadImageData(PP_Resource image, const PP_Point* top_left);
-  // Assciates this device with the given plugin instance. You can pass NULL
+  // Associates this device with the given plugin instance. You can pass NULL
   // to clear the existing device. Returns true on success. In this case, a
   // repaint of the page will also be scheduled. Failure means that the device
   // is already bound to a different instance, and nothing will happen.
