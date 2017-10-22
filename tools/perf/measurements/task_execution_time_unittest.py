@@ -60,7 +60,7 @@ class TaskExecutionTimeUnitTest(page_test_test_case.PageTestTestCase):
 
        If the code has been refactored and these keywords no longer exist
        the code that relies on them in task_execution_time.py should be
-       updated to use the appropriate technique for assertaining this data
+       updated to use the appropriate technique for ascertaining this data
        (and this test changed in the same way).
     """
     self._GenerateDataForEmptyPageSet()
