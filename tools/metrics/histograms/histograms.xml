@@ -16893,7 +16893,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
     Note that this histogram tracks whether the setting under Settings ~&gt;
     Security ~&gt; Trust agents ~&gt; Smart Lock (Google) (or any other trust
     agent) is enabled. The Smart Lock trust agent is enabled by default for
-    users who have ascure lock screen. This metric does _not_ measure whether
+    users who have a secure lock screen. This metric does _not_ measure whether
     users have any Smart Lock trustlets enabled.
   </details>
 </histogram>
