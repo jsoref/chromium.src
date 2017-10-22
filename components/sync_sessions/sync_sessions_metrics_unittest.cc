@@ -155,7 +155,7 @@ TEST_F(SyncSessionsMetricsTest, OrderedSessions) {
 TEST_F(SyncSessionsMetricsTest, NonOrderedSessions) {
   // While 2 is not the max, it should give up when it sees the tab at index 1.
   // This is breaking the assumptions of the logic we're testing, and thus we
-  // expect to return an incorrect ansewr. What this test is really verifying
+  // expect to return an incorrect answer. What this test is really verifying
   // is that the logic that finds the most recent timestamp is is exiting early
   // instead of inefficiently examining all foreign tabs.
   PushTab(0, 0, SecondsFromEpoch(2));
