@@ -158,7 +158,7 @@ public class AndroidKeyStore {
      *
      * This assumes that the target device uses a vanilla AOSP
      * implementation of its java.security classes, which is also
-     * based on OpenSSL (fortunately, no OEM has apperently changed to
+     * based on OpenSSL (fortunately, no OEM has apparently changed to
      * a different implementation, according to the Android team).
      *
      * Note that the object returned was created with the platform version of
