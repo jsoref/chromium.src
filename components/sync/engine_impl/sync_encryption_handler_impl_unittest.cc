@@ -728,7 +728,7 @@ TEST_F(SyncEncryptionHandlerImplTest, MigrateOnDecryptImplicitPass) {
     encryption_handler()->ApplyNigoriUpdate(nigori, trans.GetWrappedTrans());
     nigori_node.SetNigoriSpecifics(nigori);
   }
-  // Run any tasks posted via AppplyNigoriUpdate.
+  // Run any tasks posted via ApplyNigoriUpdate.
   PumpLoop();
   EXPECT_FALSE(encryption_handler()->MigratedToKeystore());
   Mock::VerifyAndClearExpectations(observer());
@@ -781,7 +781,7 @@ TEST_F(SyncEncryptionHandlerImplTest, MigrateOnDecryptCustomPass) {
     encryption_handler()->ApplyNigoriUpdate(nigori, trans.GetWrappedTrans());
     nigori_node.SetNigoriSpecifics(nigori);
   }
-  // Run any tasks posted via AppplyNigoriUpdate.
+  // Run any tasks posted via ApplyNigoriUpdate.
   PumpLoop();
   EXPECT_FALSE(encryption_handler()->MigratedToKeystore());
   Mock::VerifyAndClearExpectations(observer());
@@ -1045,7 +1045,7 @@ TEST_F(SyncEncryptionHandlerImplTest, ReceiveMigratedNigoriKeystorePass) {
     encryption_handler()->ApplyNigoriUpdate(nigori, trans.GetWrappedTrans());
     nigori_node.SetNigoriSpecifics(nigori);
   }
-  // Run any tasks posted via AppplyNigoriUpdate.
+  // Run any tasks posted via ApplyNigoriUpdate.
   PumpLoop();
   Mock::VerifyAndClearExpectations(observer());
 
@@ -1111,7 +1111,7 @@ TEST_F(SyncEncryptionHandlerImplTest, ReceiveMigratedNigoriFrozenImplicitPass) {
     encryption_handler()->ApplyNigoriUpdate(nigori, trans.GetWrappedTrans());
     nigori_node.SetNigoriSpecifics(nigori);
   }
-  // Run any tasks posted via AppplyNigoriUpdate.
+  // Run any tasks posted via ApplyNigoriUpdate.
   PumpLoop();
   Mock::VerifyAndClearExpectations(observer());
 
@@ -1184,7 +1184,7 @@ TEST_F(SyncEncryptionHandlerImplTest, ReceiveMigratedNigoriCustomPass) {
     encryption_handler()->ApplyNigoriUpdate(nigori, trans.GetWrappedTrans());
     nigori_node.SetNigoriSpecifics(nigori);
   }
-  // Run any tasks posted via AppplyNigoriUpdate.
+  // Run any tasks posted via ApplyNigoriUpdate.
   PumpLoop();
   Mock::VerifyAndClearExpectations(observer());
 
@@ -1441,7 +1441,7 @@ TEST_F(SyncEncryptionHandlerImplTest, SetKeystoreAfterReceivingMigratedNigori) {
     encryption_handler()->ApplyNigoriUpdate(nigori, trans.GetWrappedTrans());
     nigori_node.SetNigoriSpecifics(nigori);
   }
-  // Run any tasks posted via AppplyNigoriUpdate.
+  // Run any tasks posted via ApplyNigoriUpdate.
   PumpLoop();
   EXPECT_TRUE(encryption_handler()->MigratedToKeystore());
   EXPECT_TRUE(GetCryptographer()->has_pending_keys());
