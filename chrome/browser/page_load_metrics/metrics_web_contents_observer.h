@@ -45,7 +45,7 @@ class MetricsWebContentsObserver
  public:
   // TestingObserver allows tests to observe MetricsWebContentsObserver state
   // changes. Tests may use TestingObserver to wait until certain state changes,
-  // such as the arrivial of PageLoadTiming messages from the render process,
+  // such as the arrival of PageLoadTiming messages from the render process,
   // have been observed.
   class TestingObserver {
    public:
