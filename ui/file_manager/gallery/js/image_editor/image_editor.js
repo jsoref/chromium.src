@@ -192,7 +192,7 @@ ImageEditor.prototype.recordToolUse = function(name) {
  * Content update handler.
  * @private
  */
-ImageEditor.prototype.calculateModeApplicativity_ = function() {
+ImageEditor.prototype.calculateModeApplicability_ = function() {
   for (var i = 0; i != this.modes_.length; i++) {
     var mode = this.modes_[i];
     ImageUtil.setAttribute(assert(mode.button_), 'disabled',
@@ -304,7 +304,7 @@ ImageEditor.prototype.undo = function() {
   this.leaveModeInternal_(false, false /* not to switch mode */);
   this.commandQueue_.undo();
   this.updateUndoRedo();
-  this.calculateModeApplicativity_();
+  this.calculateModeApplicability_();
 };
 
 /**
@@ -317,7 +317,7 @@ ImageEditor.prototype.redo = function() {
   this.leaveModeInternal_(false, false /* not to switch mode */);
   this.commandQueue_.redo();
   this.updateUndoRedo();
-  this.calculateModeApplicativity_();
+  this.calculateModeApplicability_();
 };
 
 /**
@@ -449,7 +449,7 @@ ImageEditor.prototype.setUpMode_ = function(mode) {
 
   this.currentMode_.setUp();
 
-  this.calculateModeApplicativity_();
+  this.calculateModeApplicability_();
   if (this.currentMode_.instant) {  // Instant tool.
     this.leaveModeInternal_(true, false /* not to switch mode */);
     return;
@@ -642,7 +642,7 @@ ImageEditor.prototype.onDoubleTap_ = function(x, y) {
  * Called when the user starts editing image.
  */
 ImageEditor.prototype.onStartEditing = function() {
-  this.calculateModeApplicativity_();
+  this.calculateModeApplicability_();
 };
 
 /**
