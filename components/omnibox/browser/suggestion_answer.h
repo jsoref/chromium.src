@@ -89,7 +89,7 @@ class SuggestionAnswer {
     FRIEND_TEST_ALL_PREFIXES(SuggestionAnswerTest, DifferentValuesAreUnequal);
 
     // No DISALLOW_COPY_AND_ASSIGN since we depend on the copy constructor in
-    // SuggestionAnswer::copy and the assigment operator as values in vector.
+    // SuggestionAnswer::copy and the assignment operator as values in vector.
   };
 
   class ImageLine {

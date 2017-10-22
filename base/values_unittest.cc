@@ -166,7 +166,7 @@ TEST(ValuesTest, ConstructListFromStorage) {
   }
 }
 
-// Group of tests for the copy constructors and copy-assigmnent. For equality
+// Group of tests for the copy constructors and copy-assignment. For equality
 // checks comparisons of the interesting fields are done instead of relying on
 // Equals being correct.
 TEST(ValuesTest, CopyBool) {
@@ -269,7 +269,7 @@ TEST(ValuesTest, CopyList) {
   EXPECT_EQ(value, blank);
 }
 
-// Group of tests for the move constructors and move-assigmnent.
+// Group of tests for the move constructors and move-assignment.
 TEST(ValuesTest, MoveBool) {
   Value true_value(true);
   Value moved_true_value(std::move(true_value));

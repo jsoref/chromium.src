@@ -15850,8 +15850,8 @@ uploading your change for review.  These are checked by presubmit scripts.
   <int value="1761" label="BaseWithNewlinesInTarget"/>
   <int value="1762" label="BaseWithOpenBracketInTarget"/>
   <int value="1763" label="BaseWouldBeBlockedByDefaultSrc"/>
-  <int value="1764" label="V8AssigmentExpressionLHSIsCallInSloppy"/>
-  <int value="1765" label="V8AssigmentExpressionLHSIsCallInStrict"/>
+  <int value="1764" label="V8AssignmentExpressionLHSIsCallInSloppy"/>
+  <int value="1765" label="V8AssignmentExpressionLHSIsCallInStrict"/>
   <int value="1766" label="V8PromiseConstructorReturnedUndefined"/>
   <int value="1767" label="FormSubmittedWithUnclosedFormControl"/>
   <int value="1768" label="DocumentCompleteURLHTTPContainingNewline"/>

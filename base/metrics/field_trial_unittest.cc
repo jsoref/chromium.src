@@ -183,7 +183,7 @@ TEST_F(FieldTrialTest, FiftyFiftyProbability) {
     scoped_refptr<FieldTrial> trial =
         CreateFieldTrial(name, 2, default_group_name, NULL);
     trial->AppendGroup("first", 1);  // 50% chance of being chosen.
-    // If group_ is kNotFinalized, then a group assignement hasn't been done.
+    // If group_ is kNotFinalized, then a group assignment hasn't been done.
     if (trial->group_ != FieldTrial::kNotFinalized) {
       first_winner = true;
       continue;

@@ -19,7 +19,7 @@ class WebShareTarget {
   // Move constructor
   WebShareTarget(WebShareTarget&& other) = default;
 
-  // Move assigment
+  // Move assignment
   WebShareTarget& operator=(WebShareTarget&& other) = default;
 
   const std::string& name() const { return name_; }
