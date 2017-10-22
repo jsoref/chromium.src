@@ -633,7 +633,7 @@ TEST_F(AppCacheTest, IsNamespaceMatch) {
   prefix.namespace_url = GURL("http://foo.com/prefix");
   prefix.is_pattern = false;
   EXPECT_TRUE(prefix.IsMatch(
-      GURL("http://foo.com/prefix_and_anothing_goes")));
+      GURL("http://foo.com/prefix_and_anything_goes")));
   EXPECT_FALSE(prefix.IsMatch(
       GURL("http://foo.com/nope")));
 

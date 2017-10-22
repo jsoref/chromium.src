@@ -975,7 +975,7 @@ void AppMenu::ExecuteCommand(int command_id, int mouse_event_flags) {
       command_id == IDC_EXTENSIONS_OVERFLOW_MENU) {
     // These items are represented by child views. If ExecuteCommand is invoked
     // it means the user clicked on the area around the buttons and we should
-    // not do anyting.
+    // not do anything.
     return;
   }
 
