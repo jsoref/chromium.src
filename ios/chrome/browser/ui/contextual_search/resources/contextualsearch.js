@@ -393,7 +393,7 @@ ContextData.prototype.getSelectedText = function() {
 };
 
 /**
- * @return {JSONDictionary} Context data assembeld for return to native app.
+ * @return {JSONDictionary} Context data assembled for return to native app.
  */
 ContextData.prototype.returnContext = function() {
   var context = {'url' : this.url,
