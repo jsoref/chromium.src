@@ -30,7 +30,7 @@ class ConnectionExpireAlarm : public QuicAlarm::Delegate {
 
   void OnAlarm() override { connection_store_->OnExpirationTimeout(); }
 
-  // Disallow copy and asign.
+  // Disallow copy and assign.
   ConnectionExpireAlarm(const ConnectionExpireAlarm&) = delete;
   ConnectionExpireAlarm& operator=(const ConnectionExpireAlarm&) = delete;
 

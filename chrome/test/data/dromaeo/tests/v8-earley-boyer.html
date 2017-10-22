@@ -833,14 +833,14 @@ function sc_remq(o, l) {
 function sc_remqBang(o, l) {
     var dummy = { cdr : null };
     var tail = dummy;
-    var needsAssig = true;
+    var needsAssign = true;
     while (l !== null) {
 	if (l.car === o) {
-	    needsAssig = true;
+	    needsAssign = true;
 	} else {
-	    if (needsAssig) {
+	    if (needsAssign) {
 		tail.cdr = l;
-		needsAssig = false;
+		needsAssign = false;
 	    }
 	    tail = l;
 	}
@@ -868,14 +868,14 @@ function sc_delete(o, l) {
 function sc_deleteBang(o, l) {
     var dummy = { cdr : null };
     var tail = dummy;
-    var needsAssig = true;
+    var needsAssign = true;
     while (l !== null) {
 	if (sc_isEqual(l.car, o)) {
-	    needsAssig = true;
+	    needsAssign = true;
 	} else {
-	    if (needsAssig) {
+	    if (needsAssign) {
 		tail.cdr = l;
-		needsAssig = false;
+		needsAssign = false;
 	    }
 	    tail = l;
 	}
