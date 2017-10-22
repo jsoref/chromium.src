@@ -50,7 +50,7 @@ class ArchiveManagerTest : public testing::Test {
   const base::FilePath& temp_path() const { return temp_dir_.GetPath(); }
   CallbackStatus callback_status() const { return callback_status_; }
   const std::set<base::FilePath>& last_archive_paths() const {
-    return last_archvie_paths_;
+    return last_archive_paths_;
   }
   ArchiveManager::StorageStats last_storage_sizes() const {
     return last_storage_sizes_;
@@ -64,7 +64,7 @@ class ArchiveManagerTest : public testing::Test {
 
   std::unique_ptr<ArchiveManager> manager_;
   CallbackStatus callback_status_;
-  std::set<base::FilePath> last_archvie_paths_;
+  std::set<base::FilePath> last_archive_paths_;
   ArchiveManager::StorageStats last_storage_sizes_;
   std::unique_ptr<base::HistogramTester> histogram_tester_;
 };
@@ -87,7 +87,7 @@ void ArchiveManagerTest::PumpLoop() {
 
 void ArchiveManagerTest::ResetResults() {
   callback_status_ = CallbackStatus::NOT_CALLED;
-  last_archvie_paths_.clear();
+  last_archive_paths_.clear();
 }
 
 void ArchiveManagerTest::ResetManager(const base::FilePath& file_path) {
@@ -102,7 +102,7 @@ void ArchiveManagerTest::Callback(bool result) {
 
 void ArchiveManagerTest::GetAllArchivesCallback(
     const std::set<base::FilePath>& archive_paths) {
-  last_archvie_paths_ = archive_paths;
+  last_archive_paths_ = archive_paths;
 }
 
 void ArchiveManagerTest::GetStorageStatsCallback(

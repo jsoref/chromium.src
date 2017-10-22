@@ -182,7 +182,7 @@ function testMountArchiveAndUnmount(callback) {
         var numberOfVolumes = volumeManager.volumeInfoList.length;
 
         return new Promise(function(resolve, reject) {
-          // Mount an archieve
+          // Mount an archive
           volumeManager.mountArchive(
               'filesystem:chrome-extension://extensionid/external/' +
               'Downloads-test/foobar.zip',
@@ -208,7 +208,7 @@ function testMountArchiveAndUnmount(callback) {
                        volumeManager.volumeInfoList.length);
 
           return new Promise(function(resolve, reject) {
-            // Unmount the mounted archievea
+            // Unmount the mounted archive
             volumeManager.volumeInfoList.addEventListener('splice', function() {
               assertEquals(numberOfVolumes,
                   volumeManager.volumeInfoList.length);
