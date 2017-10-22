@@ -116,9 +116,9 @@ public class BookmarkModel extends BookmarkBridge {
      * bookmark list. The bookmarks are appended at the end.
      */
     public void moveBookmarks(List<BookmarkId> bookmarkIds, BookmarkId newParentId) {
-        int appenedIndex = getChildCount(newParentId);
+        int appendIndex = getChildCount(newParentId);
         for (int i = 0; i < bookmarkIds.size(); ++i) {
-            moveBookmark(bookmarkIds.get(i), newParentId, appenedIndex + i);
+            moveBookmark(bookmarkIds.get(i), newParentId, appendIndex + i);
         }
     }
 

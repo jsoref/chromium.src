@@ -3580,7 +3580,7 @@ TEST_F(PictureLayerImplTest, SharedQuadStateContainsMaxTilingScale) {
   AppendQuadsData data;
   active_layer()->AppendQuads(render_pass.get(), &data);
 
-  // SharedQuadState should have be of size 1, as we are doing AppenQuad once.
+  // SharedQuadState should have be of size 1, as we are doing AppendQuad once.
   EXPECT_EQ(1u, render_pass->shared_quad_state_list.size());
   // The quad_to_target_transform should be scaled by the
   // MaximumTilingContentsScale on the layer.

@@ -1043,7 +1043,7 @@ cr.define('cr.ui', function() {
         var listItem = this.cachedItems_[index] || this.createItem(dataItem);
         listItem.listIndex = index;
 
-        // If |listItems| is not on the list, apppends it to the list and sets
+        // If |listItems| is not on the list, appends it to the list and sets
         // the flag.
         if (!listItem.parentNode) {
           this.appendChild(listItem);

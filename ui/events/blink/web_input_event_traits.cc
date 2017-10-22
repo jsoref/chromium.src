@@ -24,7 +24,7 @@ using blink::WebTouchPoint;
 namespace ui {
 namespace {
 
-void ApppendEventDetails(const WebKeyboardEvent& event, std::string* result) {
+void AppendEventDetails(const WebKeyboardEvent& event, std::string* result) {
   StringAppendF(result,
                 "{\n WinCode: %d\n NativeCode: %d\n IsSystem: %d\n"
                 " Text: %s\n UnmodifiedText: %s\n}",
@@ -33,7 +33,7 @@ void ApppendEventDetails(const WebKeyboardEvent& event, std::string* result) {
                 reinterpret_cast<const char*>(event.unmodified_text));
 }
 
-void ApppendEventDetails(const WebMouseEvent& event, std::string* result) {
+void AppendEventDetails(const WebMouseEvent& event, std::string* result) {
   StringAppendF(result,
                 "{\n Button: %d\n Pos: (%f, %f)\n"
                 " GlobalPos: (%f, %f)\n Movement: (%d, %d)\n Clicks: %d\n}",
@@ -43,7 +43,7 @@ void ApppendEventDetails(const WebMouseEvent& event, std::string* result) {
                 event.click_count);
 }
 
-void ApppendEventDetails(const WebMouseWheelEvent& event, std::string* result) {
+void AppendEventDetails(const WebMouseWheelEvent& event, std::string* result) {
   StringAppendF(result,
                 "{\n Delta: (%f, %f)\n WheelTicks: (%f, %f)\n Accel: (%f, %f)\n"
                 " ScrollByPage: %d\n HasPreciseScrollingDeltas: %d\n"
@@ -55,7 +55,7 @@ void ApppendEventDetails(const WebMouseWheelEvent& event, std::string* result) {
                 event.momentum_phase);
 }
 
-void ApppendEventDetails(const WebGestureEvent& event, std::string* result) {
+void AppendEventDetails(const WebGestureEvent& event, std::string* result) {
   StringAppendF(
       result,
       "{\n Pos: (%d, %d)\n GlobalPos: (%d, %d)\n SourceDevice: %d\n"
@@ -66,7 +66,7 @@ void ApppendEventDetails(const WebGestureEvent& event, std::string* result) {
       event.data.scroll_update.previous_update_in_sequence_prevented);
 }
 
-void ApppendTouchPointDetails(const WebTouchPoint& point, std::string* result) {
+void AppendTouchPointDetails(const WebTouchPoint& point, std::string* result) {
   StringAppendF(result,
                 "  (ID: %d, State: %d, ScreenPos: (%f, %f), Pos: (%f, %f),"
                 " Radius: (%f, %f), Rot: %f, Force: %f,"
@@ -77,14 +77,14 @@ void ApppendTouchPointDetails(const WebTouchPoint& point, std::string* result) {
                 point.rotation_angle, point.force, point.tilt_x, point.tilt_y);
 }
 
-void ApppendEventDetails(const WebTouchEvent& event, std::string* result) {
+void AppendEventDetails(const WebTouchEvent& event, std::string* result) {
   StringAppendF(result,
                 "{\n Touches: %u, DispatchType: %d, CausesScrolling: %d,"
                 " uniqueTouchEventId: %u\n[\n",
                 event.touches_length, event.dispatch_type,
                 event.moved_beyond_slop_region, event.unique_touch_event_id);
   for (unsigned i = 0; i < event.touches_length; ++i)
-    ApppendTouchPointDetails(event.touches[i], result);
+    AppendTouchPointDetails(event.touches[i], result);
   result->append(" ]\n}");
 }
 
@@ -106,7 +106,7 @@ struct WebInputEventToString {
                   WebInputEvent::GetName(event.GetType()),
                   event.TimeStampSeconds(), event.GetModifiers());
     const EventType& typed_event = static_cast<const EventType&>(event);
-    ApppendEventDetails(typed_event, result);
+    AppendEventDetails(typed_event, result);
     return true;
   }
 };
