@@ -747,7 +747,7 @@ void ChromeMetricsServiceClient::CollectFinalHistograms() {
 void ChromeMetricsServiceClient::OnMemoryDetailCollectionDone() {
   DCHECK_CALLED_ON_VALID_SEQUENCE(sequence_checker_);
 
-  // This function should only be called as the callback from an ansynchronous
+  // This function should only be called as the callback from an asychronous
   // step.
   DCHECK(waiting_for_collect_final_metrics_step_);
 
@@ -792,7 +792,7 @@ void ChromeMetricsServiceClient::OnMemoryDetailCollectionDone() {
 void ChromeMetricsServiceClient::OnHistogramSynchronizationDone() {
   DCHECK_CALLED_ON_VALID_SEQUENCE(sequence_checker_);
 
-  // This function should only be called as the callback from an ansynchronous
+  // This function should only be called as the callback from an asychronous
   // step.
   DCHECK(waiting_for_collect_final_metrics_step_);
   DCHECK_GT(num_async_histogram_fetches_in_progress_, 0);

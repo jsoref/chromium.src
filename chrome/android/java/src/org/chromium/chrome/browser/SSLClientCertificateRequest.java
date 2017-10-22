@@ -43,7 +43,7 @@ public class SSLClientCertificateRequest {
     static final String TAG = "SSLClientCertificateRequest";
 
     /**
-     * Implementation for anynchronous task of handling the certificate request. This
+     * Implementation for asychronous task of handling the certificate request. This
      * AsyncTask retrieves the authentication material from the system key store.
      * The key store is accessed in background, as the APIs being exercised
      * may be blocking. The results are posted back to native on the UI thread.

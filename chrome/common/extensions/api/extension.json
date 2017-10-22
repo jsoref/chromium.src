@@ -14,7 +14,7 @@
         "type": "object",
         "optional": true,
         "deprecated": "Please use $(ref:runtime.lastError).",
-        "description": "Set for the lifetime of a callback if an ansychronous extension api has resulted in an error. If no error has occured lastError will be <var>undefined</var>.",
+        "description": "Set for the lifetime of a callback if an asychronous extension api has resulted in an error. If no error has occured lastError will be <var>undefined</var>.",
         "properties": {
           "message": { "type": "string", "description": "Description of the error that has taken place." }
         }
