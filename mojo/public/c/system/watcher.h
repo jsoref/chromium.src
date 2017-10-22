@@ -104,7 +104,7 @@ MOJO_SYSTEM_EXPORT MojoResult MojoWatch(MojoHandle watcher_handle,
 // Removes a watch from a watcher.
 //
 // This ensures that the watch is cancelled as soon as possible. Cancellation
-// may be deferred (or may even block) an aritrarily long time if the watch is
+// may be deferred (or may even block) an arbitrarily long time if the watch is
 // already dispatching one or more notifications.
 //
 // When cancellation is complete, the watcher's callback is invoked one final

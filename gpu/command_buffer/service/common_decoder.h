@@ -39,7 +39,7 @@ class GPU_EXPORT CommonDecoder {
   // API has functions that take a pointer to data.  A good example is OpenGL's
   // glBufferData. Because the data is separated between client and service,
   // there are 2 ways to get this data across. 1 is to put all the data in
-  // shared memory. The problem with this is the data can be arbitarily large
+  // shared memory. The problem with this is the data can be arbitrarily large
   // and the host OS may not support that much shared memory. Another solution
   // is to shuffle memory across a little bit at a time, collecting it on the
   // service side and when it is all there then call glBufferData. Buckets

@@ -255,7 +255,7 @@ const CGFloat kLineWidthAtApogee = 3;
     // |self| needs to know when the animations are finished. This is achieved
     // by having |self| be registered as a CAAnimationDelegate.
     // Because all animations have the same duration, any animation can be used.
-    // Arbitrarly use the |strokeStartAnimation| of the first dot.
+    // Arbitrarily use the |strokeStartAnimation| of the first dot.
     if (i == 0) {
       strokeStartAnimation.delegate = self;
     }
