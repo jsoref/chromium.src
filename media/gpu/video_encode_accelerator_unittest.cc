@@ -67,7 +67,7 @@ namespace {
 const VideoPixelFormat kInputFormat = PIXEL_FORMAT_I420;
 
 // The absolute differences between original frame and decoded frame usually
-// ranges aroud 1 ~ 7. So we pick 10 as an extreme value to detect abnormal
+// ranges around 1 ~ 7. So we pick 10 as an extreme value to detect abnormal
 // decoded frames.
 const double kDecodeSimilarityThreshold = 10.0;
 

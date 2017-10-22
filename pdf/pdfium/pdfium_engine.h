@@ -285,7 +285,7 @@ class PDFiumEngine : public PDFEngine,
   void AddFindResult(const PDFiumRange& result);
 
   // Search a page using PDFium's methods.  Doesn't work with unicode.  This
-  // function is just kept arount in case PDFium code is fixed.
+  // function is just kept around in case PDFium code is fixed.
   void SearchUsingPDFium(const base::string16& term,
                          bool case_sensitive,
                          bool first_search,

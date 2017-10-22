@@ -337,7 +337,7 @@ static void MaybeAppendWithLength(State *state, const char * const str,
   }
 }
 
-// A convenient wrapper arount MaybeAppendWithLength().
+// A convenient wrapper around MaybeAppendWithLength().
 static bool MaybeAppend(State *state, const char * const str) {
   if (state->append) {
     int length = StrLen(str);
