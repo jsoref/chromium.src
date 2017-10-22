@@ -31,7 +31,7 @@ NSString* const kFindInPageCloseButtonId = @"kFindInPageCloseButtonId";
 // Initializes all subviews.
 - (void)setupSubviews;
 // Sets up appearance of subviews, such as fonts, background colors.
-- (void)configureApperance:(BOOL)isDark;
+- (void)configureAppearance:(BOOL)isDark;
 // Convenience method that returns images for light and dark appearances.
 - (UIImage*)imageWithName:(NSString*)imageName isDark:(BOOL)isDark;
 
@@ -50,7 +50,7 @@ NSString* const kFindInPageCloseButtonId = @"kFindInPageCloseButtonId";
   self = [super initWithFrame:CGRectZero];
   if (self) {
     [self setupSubviews];
-    [self configureApperance:darkAppearance];
+    [self configureAppearance:darkAppearance];
   }
   return self;
 }
@@ -212,7 +212,7 @@ NSString* const kFindInPageCloseButtonId = @"kFindInPageCloseButtonId";
   [NSLayoutConstraint activateConstraints:constraints];
 }
 
-- (void)configureApperance:(BOOL)isDark {
+- (void)configureAppearance:(BOOL)isDark {
   [self.closeButton setImage:[self imageWithName:@"find_close" isDark:isDark]
                     forState:UIControlStateNormal];
   [self.closeButton
