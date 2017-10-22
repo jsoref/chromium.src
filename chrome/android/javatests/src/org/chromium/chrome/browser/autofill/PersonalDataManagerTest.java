@@ -222,7 +222,7 @@ public class PersonalDataManagerTest {
     @RetryOnFailure
     public void testMultilineStreetAddress()
             throws InterruptedException, ExecutionException, TimeoutException {
-        final String streetAddress1 = "Chez Mireille COPEAU Appartment. 2\n"
+        final String streetAddress1 = "Chez Mireille COPEAU Apartment. 2\n"
                 + "Entree A Batiment Jonquille\n"
                 + "25 RUE DE L'EGLISE";
         final String streetAddress2 = streetAddress1 + "\n"
