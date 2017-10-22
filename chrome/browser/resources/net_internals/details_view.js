@@ -19,7 +19,7 @@ var DetailsView = (function() {
     this.sourceEntries_ = [];
     // Map of source IDs to their corresponding DIVs.
     this.sourceIdToDivMap_ = {};
-    // True when there's an asychronous repaint outstanding.
+    // True when there's an asynchronous repaint outstanding.
     this.outstandingRepaint_ = false;
     // ID of source entry we should jump to after the oustanding repaint.
     // 0 if none, or there's no such repaint.

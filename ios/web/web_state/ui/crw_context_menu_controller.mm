@@ -92,7 +92,7 @@ void CancelTouches(UIGestureRecognizer* gesture_recognizer) {
   NSDictionary* _DOMElementForLastTouch;
   // Whether or not the cotext menu should be displayed as soon as the DOM
   // element details are returned. Since fetching the details from the |webView|
-  // of the element the user long pressed is asyncrounous, it may not be
+  // of the element the user long pressed is asynchronous, it may not be
   // complete by the time the context menu gesture recognizer is complete.
   // |_contextMenuNeedsDisplay| is set to YES to indicate the
   // |_contextMenuRecognizer| finished, but couldn't yet show the context menu

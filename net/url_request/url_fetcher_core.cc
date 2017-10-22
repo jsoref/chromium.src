@@ -519,7 +519,7 @@ void URLFetcherCore::StartOnIOThread() {
 
   // Create ChunkedUploadDataStream, if needed, so the consumer can start
   // appending data.  Have to do it here because StartURLRequest() may be called
-  // asynchonously.
+  // asynchronously.
   if (is_chunked_upload_) {
     chunked_stream_.reset(new ChunkedUploadDataStream(0));
     chunked_stream_writer_ = chunked_stream_->CreateWriter();

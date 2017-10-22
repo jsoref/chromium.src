@@ -32,7 +32,7 @@ class ImageDownloaderBase : public RenderFrameObserver,
 
   using DownloadCallback =
       base::Callback<void(int32_t, const std::vector<SkBitmap>&)>;
-  // Request to aynchronously download an image. When done, |callback| will be
+  // Request to asynchronously download an image. When done, |callback| will be
   // called.
   void DownloadImage(const GURL& url,
                      bool is_favicon,

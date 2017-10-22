@@ -71,7 +71,7 @@ class CONTENT_EXPORT SharedMemoryDataConsumerHandle final
   // writer should be used on the calling thread.
   SharedMemoryDataConsumerHandle(BackpressureMode mode,
                                  std::unique_ptr<Writer>* writer);
-  // |on_reader_detached| will be called aynchronously on the calling thread
+  // |on_reader_detached| will be called asynchronously on the calling thread
   // when the reader (including the handle) is detached (i.e. both the handle
   // and the reader are destructed). The callback will be reset in the internal
   // context when the writer is detached, i.e. |Close| or |Fail| is called,

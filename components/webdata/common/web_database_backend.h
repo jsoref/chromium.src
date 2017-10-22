@@ -59,7 +59,7 @@ class WEBDATA_EXPORT WebDatabaseBackend
 
   // Task wrappers to update requests and and notify |request_manager_|. These
   // are used in cases where the request is being made from the UI thread and an
-  // asyncronous callback is required to notify the client of |request|'s
+  // asynchronous callback is required to notify the client of |request|'s
   // completion.
   void DBWriteTaskWrapper(const WebDatabaseService::WriteTask& task,
                           std::unique_ptr<WebDataRequest> request);

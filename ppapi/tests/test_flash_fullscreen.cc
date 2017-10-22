@@ -98,7 +98,7 @@ std::string TestFlashFullscreen::TestNormalToFullscreenToNormal() {
     return ReportError("IsFullscreen() in fullscreen^2", false);
 
   // 3. Switch to normal.
-  // The transition is synchronous in-process and asynchornous out-of-process
+  // The transition is synchronous in-process and asynchronous out-of-process
   // because proxied IsFullscreen saves a roundtrip by relying on information
   // communicated via a previous call to DidChangeView.
   // Graphics devices can be bound right away.
@@ -129,7 +129,7 @@ std::string TestFlashFullscreen::TestNormalToFullscreenToNormal() {
   PASS();
 }
 
-// Transition to fullscreen is asynchornous ending at DidChangeView.
+// Transition to fullscreen is asynchronous ending at DidChangeView.
 // Transition to normal is synchronous in-process and asynchronous
 // out-of-process ending at DidChangeView.
 void TestFlashFullscreen::DidChangeView(const pp::View& view) {

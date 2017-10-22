@@ -117,7 +117,7 @@ class NET_EXPORT_PRIVATE MDnsClientImpl : public MDnsClient {
  public:
   // The core object exists while the MDnsClient is listening, and is deleted
   // whenever the number of listeners reaches zero. The deletion happens
-  // asychronously, so destroying the last listener does not immediately
+  // asynchronously, so destroying the last listener does not immediately
   // invalidate the core.
   class Core : public base::SupportsWeakPtr<Core>, MDnsConnection::Delegate {
    public:

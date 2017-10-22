@@ -4468,7 +4468,7 @@ registerLoadRequestForURL:(const GURL&)requestURL
 
   // If this is a placeholder navigation or if |navigation| has been previous
   // aborted, return without modifying the navigation states. The latter case
-  // seems to happen due to asychronous nature of WKWebView; sometimes
+  // seems to happen due to asynchronous nature of WKWebView; sometimes
   // |didCommitNavigation| callback arrives after |stopLoading| has been called.
   if (web::GetWebClient()->IsSlimNavigationManagerEnabled() &&
       (IsPlaceholderUrl(webViewURL) ||

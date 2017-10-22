@@ -305,7 +305,7 @@ void WizardController::Init(OobeScreen first_screen) {
   // enterprise-enrolled devices.
   //
   // TODO (ygorshenin@): implement handling of the local state
-  // corruption in the case of asynchronious loading.
+  // corruption in the case of asynchronous loading.
   policy::BrowserPolicyConnectorChromeOS* connector =
       g_browser_process->platform_part()->browser_policy_connector_chromeos();
   if (!connector->IsEnterpriseManaged()) {

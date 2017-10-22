@@ -52,7 +52,7 @@ class CONTENT_EXPORT InterstitialPageNavigatorImpl : public Navigator {
   NavigationControllerImpl* controller_;
 
   // Whether this interstitial is still enabled.  Becomes false when the
-  // interstitial page is asychronously deleting itself.
+  // interstitial page is asynchronously deleting itself.
   bool enabled_;
 
   DISALLOW_COPY_AND_ASSIGN(InterstitialPageNavigatorImpl);

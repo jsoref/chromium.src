@@ -37,7 +37,7 @@ class NET_EXPORT UploadElementReader {
   // Init() success results in resetting the state (i.e. the stream is rewound).
   //
   // Initializes the instance synchronously when possible, otherwise does
-  // initialization aynschronously, returns ERR_IO_PENDING and runs callback.
+  // initialization asynchronously, returns ERR_IO_PENDING and runs callback.
   // Calling this method again after a Init() success results in resetting the
   // state.
   virtual int Init(const CompletionCallback& callback) = 0;

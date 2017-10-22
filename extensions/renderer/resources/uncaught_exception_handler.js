@@ -62,7 +62,7 @@ function formatErrorMessage(message, e, priorStackTrace) {
   if (stack)
     message += '\n' + stack;
 
-  // If an asynchronouse stack trace was set, append it.
+  // If an asynchronous stack trace was set, append it.
   if (priorStackTrace)
     message += '\n' + priorStackTrace;
 

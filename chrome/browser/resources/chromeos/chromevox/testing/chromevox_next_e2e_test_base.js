@@ -43,7 +43,7 @@ ChromeVoxNextE2ETest.prototype = {
    * the given document, and runs |callback| when a load complete fires.
    * Arranges to call |testDone()| after |callback| returns.
    * NOTE: Callbacks creatd instide |opt_callback| must be wrapped with
-   * |this.newCallback| if passed to asynchonous calls.  Otherwise, the test
+   * |this.newCallback| if passed to asynchronous calls.  Otherwise, the test
    * will be finished prematurely.
    * @param {function() : void} doc Snippet wrapped inside of a function.
    * @param {function(chrome.automation.AutomationNode)} callback

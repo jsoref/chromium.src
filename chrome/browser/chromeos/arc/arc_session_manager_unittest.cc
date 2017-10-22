@@ -416,7 +416,7 @@ TEST_F(ArcSessionManagerTest, RemoveDataDir) {
   EXPECT_EQ(ArcSessionManager::State::REMOVING_DATA_DIR,
             arc_session_manager()->state());
 
-  // Enable ARC. Data is removed asyncronously. At this moment session manager
+  // Enable ARC. Data is removed asynchronously. At this moment session manager
   // should be in REMOVING_DATA_DIR state.
   arc_session_manager()->RequestEnable();
   EXPECT_TRUE(

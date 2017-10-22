@@ -195,7 +195,7 @@ class CHROMEOS_EXPORT NetworkDeviceHandler {
       const network_handler::ErrorCallback& error_callback) = 0;
 
   // Enables/disables roaming of all cellular devices. This happens
-  // asychronously in the background and applies also to devices which become
+  // asynchronously in the background and applies also to devices which become
   // available in the future.
   virtual void SetCellularAllowRoaming(bool allow_roaming) = 0;
 

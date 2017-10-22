@@ -56,7 +56,7 @@ void InterceptDownloadResourceThrottle::WillProcessResponse(bool* defer) {
 
   net::CookieStore* cookie_store = request_->context()->cookie_store();
   if (cookie_store) {
-    // Cookie is obtained via asynchonous call. Setting |*defer| to true
+    // Cookie is obtained via asynchronous call. Setting |*defer| to true
     // keeps the throttle alive in the meantime.
     *defer = true;
     net::CookieOptions options;

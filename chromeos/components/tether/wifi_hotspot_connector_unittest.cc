@@ -571,7 +571,7 @@ TEST_F(WifiHotspotConnectorTest, TestConnect_WifiDisabled_Success) {
       base::Bind(&WifiHotspotConnectorTest::WifiConnectionCallback,
                  base::Unretained(this)));
 
-  // Allow the asyncronous call to NetworkStateHandler::SetTechnologyEnabled()
+  // Allow the asynchronous call to NetworkStateHandler::SetTechnologyEnabled()
   // within WifiHotspotConnector::ConnectToWifiHotspot() to synchronously
   // run. After this call, Wi-Fi should be enabled and WifiHotspotConnector
   // will have called TestNetworkConnect::CreateConfiguration().
@@ -627,7 +627,7 @@ TEST_F(WifiHotspotConnectorTest,
   wifi_hotspot_connector_->DeviceListChanged();
   EXPECT_FALSE(test_network_connect_->last_configuration());
 
-  // Allow the asyncronous call to NetworkStateHandler::SetTechnologyEnabled()
+  // Allow the asynchronous call to NetworkStateHandler::SetTechnologyEnabled()
   // within WifiHotspotConnector::ConnectToWifiHotspot() to synchronously
   // run. After this call, Wi-Fi should be enabled and WifiHotspotConnector
   // will have called TestNetworkConnect::CreateConfiguration().
@@ -681,7 +681,7 @@ TEST_F(WifiHotspotConnectorTest, TestConnect_WifiDisabled_AttemptTimesOut) {
   EXPECT_EQ(1u, connection_callback_responses_.size());
   EXPECT_EQ("", connection_callback_responses_[0]);
 
-  // Allow the asyncronous call to NetworkStateHandler::SetTechnologyEnabled()
+  // Allow the asynchronous call to NetworkStateHandler::SetTechnologyEnabled()
   // within WifiHotspotConnector::ConnectToWifiHotspot() to synchronously
   // run. After this call, Wi-Fi should be enabled, but the connection attempt
   // has timed out and therefore a new Wi-Fi configuration should not exist.
@@ -722,7 +722,7 @@ TEST_F(WifiHotspotConnectorTest,
       base::Bind(&WifiHotspotConnectorTest::WifiConnectionCallback,
                  base::Unretained(this)));
 
-  // Allow the asyncronous call to NetworkStateHandler::SetTechnologyEnabled()
+  // Allow the asynchronous call to NetworkStateHandler::SetTechnologyEnabled()
   // within WifiHotspotConnector::ConnectToWifiHotspot() to synchronously
   // run. After this call, Wi-Fi should be enabled and WifiHotspotConnector
   // will have called TestNetworkConnect::CreateConfiguration().

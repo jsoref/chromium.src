@@ -455,7 +455,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionApiTestWithManagementPolicy,
     ExtensionManagementPolicyUpdater pref(&policy_provider_);
     pref.AddRuntimeBlockedHost(extension_id, "*://example.com");
   }
-  // Some policy updating operations are performed asynchronuosly. Wait for them
+  // Some policy updating operations are performed asynchronously. Wait for them
   // to complete before installing extension.
   base::RunLoop().RunUntilIdle();
 

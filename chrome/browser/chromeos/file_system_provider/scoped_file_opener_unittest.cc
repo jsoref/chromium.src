@@ -100,7 +100,7 @@ TEST(ScopedFileOpenerTest, CloseWhileOpening) {
         FROM_HERE, base::BindOnce(open_callback, 123, base::File::FILE_OK));
   }
 
-  // Wait until the open callback is called asynchonously.
+  // Wait until the open callback is called asynchronously.
   base::RunLoop().RunUntilIdle();
 
   ASSERT_EQ(1u, log.size());

@@ -42,7 +42,7 @@ bool IsBackgroundLoaderForDownloadsEnabled();
 // Returns true if concurrent background loading is enabled for svelte.
 bool IsOfflinePagesSvelteConcurrentLoadingEnabled();
 
-// Returns true if downloading a page asynchonously is enabled.
+// Returns true if downloading a page asynchronously is enabled.
 bool IsOfflinePagesAsyncDownloadEnabled();
 
 // Returns true if prefetching offline pages is enabled.

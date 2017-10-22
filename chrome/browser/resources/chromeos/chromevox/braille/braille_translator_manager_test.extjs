@@ -93,7 +93,7 @@ TEST_F('CvoxBrailleTranslatorManagerTest', 'testRefreshWithoutChange',
        function() {
   this.addChangeListener(function() {
     assertNotEquals(null, this.manager.getExpandingTranslator());
-    // This works because the fake liblouis is actually not asynchonous.
+    // This works because the fake liblouis is actually not asynchronous.
     this.manager.addChangeListener(function() {
       assertNotReached('Refresh should not be called without a change.');
     });

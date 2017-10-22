@@ -1622,7 +1622,7 @@ TEST_F(NativeWidgetMacTest, SchedulePaintInRect_Titled) {
   [mock_bridged_view setDrawRectCount:0];
   widget->GetContentsView()->AddChildView(dummy_view);
 
-  // SchedulePaint is asyncronous. Wait for drawRect: to be called.
+  // SchedulePaint is asynchronous. Wait for drawRect: to be called.
   base::RunLoop().RunUntilIdle();
 
   EXPECT_EQ(1u, [mock_bridged_view drawRectCount]);
@@ -1664,7 +1664,7 @@ TEST_F(NativeWidgetMacTest, SchedulePaintInRect_Borderless) {
   [mock_bridged_view setDrawRectCount:0];
   widget->GetRootView()->AddChildView(dummy_view);
 
-  // SchedulePaint is asyncronous. Wait for drawRect: to be called.
+  // SchedulePaint is asynchronous. Wait for drawRect: to be called.
   base::RunLoop().RunUntilIdle();
 
   EXPECT_EQ(1u, [mock_bridged_view drawRectCount]);

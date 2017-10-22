@@ -111,7 +111,7 @@ class ChildProcessLauncherHelper :
 
   // Does the actual starting of the process.
   // |is_synchronous_launch| is set to false if the starting of the process is
-  // asynchonous (this is the case on Android), in which case the returned
+  // asynchronous (this is the case on Android), in which case the returned
   // Process is not valid (and PostLaunchOnLauncherThread() will provide the
   // process once it is available).
   // Platform specific.

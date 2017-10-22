@@ -374,7 +374,7 @@ TEST_F(TetherServiceTest, TestAsyncTetherShutdown) {
   test_initializer_factory_->active_initializer()
       ->set_has_asynchronous_shutdown(true);
 
-  // Disable the Tether preference. This should trigger the asynchrnous
+  // Disable the Tether preference. This should trigger the asynchronous
   // shutdown.
   SetTetherTechnologyStateEnabled(false);
 

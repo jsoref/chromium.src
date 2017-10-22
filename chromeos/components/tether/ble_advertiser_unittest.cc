@@ -524,7 +524,7 @@ TEST_F(BleAdvertiserTest, AdvertisementReleased) {
 // occurs:
 //   (1) BleAdvertiser starts advertising to device A.
 //   (2) BleAdvertiser stops advertising to device A. The advertisement starts
-//       its asynchyronous unregistration flow.
+//       its asynchronous unregistration flow.
 //   (3) BleAdvertiser starts advertising to device A again, but the previous
 //       advertisement has not yet been fully unregistered.
 // Before the fix for crbug.com/739883, this would cause an error of type

@@ -19,7 +19,7 @@ namespace shell_integration {
 namespace win {
 
 // A monitor that watches the Windows Settings app and notifies a delegate of
-// particularly interesting events. An asychronous initialization procedure is
+// particularly interesting events. An asynchronous initialization procedure is
 // started at instance creation, after which the delegate's |OnInitialized|
 // method is invoked. Following successful initilization, the monitor is ready
 // to observe the Settings app.

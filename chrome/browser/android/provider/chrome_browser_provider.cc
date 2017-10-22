@@ -342,7 +342,7 @@ class IsInMobileBookmarksBranchTask : public BookmarkModelTask {
   DISALLOW_COPY_AND_ASSIGN(IsInMobileBookmarksBranchTask);
 };
 
-// ------------- Aynchronous requests classes ------------- //
+// ------------- Asynchronous requests classes ------------- //
 
 // Base class for asynchronous blocking requests to Chromium services.
 // Service: type of the service to use (e.g. HistoryService, FaviconService).

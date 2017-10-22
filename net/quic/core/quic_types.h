@@ -52,7 +52,7 @@ struct QUIC_EXPORT_PRIVATE QuicConsumedData {
 enum QuicAsyncStatus {
   QUIC_SUCCESS = 0,
   QUIC_FAILURE = 1,
-  // QUIC_PENDING results from an operation that will occur asynchonously. When
+  // QUIC_PENDING results from an operation that will occur asynchronously. When
   // the operation is complete, a callback's |Run| method will be called.
   QUIC_PENDING = 2,
 };

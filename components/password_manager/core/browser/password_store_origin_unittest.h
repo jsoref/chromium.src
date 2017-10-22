@@ -50,7 +50,7 @@ PasswordFormData CreateTestPasswordFormDataByOrigin(const char* origin_url) {
 //    // Returns a pointer to a fully initialized store for polymorphic usage.
 //    PasswordStore* store();
 //
-//    // Finishes all asnychronous processing on the store.
+//    // Finishes all asynchronous processing on the store.
 //    void FinishAsyncProcessing();
 template <typename T>
 class PasswordStoreOriginTest : public testing::Test {

@@ -25,7 +25,7 @@
 @interface BookmarkBarFolderHoverState : NSObject {
  @private
   // Enumeration of the valid states that the |hoverButton_| member can be in.
-  // Because the opening and closing of hover views can be done asyncronously
+  // Because the opening and closing of hover views can be done asynchronously
   // there are periods where the hover state is in transtion between open and
   // closed.  During those times of transition the opening or closing operation
   // can be cancelled.  We serialize the opening and closing of the

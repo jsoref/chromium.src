@@ -164,7 +164,7 @@ struct TrackingInfo;
 // The ProcessDataPhaseSnapshot struct is a serialized representation of the
 // list of ThreadData objects for a process for a concrete profiling phase.  It
 // holds a set of TaskSnapshots.  The statistics in a snapshot are gathered
-// asynhcronously relative to their ongoing updates.
+// asynchronously relative to their ongoing updates.
 // It is possible, though highly unlikely, that stats could be incorrectly
 // recorded by this process (all data is held in 32 bit ints, but we are not
 // atomically collecting all data, so we could have count that does not, for

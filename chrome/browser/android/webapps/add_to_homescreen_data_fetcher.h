@@ -24,7 +24,7 @@ class InstallableManager;
 struct InstallableData;
 struct WebApplicationInfo;
 
-// Aysnchronously fetches and processes data needed to create a shortcut for an
+// Asynchronously fetches and processes data needed to create a shortcut for an
 // Android Home screen launcher.
 class AddToHomescreenDataFetcher : public content::WebContentsObserver {
  public:

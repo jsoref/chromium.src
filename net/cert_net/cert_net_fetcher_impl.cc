@@ -50,7 +50,7 @@
 // ---------------
 //
 // AsyncCertNetFetcherImpl
-//   * Asyncronous manager for outstanding requests. Handles de-duplication,
+//   * Asynchronous manager for outstanding requests. Handles de-duplication,
 //     timeouts, and actual integration with network stack. This is where the
 //     majority of the logic lives.
 //   * Signals completion of requests through RequestCore's WaitableEvent.

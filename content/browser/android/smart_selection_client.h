@@ -27,7 +27,7 @@ class SmartSelectionClient {
                        WebContents* web_contents);
   ~SmartSelectionClient();
 
-  // Sends asynchronius request to retrieve the text.
+  // Sends asynchronous request to retrieve the text.
   void RequestSurroundingText(JNIEnv* env,
                               const base::android::JavaParamRef<jobject>& obj,
                               int num_extra_characters,

@@ -257,7 +257,7 @@ class FileStream::Context {
   // operation is complete.
   bool async_read_completed_;
   // This flag is set to true when we receive an IO completion notification for
-  // an asynchonously initiated Read operaton. OnIOComplete().
+  // an asynchronously initiated Read operaton. OnIOComplete().
   bool io_complete_for_read_received_;
   // Tracks the result of the IO completion operation. Set in OnIOComplete.
   int result_;

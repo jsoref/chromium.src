@@ -42,7 +42,7 @@ class QUIC_EXPORT_PRIVATE QuicServerSessionBase : public QuicSpdySession {
                         const QuicCryptoServerConfig* crypto_config,
                         QuicCompressedCertsCache* compressed_certs_cache);
 
-  // Override the base class to cancel any ongoing asychronous crypto.
+  // Override the base class to cancel any ongoing asynchronous crypto.
   void OnConnectionClosed(QuicErrorCode error,
                           const std::string& error_details,
                           ConnectionCloseSource source) override;

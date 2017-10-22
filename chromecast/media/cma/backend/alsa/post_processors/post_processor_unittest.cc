@@ -33,7 +33,7 @@ void TestDelay(AudioPostProcessor* pp, int sample_rate) {
   int delayed_frames = 0;
 
   // PostProcessors that run in dedicated threads may need to delay
-  // until they get data processed asyncronously.
+  // until they get data processed asynchronously.
   while (delay_frames >= delayed_frames + kNumFrames) {
     delayed_frames += kNumFrames;
     for (int i = 0; i < kNumFrames * kNumChannels; ++i) {
@@ -109,7 +109,7 @@ void TestPassthrough(AudioPostProcessor* pp, int sample_rate) {
   int delayed_frames = 0;
 
   // PostProcessors that run in dedicated threads may need to delay
-  // until they get data processed asyncronously.
+  // until they get data processed asynchronously.
   while (delay_frames >= delayed_frames + kNumFrames) {
     delayed_frames += kNumFrames;
     for (int i = 0; i < kNumFrames * kNumChannels; ++i) {

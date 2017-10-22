@@ -318,7 +318,7 @@ class MEDIA_EXPORT VideoDecodeAccelerator {
   virtual void SetOverlayInfo(const OverlayInfo& overlay_info);
 
   // Destroys the decoder: all pending inputs are dropped immediately and the
-  // component is freed.  This call may asynchornously free system resources,
+  // component is freed.  This call may asynchronously free system resources,
   // but its client-visible effects are synchronous.  After this method returns
   // no more callbacks will be made on the client.  Deletes |this|
   // unconditionally, so make sure to drop all pointers to it!

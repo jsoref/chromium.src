@@ -1682,7 +1682,7 @@ void BluetoothAdapterBlueZ::ProcessQueuedDiscoveryRequests() {
                         std::get<2>(params));
 
     // If the queued request resulted in a pending call, then let it
-    // asynchonously process the remaining queued requests once the pending
+    // asynchronously process the remaining queued requests once the pending
     // call returns.
     if (discovery_request_pending_)
       return;

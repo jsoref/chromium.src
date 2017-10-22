@@ -41,7 +41,7 @@ class TokenBindingManager {
   using DeletionCompleteCallback = base::Callback<void(void)>;
 
   // Retrieve (or create if not exist) the key for the given host. The callback
-  // is called asynchonously to indicate the status for the key creation and
+  // is called asynchronously to indicate the status for the key creation and
   // to provide the key.
   // This method simply pushes the work to the right thread so see the
   // underlying implementation for more details.

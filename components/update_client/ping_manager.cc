@@ -99,7 +99,7 @@ bool PingManager::SendPing(const Component& component) {
   if (!ping_sender->SendPing(component))
     return false;
 
-  // The ping sender object self-deletes after sending the ping asynchrously.
+  // The ping sender object self-deletes after sending the ping asynchronously.
   ping_sender.release();
   return true;
 }

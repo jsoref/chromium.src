@@ -57,7 +57,7 @@ class ReportingService {
 
   // Enable/disable transmission of accumulated logs and crash reports (dumps).
   // Calling Start() automatically enables reporting, but sending is
-  // asyncronous so this can be called immediately after Start() to prevent
+  // asynchronous so this can be called immediately after Start() to prevent
   // any uploading.
   void EnableReporting();
   void DisableReporting();

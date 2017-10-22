@@ -87,7 +87,7 @@ void OffscreenBrowserCompositorOutputSurface::EnsureBackbuffer() {
 
   // The reflector may be created later or detached and re-attached,
   // so don't assume it always exists. For example, ChromeOS always
-  // creates a reflector asynchronosly when creating this for software
+  // creates a reflector asynchronously when creating this for software
   // mirroring.  See |DisplayManager::CreateMirrorWindowAsyncIfAny|.
   if (reflector_ && update_source_texture)
     reflector_->OnSourceTextureMailboxUpdated(reflector_texture_->mailbox());

@@ -176,7 +176,7 @@ void FileStream::Context::OnIOCompleted(
 }
 
 void FileStream::Context::InvokeUserCallback() {
-  // For an asynchonous Read operation don't invoke the user callback until
+  // For an asynchronous Read operation don't invoke the user callback until
   // we receive the IO completion notification and the asynchronous Read
   // completion notification.
   if (async_read_initiated_) {
