@@ -89,7 +89,7 @@ class WindowManager : public display::NativeDisplayObserver {
   void RemoveWindow(DemoWindow* window);
 
  private:
-  void OnDisplaysAquired(
+  void OnDisplaysAcquired(
       const std::vector<display::DisplaySnapshot*>& displays);
   void OnDisplayConfigured(const gfx::Rect& bounds, bool success);
 
@@ -286,12 +286,12 @@ void WindowManager::OnConfigurationChanged() {
 
   is_configuring_ = true;
   delegate_->GetDisplays(
-      base::Bind(&WindowManager::OnDisplaysAquired, base::Unretained(this)));
+      base::Bind(&WindowManager::OnDisplaysAcquired, base::Unretained(this)));
 }
 
 void WindowManager::OnDisplaySnapshotsInvalidated() {}
 
-void WindowManager::OnDisplaysAquired(
+void WindowManager::OnDisplaysAcquired(
     const std::vector<display::DisplaySnapshot*>& displays) {
   windows_.clear();
 

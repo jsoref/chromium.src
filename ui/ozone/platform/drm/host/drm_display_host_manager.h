@@ -109,7 +109,7 @@ class DrmDisplayHostManager : public DeviceEventObserver, GpuThreadObserver {
 
   // File path for the primary graphics card which is opened by default in the
   // GPU process. We'll avoid opening this in hotplug events since it will race
-  // with the GPU process trying to open it and aquire DRM master.
+  // with the GPU process trying to open it and acquire DRM master.
   base::FilePath primary_graphics_card_path_;
 
   // Keeps track if there is a dummy display. This happens on initialization

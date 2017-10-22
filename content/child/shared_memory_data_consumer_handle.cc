@@ -49,7 +49,7 @@ class DelegateThreadSafeReceivedData final
 
 using Result = blink::WebDataConsumerHandle::Result;
 
-// All methods (except for ctor/dtor) must be called with |lock_| aquired
+// All methods (except for ctor/dtor) must be called with |lock_| acquired
 // unless otherwise stated.
 class SharedMemoryDataConsumerHandle::Context final
     : public base::RefCountedThreadSafe<Context> {
@@ -139,7 +139,7 @@ class SharedMemoryDataConsumerHandle::Context final
     runner->PostTask(FROM_HERE,
                      base::BindOnce(&Context::NotifyInternal, this, false));
   }
-  // Must be called with |lock_| not aquired.
+  // Must be called with |lock_| not acquired.
   void Notify() { NotifyInternal(true); }
   // This function doesn't work in the destructor if |on_reader_detached_| is
   // not null.
@@ -195,11 +195,11 @@ class SharedMemoryDataConsumerHandle::Context final
     lock_.AssertAcquired();
     is_two_phase_read_in_progress_ = b;
   }
-  // Can be called with |lock_| not aquired.
+  // Can be called with |lock_| not acquired.
   base::Lock& lock() { return lock_; }
 
  private:
-  // Must be called with |lock_| not aquired.
+  // Must be called with |lock_| not acquired.
   void NotifyInternal(bool repost) {
     scoped_refptr<base::SingleThreadTaskRunner> runner;
     {
@@ -231,7 +231,7 @@ class SharedMemoryDataConsumerHandle::Context final
     CHECK(!client_);
     ResetOnReaderDetached();
   }
-  // Must be called with |lock_| not aquired.
+  // Must be called with |lock_| not acquired.
   void ResetOnReaderDetachedWithLock() {
     base::AutoLock lock(lock_);
     ResetOnReaderDetached();

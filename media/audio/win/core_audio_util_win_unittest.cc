@@ -250,7 +250,7 @@ TEST_F(CoreAudioUtilWinTest, GetSharedModeMixFormat) {
   client = CoreAudioUtil::CreateClient(device.Get());
   EXPECT_TRUE(client.Get());
 
-  // Perform a simple sanity test of the aquired format structure.
+  // Perform a simple sanity test of the acquired format structure.
   WAVEFORMATPCMEX format;
   EXPECT_TRUE(
       SUCCEEDED(CoreAudioUtil::GetSharedModeMixFormat(client.Get(), &format)));

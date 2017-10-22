@@ -45,11 +45,11 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothMediaTransportClient
     dbus::Property<std::string> state;
 
     // The unit of transport delay is in 1/10 of millisecond. This property is
-    // only writeable when the transport was aquired by the sender. Optional.
+    // only writeable when the transport was acquired by the sender. Optional.
     dbus::Property<uint16_t> delay;
 
     // The volume level of the transport. This property is only writable when
-    // the transport was aquired by the sender. Optional.
+    // the transport was acquired by the sender. Optional.
     dbus::Property<uint16_t> volume;
 
     Properties(dbus::ObjectProxy* object_proxy,

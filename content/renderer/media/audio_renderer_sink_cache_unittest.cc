@@ -177,7 +177,7 @@ TEST_F(AudioRendererSinkCacheTest, GetDeviceInfo) {
   EXPECT_EQ(1, sink_count());
   EXPECT_EQ(device_info.device_id(), one_more_device_info.device_id());
 
-  // Aquire the sink that was created on GetSinkInfo().
+  // Acquire the sink that was created on GetSinkInfo().
   scoped_refptr<media::AudioRendererSink> sink =
       cache_->GetSink(kRenderFrameId, kDefaultDeviceId, url::Origin()).get();
   EXPECT_EQ(1, sink_count());
@@ -268,7 +268,7 @@ TEST_F(AudioRendererSinkCacheTest, UnhealthySinkIsNotCached) {
   EXPECT_EQ(0, sink_count());
 }
 
-// Verify that cache works fine if a sink scheduled for delettion is aquired and
+// Verify that cache works fine if a sink scheduled for delettion is acquired and
 // released before deletion timeout elapses.
 // The test produces one "Uninteresting mock" warning for
 // MockAudioRendererSink::Stop().

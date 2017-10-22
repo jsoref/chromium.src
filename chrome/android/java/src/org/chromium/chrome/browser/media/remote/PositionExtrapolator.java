@@ -40,7 +40,7 @@ public class PositionExtrapolator {
      * Update the extrapolator with the latest position info.
      * @param duration The new duration.
      * @param position The new playback position.
-     * @param timestamp The time stamp of this info, must be directly or indirectly aquired via
+     * @param timestamp The time stamp of this info, must be directly or indirectly acquired via
      * {@link SystemClock.elapsedRealtime()}. The time stamp from the Cast receiver uses
      * elapsedRealtime, so it can be used here. Don't use {@link SystemClock.uptimeMillis()} since
      * it doesn't include the device sleep time.

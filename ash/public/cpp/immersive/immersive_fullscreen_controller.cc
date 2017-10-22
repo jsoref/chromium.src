@@ -479,7 +479,7 @@ bool ImmersiveFullscreenController::UpdateRevealedLocksForSwipe(
         return true;
       }
 
-      // Ending the reveal was unsuccessful. Reaquire the locks if appropriate.
+      // Ending the reveal was unsuccessful. Reacquire the locks if appropriate.
       UpdateLocatedEventRevealedLock();
       if (immersive_focus_watcher_)
         immersive_focus_watcher_->UpdateFocusRevealedLock();

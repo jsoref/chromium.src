@@ -142,7 +142,7 @@ class SQL_EXPORT Connection {
   //
   // Exclusive mode means that the database is not unlocked at the end of each
   // transaction, which means there may be less time spent initializing the
-  // next transaction because it doesn't have to re-aquire locks.
+  // next transaction because it doesn't have to re-acquire locks.
   //
   // This must be called before Open() to have an effect.
   void set_exclusive_locking() { exclusive_locking_ = true; }

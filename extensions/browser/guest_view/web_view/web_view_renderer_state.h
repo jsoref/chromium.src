@@ -7,7 +7,7 @@
 // This class's data can be accessed via its methods from both the UI and IO
 // threads, and uses locks to mediate this access. When making changes to this
 // class, ensure that you avoid introducing any reentrant code in the methods,
-// and that you always aquire the locks in the order |web_view_info_map_lock_|
+// and that you always acquire the locks in the order |web_view_info_map_lock_|
 // -> |web_view_partition_id_map_lock_| (if both are needed in one method).
 
 #ifndef EXTENSIONS_BROWSER_GUEST_VIEW_WEB_VIEW_WEB_VIEW_RENDERER_STATE_H_

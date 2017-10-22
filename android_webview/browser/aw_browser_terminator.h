@@ -50,7 +50,7 @@ class AwBrowserTerminator : public breakpad::CrashDumpObserver::Client {
 
   base::FilePath crash_dump_dir_;
 
-  // This map should only be accessed with its lock aquired as it is accessed
+  // This map should only be accessed with its lock acquired as it is accessed
   // from the PROCESS_LAUNCHER, FILE, and UI threads.
   base::Lock child_process_id_to_pipe_lock_;
   std::map<int, std::unique_ptr<base::SyncSocket>> child_process_id_to_pipe_;

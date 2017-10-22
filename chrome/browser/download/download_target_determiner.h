@@ -179,7 +179,7 @@ class DownloadTargetDeterminer
   // - STATE_PROMPT_USER_FOR_DOWNLOAD_PATH.
   Result DoReserveVirtualPath();
 
-  // Callback invoked after the delegate aquires a path reservation.
+  // Callback invoked after the delegate acquires a path reservation.
   void ReserveVirtualPathDone(PathValidationResult result,
                               const base::FilePath& path);
 

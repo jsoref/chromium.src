@@ -75,7 +75,7 @@ void Receiver::AcquireRenderer(std::unique_ptr<pb::RpcMessage> message) {
 
   remote_handle_ = message->integer_value();
   if (stream_provider_) {
-    VLOG(1) << "Acquire renderer error: Already aquired.";
+    VLOG(1) << "Acquire renderer error: Already acquired.";
     OnError(PipelineStatus::PIPELINE_ERROR_DECODE);
     return;
   }
