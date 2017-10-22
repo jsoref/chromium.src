@@ -73,7 +73,7 @@ void JavaScriptBrowserTest::SetUpOnMainThread() {
   AddLibrary(base::FilePath(kWebUILibraryJS));
 }
 
-// TODO(dtseng): Make this return bool (success/failure) and remove ASSERt_TRUE
+// TODO(dtseng): Make this return bool (success/failure) and remove ASSERT_TRUE
 // calls.
 void JavaScriptBrowserTest::BuildJavascriptLibraries(
     std::vector<base::string16>* libraries) {
