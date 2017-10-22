@@ -107,7 +107,7 @@ namespace mediaGalleries {
     // The number of Galleries found.
     long? galleryCount;
 
-    // Appoximate number of media files found; some file types can be either
+    // Approximate number of media files found; some file types can be either
     // audio or video and are included in both counts.
     long? audioCount;
     long? imageCount;
