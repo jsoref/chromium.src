@@ -76,7 +76,7 @@ class RequestSender {
   // TODO(kinaba): refactor the life time management and make this at private.
   void RequestFinished(AuthenticatedRequestInterface* request);
 
-  // Returns traffic annotation tag asssigned to this object.
+  // Returns traffic annotation tag assigned to this object.
   const net::NetworkTrafficAnnotationTag& get_traffic_annotation_tag() const {
     return traffic_annotation_;
   }

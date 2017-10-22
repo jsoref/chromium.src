@@ -74,7 +74,7 @@ var LOG_INTERVAL = 3000;
  * Returns a pending marker. See also the repeatUntil function.
  * @param {string} message Pending reason including %s, %d, or %j markers. %j
  *     format an object as JSON.
- * @param {Array<*>} var_args Values to be assigined to %x markers.
+ * @param {Array<*>} var_args Values to be assigned to %x markers.
  * @return {Object} Object which returns true for the expression: obj instanceof
  *     pending.
  */
