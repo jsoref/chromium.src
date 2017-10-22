@@ -11,7 +11,7 @@ goog.provide('__crWeb.legacy');
 goog.require('__crWeb.common');
 goog.require('__crWeb.message');
 
-/** Beginning of anonymouse object */
+/** Beginning of anonymous object */
 (function() {
 
   /**
@@ -32,4 +32,4 @@ goog.require('__crWeb.message');
       __gCrWeb.message.invokeOnHost({'command': 'addPluginPlaceholders'});
   }
 
-}());  // End of anonymouse object
+}());  // End of anonymous object

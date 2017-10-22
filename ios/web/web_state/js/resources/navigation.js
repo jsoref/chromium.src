@@ -8,7 +8,7 @@
 
 goog.provide('__crWeb.navigation');
 
-/** Beginning of anonymouse object */
+/** Beginning of anonymous object */
 (function() {
 
   /**
@@ -128,4 +128,4 @@ goog.provide('__crWeb.navigation');
     __gCrWeb.message.invokeQueues();
   }
 
-}());  // End of anonymouse object
+}());  // End of anonymous object

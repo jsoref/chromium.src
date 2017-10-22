@@ -88,7 +88,7 @@ void LoginAttemptObserver::LoginAttempted() {
     base::RunLoop::QuitCurrentWhenIdleDeprecated();
 }
 
-}  // anyonymous namespace
+}  // anonymous namespace
 
 namespace chromeos {
 

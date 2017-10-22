@@ -10,7 +10,7 @@ goog.provide('__crWeb.error');
 
 goog.require('__crWeb.message');
 
-/** Beginning of anonymouse object */
+/** Beginning of anonymous object */
 (function() {
 
   /**

@@ -301,4 +301,4 @@ goog.provide('__crWeb.contextMenu');
     return 'default';
   };
 
-}());  // End of anonymouse object
+}());  // End of anonymous object

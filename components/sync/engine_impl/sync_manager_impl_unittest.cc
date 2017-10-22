@@ -1735,7 +1735,7 @@ TEST_F(SyncManagerTest, SetPassphraseWithEmptyPasswordNode) {
   }
 }
 
-// Friended by WriteNode, so can't be in an anonymouse namespace.
+// Friended by WriteNode, so can't be in an anonymous namespace.
 TEST_F(SyncManagerTest, EncryptBookmarksWithLegacyData) {
   EXPECT_TRUE(SetUpEncryption(WRITE_TO_NIGORI, DEFAULT_ENCRYPTION));
   std::string title;

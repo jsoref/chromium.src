@@ -138,7 +138,7 @@ TEST_F(FtpDirectoryListingParserVmsTest, BadDataAfterFooter) {
   const char* const bad_cases[] = {
     "garbage",
     "Total of 1 file, 2 blocks.",
-    "Directory ANYNYMOUS_ROOT:[000000]",
+    "Directory ANONYMOUS_ROOT:[000000]",
   };
   for (size_t i = 0; i < arraysize(bad_cases); i++) {
     SCOPED_TRACE(base::StringPrintf("Test[%" PRIuS "]: %s", i, bad_cases[i]));

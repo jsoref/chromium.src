@@ -35,4 +35,4 @@ goog.provide('__crWeb.scrollWorkaround');
     originalWindowScrollTo_(x, y);
   };
 
-}())  // End of anonymouse object
+}())  // End of anonymous object

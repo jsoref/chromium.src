@@ -133,7 +133,7 @@ scoped_refptr<InProcessCommandBuffer::Service> GetInitialService(
   return g_default_service.Get().GetGpuThreadService();
 }
 
-}  // anonyous namespace
+}  // anonymous namespace
 
 InProcessCommandBuffer::Service::Service(
     const GpuPreferences& gpu_preferences,

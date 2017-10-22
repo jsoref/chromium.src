@@ -34,7 +34,7 @@ namespace {
 const base::FilePath::CharType kDownloadItemTargetPathString[] =
     FILE_PATH_LITERAL("/tmp/TITLE.bin");
 
-}  // anonymouse namespace
+}  // anonymous namespace
 
 namespace test {
 

@@ -26,7 +26,7 @@ class AppManager {
   //     settings are used to determine whether and for which app lock screen
   //     action is enabled, and it should be associated with the primary user.
   // |lock_screen_profile| - the profile in which lock screen apps should be
-  //     installed and launched. This profile should be annonymous - i.e. not
+  //     installed and launched. This profile should be anonymous - i.e. not
   //     associated with any user.
   virtual void Initialize(Profile* primary_profile,
                           Profile* lock_screen_profile) = 0;
