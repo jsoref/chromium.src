@@ -30,7 +30,7 @@ TEST(BluetoothAdvertisementTest, DataMembersAreAssignedCorrectly) {
       BluetoothAdvertisement::ADVERTISEMENT_TYPE_BROADCAST);
   ASSERT_EQ(data.type(), BluetoothAdvertisement::ADVERTISEMENT_TYPE_BROADCAST);
 
-  // Try without assiging Service UUID.
+  // Try without assigning Service UUID.
   ASSERT_FALSE(data.service_uuids().get());
   // Assign Service UUID.
   data.set_service_uuids(
