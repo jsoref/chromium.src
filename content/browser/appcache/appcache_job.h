@@ -118,7 +118,7 @@ class CONTENT_EXPORT AppCacheJob : public base::SupportsWeakPtr<AppCacheJob> {
   // AppCaches loaded via the URLLoader mechanism.
   virtual net::URLRequestJob* AsURLRequestJob();
 
-  // Returns the underlying ApppCacheURLLoaderJob if any. This only applies to
+  // Returns the underlying AppCacheURLLoaderJob if any. This only applies to
   // AppCaches loaded via the URLRequest mechanism.
   virtual AppCacheURLLoaderJob* AsURLLoaderJob();
 
