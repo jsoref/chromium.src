@@ -32,7 +32,7 @@ def ParseArgs():
       '--program', metavar='FILE', help='Main program nexe')
   parser.add_argument(
       '--arch', metavar='ARCH', choices=('x86-32', 'x86-64', 'arm'),
-      help='The archtecture of main program nexe')
+      help='The architecture of main program nexe')
   # To keep compatibility with create_nmf.py, we use -x and --extra-files
   # as flags.
   parser.add_argument(

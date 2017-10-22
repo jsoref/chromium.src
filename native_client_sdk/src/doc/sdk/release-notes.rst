@@ -436,7 +436,7 @@ Build tools and toolchains
   * Take a look at the ``hello_world`` example to see how to use the ARM
     toolchain. Go to ``examples/hello_world`` and run ``make``. When the build
     finishes, the newlib/Debug and newlib/Release subdirectories will contain
-    .nexe files for the x86-32, x86-64, and ARM target architecutes, and a
+    .nexe files for the x86-32, x86-64, and ARM target architectures, and a
     Native Client manifest (.nmf file) that references those three .nexe files.
 
 * The simple web server included in the SDK, ``httpd.py``, has been moved from

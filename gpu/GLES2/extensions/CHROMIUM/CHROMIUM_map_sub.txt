@@ -21,7 +21,7 @@ Overview
 
     For security reasons Chromium accesses the GPU from a separate process. User
     processes are not allowed to access the GPU directly. This multi-process
-    architechure has the advantage that GPU operations can be secured and
+    architecture has the advantage that GPU operations can be secured and
     pipelined but it has the disadvantage that all data that is going to be
     passed to GPU must first be made available to the separate GPU process.
 

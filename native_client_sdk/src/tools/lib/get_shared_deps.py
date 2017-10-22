@@ -134,7 +134,7 @@ def GleanFromObjdump(files, arch, objdump, lib_path):
           '/path/to/lib64/libmy.so',
           '/path/to/mydata.so',
           '/path/to/my.data' ]
-    arch: The architecure we are looking for, or None to accept any
+    arch: The architecture we are looking for, or None to accept any
           architecture.
     objdump: Path to the objdump executable.
     lib_path: A list of paths to search for shared libraries.

@@ -38,7 +38,7 @@ Non-portable Native Client
 NaCl modules are only allowed for applications distributed through the `Chrome
 Web Store (CWS) <https://chrome.google.com/webstore/category/apps>`_
 The CWS requirement is in place to prevent the proliferation of Native Client
-executables (**nexe**\s) compiled for specific architecures (e.g., x86-32,
+executables (**nexe**\s) compiled for specific architectures (e.g., x86-32,
 x86-64, or ARM).
 
 In general, the considerations and guidelines for distributing applications
