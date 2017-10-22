@@ -154,7 +154,7 @@ void RegisterFontFamilyMapObserver(
 #endif  // !defined(OS_ANDROID)
 
 #if defined(OS_WIN)
-// On Windows with antialising we want to use an alternate fixed font like
+// On Windows with antialiasing we want to use an alternate fixed font like
 // Consolas, which looks much better than Courier New.
 bool ShouldUseAlternateDefaultFixedFont(const std::string& script) {
   if (!base::StartsWith(script, "courier",

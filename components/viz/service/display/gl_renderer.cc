@@ -1824,8 +1824,8 @@ void GLRenderer::DrawSolidColorQuad(const cc::SolidColorDrawQuad* quad,
   SetBlendEnabled(quad->ShouldDrawWithBlending() || use_aa);
   ApplyBlendModeUsingBlendFunc(quad->shared_quad_state->blend_mode);
 
-  // Antialising requires a normalized quad, but this could lead to floating
-  // point precision errors, so only normalize when antialising is on.
+  // Antialiasing requires a normalized quad, but this could lead to floating
+  // point precision errors, so only normalize when antialiasing is on.
   if (use_aa) {
     // Normalize to tile_rect.
     local_quad.Scale(1.0f / tile_rect.width(), 1.0f / tile_rect.height());
