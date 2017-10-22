@@ -15,7 +15,7 @@
  */
 __gCrWeb['contextualSearch'] = {};
 
-/* Anyonymizing block */
+/* Anonymizing block */
 new function() {
 
 /**
@@ -1338,5 +1338,5 @@ Context.getHighlightRects = function() {
   return rectsArray.join(',');
 };
 
-/* Anyonymizing block end */
+/* Anonymizing block end */
 }

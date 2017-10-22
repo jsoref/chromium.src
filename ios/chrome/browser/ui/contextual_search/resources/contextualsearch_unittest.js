@@ -14,7 +14,7 @@
  */
 __gCrWeb['contextualSearch_unittest'] = {};
 
-/* Anyonymizing block */
+/* Anonymizing block */
 new function() {
 
 /**
@@ -38,5 +38,5 @@ __gCrWeb['contextualSearch'].tapOnElement = function(elementID) {
   return null;
 };
 
-/* Anyonymizing block end */
+/* Anonymizing block end */
 }
