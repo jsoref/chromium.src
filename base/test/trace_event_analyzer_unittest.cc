@@ -496,7 +496,7 @@ TEST_F(TraceEventAnalyzerTest, CompleteDuration) {
 }
 
 // Test AssociateBeginEndEvents
-TEST_F(TraceEventAnalyzerTest, BeginEndAssocations) {
+TEST_F(TraceEventAnalyzerTest, BeginEndAssociations) {
   ManualSetUp();
 
   BeginTracing();
@@ -549,7 +549,7 @@ TEST_F(TraceEventAnalyzerTest, MergeAssociatedEventArgs) {
 }
 
 // Test AssociateAsyncBeginEndEvents
-TEST_F(TraceEventAnalyzerTest, AsyncBeginEndAssocations) {
+TEST_F(TraceEventAnalyzerTest, AsyncBeginEndAssociations) {
   ManualSetUp();
 
   BeginTracing();
@@ -578,7 +578,7 @@ TEST_F(TraceEventAnalyzerTest, AsyncBeginEndAssocations) {
 }
 
 // Test AssociateAsyncBeginEndEvents
-TEST_F(TraceEventAnalyzerTest, AsyncBeginEndAssocationsWithSteps) {
+TEST_F(TraceEventAnalyzerTest, AsyncBeginEndAssociationsWithSteps) {
   ManualSetUp();
 
   BeginTracing();

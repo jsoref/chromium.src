@@ -107,7 +107,7 @@ class MOJO_CPP_BINDINGS_EXPORT ScopedInterfaceEndpointHandle {
   //     the return value of the getter will be non-null and remain unchanged
   //     even if the handle is later reset.
   //   - If the getter is retrieved when the handle is valid but pending
-  //     asssociation, the return value of the getter will initially be null,
+  //     association, the return value of the getter will initially be null,
   //     change to non-null when the handle is associated, and remain unchanged
   //     ever since.
   base::Callback<AssociatedGroupController*()> CreateGroupControllerGetter()

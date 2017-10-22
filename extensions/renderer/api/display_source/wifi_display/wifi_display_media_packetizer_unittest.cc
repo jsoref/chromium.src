@@ -367,7 +367,7 @@ class WiFiDisplayElementaryStreamUnitPacketizationTest
 
   void CheckTransportStreamProgramAssociationTablePacket(
       const WiFiDisplayTransportStreamPacket& packet) {
-    static const uint8_t kProgramAssicationTable[4u + 13u] = {
+    static const uint8_t kProgramAssociationTable[4u + 13u] = {
         // Pointer:
         0u,  // Pointer field
         // Table header:
@@ -401,10 +401,10 @@ class WiFiDisplayElementaryStreamUnitPacketizationTest
         packet.header().size());
     CheckTransportStreamPacketHeader(
         &header_reader, true, widi::kProgramAssociationTablePacketId, nullptr,
-        continuity_.program_assication_table++);
+        continuity_.program_association_table++);
     EXPECT_EQ(0, header_reader.remaining());
 
-    EXPECT_EQ(PacketPart(kProgramAssicationTable), packet.payload());
+    EXPECT_EQ(PacketPart(kProgramAssociationTable), packet.payload());
   }
 
   void CheckTransportStreamProgramMapTablePacket(
@@ -544,7 +544,7 @@ class WiFiDisplayElementaryStreamUnitPacketizationTest
   const base::TimeTicks pts_;
 
   struct {
-    size_t program_assication_table;
+    size_t program_association_table;
     size_t program_map_table;
     size_t program_clock_reference;
     size_t elementary_streams[3];

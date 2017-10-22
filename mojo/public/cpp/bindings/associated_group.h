@@ -36,7 +36,7 @@ class MOJO_CPP_BINDINGS_EXPORT AssociatedGroup {
   //   - If the handle is invalid, the return value will always be null.
   //   - If the handle is valid and non-pending, the return value will be
   //     non-null and remain unchanged even if the handle is later reset.
-  //   - If the handle is pending asssociation, the return value will initially
+  //   - If the handle is pending association, the return value will initially
   //     be null, change to non-null when/if the handle is associated, and
   //     remain unchanged ever since.
   AssociatedGroupController* GetController();
