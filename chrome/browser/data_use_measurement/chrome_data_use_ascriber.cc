@@ -442,7 +442,7 @@ void ChromeDataUseAscriber::DidFinishMainFrameNavigation(
 
     // |time| is when navigation commit finished in UI thread. Before this
     // navigation finish is processed in IO thread, there could be some
-    // subresource requests started and get asribed to |old_frame_entry|. Move
+    // subresource requests started and get ascribed to |old_frame_entry|. Move
     // these requests that started after |time| but ascribed to the previous
     // page load to page load |entry|.
     // TODO(rajendrant): This does not move completed requests. It is possible
