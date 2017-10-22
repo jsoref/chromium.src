@@ -1589,7 +1589,7 @@ void RenderWidgetHostViewAndroid::HideInternal() {
       << "Hide called when the widget should be shown.";
 
   // Only preserve the frontbuffer if the activity was stopped while the
-  // window is still visible. This avoids visual artificts when transitioning
+  // window is still visible. This avoids visual artifacts when transitioning
   // between activities.
   bool hide_frontbuffer = is_window_activity_started_ || !is_window_visible_;
 
