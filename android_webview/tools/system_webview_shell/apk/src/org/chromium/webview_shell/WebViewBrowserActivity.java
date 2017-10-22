@@ -102,7 +102,7 @@ public class WebViewBrowserActivity extends Activity implements PopupMenu.OnMenu
     private String mWebViewVersion;
 
     // Each time we make a request, store it here with an int key. onRequestPermissionsResult will
-    // look up the request in order to grant the approprate permissions.
+    // look up the request in order to grant the appropriate permissions.
     private SparseArray<PermissionRequest> mPendingRequests = new SparseArray<PermissionRequest>();
     private int mNextRequestKey = 0;
 

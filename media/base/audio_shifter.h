@@ -71,7 +71,7 @@ class MEDIA_EXPORT AudioShifter {
   // Given audio from an a microphone, a reasonable way to calculate
   // playout_time would be now + 30ms.
   // Ideally playout_time is some time in the future, in which case
-  // the samples will be buffered until the approperiate time. If
+  // the samples will be buffered until the appropriate time. If
   // playout_time is in the past, everything will still work, and we'll
   // try to keep the buffring to a minimum.
   void Push(std::unique_ptr<AudioBus> input, base::TimeTicks playout_time);

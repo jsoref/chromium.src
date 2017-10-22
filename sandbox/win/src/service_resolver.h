@@ -78,7 +78,7 @@ class ServiceResolverThunk : public ResolverThunk {
   // contain the original code. The real type of this buffer is ServiceFullThunk
   // (yes, private). remote_thunk (real type ServiceFullThunk), must be
   // allocated on the child, and will contain the thunk data, after this call.
-  // Returns the apropriate status code.
+  // Returns the appropriate status code.
   virtual NTSTATUS PerformPatch(void* local_thunk, void* remote_thunk);
 
   // Provides basically the same functionality as IsFunctionAService but it

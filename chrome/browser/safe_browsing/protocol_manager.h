@@ -226,7 +226,7 @@ class SafeBrowsingProtocolManager : public net::URLFetcherDelegate {
   GURL NextChunkUrl(const std::string& input) const;
 
   // Returns the time for the next update request. If |back_off| is true,
-  // the time returned will increment an error count and return the appriate
+  // the time returned will increment an error count and return the appropriate
   // next time (see ScheduleNextUpdate below).
   base::TimeDelta GetNextUpdateInterval(bool back_off);
 

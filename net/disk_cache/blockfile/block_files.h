@@ -42,7 +42,7 @@ class NET_EXPORT_PRIVATE BlockHeader {
   ~BlockHeader();
 
   // Creates a new entry of |size| blocks on the allocation map, updating the
-  // apropriate counters.
+  // appropriate counters.
   bool CreateMapBlock(int size, int* index);
 
   // Deletes the block pointed by |index|.

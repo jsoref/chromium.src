@@ -1778,7 +1778,7 @@ int ChromeBrowserMainParts::PreMainMessageLoopRunImpl() {
 
   // Instantiate the notification UI manager, as this triggers a perf timer
   // used to measure startup time. TODO(stevenjb): Figure out what is actually
-  // triggering the timer and call that explicitly in the approprate place.
+  // triggering the timer and call that explicitly in the appropriate place.
   // http://crbug.com/105065.
   browser_process_->notification_ui_manager();
 

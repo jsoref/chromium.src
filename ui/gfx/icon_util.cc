@@ -583,7 +583,7 @@ void IconUtil::InitializeBitmapHeader(BITMAPV5HEADER* header, int width,
   header->bV5AlphaMask = 0xFF000000;
 
   // Use the system color space.  The default value is LCS_CALIBRATED_RGB, which
-  // causes us to crash if we don't specify the approprite gammas, etc.  See
+  // causes us to crash if we don't specify the appropriate gammas, etc.  See
   // <http://msdn.microsoft.com/en-us/library/ms536531(VS.85).aspx> and
   // <http://b/1283121>.
   header->bV5CSType = LCS_WINDOWS_COLOR_SPACE;

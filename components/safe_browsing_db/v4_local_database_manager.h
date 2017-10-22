@@ -279,7 +279,7 @@ class V4LocalDatabaseManager : public SafeBrowsingDatabaseManager {
   // the database to become available with the verdict as SAFE.
   void RespondSafeToQueuedChecks();
 
-  // Calls the appopriate method on the |client| object, based on the contents
+  // Calls the appropriate method on the |client| object, based on the contents
   // of |pending_check|.
   void RespondToClient(std::unique_ptr<PendingCheck> pending_check);
 

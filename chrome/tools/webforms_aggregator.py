@@ -111,7 +111,7 @@ class Retriever(object):
   def _AddLink(self, link):
     """Adds url |link|, if not already present, to the appropriate list.
 
-    The link only gets added to the single list that is appopriate for it:
+    The link only gets added to the single list that is appropriate for it:
     _secure_links, _general_links, _clues_secure_links or _clues_general_links.
 
     Args:

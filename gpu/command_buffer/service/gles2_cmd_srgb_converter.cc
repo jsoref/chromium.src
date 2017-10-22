@@ -318,7 +318,7 @@ void SRGBConverter::Blit(
 
     glDrawArrays(GL_TRIANGLES, 0, 6);
   } else {
-    // Set approriate read framebuffer if decoding is skipped.
+    // Set appropriate read framebuffer if decoding is skipped.
     glBindFramebufferEXT(GL_READ_FRAMEBUFFER, src_framebuffer);
   }
 
@@ -342,7 +342,7 @@ void SRGBConverter::Blit(
     glFramebufferTexture2DEXT(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0,
                               GL_TEXTURE_2D, srgb_converter_textures_[0], 0);
   } else {
-    // Set approriate draw framebuffer if encoding is skipped.
+    // Set appropriate draw framebuffer if encoding is skipped.
     glBindFramebufferEXT(GL_DRAW_FRAMEBUFFER, dst_framebuffer);
 
     if (enable_scissor_test) {

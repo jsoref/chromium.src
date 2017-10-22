@@ -1934,7 +1934,7 @@ TEST_F(ViewTest, Textfield) {
   widget->CloseNow();
 }
 
-// Tests that the Textfield view respond appropiately to cut/copy/paste.
+// Tests that the Textfield view respond appropriately to cut/copy/paste.
 TEST_F(ViewTest, TextfieldCutCopyPaste) {
   const base::string16 kNormalText = ASCIIToUTF16("Normal");
   const base::string16 kReadOnlyText = ASCIIToUTF16("Read only");

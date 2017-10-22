@@ -1660,7 +1660,7 @@ Trex.prototype = {
 
   /**
    * Setter for the jump velocity.
-   * The approriate drop velocity is also set.
+   * The appropriate drop velocity is also set.
    */
   setJumpVelocity: function(setting) {
     this.config.INIITAL_JUMP_VELOCITY = -setting;

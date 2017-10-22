@@ -40,7 +40,7 @@ public interface OverscrollRefreshHandler {
     /**
      * Toggle whether the effect is active.
      * @param enabled Whether to enable the effect.
-     *                If disabled, the effect should deactive itself apropriately.
+     *                If disabled, the effect should deactive itself appropriately.
      */
     public void setEnabled(boolean enabled);
 }

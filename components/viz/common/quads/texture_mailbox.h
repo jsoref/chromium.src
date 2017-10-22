@@ -28,7 +28,7 @@ namespace viz {
 
 class SharedBitmap;
 
-// TODO(skaslev, danakj) Rename this class more apropriately since now it
+// TODO(skaslev, danakj) Rename this class more appropriately since now it
 // can hold a shared memory resource as well as a texture mailbox.
 class VIZ_COMMON_EXPORT TextureMailbox {
  public:

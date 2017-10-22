@@ -54,7 +54,7 @@ editing.TextEditHandler.prototype = {
    * Receives the following kinds of events when the node provided to the
    * constructor is focuse: |focus|, |textChanged|, |textSelectionChanged| and
    * |valueChanged|.
-   * An implementation of this method should emit the appropritate braille and
+   * An implementation of this method should emit the appropriate braille and
    * spoken feedback for the event.
    * @param {!(AutomationEvent|CustomAutomationEvent)} evt
    */

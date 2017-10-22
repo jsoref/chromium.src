@@ -459,7 +459,7 @@ void MultiBuffer::PinRange(const BlockId& from,
 
   // Iterate over all the modified ranges and check if any of them have
   // transitioned in or out of the unlocked state. If so, we iterate over
-  // all buffers in that range and add/remove them from the LRU as approperiate.
+  // all buffers in that range and add/remove them from the LRU as appropriate.
   // We iterate *backwards* through the ranges, with the idea that data in a
   // continous range should be freed from the end first.
 

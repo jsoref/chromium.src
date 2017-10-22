@@ -1193,7 +1193,7 @@ void NativeBackendKWalletPickleTest::CreateVersion0Pickle(
     const PasswordForm& form,
     base::Pickle* pickle) {
   pickle->WriteInt(0);
-  // Write the number of forms in the pickle in the appopriate bit size.
+  // Write the number of forms in the pickle in the appropriate bit size.
   if (size_32)
     pickle->WriteUInt32(1);
   else

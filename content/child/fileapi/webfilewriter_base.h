@@ -37,7 +37,7 @@ class CONTENT_EXPORT WebFileWriterBase : public blink::WebFileWriter {
   void DidFail(base::File::Error error_code);
 
   // Derived classes must provide these methods to asynchronously perform
-  // the requested operation, and they must call the appropiate DidSomething
+  // the requested operation, and they must call the appropriate DidSomething
   // method upon completion and as progress is made in the Write case.
   virtual void DoTruncate(const GURL& path, int64_t offset) = 0;
   virtual void DoWrite(const GURL& path,

@@ -25,7 +25,7 @@
 // We simply add an extra reference to objects when they're put in storage,
 // and remove the extra reference when they are removed from storage.
 // Responses are never really removed from the in-memory disk cache.
-// Delegate callbacks are made asyncly to appropiately mimic what will
+// Delegate callbacks are made asyncly to appropriately mimic what will
 // happen with a real disk-backed storage impl that involves IO on a
 // background thread.
 

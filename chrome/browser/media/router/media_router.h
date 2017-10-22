@@ -160,7 +160,7 @@ class MediaRouter : public KeyedService {
 
   // Notifies the Media Router that the user has taken an action involving the
   // Media Router. This can be used to perform any initialization that is not
-  // approriate to be done at construction.
+  // appropriate to be done at construction.
   virtual void OnUserGesture() = 0;
 
   // Searches for a MediaSink using |search_input| and |domain| as criteria.

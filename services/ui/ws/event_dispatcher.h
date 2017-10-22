@@ -158,7 +158,7 @@ class EventDispatcher : public ServerWindowObserver,
   // True if we are actively finding a target for an event, false otherwise.
   bool IsProcessingEvent() const;
 
-  // Processes the supplied event, informing the delegate as approriate. This
+  // Processes the supplied event, informing the delegate as appropriate. This
   // may result in generating any number of events. If |match_phase| is
   // ANY and there is a matching accelerator with PRE_TARGET found, than only
   // OnAccelerator() is called. The expectation is after the PRE_TARGET has been

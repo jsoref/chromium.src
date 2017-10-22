@@ -261,7 +261,7 @@ HEADLESS_EXPORT void RunChildProcessIfNeeded(int argc, const char** argv);
 // In Windows, the headless browser may need to create child processes. This is
 // done by re-executing the parent process which may have been initialized with
 // different libraries (e.g. child_dll). In this case, the embedder has to pass
-// the appropiate HINSTANCE and initalization sandbox_info to properly launch
+// the appropriate HINSTANCE and initalization sandbox_info to properly launch
 // the child process.
 HEADLESS_EXPORT void RunChildProcessIfNeeded(
     HINSTANCE instance,

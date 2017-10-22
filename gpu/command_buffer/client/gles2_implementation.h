@@ -628,11 +628,11 @@ class GLES2_IMPL_EXPORT GLES2Implementation
   void RunIfContextNotLost(const base::Closure& callback);
 
   // Validate if an offset is valid, i.e., non-negative and fit into 32-bit.
-  // If not, generate an approriate error, and return false.
+  // If not, generate an appropriate error, and return false.
   bool ValidateOffset(const char* func, GLintptr offset);
 
   // Validate if a size is valid, i.e., non-negative and fit into 32-bit.
-  // If not, generate an approriate error, and return false.
+  // If not, generate an appropriate error, and return false.
   bool ValidateSize(const char* func, GLsizeiptr offset);
 
   // Remove the transfer buffer from the buffer tracker. For buffers used
