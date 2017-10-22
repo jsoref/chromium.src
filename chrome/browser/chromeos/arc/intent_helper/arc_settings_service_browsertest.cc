@@ -636,7 +636,7 @@ IN_PROC_BROWSER_TEST_F(ArcSettingsServiceTest, NoNetworkConnectedTest) {
 }
 
 IN_PROC_BROWSER_TEST_F(ArcSettingsServiceTest, TwoONCProxyPolicyTest) {
-  // Connect to wifi1 with appliead device ONC policy.
+  // Connect to wifi1 with applied device ONC policy.
   ConnectWifiNetworkService(kWifi1ServicePath, kWifi1Guid, kWifi1Ssid);
 
   // Disconnect default network.
@@ -669,7 +669,7 @@ IN_PROC_BROWSER_TEST_F(ArcSettingsServiceTest, TwoONCProxyPolicyTest) {
   DisconnectNetworkService(kWifi1ServicePath);
   fake_intent_helper_instance_->clear_broadcasts();
 
-  // Connect to wifi0 with appliead user ONC policy.
+  // Connect to wifi0 with applied user ONC policy.
   ConnectWifiNetworkService(kWifi0ServicePath, kWifi0Guid, kWifi0Ssid);
 
   expected_proxy_config->SetString("mode",
