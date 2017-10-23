@@ -53,7 +53,7 @@ class CHROMEOS_EXPORT EasyUnlockClient : public DBusClient {
     std::string public_metadata;
 
     // The key id added to the message header. Has to be set if the message is
-    // signed with private asymetric key. This value is used by the receiver to
+    // signed with private asymmetric key. This value is used by the receiver to
     // identify the key that should be used to verify the signature.
     std::string verification_key_id;
 
@@ -109,7 +109,7 @@ class CHROMEOS_EXPORT EasyUnlockClient : public DBusClient {
 
   // Given a private and a public key, creates a symetric secret key using
   // EC Diffe-Hellman key exchange. The provided keys come from different
-  // asymetric key pairs, and are expected to be in the same format as the ones
+  // asymmetric key pairs, and are expected to be in the same format as the ones
   // returned by |GenerateEcP256KeyAgreement|. Reversing key pairs from which
   // private and public key come generates the same secret key.
   virtual void PerformECDHKeyAgreement(const std::string& private_key,
