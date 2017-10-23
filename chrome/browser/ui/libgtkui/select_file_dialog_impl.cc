@@ -37,7 +37,7 @@ ui::SelectFileDialog* SelectFileDialogImpl::Create(
     std::unique_ptr<ui::SelectFilePolicy> policy) {
   DCHECK_CURRENTLY_ON(BrowserThread::UI);
   if (use_kde_ == UNKNOWN) {
-    // Start out assumimg we are not going to use KDE.
+    // Start out assuming we are not going to use KDE.
     use_kde_ = NO_KDE;
 
     // Check to see if KDE is the desktop environment.
