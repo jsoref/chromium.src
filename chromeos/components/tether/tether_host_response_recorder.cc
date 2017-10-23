@@ -16,7 +16,7 @@ namespace tether {
 
 // static
 void TetherHostResponseRecorder::RegisterPrefs(PrefRegistrySimple* registry) {
-  registry->RegisterListPref(prefs::kMostRecentTetherAvailablilityResponderIds);
+  registry->RegisterListPref(prefs::kMostRecentTetherAvailabilityResponderIds);
   registry->RegisterListPref(prefs::kMostRecentConnectTetheringResponderIds);
 }
 
@@ -37,12 +37,12 @@ void TetherHostResponseRecorder::RemoveObserver(Observer* observer) {
 void TetherHostResponseRecorder::RecordSuccessfulTetherAvailabilityResponse(
     const cryptauth::RemoteDevice& remote_device) {
   AddRecentResponse(remote_device.GetDeviceId(),
-                    prefs::kMostRecentTetherAvailablilityResponderIds);
+                    prefs::kMostRecentTetherAvailabilityResponderIds);
 }
 
 std::vector<std::string>
 TetherHostResponseRecorder::GetPreviouslyAvailableHostIds() const {
-  return GetDeviceIdsForPref(prefs::kMostRecentTetherAvailablilityResponderIds);
+  return GetDeviceIdsForPref(prefs::kMostRecentTetherAvailabilityResponderIds);
 }
 
 void TetherHostResponseRecorder::RecordSuccessfulConnectTetheringResponse(

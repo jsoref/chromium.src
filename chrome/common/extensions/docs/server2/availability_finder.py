@@ -281,7 +281,7 @@ class AvailabilityFinder(object):
       available_channel = _GetChannelFromAPIFeatures(node_name, features_bundle)
     if (available_channel is None and
         channel_info.version >= earliest_channel_info.version):
-      # Most API nodes inherit their availabiltity from their parent, so don't
+      # Most API nodes inherit their availability from their parent, so don't
       # explicitly appear in _api_features.json. For example, "tabs.create"
       # isn't listed; it inherits from "tabs". Assume these are available at
       # |channel_info|.

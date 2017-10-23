@@ -122,7 +122,7 @@ void MediaFactory::SetupMojo() {
 
 #if BUILDFLAG(ENABLE_MEDIA_REMOTING)
   // Create the SinkAvailabilityObserver to monitor the remoting sink
-  // availablity.
+  // availability.
   media::mojom::RemotingSourcePtr remoting_source;
   auto remoting_source_request = mojo::MakeRequest(&remoting_source);
   media::mojom::RemoterPtr remoter;

@@ -18,7 +18,7 @@ namespace remoting {
 class RemotingCdmFactory : public CdmFactory {
  public:
   // |remoter_factory| is expected to outlive this class.
-  // |sink_observer| monitors the remoting sink availablity, which is used to
+  // |sink_observer| monitors the remoting sink availability, which is used to
   // initialize SharedSession when created to avoid possible delay of
   // OnSinkAvailable() call from browser.
   RemotingCdmFactory(std::unique_ptr<CdmFactory> default_cdm_factory,

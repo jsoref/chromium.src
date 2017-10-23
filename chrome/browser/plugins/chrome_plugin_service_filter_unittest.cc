@@ -310,7 +310,7 @@ TEST_F(ChromePluginServiceFilterTest,
   map->SetDefaultContentSetting(CONTENT_SETTINGS_TYPE_PLUGINS,
                                 CONTENT_SETTING_BLOCK);
 
-  // We should fail the availablity check in incognito.
+  // We should fail the availability check in incognito.
   GURL url("http://www.google.com");
   url::Origin main_frame_origin(url);
   EXPECT_FALSE(IsPluginAvailable(
@@ -355,7 +355,7 @@ TEST_F(ChromePluginServiceFilterTest,
       std::string(),
       CONTENT_SETTING_ALLOW);
 
-  // We pass the availablity check in incognito based on the original content
+  // We pass the availability check in incognito based on the original content
   // setting.
   url::Origin main_frame_origin(url);
   EXPECT_TRUE(IsPluginAvailable(url, main_frame_origin,

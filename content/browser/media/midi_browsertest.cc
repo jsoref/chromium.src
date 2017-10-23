@@ -25,7 +25,7 @@ IN_PROC_BROWSER_TEST_F(MidiBrowserTest, RequestMIDIAccess) {
       "    _ => domAutomationController.send(true),"
       "    _ => domAutomationController.send(false));",
       &result));
-  // We cannot check result since it relies on the availabity of system
+  // We cannot check result since it relies on the availability of system
   // level MIDI on the test runner.
 }
 
@@ -40,7 +40,7 @@ IN_PROC_BROWSER_TEST_F(MidiBrowserTest, SubscribeAll) {
       "             domAutomationController.send(true) },"
       "    _ => domAutomationController.send(false));",
       &result));
-  // We cannot check result since it relies on the availabity of system
+  // We cannot check result since it relies on the availability of system
   // level MIDI on the test runner.
 }
 

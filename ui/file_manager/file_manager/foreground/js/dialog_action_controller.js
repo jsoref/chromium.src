@@ -263,7 +263,7 @@ DialogActionController.prototype.processNewFolderAction_ = function() {
 };
 
 /**
- * Handles disabledChange event to update the new-folder button's avaliability.
+ * Handles disabledChange event to update the new-folder button's availability.
  * @private
  */
 DialogActionController.prototype.updateNewFolderButton_ = function() {

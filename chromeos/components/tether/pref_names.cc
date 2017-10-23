@@ -10,7 +10,7 @@ namespace tether {
 
 namespace prefs {
 
-const char kMostRecentTetherAvailablilityResponderIds[] =
+const char kMostRecentTetherAvailabilityResponderIds[] =
     "tether.most_recent_tether_availability_responder_ids";
 
 const char kMostRecentConnectTetheringResponderIds[] =

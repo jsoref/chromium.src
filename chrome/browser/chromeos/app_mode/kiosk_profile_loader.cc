@@ -73,7 +73,7 @@ class KioskProfileLoader::CryptohomedChecker
     DBusThreadManager::Get()
         ->GetCryptohomeClient()
         ->WaitForServiceToBeAvailable(base::Bind(
-            &CryptohomedChecker::OnServiceAvailibityChecked, AsWeakPtr()));
+            &CryptohomedChecker::OnServiceAvailabilityChecked, AsWeakPtr()));
   }
 
  private:
@@ -92,7 +92,7 @@ class KioskProfileLoader::CryptohomedChecker
         base::TimeDelta::FromMilliseconds(retry_delay_in_milliseconds));
   }
 
-  void OnServiceAvailibityChecked(bool service_is_ready) {
+  void OnServiceAvailabilityChecked(bool service_is_ready) {
     if (!service_is_ready) {
       Retry();
       return;

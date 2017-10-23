@@ -204,8 +204,8 @@ class ProfileIOData {
 
   bool IsOffTheRecord() const;
 
-  IntegerPrefMember* incognito_availibility() const {
-    return &incognito_availibility_pref_;
+  IntegerPrefMember* incognito_availability() const {
+    return &incognito_availability_pref_;
   }
 
   chrome_browser_net::LoadingPredictorObserver* loading_predictor_observer()
@@ -556,7 +556,7 @@ class ProfileIOData {
   mutable BooleanPrefMember safe_browsing_enabled_;
   mutable StringPrefMember allowed_domains_for_apps_;
   mutable IntegerPrefMember network_prediction_options_;
-  mutable IntegerPrefMember incognito_availibility_pref_;
+  mutable IntegerPrefMember incognito_availability_pref_;
 
   BooleanPrefMember enable_metrics_;
 

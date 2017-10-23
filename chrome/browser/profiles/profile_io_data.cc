@@ -542,9 +542,9 @@ void ProfileIOData::InitializeOnUIThread(Profile* profile) {
     }
   }
 
-  incognito_availibility_pref_.Init(
+  incognito_availability_pref_.Init(
       prefs::kIncognitoModeAvailability, pref_service);
-  incognito_availibility_pref_.MoveToThread(io_task_runner);
+  incognito_availability_pref_.MoveToThread(io_task_runner);
 
   // We need to make sure that content initializes its own data structures that
   // are associated with each ResourceContext because we might post this
@@ -1372,7 +1372,7 @@ void ProfileIOData::ShutdownOnUIThread(
     ct_policy_manager_->Shutdown();
   if (chrome_http_user_agent_settings_)
     chrome_http_user_agent_settings_->CleanupOnUIThread();
-  incognito_availibility_pref_.Destroy();
+  incognito_availability_pref_.Destroy();
 
   if (!context_getters->empty()) {
     if (BrowserThread::IsMessageLoopValid(BrowserThread::IO)) {

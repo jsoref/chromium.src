@@ -247,7 +247,7 @@ void FixAccountConsistencyRequestHeader(net::URLRequest* request,
   }
 
   int profile_mode_mask = PROFILE_MODE_DEFAULT;
-  if (io_data->incognito_availibility()->GetValue() ==
+  if (io_data->incognito_availability()->GetValue() ==
           IncognitoModePrefs::DISABLED ||
       IncognitoModePrefs::ArePlatformParentalControlsEnabled()) {
     profile_mode_mask |= PROFILE_MODE_INCOGNITO_DISABLED;

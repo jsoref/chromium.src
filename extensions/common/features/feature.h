@@ -70,7 +70,7 @@ class Feature {
     MISSING_COMMAND_LINE_SWITCH,
   };
 
-  // Container for AvailabiltyResult that also exposes a user-visible error
+  // Container for AvailabilityResult that also exposes a user-visible error
   // message in cases where the feature is not available.
   class Availability {
    public:

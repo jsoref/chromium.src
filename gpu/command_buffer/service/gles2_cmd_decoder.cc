@@ -2432,7 +2432,7 @@ class GLES2DecoderImpl : public GLES2Decoder, public ErrorStateClient {
 
   // These flags are used to override the state of the shared feature_info_
   // member.  Because the same FeatureInfo instance may be shared among many
-  // contexts, the assumptions on the availablity of extensions in WebGL
+  // contexts, the assumptions on the availability of extensions in WebGL
   // contexts may be broken.  These flags override the shared state to preserve
   // WebGL semantics.
   bool derivatives_explicitly_enabled_;

@@ -21,7 +21,7 @@ class AnimationCurve;
 class CC_ANIMATION_EXPORT Animation {
  public:
   // Animations begin in the 'WAITING_FOR_TARGET_AVAILABILITY' state. An
-  // Animation waiting for target availibility will run as soon as its target
+  // Animation waiting for target availability will run as soon as its target
   // property is free (and all the animations animating with it are also able to
   // run). When this time arrives, the controller will move the animation into
   // the STARTING state, and then into the RUNNING state. RUNNING animations may

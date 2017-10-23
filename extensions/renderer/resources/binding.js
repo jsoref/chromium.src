@@ -4,7 +4,7 @@
 
 var Event = require('event_bindings').Event;
 var forEach = require('utils').forEach;
-// Note: Beware sneaky getters/setters when using GetAvailbility(). Use safe/raw
+// Note: Beware sneaky getters/setters when using GetAvailability(). Use safe/raw
 // variables as arguments.
 var GetAvailability = requireNative('v8_context').GetAvailability;
 var exceptionHandler = require('uncaught_exception_handler');

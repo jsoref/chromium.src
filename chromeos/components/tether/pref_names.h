@@ -15,7 +15,7 @@ namespace prefs {
 // which have most recently replied to a TetherAvailabilityRequest with a
 // response code indicating that tethering is available. The value stored is a
 // ListValue, with the most recent response residing at the start of the list.
-extern const char kMostRecentTetherAvailablilityResponderIds[];
+extern const char kMostRecentTetherAvailabilityResponderIds[];
 
 // Preference name for the preference which stores IDs corresponding to devices
 // which have most recently replied to a ConnectTetheringResponse with a
