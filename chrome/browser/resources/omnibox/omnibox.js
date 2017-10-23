@@ -11,7 +11,7 @@
  *
  * The simple object defined in this javascript file listens for
  * certain events on omnibox.html, sends (when appropriate) the
- * input text to C++ code to start the omnibox autcomplete controller
+ * input text to C++ code to start the omnibox autocomplete controller
  * working, and listens from callbacks from the C++ code saying that
  * results are available.  When results (possibly intermediate ones)
  * are available, the Javascript formats them and displays them.

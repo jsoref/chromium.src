@@ -14,7 +14,7 @@
 @class AutocompleteTextField;
 class AutocompleteTextFieldObserver;
 
-// AutocompleteTextFieldEditor customized the AutocompletTextField
+// AutocompleteTextFieldEditor customized the AutocompleteTextField
 // field editor (helper text-view used in editing).  It intercepts UI
 // events for forwarding to the core Omnibox code.  It also undoes
 // some of the effects of using styled text in the Omnibox (the text
@@ -25,7 +25,7 @@ class AutocompleteTextFieldObserver;
 @interface AutocompleteTextFieldEditor : NSTextView<URLDropTarget,
                                                     ThemedWindowDrawing> {
   // Handles being a drag-and-drop target. We handle DnD directly instead
-  // allowing the |AutocompletTextField| to handle it (by making an empty
+  // allowing the |AutocompleteTextField| to handle it (by making an empty
   // |-updateDragTypeRegistration|), since the latter results in a weird
   // start-up time regression.
   base::scoped_nsobject<URLDropTargetHandler> dropHandler_;

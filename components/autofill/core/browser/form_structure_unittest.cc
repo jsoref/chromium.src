@@ -957,7 +957,7 @@ TEST_F(FormStructureTest,
   FormFieldData field;
   field.form_control_type = "text";
 
-  // Set a valid autocompelete attribute to the first field.
+  // Set a valid autocomplete attribute to the first field.
   field.label = ASCIIToUTF16("First Name");
   field.name = ASCIIToUTF16("firstname");
   field.autocomplete_attribute = "given-name";
