@@ -134,7 +134,7 @@ void UpdateModalDialogPosition(views::Widget* widget,
 
 #if defined(USE_AURA)
   if (!widget->is_top_level()) {
-    // Toplevel windows are automatiacally snapped, but CHILD windows
+    // Toplevel windows are automagically snapped, but CHILD windows
     // may not. If it's not toplevel, snap the widget's layer to pixel
     // based on the parent toplevel window, which should be snapped.
     gfx::NativeView window = widget->GetNativeView();

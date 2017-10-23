@@ -2492,7 +2492,7 @@ TEST_F(DisplayManagerTest, UnifiedDesktopWithHardwareMirroring) {
   display_manager()->SetUnifiedDesktopEnabled(true);
   EXPECT_TRUE(display_manager()->IsInMirrorMode());
 
-  // The display manager automaticaclly switches to software mirroring
+  // The display manager automagically switches to software mirroring
   // if the displays are configured to use mirroring when running on desktop.
   // This is a workdaround to force the display manager to forget
   // the mirroing layout.

@@ -24,7 +24,7 @@ namespace {
 // pause in the video stream.
 const int kRestartFramePeriods = 3;
 
-// The following constants are used to automactically tune the encoder
+// The following constants are used to automagically tune the encoder
 // parameters: |cpu_used| and |min_quantizer|.
 
 // The |half-life| of the encoding speed accumulator.
