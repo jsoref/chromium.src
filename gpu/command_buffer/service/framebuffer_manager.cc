@@ -766,7 +766,7 @@ GLenum Framebuffer::IsPossiblyComplete(const FeatureInfo* feature_info) const {
   }
   if (feature_info->context_type() == CONTEXT_TYPE_WEBGL1) {
     // WebGL1 has specific additional restrictions on depth and stencil
-    // attachments (e.g. it is forbidden to bind a DEPTH_STENCIL attachement to
+    // attachments (e.g. it is forbidden to bind a DEPTH_STENCIL attachment to
     // a (pure) GL_DEPTH_ATTACHMENT. Note that in WebGL1,
     // GL_DEPTH_STENCIL_ATTACHMENT is a separate bind point, but that logic is
     // handled in Blink and translated to

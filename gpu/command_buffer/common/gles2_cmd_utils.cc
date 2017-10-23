@@ -386,12 +386,12 @@ int GLES2Util::GLGetNumValuesReturned(int id) const {
     // -- glGetShaderiv
     case GL_SHADER_TYPE:
       return 1;
-    // Already defined under glGetFramebufferAttachemntParameteriv.
+    // Already defined under glGetFramebufferAttachmentParameteriv.
     // case GL_DELETE_STATUS:
     //   return 1;
     case GL_COMPILE_STATUS:
       return 1;
-    // Already defined under glGetFramebufferAttachemntParameteriv.
+    // Already defined under glGetFramebufferAttachmentParameteriv.
     // case GL_INFO_LOG_LENGTH:
     //   return 1;
     case GL_SHADER_SOURCE_LENGTH:

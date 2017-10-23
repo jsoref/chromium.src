@@ -91,7 +91,7 @@ bool CastCrashdumpUploader::Upload(std::string* response) {
   parameters_[kEmailKey] = data_.email;
   parameters_[kCommentsKey] = data_.comments;
 
-  // Add each attachement in |attachments_|.
+  // Add each attachment in |attachments_|.
   for (auto iter = attachments_.begin(); iter != attachments_.end(); ++iter) {
     // Search for the attachment.
     if (0 != stat(iter->second.c_str(), &st)) {

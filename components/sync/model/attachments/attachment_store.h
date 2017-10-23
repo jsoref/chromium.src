@@ -94,7 +94,7 @@ class AttachmentStore {
   // successfully.
   void Write(const AttachmentList& attachments, const WriteCallback& callback);
 
-  // Asynchronously drops |attchments| from this store.
+  // Asynchronously drops |attachments| from this store.
   //
   // This does not remove attachments from the server.
   //

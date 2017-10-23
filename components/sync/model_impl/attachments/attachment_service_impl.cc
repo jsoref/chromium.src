@@ -26,7 +26,7 @@ class AttachmentServiceImpl::GetOrDownloadState
  public:
   // GetOrDownloadState gets parameter from values passed to
   // AttachmentService::GetOrDownloadAttachments.
-  // |attachment_ids| is a list of attachmens to retrieve.
+  // |attachment_ids| is a list of attachments to retrieve.
   // |callback| will be posted on current thread when all attachments retrieved
   // or confirmed unavailable.
   GetOrDownloadState(const AttachmentIdList& attachment_ids,
