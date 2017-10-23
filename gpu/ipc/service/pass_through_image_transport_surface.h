@@ -62,7 +62,7 @@ class PassThroughImageTransportSurface : public gl::GLSurfaceAdapter {
 
   void UpdateSwapInterval();
 
-  // Add |latency_info| to be reported and augumented with GPU latency
+  // Add |latency_info| to be reported and augmented with GPU latency
   // components next time there is a GPU buffer swap.
   void AddLatencyInfo(const std::vector<ui::LatencyInfo>& latency_info);
   std::unique_ptr<std::vector<ui::LatencyInfo>> StartSwapBuffers();

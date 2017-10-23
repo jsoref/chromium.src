@@ -70,7 +70,7 @@ class VIEWS_EXPORT StyledLabel : public View, public LinkListener {
 
   const base::string16& text() const { return text_; }
 
-  // Sets the fonts used by all labels. Can be augemented by styling set by
+  // Sets the fonts used by all labels. Can be augmented by styling set by
   // AddStyleRange and SetDefaultStyle.
   void SetBaseFontList(const gfx::FontList& font_list);
 
