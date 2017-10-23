@@ -626,7 +626,7 @@ IN_PROC_BROWSER_TEST_F(SamlTest, ScrapedNone) {
 // Types |bob@example.com| into the GAIA login form but then authenticates as
 // |alice@example.com| via SAML. Verifies that the logged-in user is correctly
 // identified as Alice.
-IN_PROC_BROWSER_TEST_F(SamlTest, UseAutenticatedUserEmailAddress) {
+IN_PROC_BROWSER_TEST_F(SamlTest, UseAuthenticatedUserEmailAddress) {
   fake_saml_idp()->SetLoginHTMLTemplate("saml_login.html");
   // Type |bob@example.com| into the GAIA login form.
   StartSamlAndWaitForIdpPageLoad(kSecondSAMLUserEmail);
@@ -651,7 +651,7 @@ IN_PROC_BROWSER_TEST_F(SamlTest, UseAutenticatedUserEmailAddress) {
 
 // Verifies that if the authenticated user's e-mail address cannot be retrieved,
 // an error message is shown.
-IN_PROC_BROWSER_TEST_F(SamlTest, FailToRetrieveAutenticatedUserEmailAddress) {
+IN_PROC_BROWSER_TEST_F(SamlTest, FailToRetrieveAuthenticatedUserEmailAddress) {
   fake_saml_idp()->SetLoginHTMLTemplate("saml_login.html");
   StartSamlAndWaitForIdpPageLoad(kFirstSAMLUserEmail);
 

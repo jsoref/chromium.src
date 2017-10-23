@@ -430,7 +430,7 @@ sources of information, or significant power over a user's experience with their
 computer/phone/watch/et c., or over their experience with it. We would therefore
 like to have some basis to believe the origin meets a minimum bar for security,
 that the sensitive information is transported over the Internet in an
-authetnicated and confidential way, and that users can make meaningful choices
+authenticated and confidential way, and that users can make meaningful choices
 to trust or not trust a web origin.
 
 Note that the reason we require secure origins for WebCrypto is slightly
