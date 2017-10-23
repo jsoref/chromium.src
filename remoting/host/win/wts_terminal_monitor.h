@@ -46,7 +46,7 @@ class WtsTerminalMonitor {
 
   // Returns ID of the session that |terminal_id| is attached.
   // |kInvalidSessionId| is returned if none of the sessions is currently
-  // attahced to |client_endpoint|.
+  // attached to |client_endpoint|.
   static uint32_t LookupSessionId(const std::string& terminal_id);
 
  protected:
