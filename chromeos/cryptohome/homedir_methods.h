@@ -84,7 +84,7 @@ class CHROMEOS_EXPORT HomedirMethods {
   // to unlock the key.
   // Label for |auth| and |key| have to be the same.
   // Key used in |auth| should have PRIV_AUTHORIZED_UPDATE privilege.
-  // |signature| is used by cryptohome to verify the authentity of new key.
+  // |signature| is used by cryptohome to verify the authenticity of new key.
   // |callback| will be called with status info on completion.
   virtual void UpdateKeyEx(const Identification& id,
                            const Authorization& auth,
