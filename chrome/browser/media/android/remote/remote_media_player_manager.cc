@@ -117,7 +117,7 @@ void RemoteMediaPlayerManager::FetchPosterBitmap(int player_id) {
 }
 
 void RemoteMediaPlayerManager::OnSetPoster(int player_id, const GURL& url) {
-  // OnSetPoster is called when the attibutes of the video element are parsed,
+  // OnSetPoster is called when the attributes of the video element are parsed,
   // which may be before OnInitialize is called, so we can't assume that the
   // players wil exist.
   poster_urls_[player_id] = url;

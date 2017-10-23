@@ -509,7 +509,7 @@ class GPU_EXPORT Program : public base::RefCounted<Program> {
   // Clears all the uniforms.
   void ClearUniforms(std::vector<uint8_t>* zero_buffer);
 
-  // If long attribate names are mapped during shader translation, call
+  // If long attribute names are mapped during shader translation, call
   // glBindAttribLocation() again with the mapped names.
   // This is called right before the glLink() call, but after shaders are
   // translated.

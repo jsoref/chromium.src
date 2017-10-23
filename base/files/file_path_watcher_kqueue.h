@@ -22,7 +22,7 @@ namespace base {
 // - file creation/deletion/modification in a watched directory
 // - file creation/deletion/modification for a watched file
 // - modifications to the paths to a watched object that would affect the
-//   object such as renaming/attibute changes etc.
+//   object such as renaming/attribute changes etc.
 // The kqueue implementation will handle all of the items in the list above
 // except for detecting modifications to files in a watched directory. It will
 // detect the creation and deletion of files, just not the modification of

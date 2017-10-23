@@ -2073,7 +2073,7 @@ TEST_F(FormAutofillTest, DetectTextDirectionFromParentDIRAttribute) {
   EXPECT_EQ(base::i18n::RIGHT_TO_LEFT, result.text_direction);
 }
 
-TEST_F(FormAutofillTest, DetectTextDirectionWhenStyleAndDIRAttributMixed) {
+TEST_F(FormAutofillTest, DetectTextDirectionWhenStyleAndDIRAttributeMixed) {
   LoadHTML("<STYLE>input{direction:ltr}</STYLE>"
            "<FORM dir='rtl'>"
            "  <INPUT type='text' id='element'/>"

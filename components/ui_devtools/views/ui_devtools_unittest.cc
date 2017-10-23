@@ -307,7 +307,7 @@ class UIDevToolsTest : public views::ViewsTestBase {
     EXPECT_EQ(bounds.y(), GetIntPropertyByName("y", properties));
   }
 
-  void CompareViewAtrributes(DOM::Node* node, views::View* view) {
+  void CompareViewAttributes(DOM::Node* node, views::View* view) {
     Maybe<CSS::CSSStyle> styles;
     css_agent_->getMatchedStylesForNode(node->getNodeId(), &styles);
     ASSERT_TRUE(styles.isJust());
@@ -930,7 +930,7 @@ TEST_F(UIDevToolsTest, WindowWidgetViewGetMatchedStylesForNode) {
   CompareNodeBounds(parent_children->get(1), window_bounds);
   CompareNodeBounds(parent_children->get(0)->getChildren(nullptr)->get(0),
                     view_bounds);
-  CompareViewAtrributes(parent_children->get(0)->getChildren(nullptr)->get(0),
+  CompareViewAttributes(parent_children->get(0)->getChildren(nullptr)->get(0),
                         widget->GetRootView());
 }
 

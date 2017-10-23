@@ -375,7 +375,7 @@ class SitePerProcessTextInputManagerTest : public InProcessBrowserTest {
   }
 
   // static
-  // Appends an <input> field with various attribues to a given frame by
+  // Appends an <input> field with various attributes to a given frame by
   // executing javascript code.
   static void AppendInputFieldToFrame(content::RenderFrameHost* rfh,
                                       const std::string& type,

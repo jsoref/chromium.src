@@ -1100,7 +1100,7 @@ class PE:
     FILE_HEADER
     OPTIONAL_HEADER
     
-    All of them will contain among their attrbitues the members of the
+    All of them will contain among their attributes the members of the
     corresponding structures as defined in WINNT.H
     
     The raw data corresponding to the header (from the beginning of the
@@ -1794,7 +1794,7 @@ class PE:
     def set_flags(self, obj, flag_field, flags):
         """Will process the flags and set attributes in the object accordingly.
         
-        The object "obj" will gain attritutes named after the flags provided in
+        The object "obj" will gain attributes named after the flags provided in
         "flags" and valued True/False, matching the results of applyin each
         flag value from "flags" to flag_field.
         """
@@ -2027,7 +2027,7 @@ class PE:
         representing upper layers of the tree. This one will also have
         an 'entries' attribute, pointing to the 3rd, and last, level.
         Another directory with more entries. Those last entries will
-        have a new atribute (both 'leaf' or 'data_entry' can be used to
+        have a new attribute (both 'leaf' or 'data_entry' can be used to
         access it). This structure finally points to the resource data.
         All the members of this structure, IMAGE_RESOURCE_DATA_ENTRY,
         are available as its attributes.

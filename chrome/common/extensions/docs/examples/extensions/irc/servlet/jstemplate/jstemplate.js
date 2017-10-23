@@ -169,7 +169,7 @@ JstProcessor.jstcache_[0] = {};
 
 /**
  * Map from concatenated attribute string to jstid.
- * The key is the concatenation of all jst atributes found on a node
+ * The key is the concatenation of all jst attributes found on a node
  * formatted as "name1=value1&name2=value2&...", in the order defined by
  * JST_ATTRIBUTES. The value is the id of the jstcache_ entry that can
  * be used for this node. This allows the reuse of cache entries in cases

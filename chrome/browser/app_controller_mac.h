@@ -50,7 +50,7 @@ class WorkAreaWatcherObserver;
   // build the user-data specific main menu items.
   Profile* lastProfile_;
 
-  // The ProfileObserver observes the ProfileAttrbutesStorage and gets notified
+  // The ProfileObserver observes the ProfileAttributesStorage and gets notified
   // when a profile has been deleted.
   std::unique_ptr<AppControllerProfileObserver>
       profileAttributesStorageObserver_;

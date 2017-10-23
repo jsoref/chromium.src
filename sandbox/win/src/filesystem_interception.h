@@ -26,14 +26,14 @@ SANDBOX_INTERCEPT NTSTATUS WINAPI TargetNtOpenFile(
     POBJECT_ATTRIBUTES object_attributes, PIO_STATUS_BLOCK io_status,
     ULONG sharing, ULONG options);
 
-// Interception of NtQueryAtttributesFile on the child process.
+// Interception of NtQueryAttributesFile on the child process.
 // It should never be called directly.
 SANDBOX_INTERCEPT NTSTATUS WINAPI TargetNtQueryAttributesFile(
     NtQueryAttributesFileFunction orig_QueryAttributes,
     POBJECT_ATTRIBUTES object_attributes,
     PFILE_BASIC_INFORMATION file_attributes);
 
-// Interception of NtQueryFullAtttributesFile on the child process.
+// Interception of NtQueryFullAttributesFile on the child process.
 // It should never be called directly.
 SANDBOX_INTERCEPT NTSTATUS WINAPI TargetNtQueryFullAttributesFile(
     NtQueryFullAttributesFileFunction orig_QueryAttributes,

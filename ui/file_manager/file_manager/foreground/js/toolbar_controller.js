@@ -195,7 +195,7 @@ ToolbarController.prototype.onNavigationListRelayout_ = function() {
 }
 
 /**
- * Handles the mutation event occurd on attibutes of toolbar buttons.
+ * Handles the mutation event occurd on attributes of toolbar buttons.
  * Toolbar buttons visibility can affect the available width for location line.
  * @private
  */

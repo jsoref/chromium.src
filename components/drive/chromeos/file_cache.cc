@@ -864,7 +864,7 @@ bool FileCache::FixMetadataAndFileAttributes() {
 
     if (base::PathExists(filepath)) {
       if (file_cache_entry->is_present()) {
-        // Update file attribues for cryptohome.
+        // Update file attributes for cryptohome.
         if (file_cache_entry->is_pinned() || file_cache_entry->is_dirty()) {
           if (!UnsetRemovable(filepath)) return false;
         } else {

@@ -2618,7 +2618,7 @@ IN_PROC_BROWSER_TEST_F(
 
 // Test whether the change password form having username and password fields
 // with empty names but having only new password fields having
-// |autocomplete='new-password'| atrribute do not get autofilled.
+// |autocomplete='new-password'| attribute do not get autofilled.
 IN_PROC_BROWSER_TEST_F(
     PasswordManagerBrowserTestBase,
     AutofillSuggestionsForChangePwdWithEmptyNamesButOnlyNewPwdField) {

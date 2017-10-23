@@ -19,7 +19,7 @@ namespace {
 
 const char kJingleNamespace[] = "urn:xmpp:jingle:1";
 
-// Represents the XML attrbute names for the various address fields in the
+// Represents the XML attribute names for the various address fields in the
 // iq stanza.
 enum class Field { JID, CHANNEL, ENDPOINT_ID };
 

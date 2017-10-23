@@ -54,7 +54,7 @@ var SsrcInfoManager = (function() {
     this.streamInfoContainer_ = {};
 
     /**
-     * The string separating attibutes in an SDP.
+     * The string separating attributes in an SDP.
      * @type {string}
      * @const
      * @private
