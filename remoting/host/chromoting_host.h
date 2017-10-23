@@ -44,7 +44,7 @@ class DesktopEnvironmentFactory;
 // Here's the work flow of this class:
 // 1. We should load the saved GAIA ID token or if this is the first
 //    time the host process runs we should prompt user for the
-//    credential. We will use this token or credentials to authenicate
+//    credential. We will use this token or credentials to authenticate
 //    and register the host.
 //
 // 2. We listen for incoming connection using libjingle. We will create

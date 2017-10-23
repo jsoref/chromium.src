@@ -5,7 +5,7 @@
 // <include src="saml_handler.js">
 
 /**
- * @fileoverview An UI component to authenciate to Chrome. The component hosts
+ * @fileoverview An UI component to authenticate to Chrome. The component hosts
  * IdP web pages in a webview. A client who is interested in monitoring
  * authentication events should pass a listener object of type
  * cr.login.GaiaAuthHost.Listener as defined in this file. After initialization,
