@@ -182,7 +182,7 @@ login.createScreen('GaiaSigninScreen', 'gaia-signin', function() {
 
     /**
      * This is a copy of authenticator object attribute.
-     * UI is tied to API version, so we adjust authernticator container
+     * UI is tied to API version, so we adjust authenticator container
      * to match the API version.
      * Note that this cannot be changed after authenticator is created.
      */

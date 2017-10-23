@@ -31,7 +31,7 @@ TEST(CFBundleBlockerTest, IsBundleAllowed) {
     // Block bundle IDs that aren't in the whitelist.
     { @"org.chromium.Chromium.evil", nil, false },
 
-    // The AllowedBundle structure for Google Authetnicator BT doesn't
+    // The AllowedBundle structure for Google Authenticator BT doesn't
     // require a version, so this should work equally well with any version
     // including no version at all.
     { @"com.google.osax.Google_Authenticator_BT", nil, true },
