@@ -18,7 +18,7 @@
 #    We can specify multiple language code with comma separator.
 # 4) The indicator string (ex. INTL for xkb:us:intl:eng). This string will be
 #    shown in system tray or indicator window.
-# 5) The additional attibution.
+# 5) The additional attribution.
 #    login: Specified keyboard layout will be used on login screen or lock
 #    screen.
 #
