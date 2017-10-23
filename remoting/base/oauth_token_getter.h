@@ -70,7 +70,7 @@ class OAuthTokenGetter {
 
     ~OAuthIntermediateCredentials();
 
-    // Code used to check out a access token from the authrozation service.
+    // Code used to check out a access token from the authorization service.
     std::string authorization_code;
 
     // Override uri for oauth redirect. This is used for client accounts only
