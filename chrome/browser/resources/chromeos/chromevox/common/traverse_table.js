@@ -686,10 +686,10 @@ cvox.TraverseTable.prototype.findHeaderCells_ = function() {
       this.tableColHeaders.push(currentCell);
     }
     if (currentCell.hasAttribute('headers')) {
-      this.findAttrbHeaders_(currentShadowNode);
+      this.findAttribHeaders_(currentShadowNode);
     }
     if (currentCell.hasAttribute('aria-describedby')) {
-      this.findAttrbDescribedBy_(currentShadowNode);
+      this.findAttribDescribedBy_(currentShadowNode);
     }
   }
 };
@@ -712,7 +712,7 @@ cvox.TraverseTable.prototype.findHeaderCells_ = function() {
  *
  * @private
  */
-cvox.TraverseTable.prototype.findAttrbHeaders_ = function(currentShadowNode) {
+cvox.TraverseTable.prototype.findAttribHeaders_ = function(currentShadowNode) {
   var activeTableCell = currentShadowNode.activeCell;
 
   var idList = activeTableCell.getAttribute('headers').split(' ');
@@ -771,7 +771,7 @@ cvox.TraverseTable.prototype.findAttrbHeaders_ = function(currentShadowNode) {
  *
  * @private
  */
-cvox.TraverseTable.prototype.findAttrbDescribedBy_ = function(
+cvox.TraverseTable.prototype.findAttribDescribedBy_ = function(
     currentShadowNode) {
   var activeTableCell = currentShadowNode.activeCell;
 
