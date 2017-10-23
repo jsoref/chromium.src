@@ -61,7 +61,7 @@ class RequestPinView : public views::DialogDelegateView,
   // |attempts_left| - the number of attempts user has to try the code. When
   //     zero the textfield is disabled and user cannot provide any input. When
   //     -1 the user is allowed to provide the input and no information about
-  //     the attepts left is displayed in the view.
+  //     the attempts left is displayed in the view.
   // |callback| - used to send the value of the PIN/PUK the user entered.
   // |delegate| - used to notify that dialog was closed. Cannot be null.
   RequestPinView(const std::string& extension_name,
@@ -95,7 +95,7 @@ class RequestPinView : public views::DialogDelegateView,
   //     was last set.
   // |error_type| - the error template to be displayed in red in the dialog. If
   //     NONE, no error is displayed.
-  // |attempts_left| - included in the view as the number of attepts user can
+  // |attempts_left| - included in the view as the number of attempts user can
   //     have to enter correct code.
   // |accept_input| - specifies whether the textfield is enabled. If disabled
   //     the user is unable to provide input.

@@ -65,7 +65,7 @@ TEST_F(JsFindinpageManagerTest, FindInPageFails) {
   });
 }
 
-// Attepting to break out of the script and inject new script fails.
+// Attempting to break out of the script and inject new script fails.
 TEST_F(JsFindinpageManagerTest, InjectionTest) {
   LoadHtml(@"<html><body><p>Target phrase</p></body></html>");
   __block BOOL completion_handler_block_was_called = NO;

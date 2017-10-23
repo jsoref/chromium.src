@@ -484,7 +484,7 @@ SUBLANG = dict(sublang+[(e[1], e[0]) for e in sublang])
 
 
 class UnicodeStringWrapperPostProcessor:
-    """This class attemps to help the process of identifying strings
+    """This class attempts to help the process of identifying strings
     that might be plain Unicode or Pascal. A list of strings will be
     wrapped on it with the hope the overlappings will help make the 
     decission about their type."""

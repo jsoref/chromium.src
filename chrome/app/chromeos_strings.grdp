@@ -4591,7 +4591,7 @@ All users must sign out to continue.
   <message name="IDS_PAIRING_HOST_DONE_TEXT" desc="Title of the final host's page shown when the 'Hangouts Meet' setup process is finished.">
     You're all set to continue on to Hangouts Meet
   </message>
-  <message name="IDS_PAIRING_HOST_ERROR_NEED_RESTART_TEXT" desc="Text on the host's error page shown when the bootstrapping attampt or 'Hangouts Meet' setup process is failed.">
+  <message name="IDS_PAIRING_HOST_ERROR_NEED_RESTART_TEXT" desc="Text on the host's error page shown when the bootstrapping attempt or 'Hangouts Meet' setup process is failed.">
     Please restart the device and try again later.
   </message>
 

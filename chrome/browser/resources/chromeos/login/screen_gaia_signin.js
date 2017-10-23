@@ -1099,7 +1099,7 @@ login.createScreen('GaiaSigninScreen', 'gaia-signin', function() {
 
     /**
      * Shows sign-in error bubble.
-     * @param {number} loginAttempts Number of login attemps tried.
+     * @param {number} loginAttempts Number of login attempts tried.
      * @param {HTMLElement} content Content to show in bubble.
      */
     showErrorBubble: function(loginAttempts, error) {

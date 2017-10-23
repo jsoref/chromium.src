@@ -129,7 +129,7 @@ class NET_EXPORT_PRIVATE BlockFiles {
   bool CreateBlockFile(int index, FileType file_type, bool force);
   bool OpenBlockFile(int index);
 
-  // Attemp to grow this file. Fails if the file cannot be extended anymore.
+  // Attempt to grow this file. Fails if the file cannot be extended anymore.
   bool GrowBlockFile(MappedFile* file, BlockFileHeader* header);
 
   // Returns the appropriate file to use for a new block.

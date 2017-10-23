@@ -180,12 +180,12 @@ void VideoSender::InsertRawVideoFrame(
   // long enough from the last time sending key frame request on receiving a Pli
   // message.
   if (picture_lost_at_receiver_) {
-    const int64_t min_attemp_interval_ms =
+    const int64_t min_attempt_interval_ms =
         std::max(kMinKeyFrameRequestOnPliIntervalMs,
                  6 * target_playout_delay_.InMilliseconds());
     if (last_time_attempted_to_resolve_pli_.is_null() ||
         ((reference_time - last_time_attempted_to_resolve_pli_)
-             .InMilliseconds() > min_attemp_interval_ms)) {
+             .InMilliseconds() > min_attempt_interval_ms)) {
       video_encoder_->GenerateKeyFrame();
       last_time_attempted_to_resolve_pli_ = reference_time;
     }

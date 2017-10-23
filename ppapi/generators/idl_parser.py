@@ -1012,7 +1012,7 @@ class IDLParser(IDLLexer):
 #
 # ParseFile
 #
-# Loads a new file into the lexer and attemps to parse it.
+# Loads a new file into the lexer and attempts to parse it.
 #
   def ParseFile(self, filename):
     date = time.ctime(os.path.getmtime(filename))

@@ -139,7 +139,7 @@ class COLOR_SPACE_EXPORT ICCProfile {
   uint64_t id_ = 0;
   std::vector<char> data_;
 
-  // The result of attepting to extract a color space from the color profile.
+  // The result of attempting to extract a color space from the color profile.
   AnalyzeResult analyze_result_ = kICCFailedToParse;
 
   // |color_space| always links back to this ICC profile, and its SkColorSpace

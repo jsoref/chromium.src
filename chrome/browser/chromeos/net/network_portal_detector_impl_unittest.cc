@@ -595,7 +595,7 @@ TEST_F(NetworkPortalDetectorImplTest, PortalDetectorRetryAfterIsSmall) {
 
   // First portal detection completed, next portal detection is
   // scheduled after 3 seconds (due to minimum time between detection
-  // attemps).
+  // attempts).
   ASSERT_TRUE(is_state_portal_detection_pending());
   ASSERT_EQ(1, no_response_result_count());
 

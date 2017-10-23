@@ -186,7 +186,7 @@ public class PartnerBrowserCustomizations {
                             && !sIgnoreBrowserProviderSystemPackageCheck) {
                         Log.w("TAG", "Browser Cutomizations content provider package, "
                                 + providerInfo.packageName + ", is not a system package. "
-                                + "This could be a malicious attepment from a third party app, "
+                                + "This could be a malicious attempt from a third party app, "
                                 + "so skip reading the browser content provider.");
                         return null;
                     }

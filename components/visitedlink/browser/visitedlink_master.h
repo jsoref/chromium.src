@@ -335,7 +335,7 @@ class VisitedLinkMaster : public VisitedLinkCommon {
   // old table.
   //
   // Returns true on success. On failure, the old table will be restored. The
-  // caller should not attemp to release the pointer/handle in this case.
+  // caller should not attempt to release the pointer/handle in this case.
   bool BeginReplaceURLTable(int32_t num_entries);
 
   // unallocates the Fingerprint table

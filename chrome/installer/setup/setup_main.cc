@@ -340,7 +340,7 @@ bool UncompressAndPatchChromeArchive(
   return true;
 }
 
-void RecordNumDeleteOldVersionsAttempsBeforeAbort(int num_attempts) {
+void RecordNumDeleteOldVersionsAttemptsBeforeAbort(int num_attempts) {
   UMA_HISTOGRAM_COUNTS_100(
       "Setup.Install.NumDeleteOldVersionsAttemptsBeforeAbort", num_attempts);
 }
@@ -372,7 +372,7 @@ installer::InstallStatus RepeatDeleteOldVersions(
     if (setup_singleton.WaitForInterrupt(max_wait_time)) {
       VLOG(1) << "Exiting --delete-old-versions process because another "
                  "process tries to acquire the SetupSingleton.";
-      RecordNumDeleteOldVersionsAttempsBeforeAbort(num_attempts);
+      RecordNumDeleteOldVersionsAttemptsBeforeAbort(num_attempts);
       return installer::SETUP_SINGLETON_RELEASED;
     }
 
@@ -400,7 +400,7 @@ installer::InstallStatus RepeatDeleteOldVersions(
   VLOG(1) << "Exiting --delete-old-versions process after retrying too many "
              "times to delete all old files.";
   DCHECK_EQ(num_attempts, kMaxNumAttempts);
-  RecordNumDeleteOldVersionsAttempsBeforeAbort(num_attempts);
+  RecordNumDeleteOldVersionsAttemptsBeforeAbort(num_attempts);
   return installer::DELETE_OLD_VERSIONS_TOO_MANY_ATTEMPTS;
 }
 

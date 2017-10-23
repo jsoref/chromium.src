@@ -53,7 +53,7 @@ class PinDialogManager : RequestPinView::Delegate {
   //     is informational only, and enforced on Chrome side only in case it's
   //     zero. In that case the textfield is disabled and the user can't provide
   //     any input to extension. If -1 the textfield from the dialog is enabled
-  //     but no information about the attepts left is not given to the user.
+  //     but no information about the attempts left is not given to the user.
   // |callback| - used to notify about the user input in the text_field from the
   //     dialog.
   // Returns SUCCESS if the dialog is displayed and extension owns it. Otherwise

@@ -253,7 +253,7 @@ IN_PROC_BROWSER_TEST_P(AppViewTest,
       InstallPlatformApp("app_view/guest_app");
   const extensions::Extension* bad_app =
       LoadAndLaunchPlatformApp("app_view/bad_app", "AppViewTest.LAUNCHED");
-  // The host app attemps to embed the guest
+  // The host app attempts to embed the guest
   EXPECT_TRUE(content::ExecuteScript(
       extensions::AppWindowRegistry::Get(browser()->profile())
           ->GetCurrentAppWindowForApp(host_app->id())

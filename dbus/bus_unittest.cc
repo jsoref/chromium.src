@@ -310,7 +310,7 @@ TEST(BusTest, DoubleAddAndRemoveMatch) {
       error.get()));
   ASSERT_FALSE(error.is_set());
 
-  // A third attemp to remove the same rule should fail.
+  // A third attempt to remove the same rule should fail.
   ASSERT_FALSE(bus->RemoveMatch(
       "type='signal',interface='org.chromium.TestService',path='/'",
       error.get()));

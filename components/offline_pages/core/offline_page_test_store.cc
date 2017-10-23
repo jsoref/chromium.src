@@ -20,7 +20,7 @@ OfflinePageTestStore::OfflinePageTestStore(
       initialize_attempts_count_(0) {}
 
 // This ctor is used in tests to 'reload' the model. Therefore it starts
-// from NOT_LOADED and 0 attampts, to be able to verify those directly and not
+// from NOT_LOADED and 0 attempts, to be able to verify those directly and not
 // accumulate form previous load. However, the set of test pages is preserved.
 OfflinePageTestStore::OfflinePageTestStore(
     const OfflinePageTestStore& other_store)

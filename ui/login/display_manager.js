@@ -956,7 +956,7 @@ cr.define('cr.ui.login', function() {
 
   /**
    * Shows sign-in error bubble.
-   * @param {number} loginAttempts Number of login attemps tried.
+   * @param {number} loginAttempts Number of login attempts tried.
    * @param {string} message Error message to show.
    * @param {string} link Text to use for help link.
    * @param {number} helpId Help topic Id associated with help link.

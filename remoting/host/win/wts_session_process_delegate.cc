@@ -135,7 +135,7 @@ class WtsSessionProcessDelegate::Core
   // True if the worker process should be launched elevated.
   bool launch_elevated_;
 
-  // True if a laucnh attemp is pending.
+  // True if a laucnh attempt is pending.
   bool launch_pending_;
 
   // The token to be used to launch a process in a different session.
@@ -328,7 +328,7 @@ void WtsSessionProcessDelegate::Core::OnIOCompleted(
         worker_process_pid_ = base::kNullProcessId;
       } else if (process_id == elevated_launcher_pid_) {
         if (worker_process_pid_ == base::kNullProcessId) {
-          // The elevated launcher process can fail to launch without attemping
+          // The elevated launcher process can fail to launch without attempting
           // to launch the worker.  In this scenario, the failure will be
           // detected outside this method and the elevated launcher will be
           // launched again.

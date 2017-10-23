@@ -282,7 +282,7 @@ class SandwichRunner(object):
           assert resume_attempt_id is 0
           return True
     else:
-      logging.error('Failed to navigate to %s after %d attemps' % \
+      logging.error('Failed to navigate to %s after %d attempts' % \
                     (self.url, self._ATTEMPT_COUNT))
       error.RaiseOriginal()
     return False

@@ -13,7 +13,7 @@ namespace chrome_test_util {
 // using a JavaScript click() event.
 void TapWebViewElementWithId(const std::string& element_id);
 
-// Attemps to submit form with |form_id| in the current WebState.
+// Attempts to submit form with |form_id| in the current WebState.
 void SubmitWebViewFormWithId(const std::string& form_id);
 
 }  //  namespace chrome_test_util

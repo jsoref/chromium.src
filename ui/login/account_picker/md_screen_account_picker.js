@@ -170,7 +170,7 @@ login.createScreen('AccountPickerScreen', 'account-picker', function() {
 
     /**
      * Shows sign-in error bubble.
-     * @param {number} loginAttempts Number of login attemps tried.
+     * @param {number} loginAttempts Number of login attempts tried.
      * @param {HTMLElement} error Error to show in bubble.
      */
     showErrorBubble: function(loginAttempts, error) {

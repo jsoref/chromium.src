@@ -173,7 +173,7 @@ class TRACING_EXPORT ProtoZeroMessage {
   ContiguousMemoryRange size_field_;
   size_t size_already_written_;
 
-  // Used to detect attemps to create messages with a nesting level >
+  // Used to detect attempts to create messages with a nesting level >
   // kMaxNestingDepth. |nesting_depth_| == 0 for root (non-nested) messages.
   uint32_t nesting_depth_;
 

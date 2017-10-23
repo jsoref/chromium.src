@@ -37,7 +37,7 @@ class ReadingListWebStateObserver : public web::WebStateObserver,
   ReadingListWebStateObserver(web::WebState* web_state,
                               ReadingListModel* reading_list_model);
 
-  // Looks at the loading percentage. If less than 25% * time, attemps to load
+  // Looks at the loading percentage. If less than 25% * time, attempts to load
   // the offline version of that page.
   // |time| is the number of seconds since |StartCheckingProgress| was called.
   void VerifyIfReadingListEntryStartedLoading();

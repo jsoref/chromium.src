@@ -71708,7 +71708,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <owner>joaodasilva@chromium.org</owner>
   <summary>
     Records the reason why a context report to Icing failed, every time Chrome
-    attemps to record the current context (tab switching, navigations, etc).
+    attempts to record the current context (tab switching, navigations, etc).
     Also records reasons why context reporting might be disabled. Recorded on
     Android only.
   </summary>
