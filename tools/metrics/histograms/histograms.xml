@@ -29916,7 +29916,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <summary>
     Records how long more than one tab is audible at the same time. The
     concurrent tabs might change during this period. The time recorded starts
-    when the browser goes from one to two audbile tabs and stops when it is back
+    when the browser goes from one to two audible tabs and stops when it is back
     below two.
   </summary>
 </histogram>
