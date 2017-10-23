@@ -31,7 +31,7 @@ typedef void (^AccessTokenCallback)(RemotingAuthenticationStatus status,
 // This is the interface that will manage the details around authentication
 // management and currently active user. It will make sure the user object is
 // saved to the keychain correctly and loaded on startup. It also is the entry
-// point for gaining access to an auth token for authrized calls.
+// point for gaining access to an auth token for authorized calls.
 @protocol RemotingAuthentication<NSObject>
 
 // Fetches an Access Token and passes it back to the callback if the user is
