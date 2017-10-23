@@ -1993,7 +1993,7 @@ TEST_F(SearchProviderTest, DontInlineAutocompleteAsynchronously) {
   // asynchronous response, handling new keystroke synchronously / sending the
   // second request, and receiving the second asynchronous response) we have the
   // expected matches.  In particular, receiving the second response shouldn't
-  // cause an unexpected inline autcompletion.
+  // cause an unexpected inline autocompletion.
   struct {
     const std::string first_json;
     const ExpectedMatch first_async_matches[4];
@@ -2049,7 +2049,7 @@ TEST_F(SearchProviderTest, DontInlineAutocompleteAsynchronously) {
       { { "abcdef", true }, { "abcdef.com", false }, { "abc", false },
         { "ab", true } } },
 
-    // Without an original inline autcompletion, a new inline autcompletion
+    // Without an original inline autocompletion, a new inline autocompletion
     // should be rejected.
     { "[\"a\",[\"ab1\", \"ab2\"],[],[],"
        "{\"google:verbatimrelevance\":9000,"
