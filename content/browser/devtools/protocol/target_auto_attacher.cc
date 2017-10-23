@@ -51,7 +51,7 @@ void AddEligibleHosts(const ServiceWorkerDevToolsAgentHost::List& list,
       last_doomed_time = host->version_doomed_time();
   }
   for (const auto& host : list) {
-    // We don't attech old redundant Service Workers when there is newer
+    // We don't attach old redundant Service Workers when there is newer
     // installed Service Worker.
     if (host->version_doomed_time().is_null() ||
         (last_installed_time < last_doomed_time &&
