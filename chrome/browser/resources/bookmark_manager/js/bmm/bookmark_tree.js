@@ -122,7 +122,7 @@ cr.define('bmm', function() {
   };
 
   /**
-   * Asynchronousy adds a tree item at the correct index based on the bookmark
+   * Asynchronously adds a tree item at the correct index based on the bookmark
    * backend.
    *
    * Since the bookmark tree only contains folders the index we get from certain

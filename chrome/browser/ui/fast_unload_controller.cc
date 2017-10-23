@@ -116,7 +116,7 @@ bool FastUnloadController::BeforeUnloadFired(content::WebContents* contents,
       contents->SetClosedByUserGesture(false);
     } else {
       // No more dialogs are possible, so remove the tab and finish
-      // running unload listeners asynchrounously.
+      // running unload listeners asynchronously.
       browser_->tab_strip_model()->delegate()->CreateHistoricalTab(contents);
       DetachWebContents(contents);
     }

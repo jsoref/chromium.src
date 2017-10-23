@@ -241,7 +241,7 @@ class JumpList : public sessions::TabRestoreServiceObserver,
   // If folder cleaning fails, skip step 2. Besides, clear |icon_cur| and
   // |icon_next|.
   // 2) Create at most |max_items| icon files which are not in |icon_cur| for
-  // the asynchrounously loaded icons stored in |item_list|.
+  // the asynchronously loaded icons stored in |item_list|.
   static int UpdateIconFiles(const base::FilePath& icon_dir,
                              const ShellLinkItemList& item_list,
                              size_t max_items,
@@ -249,7 +249,7 @@ class JumpList : public sessions::TabRestoreServiceObserver,
                              URLIconCache* icon_next);
 
   // In |icon_dir|, creates at most |max_items| icon files which are not in
-  // |icon_cur| for the asynchrounously loaded icons stored in |item_list|.
+  // |icon_cur| for the asynchronously loaded icons stored in |item_list|.
   // |icon_next| is updated based on the reusable icons and the newly created
   // icons. Returns the number of new icon files created.
   static int CreateIconFiles(const base::FilePath& icon_dir,

@@ -591,7 +591,7 @@ TEST_F(DiskMountManagerTest, Format_FailToUnmount) {
   // Start test.
   DiskMountManager::GetInstance()->FormatMountedDevice(kDevice1MountPath);
 
-  // Cros disks will respond asynchronoulsy, so let's drain the message loop.
+  // Cros disks will respond asynchronously, so let's drain the message loop.
   base::RunLoop().RunUntilIdle();
 
   // Observer should be notified that unmount attempt fails and format task
@@ -627,7 +627,7 @@ TEST_F(DiskMountManagerTest, Format_FormatFailsToStart) {
   // Start the test.
   DiskMountManager::GetInstance()->FormatMountedDevice(kDevice1MountPath);
 
-  // Cros disks will respond asynchronoulsy, so let's drain the message loop.
+  // Cros disks will respond asynchronously, so let's drain the message loop.
   base::RunLoop().RunUntilIdle();
 
   // Observer should be notified that the device was unmounted and format task
@@ -670,7 +670,7 @@ TEST_F(DiskMountManagerTest, Format_ConcurrentFormatCalls) {
   DiskMountManager::GetInstance()->FormatMountedDevice(kDevice1MountPath);
   DiskMountManager::GetInstance()->FormatMountedDevice(kDevice1MountPath);
 
-  // Cros disks will respond asynchronoulsy, so let's drain the message loop.
+  // Cros disks will respond asynchronously, so let's drain the message loop.
   base::RunLoop().RunUntilIdle();
 
   // The observer should get a FORMAT_STARTED event for one format request and a
@@ -1053,7 +1053,7 @@ TEST_F(DiskMountManagerTest, Rename_FailToUnmount) {
   DiskMountManager::GetInstance()->RenameMountedDevice(kDevice1MountPath,
                                                        "MYUSB");
 
-  // Cros disks will respond asynchronoulsy, so let's drain the message loop.
+  // Cros disks will respond asynchronously, so let's drain the message loop.
   base::RunLoop().RunUntilIdle();
 
   // Observer should be notified that unmount attempt fails and rename task
@@ -1090,7 +1090,7 @@ TEST_F(DiskMountManagerTest, Rename_RenameFailsToStart) {
   DiskMountManager::GetInstance()->RenameMountedDevice(kDevice1MountPath,
                                                        "MYUSB");
 
-  // Cros disks will respond asynchronoulsy, so let's drain the message loop.
+  // Cros disks will respond asynchronously, so let's drain the message loop.
   base::RunLoop().RunUntilIdle();
 
   // Observer should be notified that the device was unmounted and rename task
@@ -1135,7 +1135,7 @@ TEST_F(DiskMountManagerTest, Rename_ConcurrentRenameCalls) {
   DiskMountManager::GetInstance()->RenameMountedDevice(kDevice1MountPath,
                                                        "MYUSB2");
 
-  // Cros disks will respond asynchronoulsy, so let's drain the message loop.
+  // Cros disks will respond asynchronously, so let's drain the message loop.
   base::RunLoop().RunUntilIdle();
 
   // The observer should get a RENAME_STARTED event for one rename request and a

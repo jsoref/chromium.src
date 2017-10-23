@@ -24,7 +24,7 @@ class URLRequestContextGetter;
 
 namespace chrome {
 
-// Asynchrounously fetches an image from the given URL and returns the
+// Asynchronously fetches an image from the given URL and returns the
 // decoded Bitmap to the provided BitmapFetcherDelegate.
 class BitmapFetcher : public net::URLFetcherDelegate,
                       public ImageDecoder::ImageRequest {

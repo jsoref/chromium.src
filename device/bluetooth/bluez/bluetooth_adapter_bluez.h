@@ -248,7 +248,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothAdapterBlueZ
   explicit BluetoothAdapterBlueZ(const InitCallback& init_callback);
   ~BluetoothAdapterBlueZ() override;
 
-  // Init will get asynchronouly called once we know if Object Manager is
+  // Init will get asynchronously called once we know if Object Manager is
   // supported.
   void Init();
 

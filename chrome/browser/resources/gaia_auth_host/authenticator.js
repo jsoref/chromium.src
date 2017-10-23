@@ -846,7 +846,7 @@ cr.define('cr.login', function() {
    */
   Authenticator.prototype.onLoadStop_ = function(e) {
     // Sends client id to EAFE on every loadstop after a small timeout. This is
-    // needed because EAFE sits behind SSO and initialize asynchrounouly
+    // needed because EAFE sits behind SSO and initialize asynchronously
     // and we don't know for sure when it is loaded and ready to listen
     // for message. The postMessage is guarded by EAFE's origin.
     if (this.useEafe_) {
