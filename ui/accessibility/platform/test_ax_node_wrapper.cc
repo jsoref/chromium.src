@@ -113,7 +113,7 @@ gfx::Rect TestAXNodeWrapper::GetScreenBoundsRect() const {
 
 TestAXNodeWrapper* TestAXNodeWrapper::HitTestSyncInternal(int x, int y) {
   // Here we find the deepest child whose bounding box contains the given point.
-  // The assuptions are that there are no overlapping bounding rects and that
+  // The assumptions are that there are no overlapping bounding rects and that
   // all children have smaller bounding rects than their parents.
   if (!GetScreenBoundsRect().Contains(gfx::Rect(x, y)))
     return nullptr;

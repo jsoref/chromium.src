@@ -627,7 +627,7 @@ void SdchOwner::OnPrefStorageInitializationComplete(bool succeeded) {
   // The GetPersistentStore() routine above assumes data formatted
   // according to the schema described at the top of this file.  Since
   // this data comes from disk, to avoid disk corruption resulting in
-  // persistent chrome errors this code avoids those assupmtions.
+  // persistent chrome errors this code avoids those assumptions.
   if (external_pref_store_->GetValue(&sdch_persistence_dictionary))
     SchedulePersistedDictionaryLoads(*sdch_persistence_dictionary);
 
