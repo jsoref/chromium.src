@@ -233,7 +233,7 @@ bool JPEGCodec::Decode(const unsigned char* input, size_t input_size,
         cinfo.output_components = 4;
       } else {
         // We can exit this function without calling jpeg_destroy_decompress()
-        // because DecompressDestroyer automaticaly calls it.
+        // because DecompressDestroyer automatically calls it.
         NOTREACHED() << "Invalid pixel format";
         return false;
       }

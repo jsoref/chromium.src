@@ -33,7 +33,7 @@
  * For example:
  *   $openid->required = array('namePerson/friendly', 'contact/email');
  *   $openid->optional = array('namePerson/first');
- * If the server supports only SREG or OpenID 1.1, these are automaticaly
+ * If the server supports only SREG or OpenID 1.1, these are automatically
  * mapped to SREG names, so that user doesn't have to know anything about the server.
  *
  * To get the values, use $openid->getAttributes().
