@@ -17,7 +17,7 @@ struct PasswordForm;
 @interface PasswordDetailsCollectionViewController
     : SettingsRootCollectionViewController
 
-// The designated initializer. |delegate| and |reauthenticaionModule| must not
+// The designated initializer. |delegate| and |reauthenticationModule| must not
 // be nil.
 - (instancetype)
   initWithPasswordForm:(const autofill::PasswordForm&)passwordForm

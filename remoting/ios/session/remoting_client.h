@@ -41,7 +41,7 @@ extern NSString* const kHostSessionPin;
 // host. This object should not be reused. Remoting Client will use the default
 // NSNotificationCenter to signal session state changes using the key
 // |kHostSessionStatusChanged|. It expects to receive an event back on
-// |kHostSessionPinProvided| when the session is asking for a PIN authenication.
+// |kHostSessionPinProvided| when the session is asking for a PIN authentication.
 @interface RemotingClient : NSObject<GlDisplayHandlerDelegate>
 
 // Connect to a given host.

@@ -856,7 +856,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest, WebSocketRequest) {
 }
 
 // Test that the webRequest events are dispatched for the WebSocket handshake
-// requests when authenrication is requested by server.
+// requests when authentication is requested by server.
 IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
                        WebSocketRequestAuthRequired) {
   ASSERT_TRUE(StartEmbeddedTestServer());

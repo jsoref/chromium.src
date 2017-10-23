@@ -57,7 +57,7 @@ interface Fingerprint {
   // Starts the biometric authentication session.
   StartAuthSession();
 
-  // Ends the current autentication session.
+  // Ends the current authentication session.
   EndCurrentAuthSession() => (bool success);
 
   // Irreversibly destroys all records registered with this biometric manager.

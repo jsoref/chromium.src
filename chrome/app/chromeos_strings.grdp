@@ -5057,7 +5057,7 @@ All users must sign out to continue.
   <message name="IDS_ARC_SIGN_IN_SERVICE_UNAVAILABLE_ERROR" desc="Android sign-in error because of service is unavailable">
     Couldn't reach Google Play
   </message>
-  <message name="IDS_ARC_SIGN_IN_BAD_AUTHENTICATION_ERROR" desc="Android sign-in error because of bad authentification">
+  <message name="IDS_ARC_SIGN_IN_BAD_AUTHENTICATION_ERROR" desc="Android sign-in error because of bad authentication">
     Couldn’t verify your account. Please try again or restart your Chromebook.
   </message>
   <message name="IDS_ARC_SIGN_IN_GMS_NOT_AVAILABLE_ERROR" desc="Android sign-in error because of GMS services are unavailable">

@@ -21,7 +21,7 @@ namespace web {
 class HttpAuthResponseProvider : public HtmlResponseProvider {
  public:
   // Constructs provider which will respond to the given |url| and will use the
-  // given authenticaion |realm|. |username| and |password| are credentials
+  // given authentication |realm|. |username| and |password| are credentials
   // required for successful authentication. Use different realms and
   // username/password combination for different tests to prevent credentials
   // caching.
