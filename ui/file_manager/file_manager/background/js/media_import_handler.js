@@ -260,7 +260,7 @@ importer.MediaImportHandler.ImportTask.UpdateType = {
 };
 
 /**
- * Auxilliary info for ENTRY_CHANGED notifications.
+ * Auxiliary info for ENTRY_CHANGED notifications.
  * @typedef {{
  *   sourceUrl: string,
  *   destination: !Entry

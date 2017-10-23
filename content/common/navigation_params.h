@@ -198,7 +198,7 @@ struct CONTENT_EXPORT BeginNavigationParams {
   GURL searchable_form_url;
   std::string searchable_form_encoding;
 
-  // Indicates the initiator of the request. In auxilliary navigations, this is
+  // Indicates the initiator of the request. In auxiliary navigations, this is
   // the origin of the document that triggered the navigation. This parameter
   // can be null during browser-initiated navigations.
   base::Optional<url::Origin> initiator_origin;

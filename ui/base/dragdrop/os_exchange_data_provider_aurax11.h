@@ -133,7 +133,7 @@ class UI_BASE_EXPORT OSExchangeDataProviderAuraX11
   // to |selection_owner_| when we take the selection.
   SelectionFormatMap format_map_;
 
-  // Auxilary data for the X Direct Save protocol.
+  // Auxiliary data for the X Direct Save protocol.
   base::FilePath file_contents_name_;
 
   // Takes a snapshot of |format_map_| and offers it to other windows.
