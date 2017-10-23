@@ -180,7 +180,7 @@ class NET_EXPORT SdchManager {
 
   std::unique_ptr<base::Value> SdchInfoToValue() const;
 
-  // Add an SDCH dictionary to our list of availible
+  // Add an SDCH dictionary to our list of available
   // dictionaries. This addition will fail if addition is illegal
   // (data in the dictionary is not acceptable from the
   // dictionary_url; dictionary already added, etc.).

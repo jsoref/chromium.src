@@ -26,16 +26,16 @@ namespace {
 enum LoadLibraryResult {
   // LoadLibraryExW API/flags are available and the call succeeds.
   SUCCEED = 0,
-  // LoadLibraryExW API/flags are availabe to use but the call fails, then
+  // LoadLibraryExW API/flags are available to use but the call fails, then
   // LoadLibraryW is used and succeeds.
   FAIL_AND_SUCCEED,
-  // LoadLibraryExW API/flags are availabe to use but the call fails, then
+  // LoadLibraryExW API/flags are available to use but the call fails, then
   // LoadLibraryW is used but fails as well.
   FAIL_AND_FAIL,
-  // LoadLibraryExW API/flags are unavailabe to use, then LoadLibraryW is used
+  // LoadLibraryExW API/flags are unavailable to use, then LoadLibraryW is used
   // and succeeds.
   UNAVAILABLE_AND_SUCCEED,
-  // LoadLibraryExW API/flags are unavailabe to use, then LoadLibraryW is used
+  // LoadLibraryExW API/flags are unavailable to use, then LoadLibraryW is used
   // but fails.
   UNAVAILABLE_AND_FAIL,
   // Add new items before this one, always keep this one at the end.

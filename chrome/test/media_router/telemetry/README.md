@@ -4,7 +4,7 @@
 -->
 
 # How to run benchmarks for media router
-1. Run the following command to find all the avaiable browsers:
+1. Run the following command to find all the available browsers:
 ./chrome/test/media_router/telemetry/run_benchmark --browser list
 
 2. Run the following command to get benchmarks for media router dialog latency:

@@ -182,7 +182,7 @@ class CertLoaderTest : public testing::Test,
 
   // Import |TEST_CLIENT_CERT_1| into a PKCS11 slot. Then notify
   // |database_to_notify| (which is presumably using that slot) that new
-  // certificates are avialable.
+  // certificates are available.
   scoped_refptr<net::X509Certificate> ImportClientCertAndKey(
       TestNSSCertDatabase* database_to_notify,
       PK11SlotInfo* slot_to_use) {

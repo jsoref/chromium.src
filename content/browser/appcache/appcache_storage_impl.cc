@@ -789,7 +789,7 @@ void AppCacheStorageImpl::StoreGroupAndCacheTask::Run() {
     return;
   }
 
-  // Check limits based on the space availbable given to us via the
+  // Check limits based on the space available given to us via the
   // quota system.
   int64_t delta = new_origin_usage_ - old_origin_usage;
   if (delta > space_available_) {

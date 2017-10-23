@@ -183,7 +183,7 @@ void OAuth2LoginManager::UpdateCredentials(const std::string& account_id) {
   FireRefreshTokensLoaded();
 
   for (auto& observer : observer_list_)
-    observer.OnNewRefreshTokenAvaiable(user_profile_);
+    observer.OnNewRefreshTokenAvailable(user_profile_);
 }
 
 void OAuth2LoginManager::FireRefreshTokensLoaded() {

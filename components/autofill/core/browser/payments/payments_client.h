@@ -133,7 +133,7 @@ class PaymentsClient : public net::URLFetcherDelegate,
 
  private:
   // Initiates a Payments request using the state in |request|. If
-  // |authenticate| is true, ensures that an OAuth token is avialble first.
+  // |authenticate| is true, ensures that an OAuth token is available first.
   // Takes ownership of |request|.
   void IssueRequest(std::unique_ptr<PaymentsRequest> request,
                     bool authenticate);

@@ -100,7 +100,7 @@ bool InitPulse(pa_threaded_mainloop** mainloop, pa_context** context) {
 #if defined(DLOPEN_PULSEAUDIO)
   StubPathMap paths;
 
-  // Check if the pulse library is avialbale.
+  // Check if the pulse library is available.
   paths[kModulePulse].push_back(kPulseLib);
   if (!InitializeStubs(paths)) {
     VLOG(1) << "Failed on loading the Pulse library and symbols";

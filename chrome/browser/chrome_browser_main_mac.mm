@@ -112,7 +112,7 @@ void ChromeBrowserMainPartsMac::PreMainMessageLoopStart() {
   }
 
   // Before we load the nib, we need to start up the resource bundle so we
-  // have the strings avaiable for localization.
+  // have the strings available for localization.
   // TODO(markusheintz): Read preference pref::kApplicationLocale in order
   // to enforce the application locale.
   const std::string loaded_locale =

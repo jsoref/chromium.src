@@ -492,7 +492,7 @@ NET_ERROR(CERT_INVALID, -207)
 // signature algorithm.
 NET_ERROR(CERT_WEAK_SIGNATURE_ALGORITHM, -208)
 
-// -209 is availible: was CERT_NOT_IN_DNS.
+// -209 is available: was CERT_NOT_IN_DNS.
 
 // The host name specified in the certificate is not unique.
 NET_ERROR(CERT_NON_UNIQUE_NAME, -210)

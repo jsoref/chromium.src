@@ -188,7 +188,7 @@ class PersonalDataManager : public KeyedService,
   // no credit card with the specified |number|.
   virtual CreditCard* GetCreditCardByNumber(const std::string& number);
 
-  // Gets the field types availabe in the stored address and credit card data.
+  // Gets the field types available in the stored address and credit card data.
   void GetNonEmptyTypes(ServerFieldTypeSet* non_empty_types);
 
   // Returns true if the credit card information is stored with a password.

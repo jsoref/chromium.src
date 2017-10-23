@@ -79,12 +79,12 @@ namespace bluetooth {
     // both.
     DOMString[]? uuids;
 
-    // The received signal strength, in dBm. This field is avaliable and valid
+    // The received signal strength, in dBm. This field is available and valid
     // only during discovery. Outside of discovery it's value is not specified.
     long? inquiryRssi;
   
-    // The transmitted power level. This field is avaliable only for LE devices
-    // that include this field in AD. It is avaliable and valid only during
+    // The transmitted power level. This field is available only for LE devices
+    // that include this field in AD. It is available and valid only during
     // discovery.
     long? inquiryTxPower;
   };

@@ -81,7 +81,7 @@ src:*/third_party/protobuf/src/google/protobuf/descriptor.pb.cc
 #############################################################################
 # Avoid link errors.
 # Ubsan vptr needs typeinfo on the target class, but it looks like typeinfo is
-# not avaiable if the class is not exported.  For now, simply blacklisted to
+# not available if the class is not exported.  For now, simply blacklisted to
 # avoid link errors; e.g., undefined reference to 'typeinfo for [CLASS_NAME]'.
 
 # obj/ppapi/libppapi_proxy.a(obj/ppapi/proxy/ppapi_proxy.proxy_channel.o):../../ppapi/proxy/proxy_channel.cc:__unnamed_53: error: undefined reference to 'typeinfo for IPC::TestSink'

@@ -356,7 +356,7 @@ void MediaRouterUI::InitCommon(content::WebContents* initiator) {
   query_result_manager_->SetSourcesForCastMode(
       MediaCastMode::DESKTOP_MIRROR, {MediaSourceForDesktop()}, origin);
 
-  // For now, file mirroring is always availible if enabled.
+  // For now, file mirroring is always available if enabled.
   if (CastLocalMediaEnabled()) {
     query_result_manager_->SetSourcesForCastMode(
         MediaCastMode::LOCAL_FILE, {MediaSourceForTab(0)}, origin);

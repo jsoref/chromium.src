@@ -15,7 +15,7 @@
 
 @optional
 
-// Informs the delegate that a refresh token is avaible for |account_id|.
+// Informs the delegate that a refresh token is available for |account_id|.
 - (void)onRefreshTokenAvailable:(const std::string&)account_id;
 
 // Informs the delegate that the refresh token was revoked for |account_id|.

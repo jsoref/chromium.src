@@ -27,7 +27,7 @@
           "description": "The requested feature is not available"
         }, {
           "name": "unsupported_extension_type",
-          "description": "The requested feature is not availabe for this type of extension"
+          "description": "The requested feature is not available for this type of extension"
         }, {
           "name": "missing_dependencies",
           "description": "There were unsatisfied dependencies, such as shared modules"

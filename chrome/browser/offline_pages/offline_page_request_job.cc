@@ -264,7 +264,7 @@ void NotifyOfflineRedirectOnIO(base::WeakPtr<OfflinePageRequestJob> job,
 
   if (!job)
     return;
-  job->OnOfflineRedirectAvailabe(redirected_url);
+  job->OnOfflineRedirectAvailable(redirected_url);
 }
 
 // Notifies OfflinePageRequestJob about the offline file path. Note that the
@@ -683,7 +683,7 @@ void OfflinePageRequestJob::OnOfflineFilePathAvailable(
   URLRequestFileJob::Start();
 }
 
-void OfflinePageRequestJob::OnOfflineRedirectAvailabe(
+void OfflinePageRequestJob::OnOfflineRedirectAvailable(
     const GURL& redirected_url) {
   receive_redirect_headers_end_ = base::TimeTicks::Now();
   redirect_response_time_ = base::Time::Now();

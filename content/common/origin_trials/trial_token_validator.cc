@@ -58,7 +58,7 @@ blink::WebOriginTrialTokenStatus TrialTokenValidator::ValidateToken(
 bool TrialTokenValidator::RequestEnablesFeature(const net::URLRequest* request,
                                                 base::StringPiece feature_name,
                                                 base::Time current_time) {
-  // TODO(mek): Possibly cache the features that are availble for request in
+  // TODO(mek): Possibly cache the features that are available for request in
   // UserData associated with the request.
   return RequestEnablesFeature(request->url(), request->response_headers(),
                                feature_name, current_time);

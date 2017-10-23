@@ -8938,13 +8938,13 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 
 <histogram name="CloudPrint.AvailablePrinters">
   <owner>vitalybuka@chromium.org</owner>
-  <summary>The number of printers availible for registration.</summary>
+  <summary>The number of printers available for registration.</summary>
 </histogram>
 
 <histogram name="CloudPrint.AvailablePrintersList">
   <owner>vitalybuka@chromium.org</owner>
   <summary>
-    The number of printers availible for registration in Windows Service.
+    The number of printers available for registration in Windows Service.
   </summary>
 </histogram>
 
@@ -62301,7 +62301,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <owner>vitalybuka@chromium.org</owner>
   <summary>
     The number of times regenerate preview requests received before the first
-    preview data is availible.
+    preview data is available.
   </summary>
 </histogram>
 

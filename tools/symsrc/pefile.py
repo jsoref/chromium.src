@@ -991,7 +991,7 @@ class ResourceDirEntryData(DataContainer):
     name:       If the resource is identified by name this
                 attribute will contain the name string. None
                 otherwise. If identified by id, the id is
-                availabe at 'struct.Id'
+                available at 'struct.Id'
     id:         the id, also in struct.Id
     directory:  If this entry has a lower level directory
                 this attribute will point to the
@@ -1104,7 +1104,7 @@ class PE:
     corresponding structures as defined in WINNT.H
     
     The raw data corresponding to the header (from the beginning of the
-    file up to the start of the first section) will be avaiable in the
+    file up to the start of the first section) will be available in the
     instance's attribute 'header' as a string.
     
     The sections will be available as a list in the 'sections' attribute.
@@ -2795,7 +2795,7 @@ class PE:
     def parse_imports(self, original_first_thunk, first_thunk, forwarder_chain):
         """Parse the imported symbols.
         
-        It will fill a list, which will be avalable as the dictionary
+        It will fill a list, which will be available as the dictionary
         attribute "imports". Its keys will be the DLL names and the values
         all the symbols imported from that object.
         """

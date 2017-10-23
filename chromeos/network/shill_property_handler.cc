@@ -560,7 +560,7 @@ void ShillPropertyHandler::GetIPConfigCallback(
     DBusMethodCallStatus call_status,
     const base::DictionaryValue& properties) {
   if (call_status != DBUS_METHOD_CALL_SUCCESS) {
-    // IP Config properties not availabe. Shill will emit a property change
+    // IP Config properties not available. Shill will emit a property change
     // when they are.
     NET_LOG(EVENT) << "Failed to get IP Config properties: " << ip_config_path
                    << ": " << call_status << ", For: " << path;

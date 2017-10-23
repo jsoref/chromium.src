@@ -73,7 +73,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothDeviceClient : public BluezDBusClient {
     // Read-only.
     dbus::Property<std::vector<std::string>> uuids;
 
-    // Transmitted power level. This field is avaliable only for LE devices
+    // Transmitted power level. This field is available only for LE devices
     // that include this field in AD. Read-only.
     dbus::Property<int16_t> tx_power;
 

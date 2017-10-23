@@ -498,7 +498,7 @@ TEST_F(SyncClientTest, WaitForUpdateTaskToComplete) {
   std::string local_id;
   EXPECT_EQ(FILE_ERROR_OK, metadata_->AddEntry(entry, &local_id));
 
-  // Sync task is not yet avialable.
+  // Sync task is not yet available.
   FileError error = FILE_ERROR_FAILED;
   EXPECT_FALSE(sync_client_->WaitForUpdateTaskToComplete(
       local_id, google_apis::test_util::CreateCopyResultCallback(&error)));

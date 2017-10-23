@@ -53,7 +53,7 @@ struct CHROMEOS_EXPORT CellTower {
   std::string mcc;       // The mobile country code if available
   std::string mnc;       // The mobile network code if available
   std::string lac;       // The location area code if available
-  std::string ci;        // The cell id if availabe
+  std::string ci;        // The cell id if available
   base::Time timestamp;  // Timestamp when this location was detected.
 };
 

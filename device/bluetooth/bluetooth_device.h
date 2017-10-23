@@ -339,13 +339,13 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothDevice {
   const std::vector<uint8_t>* GetManufacturerDataForID(
       const ManufacturerId manufacturerID) const;
 
-  // The received signal strength, in dBm. This field is avaliable and valid
+  // The received signal strength, in dBm. This field is available and valid
   // only during discovery.
   // TODO(http://crbug.com/580406): Devirtualize once BlueZ sets inquiry_rssi_.
   virtual base::Optional<int8_t> GetInquiryRSSI() const;
 
-  // The transmitted power level. This field is avaliable only for LE devices
-  // that include this field in AD. It is avaliable and valid only during
+  // The transmitted power level. This field is available only for LE devices
+  // that include this field in AD. It is available and valid only during
   // discovery.
   // TODO(http://crbug.com/580406): Devirtualize once BlueZ sets
   // inquiry_tx_power_.

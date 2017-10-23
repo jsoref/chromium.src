@@ -192,7 +192,7 @@ Error UrandomNode::Read(const HandleAttr& attr,
 
 #if defined(__native_client__)
   if (!interface_ok_) {
-    LOG_ERROR("NACL_IRT_RANDOM_v0_1 interface not avaiable.");
+    LOG_ERROR("NACL_IRT_RANDOM_v0_1 interface not available.");
     return EBADF;
   }
 

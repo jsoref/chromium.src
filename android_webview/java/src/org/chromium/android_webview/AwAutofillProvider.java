@@ -254,7 +254,7 @@ public class AwAutofillProvider extends AutofillProvider {
             onFocusChanged(true, index, x, y, width, height);
         } else {
             // Currently there is no api to notify both value and position
-            // change, before the API is availabe, we still need to call
+            // change, before the API is available, we still need to call
             // notifyVirtualViewEntered() to tell current coordinates because
             // the position could be changed.
             int virtualId = mRequest.getVirtualId(sIndex);

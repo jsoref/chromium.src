@@ -1711,7 +1711,7 @@ TEST_P(ArcAppModelBuilderTest, AppLauncher) {
   ASSERT_NE(nullptr, prefs);
 
   // App1 is called in deferred mode, after refreshing apps.
-  // App2 is never called since app is not avaialble.
+  // App2 is never called since app is not available.
   // App3 is never called immediately because app is available already.
   const arc::mojom::AppInfo& app1 = fake_apps()[0];
   const arc::mojom::AppInfo& app2 = fake_apps()[1];

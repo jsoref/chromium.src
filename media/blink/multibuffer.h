@@ -111,7 +111,7 @@ class MEDIA_BLINK_EXPORT MultiBuffer {
     virtual MultiBufferBlockId Tell() const = 0;
 
     // Returns true if one (or more) blocks are
-    // availble to read.
+    // available to read.
     virtual bool Available() const = 0;
 
     // Returns how many bytes are available, note that Available() may still

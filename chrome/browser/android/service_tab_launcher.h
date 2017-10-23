@@ -30,7 +30,7 @@ class ServiceTabLauncher {
 
   // Launches a new tab when we're in a Service rather than in an Activity.
   // |callback| will be invoked with the resulting content::WebContents* when
-  // the tab is avialable. This method must only be called from the UI thread.
+  // the tab is available. This method must only be called from the UI thread.
   void LaunchTab(content::BrowserContext* browser_context,
                  const content::OpenURLParams& params,
                  const TabLaunchedCallback& callback);

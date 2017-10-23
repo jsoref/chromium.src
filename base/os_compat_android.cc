@@ -20,7 +20,7 @@
 #include "base/strings/stringprintf.h"
 
 extern "C" {
-// There is no futimes() avaiable in Bionic, so we provide our own
+// There is no futimes() available in Bionic, so we provide our own
 // implementation until it is there.
 int futimes(int fd, const struct timeval tv[2]) {
   if (tv == NULL)

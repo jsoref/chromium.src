@@ -129,7 +129,7 @@ class V4Database {
 
   // Check if all the selected stores are available and populated.
   // Returns false if any of |stores_to_check| don't have valid data.
-  // A store may be unavailble if either it hasn't yet gotten a proper
+  // A store may be unavailable if either it hasn't yet gotten a proper
   // full-update (just after install, or corrupted/missing file), or if it's
   // not supported in this build (i.e. Chromium).
   virtual bool AreAllStoresAvailable(

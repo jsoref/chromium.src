@@ -76,7 +76,7 @@ cvox.KeyMap.AVAILABLE_MAP_INFO = {
 
 
 /**
- * The index of the default key map info in cvox.KeyMap.AVAIABLE_KEYMAP_INFO.
+ * The index of the default key map info in cvox.KeyMap.AVAILABLE_KEYMAP_INFO.
  * @type {number}
  * @const
  */

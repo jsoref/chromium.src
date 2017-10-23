@@ -84,7 +84,7 @@ class FuzzedHostResolverProc : public HostResolverProc {
     if (os_error)
       *os_error = 0;
 
-    // If the data provider is no longer avaiable, just fail. The HostResolver
+    // If the data provider is no longer available, just fail. The HostResolver
     // has already been deleted by this point, anyways.
     if (!data_provider_)
       return ERR_FAILED;

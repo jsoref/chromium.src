@@ -38,7 +38,7 @@
 // network I/O, by calling functions like dnsResolve().
 //
 // This is problematic since functions such as dnsResolve() will block the
-// Javascript execution until the DNS result is availble, thereby stalling the
+// Javascript execution until the DNS result is available, thereby stalling the
 // PAC thread, which hurts the ability to process parallel proxy resolves.
 // An obvious solution is to simply start more PAC threads, however this scales
 // poorly, which hurts the ability to process parallel proxy resolves.

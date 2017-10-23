@@ -390,7 +390,7 @@ TEST_F(MemoryCoordinatorImplTest, ForceSetMemoryCondition) {
   task_runner_->RunUntilIdle();
   EXPECT_EQ(MemoryCondition::NORMAL, coordinator_->GetMemoryCondition());
 
-  // Also make sure that the condition is updated based on free avaiable memory.
+  // Also make sure that the condition is updated based on free available memory.
   GetMockMemoryMonitor()->SetFreeMemoryUntilCriticalMB(0);
   task_runner_->FastForwardBy(interval * 2);
   task_runner_->RunUntilIdle();

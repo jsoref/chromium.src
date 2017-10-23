@@ -94,7 +94,7 @@ class NotificationPlatformBridgeAndroid : public NotificationPlatformBridge {
   // restart of Chrome.
   // When |Display()| is called, it sets an entry in
   // |regenerated_notification_infos_| synchronously. The |webapk_package| isn't
-  // avaiable at that time since the query of WebAPK package name is
+  // available at that time since the query of WebAPK package name is
   // asynchronous. After the query is done, Java calls the
   // |StoreCachedWebApkPackageForNotificationId| to set |webapk_package|
   // properly. Therefore, before the |webapk_package| is set, additional query

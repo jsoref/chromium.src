@@ -917,7 +917,7 @@ TEST_F(LockScreenItemStorageTest, DataItemsAvailableEventOnUnlock) {
   EXPECT_EQ(std::vector<bool>({true}), event_router->was_locked_values());
   event_router->ClearWasLockedValues();
 
-  // When the item is deleted, the data item avilable event should stop firing.
+  // When the item is deleted, the data item available event should stop firing.
   OperationResult delete_result;
   lock_screen_item_storage()->DeleteItem(
       extension()->id(), item_id,

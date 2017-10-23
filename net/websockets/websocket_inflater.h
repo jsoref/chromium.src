@@ -74,7 +74,7 @@ class NET_EXPORT_PRIVATE WebSocketInflater {
     ~OutputBuffer();
 
     size_t Size() const;
-    // Returns (tail pointer, availabe size).
+    // Returns (tail pointer, available size).
     // A user can push data to the queue by writing the data to
     // the area returned by this function and calling AdvanceTail.
     std::pair<char*, size_t> GetTail();

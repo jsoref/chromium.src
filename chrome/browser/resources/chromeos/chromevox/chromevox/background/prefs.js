@@ -110,7 +110,7 @@ cvox.ChromeVoxPrefs.prototype.init = function(pullFromLocalStorage) {
 /**
  * Switches to another key map.
  * @param {string} selectedKeyMap The id of the keymap in
- * cvox.KeyMap.AVAIABLE_KEYMAP_INFO.
+ * cvox.KeyMap.AVAILABLE_KEYMAP_INFO.
  */
 cvox.ChromeVoxPrefs.prototype.switchToKeyMap = function(selectedKeyMap) {
   // Switching key maps potentially affects the key codes that involve

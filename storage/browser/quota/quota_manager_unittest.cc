@@ -1205,7 +1205,7 @@ TEST_F(QuotaManagerTest, GetAndSetPersistentUsageAndQuota) {
   EXPECT_EQ(0, usage());
   EXPECT_EQ(100, quota());
 
-  // The actual space avaialble is given to 'unlimited' origins as their quota.
+  // The actual space available is given to 'unlimited' origins as their quota.
   mock_special_storage_policy()->AddUnlimited(GURL("http://unlimited/"));
   GetUsageAndQuotaForWebApps(GURL("http://unlimited/"), kPerm);
   scoped_task_environment_.RunUntilIdle();

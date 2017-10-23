@@ -295,7 +295,7 @@ void PepperMediaStreamVideoTrackHost::InitBuffers() {
       buffer->data_size = frame_data_size_;
     }
 
-    // Make all the frames avaiable to the plugin.
+    // Make all the frames available to the plugin.
     std::vector<int32_t> indices = buffer_manager()->DequeueBuffers();
     SendEnqueueBuffersMessageToPlugin(indices);
   }

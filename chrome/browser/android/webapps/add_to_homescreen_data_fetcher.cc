@@ -311,7 +311,7 @@ void AddToHomescreenDataFetcher::FetchFavicon() {
           ServiceAccessType::EXPLICIT_ACCESS);
 
   // Using favicon if its size is not smaller than platform required size,
-  // otherwise using the largest icon among all avaliable icons.
+  // otherwise using the largest icon among all available icons.
   int threshold_to_get_any_largest_icon = ideal_icon_size_in_px_ - 1;
   favicon_service->GetLargestRawFaviconForPageURL(
       shortcut_info_.url, icon_types, threshold_to_get_any_largest_icon,

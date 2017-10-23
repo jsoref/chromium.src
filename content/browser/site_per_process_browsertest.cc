@@ -6944,7 +6944,7 @@ IN_PROC_BROWSER_TEST_F(SitePerProcessBrowserTest, PopupMenuTest) {
 // its out-of-process iframe. This verifies that screen positioning information
 // is propagating down the frame tree correctly.
 #if defined(OS_ANDROID)
-// Surface-based hit testing and coordinate translation is not yet avaiable on
+// Surface-based hit testing and coordinate translation is not yet available on
 // Android.
 #define MAYBE_NestedPopupMenuTest DISABLED_NestedPopupMenuTest
 #else

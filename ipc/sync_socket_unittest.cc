@@ -287,12 +287,12 @@ TEST_F(SyncSocketTest, NonBlockingWriteTest) {
   // thread even when the buffer is full.
   while (pair[0].Send(kHelloString, kHelloStringLength) != 0) {}
 
-  // Data should be avialble on another socket.
+  // Data should be available on another socket.
   size_t bytes_in_buffer = pair[1].Peek();
   EXPECT_NE(bytes_in_buffer, 0U);
 
   // No more data can be written to the buffer since socket has been full,
-  // verify that the amount of avialble data on another socket is unchanged.
+  // verify that the amount of available data on another socket is unchanged.
   EXPECT_EQ(0U, pair[0].Send(kHelloString, kHelloStringLength));
   EXPECT_EQ(bytes_in_buffer, pair[1].Peek());
 

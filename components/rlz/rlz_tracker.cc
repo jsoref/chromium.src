@@ -251,7 +251,7 @@ bool RLZTracker::Init(bool first_run,
   }
 
 #if !defined(OS_IOS)
-  // Prime the RLZ cache for the home page access point so that its avaiable
+  // Prime the RLZ cache for the home page access point so that its available
   // for the startup page if needed (i.e., when the startup page is set to
   // the home page).
   GetAccessPointRlz(ChromeHomePage(), nullptr);

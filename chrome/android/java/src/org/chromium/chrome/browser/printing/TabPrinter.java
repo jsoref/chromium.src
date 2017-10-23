@@ -59,7 +59,7 @@ public class TabPrinter implements Printable {
         Tab tab = mTab.get();
         if (tab == null || !tab.isInitialized()) {
             // tab.isInitialized() will be false if tab is in destroy process.
-            Log.d(TAG, "Tab is not avaliable for printing.");
+            Log.d(TAG, "Tab is not available for printing.");
             return false;
         }
         return true;

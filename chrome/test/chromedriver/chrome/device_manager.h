@@ -61,7 +61,7 @@ class DeviceManager {
   Status AcquireDevice(std::unique_ptr<Device>* device);
 
   // Returns a device with the same guarantees as AcquireDevice, but fails
-  // if the device with the given serial number is not avaliable.
+  // if the device with the given serial number is not available.
   Status AcquireSpecificDevice(const std::string& device_serial,
                                std::unique_ptr<Device>* device);
 

@@ -895,7 +895,7 @@ R"(  The static library ("alink") tool allows {{arflags}} plus the common tool
 
   The compile_xcassets tool will be called with one or more source (each an
   asset catalog) that needs to be compiled to a single output. The following
-  substitutions are avaiable:
+  substitutions are available:
 
     {{inputs}}
         Expands to the list of .xcassets to use as input to compile the asset

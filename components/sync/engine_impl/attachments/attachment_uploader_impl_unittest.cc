@@ -577,7 +577,7 @@ TEST_F(AttachmentUploaderImplTest, UploadAttachment_FailToGetToken) {
 }
 
 // Verify behavior when the server returns "503 Service Unavailable".
-TEST_F(AttachmentUploaderImplTest, UploadAttachment_ServiceUnavilable) {
+TEST_F(AttachmentUploaderImplTest, UploadAttachment_ServiceUnavailable) {
   Attachment attachment = UploadAndRespondWith(net::HTTP_SERVICE_UNAVAILABLE);
   base::HistogramTester histogram_tester;
 

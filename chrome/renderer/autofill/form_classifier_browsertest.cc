@@ -35,10 +35,10 @@ class FormClassifierTest : public ChromeRenderViewTest {
     blink::WebFormElement form =
         document.GetElementById("test_form").To<blink::WebFormElement>();
     base::string16 generation_field16;
-    bool generation_availalbe =
+    bool generation_available =
         ClassifyFormAndFindGenerationField(form, &generation_field16);
     *generation_field = base::UTF16ToUTF8(generation_field16);
-    return generation_availalbe;
+    return generation_available;
   }
 
  private:

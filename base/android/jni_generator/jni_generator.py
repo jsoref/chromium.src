@@ -496,7 +496,7 @@ def GetStaticCastForReturnType(return_type):
 
 
 def GetEnvCall(is_constructor, is_static, return_type):
-  """Maps the types availabe via env->Call__Method."""
+  """Maps the types available via env->Call__Method."""
   if is_constructor:
     return 'NewObject'
   env_call_map = {'boolean': 'Boolean',

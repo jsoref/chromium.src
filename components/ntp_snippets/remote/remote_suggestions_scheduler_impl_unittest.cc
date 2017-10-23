@@ -265,7 +265,7 @@ TEST_F(RemoteSuggestionsSchedulerImplTest, ShouldIgnoreSignalsWhenNotEnabled) {
 }
 
 TEST_F(RemoteSuggestionsSchedulerImplTest,
-       ShouldIgnoreEulaStateOnPlatformsWhereNotAvaiable) {
+       ShouldIgnoreEulaStateOnPlatformsWhereNotAvailable) {
   // Only run this tests on platforms that don't support Eula.
   if (IsEulaNotifierAvailable()) {
     return;

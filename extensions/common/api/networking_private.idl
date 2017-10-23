@@ -857,7 +857,7 @@ namespace networkingPrivate {
   };
 
   dictionary CertificateLists {
-    // List of avaliable server CA certificates.
+    // List of available server CA certificates.
     Certificate[] serverCaCertificates;
 
     // List of available user certificates.

@@ -85,7 +85,7 @@ ifeq (,$(findstring $(TOOLCHAIN),$(VALID_TOOLCHAINS)))
 # Only fail to build if this is a top-level make. When building recursively, we
 # don't care if an example can't build with this toolchain.
 ifeq ($(MAKELEVEL),0)
-  $(warning Availbile choices are: $(VALID_TOOLCHAINS))
+  $(warning Available choices are: $(VALID_TOOLCHAINS))
   $(error Can not use TOOLCHAIN=$(TOOLCHAIN) on this example.)
 else
 
@@ -119,7 +119,7 @@ endif
 #
 VALID_CONFIGS ?= Debug Release
 ifeq (,$(findstring $(CONFIG),$(VALID_CONFIGS)))
-  $(warning Availbile choices are: $(VALID_CONFIGS))
+  $(warning Available choices are: $(VALID_CONFIGS))
   $(error Can not use CONFIG=$(CONFIG) on this example.)
 endif
 

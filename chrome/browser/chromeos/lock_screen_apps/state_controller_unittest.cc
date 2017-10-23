@@ -946,7 +946,7 @@ TEST_F(LockScreenAppStateTest, MoveToForegroundFromNonBackgroundState) {
   EXPECT_EQ(0u, tray_action()->observed_states().size());
 }
 
-TEST_F(LockScreenAppStateTest, HandleActionWhenNotAvaiable) {
+TEST_F(LockScreenAppStateTest, HandleActionWhenNotAvailable) {
   ASSERT_EQ(TrayActionState::kNotAvailable,
             state_controller()->GetLockScreenNoteState());
 

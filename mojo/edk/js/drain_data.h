@@ -39,7 +39,7 @@ class DrainData {
   // Waits for data to be available. DataReady() will be notified.
   void WaitForData();
 
-  // Use ReadData() to read whatever is availble now on handle_ and save
+  // Use ReadData() to read whatever is available now on handle_ and save
   // it in data_buffers_.
   void DataReady(MojoResult result);
   MojoResult ReadData();

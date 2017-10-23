@@ -799,7 +799,7 @@ cr.define('ntp', function() {
       var realTileValues = tileValuesForGrid(
           effectiveGridWidth, numRowTiles, grid.tileSpacingFraction);
 
-      // leftMargin centers the grid within the avaiable space.
+      // leftMargin centers the grid within the available space.
       var minMargin = wide ? MIN_WIDE_MARGIN : 0;
       var leftMargin = Math.max(
           minMargin, (this.tileGrid_.clientWidth - effectiveGridWidth) / 2);

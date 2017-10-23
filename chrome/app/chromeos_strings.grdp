@@ -2744,7 +2744,7 @@ Press any key to continue exploring.
   <message name="IDS_EULA_SECURE_MODULE_KEY_DESCRIPTION" desc="Description of the generated secure module password in the eula page.">
     Below is the randomly generated secure module password that has been assigned to your computer:
   </message>
-  <message name="IDS_EULA_SECURE_MODULE_KEY_DESCRIPTION_POWERWASH" desc="Notifies users that a secure module password is unavailabe after a powerwash.">
+  <message name="IDS_EULA_SECURE_MODULE_KEY_DESCRIPTION_POWERWASH" desc="Notifies users that a secure module password is unavailable after a powerwash.">
     The randomly generated secure module password is not available. This is normal after a Powerwash.
   </message>
   <message name="IDS_EULA_SECURE_MODULE_WAIT" desc="Message that is shown to users on the eula page while the secure module is being set up.">

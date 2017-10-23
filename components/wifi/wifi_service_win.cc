@@ -440,7 +440,7 @@ class WiFiServiceImpl : public WiFiService {
   WlanEnumInterfacesFunction WlanEnumInterfaces_function_;
   WlanFreeMemoryFunction WlanFreeMemory_function_;
   WlanGetAvailableNetworkListFunction WlanGetAvailableNetworkList_function_;
-  // WlanGetNetworkBssList function may not be avaiable on Windows XP.
+  // WlanGetNetworkBssList function may not be available on Windows XP.
   WlanGetNetworkBssListFunction WlanGetNetworkBssList_function_;
   WlanGetProfileFunction WlanGetProfile_function_;
   WlanOpenHandleFunction WlanOpenHandle_function_;
@@ -448,7 +448,7 @@ class WiFiServiceImpl : public WiFiService {
   WlanRegisterNotificationFunction WlanRegisterNotification_function_;
   WlanScanFunction WlanScan_function_;
   WlanSetProfileFunction WlanSetProfile_function_;
-  // WlanSaveTemporaryProfile function may not be avaiable on Windows XP.
+  // WlanSaveTemporaryProfile function may not be available on Windows XP.
   WlanSaveTemporaryProfileFunction WlanSaveTemporaryProfile_function_;
 
   // WLAN service handle.

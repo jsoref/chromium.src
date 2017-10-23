@@ -67,7 +67,7 @@ class OAuth2LoginManager : public KeyedService,
                                               SessionRestoreState state) {}
 
     // Raised when a new OAuth2 refresh token is available.
-    virtual void OnNewRefreshTokenAvaiable(Profile* user_profile) {}
+    virtual void OnNewRefreshTokenAvailable(Profile* user_profile) {}
 
     // Raised when session's GAIA credentials (SID+LSID) are available to
     // other signed in services.

@@ -147,7 +147,7 @@ TEST_F(MediaRouterContextualMenuUnitTest, EnableAndDisableReportIssue) {
 }
 
 // Tests whether the cloud services item is correctly toggled. This menu item
-// is only availble on official Chrome builds.
+// is only available on official Chrome builds.
 TEST_F(MediaRouterContextualMenuUnitTest, ToggleCloudServicesItem) {
   // The Media Router Action has a getter for the model, but not the delegate.
   // Create the MediaRouterContextualMenu ui::SimpleMenuModel::Delegate here.

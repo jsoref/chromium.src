@@ -558,7 +558,7 @@ TEST_F(SurfaceAggregatorValidSurfaceTest, FallbackSurfaceReference) {
                         arraysize(fallback_child_passes),
                         fallback_child_local_surface_id);
 
-  // Try to embed |primary_child_surface_id| and if unavailabe, embed
+  // Try to embed |primary_child_surface_id| and if unavailable, embed
   // |fallback_child_surface_id|.
   Quad root_quads[] = {Quad::SurfaceQuad(primary_child_surface_id,
                                          fallback_child_surface_id, 1.f)};
@@ -649,7 +649,7 @@ TEST_F(SurfaceAggregatorValidSurfaceTest, FallbackSurfaceReferenceWithPrimary) {
                         arraysize(fallback_child_passes),
                         fallback_child_local_surface_id);
 
-  // Try to embed |primary_child_surface_id| and if unavailabe, embed
+  // Try to embed |primary_child_surface_id| and if unavailable, embed
   // |fallback_child_surface_id|.
   Quad root_quads[] = {Quad::SurfaceQuad(primary_child_surface_id,
                                          fallback_child_surface_id, 1.f)};
