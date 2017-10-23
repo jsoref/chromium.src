@@ -222,7 +222,7 @@ public class AutofillAddress extends PaymentOption {
      * Checks address completion status in the given profile.
      *
      * If the country code is not set or invalid, but all fields for the default locale's country
-     * code are present, then the profile is deemed "complete." AutoflllAddress.toPaymentAddress()
+     * code are present, then the profile is deemed "complete." AutofillAddress.toPaymentAddress()
      * will use the default locale to fill in a blank country code before sending the address to the
      * renderer.
      *
