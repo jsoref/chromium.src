@@ -20,7 +20,7 @@ namespace {
 // Convert the supplied CFString into the specified encoding, and return it as
 // an STL string of the template type.  Returns an empty string on failure.
 //
-// Do not assert in this function since it is used by the asssertion code!
+// Do not assert in this function since it is used by the assertion code!
 template<typename StringType>
 static StringType CFStringToSTLStringWithEncodingT(CFStringRef cfstring,
                                                    CFStringEncoding encoding) {
@@ -69,7 +69,7 @@ static StringType CFStringToSTLStringWithEncodingT(CFStringRef cfstring,
 // convert it to |out_encoding| and return it as an STL string of the
 // |OutStringType| template type.  Returns an empty string on failure.
 //
-// Do not assert in this function since it is used by the asssertion code!
+// Do not assert in this function since it is used by the assertion code!
 template<typename InStringType, typename OutStringType>
 static OutStringType STLStringToSTLStringWithEncodingsT(
     const InStringType& in,
@@ -124,13 +124,13 @@ static const CFStringEncoding kWideStringEncoding = kCFStringEncodingUTF32LE;
 
 }  // namespace
 
-// Do not assert in this function since it is used by the asssertion code!
+// Do not assert in this function since it is used by the assertion code!
 std::string SysWideToUTF8(const std::wstring& wide) {
   return STLStringToSTLStringWithEncodingsT<std::wstring, std::string>(
       wide, kWideStringEncoding, kNarrowStringEncoding);
 }
 
-// Do not assert in this function since it is used by the asssertion code!
+// Do not assert in this function since it is used by the assertion code!
 std::wstring SysUTF8ToWide(const StringPiece& utf8) {
   return STLStringToSTLStringWithEncodingsT<StringPiece, std::wstring>(
       utf8, kNarrowStringEncoding, kWideStringEncoding);
