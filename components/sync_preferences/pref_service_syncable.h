@@ -39,7 +39,7 @@ class PrefServiceSyncable : public PrefService {
       PrefValueStore* pref_value_store,
       PersistentPrefStore* user_prefs,
       user_prefs::PrefRegistrySyncable* pref_registry,
-      const PrefModelAssociatorClient* pref_model_associato_client,
+      const PrefModelAssociatorClient* pref_model_associator_client,
       base::Callback<void(PersistentPrefStore::PrefReadError)>
           read_error_callback,
       bool async);
