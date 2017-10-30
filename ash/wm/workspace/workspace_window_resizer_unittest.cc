@@ -115,7 +115,7 @@ class WorkspaceWindowResizerTest : public AshTestBase {
 
   // Returns a string identifying the z-order of each of the known child windows
   // of |parent|.  The returned string constains the id of the known windows and
-  // is ordered from topmost to bottomost windows.
+  // is ordered from topmost to bottommost windows.
   std::string WindowOrderAsString(aura::Window* parent) const {
     std::string result;
     const aura::Window::Windows& windows = parent->children();

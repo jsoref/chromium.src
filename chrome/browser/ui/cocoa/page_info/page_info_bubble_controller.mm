@@ -1141,7 +1141,7 @@ bool IsInternalURL(const GURL& url) {
     [button setEnabled:NO];
   }
 
-  // Update |point| to match the y of the bottomost UI element added (|button|).
+  // Update |point| to match the y of the bottommost UI element added (|button|).
   NSRect buttonFrame = [button frame];
   point.y = NSMaxY(labelFrame) + kPermissionLabelBottomPadding;
 
