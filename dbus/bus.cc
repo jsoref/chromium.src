@@ -400,7 +400,7 @@ bool Bus::Connect() {
   if (bus_type_ == CUSTOM_ADDRESS) {
     // We should call dbus_bus_register here, otherwise unique name can not be
     // acquired. According to dbus specification, it is responsible to call
-    // org.freedesktop.DBus.Hello method at the beging of bus connection to
+    // org.freedesktop.DBus.Hello method at the beginning of bus connection to
     // acquire unique name. In the case of dbus_bus_get, dbus_bus_register is
     // called internally.
     if (!dbus_bus_register(connection_, error.get())) {

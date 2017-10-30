@@ -32,7 +32,7 @@ namespace {
 
 constexpr char kExtensionId[] = "ddchlicdkolnonkihahngkmmmjnjlkkf";
 
-// Number of events to trim from the begining and end. These events don't
+// Number of events to trim from the beginning and end. These events don't
 // contribute anything toward stable measurements: A brief moment of startup
 // "jank" is acceptable, and shutdown may result in missing events (since
 // render widget draws may stop before capture stops).

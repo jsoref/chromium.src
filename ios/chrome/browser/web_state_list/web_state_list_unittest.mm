@@ -358,7 +358,7 @@ TEST_F(WebStateListTest, ReplaceWebStateAt) {
   EXPECT_EQ(kURL1, old_web_state->GetVisibleURL().spec());
 }
 
-TEST_F(WebStateListTest, DetachWebStateAtIndexBegining) {
+TEST_F(WebStateListTest, DetachWebStateAtIndexBeginning) {
   AppendNewWebState(kURL0);
   AppendNewWebState(kURL1);
   AppendNewWebState(kURL2);

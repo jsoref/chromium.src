@@ -178,7 +178,7 @@ TEST_F(AndroidHistoryProviderServiceTest, TestHistoryAndBookmark) {
   RunMessageLoop(callback.get());
   ASSERT_TRUE(callback->success());
 
-  // Move the cursor to the begining and verify whether we could get
+  // Move the cursor to the beginning and verify whether we could get
   // the same result.
   AndroidStatement* statement = callback->statement();
   service_->MoveStatement(
@@ -248,7 +248,7 @@ TEST_F(AndroidHistoryProviderServiceTest, TestSearchTerm) {
   RunMessageLoop(callback.get());
   ASSERT_TRUE(callback->success());
 
-  // Move the cursor to the begining and verify whether we could get
+  // Move the cursor to the beginning and verify whether we could get
   // the same result.
   AndroidStatement* statement = callback->statement();
   service_->MoveStatement(

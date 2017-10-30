@@ -19,7 +19,7 @@ namespace {
 // The display serial number beginning byte position and its length in the
 // EDID number as defined in the spec.
 // https://en.wikipedia.org/wiki/Extended_Display_Identification_Data
-constexpr size_t kSerialNumberBeginingByte = 12U;
+constexpr size_t kSerialNumberBeginningByte = 12U;
 constexpr size_t kSerialNumberLengthInBytes = 4U;
 
 std::string ModeListString(
@@ -92,9 +92,9 @@ DisplaySnapshot::DisplaySnapshot(int64_t display_id,
       maximum_cursor_size_(maximum_cursor_size) {
   // We must explicitly clear out the bytes that represent the serial number.
   const size_t end =
-      std::min(kSerialNumberBeginingByte + kSerialNumberLengthInBytes,
+      std::min(kSerialNumberBeginningByte + kSerialNumberLengthInBytes,
                edid_.size());
-  for (size_t i = kSerialNumberBeginingByte; i < end; ++i)
+  for (size_t i = kSerialNumberBeginningByte; i < end; ++i)
     edid_[i] = 0;
 }
 

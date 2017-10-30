@@ -180,7 +180,7 @@ class VolumeArchiveMinizip : public VolumeArchive {
   // from last_read_data_offset_ in case the offset parameter of
   // VolumeArchiveMinizip::ReadData has the same value as
   // last_read_data_offset_. This avoids decompressing again the bytes at
-  // the begninning of the file, which is the average case scenario.
+  // the beginning of the file, which is the average case scenario.
   // But in case the offset parameter is different than last_read_data_offset_,
   // then dummy_buffer_ will be used to ignore unused bytes.
   int64_t last_read_data_offset_;

@@ -75,7 +75,7 @@ class ASH_EXPORT ShellDelegate {
   // can perform tasks necessary before the shell is initialized.
   virtual void PreInit() = 0;
 
-  // Called at the beginninig of Shell destructor so that
+  // Called at the beginning of Shell destructor so that
   // delegate can use Shell instance to perform cleanup tasks.
   virtual void PreShutdown() = 0;
 

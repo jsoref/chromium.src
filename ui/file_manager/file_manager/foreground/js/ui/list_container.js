@@ -176,7 +176,7 @@ ListContainer.prototype = /** @struct */ {
 };
 
 /**
- * Notifies begginig of batch update to the UI.
+ * Notifies beginning of batch update to the UI.
  */
 ListContainer.prototype.startBatchUpdates = function() {
   this.table.startBatchUpdates();

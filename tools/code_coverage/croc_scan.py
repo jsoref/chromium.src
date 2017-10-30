@@ -73,7 +73,7 @@ class Scanner(object):
       # If still in comment at end of line, remove comment
       if in_comment:
         line = line[:comment_index]
-        # Next line, delete from the beginnine
+        # Next line, delete from the beginning
         comment_index = 0
 
       # If line-sans-comments is not empty, claim it may be executable

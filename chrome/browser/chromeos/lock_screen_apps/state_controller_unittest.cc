@@ -511,7 +511,7 @@ class LockScreenAppStateTest : public BrowserWithTestWindowTest {
   }
 
   // Helper method to move state controller to the specified state.
-  // Should be called at the begining of tests, at most once.
+  // Should be called at the beginning of tests, at most once.
   bool InitializeNoteTakingApp(TrayActionState target_state,
                                bool enable_app_launch) {
     app_ = CreateTestNoteTakingApp(kTestAppId);

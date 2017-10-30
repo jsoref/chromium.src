@@ -695,7 +695,7 @@ Viewport.prototype = {
 
     var needsScrollbars = this.documentNeedsScrollbars_(this.zoom);
     this.keepContentCentered_ = !needsScrollbars.horizontal;
-    // We keep track of begining of the pinch.
+    // We keep track of beginning of the pinch.
     // By doing so we will be able to compute the pan distance.
     this.firstPinchCenterInFrame_ = e.center;
   },

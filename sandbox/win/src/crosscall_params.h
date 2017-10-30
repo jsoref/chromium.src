@@ -108,7 +108,7 @@ class CrossCallParams {
   // Returns the tag (ipc unique id) associated with this IPC.
   uint32_t GetTag() const { return tag_; }
 
-  // Returns the beggining of the buffer where the IPC params can be stored.
+  // Returns the beginning of the buffer where the IPC params can be stored.
   // prior to an IPC call
   const void* GetBuffer() const {
     return this;

@@ -622,7 +622,7 @@ ImageView.prototype.replace = function(
       newContentImage, this.viewport_, opt_effect, 0 /* instant */);
 
   // We need to call requestAnimationFrame twice here. The first call is for
-  // commiting the styles of beggining of transition that are assigned above.
+  // commiting the styles of beginning of transition that are assigned above.
   // The second call is for assigning and commiting the styles of end of
   // transition, which triggers transition animation.
   requestAnimationFrame(function() {

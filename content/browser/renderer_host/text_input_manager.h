@@ -70,7 +70,7 @@ class CONTENT_EXPORT TextInputManager {
     SelectionRegion();
     SelectionRegion(const SelectionRegion& other);
 
-    // The begining of the selection region.
+    // The beginning of the selection region.
     gfx::SelectionBound anchor;
     // The end of the selection region (caret position).
     gfx::SelectionBound focus;

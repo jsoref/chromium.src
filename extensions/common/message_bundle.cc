@@ -233,7 +233,7 @@ bool MessageBundle::ReplaceVariables(const SubstitutionMap& variables,
     if (beg_index == message->npos)
       return true;
 
-    // Advance it immediately to the begining of possible variable name.
+    // Advance it immediately to the beginning of possible variable name.
     beg_index += var_begin_delimiter_size;
     if (beg_index >= message->size())
       return true;

@@ -1482,7 +1482,7 @@ TEST(HttpStreamParser, ReceivedBytesExcludesNextResponse) {
 // We send data in two reads:
 // 1) Headers + beginning of response
 // 2) remaining part of response + next response start
-// We setup user read buffer so it fully accepts the beginnig of response
+// We setup user read buffer so it fully accepts the beginning of response
 // body, but it is larger that remaining part of body.
 TEST(HttpStreamParser, ReceivedBytesMultiReadExcludesNextResponse) {
   std::string headers = "HTTP/1.1 200 OK\r\n"

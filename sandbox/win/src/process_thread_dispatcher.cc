@@ -58,7 +58,7 @@ base::string16 GetPathFromCmdLine(const base::string16 &cmd_line) {
 // Returns true is the path in parameter is relative. False if it's
 // absolute.
 bool IsPathRelative(const base::string16 &path) {
-  // A path is Relative if it's not a UNC path beginnning with \\ or a
+  // A path is Relative if it's not a UNC path beginning with \\ or a
   // path beginning with a drive. (i.e. X:\)
   if (path.find(L"\\\\") == 0 || path.find(L":\\") == 1)
     return false;

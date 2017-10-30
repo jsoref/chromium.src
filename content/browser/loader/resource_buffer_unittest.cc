@@ -72,7 +72,7 @@ TEST(ResourceBufferTest, WrapAround) {
   buf->Allocate(&size);
   EXPECT_EQ(10, size);
 
-  // Create hole at the beginnning.  Next allocation should go there.
+  // Create hole at the beginning.  Next allocation should go there.
   buf->RecycleLeastRecentlyAllocated();
 
   buf->Allocate(&size);

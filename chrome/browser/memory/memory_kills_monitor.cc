@@ -176,7 +176,7 @@ void MemoryKillsMonitor::StartMonitoring() {
     return;
   }
 
-  // Insert a zero kill record at the begining of each login session for easy
+  // Insert a zero kill record at the beginning of each login session for easy
   // comparison to those with non-zero kill sessions.
   UMA_HISTOGRAM_CUSTOM_COUNTS("Arc.OOMKills.Count", 0, 1, 1000, 1001);
   UMA_HISTOGRAM_CUSTOM_COUNTS("Arc.LowMemoryKiller.Count", 0, 1, 1000, 1001);
