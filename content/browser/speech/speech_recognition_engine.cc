@@ -195,7 +195,7 @@ void SpeechRecognitionEngine::DispatchHTTPResponse(const URLFetcher* source,
   // Such chunks are sent by the speech recognition webservice over the HTTP
   // downstream channel using HTTP chunked transfer (unrelated to our chunks).
   // This function is called every time an HTTP chunk is received by the
-  // url fetcher. However there isn't any particular matching beween our
+  // url fetcher. However there isn't any particular matching between our
   // protocol chunks and HTTP chunks, in the sense that a single HTTP chunk can
   // contain a portion of one chunk or even more chunks together.
   chunked_byte_buffer_.Append(response);

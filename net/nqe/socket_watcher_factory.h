@@ -43,7 +43,7 @@ class SocketWatcherFactory : public SocketPerformanceWatcherFactory {
   // Creates a SocketWatcherFactory.  All socket watchers created by
   // SocketWatcherFactory call |updated_rtt_observation_callback| on
   // |task_runner| every time a new RTT observation is available.
-  // |min_notification_interval| is the minimum interval betweeen consecutive
+  // |min_notification_interval| is the minimum interval between consecutive
   // notifications to the socket watchers created by this factory. |tick_clock|
   // is guaranteed to be non-null.
   SocketWatcherFactory(
@@ -66,7 +66,7 @@ class SocketWatcherFactory : public SocketPerformanceWatcherFactory {
  private:
   scoped_refptr<base::SingleThreadTaskRunner> task_runner_;
 
-  // Minimum interval betweeen consecutive notifications to the socket watchers
+  // Minimum interval between consecutive notifications to the socket watchers
   // created by this factory.
   const base::TimeDelta min_notification_interval_;
 

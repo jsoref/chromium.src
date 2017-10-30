@@ -1461,7 +1461,7 @@ Obstacle.prototype = {
 
 /**
  * Obstacle definitions.
- * minGap: minimum pixel space betweeen obstacles.
+ * minGap: minimum pixel space between obstacles.
  * multipleSpeed: Speed at which multiples are allowed.
  * speedOffset: speed faster / slower than the horizon.
  * minSpeed: Minimum speed which the obstacle can make an appearance.

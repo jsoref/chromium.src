@@ -116,7 +116,7 @@ _junit_gen_dir = "$root_gen_dir/chromecast/junit"
 #        If |filters| is not defined, no filters are applied.
 #
 #   priority (optional)
-#       A string which takes any single-digit integer bewtween "1" and "9",
+#       A string which takes any single-digit integer between "1" and "9",
 #       inclusive. Assign this to prioritize filters applied by other
 #       cast_test_groups, where a higher number trumps a lower number.
 #       If not assigned, priority defaults to "1", the lowest priority.

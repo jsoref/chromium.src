@@ -918,7 +918,7 @@ QuicChromiumClientSession::CreateOutgoingReliableStreamImpl() {
   ++num_total_streams_;
   UMA_HISTOGRAM_COUNTS_1M("Net.QuicSession.NumOpenStreams",
                           GetNumOpenOutgoingStreams());
-  // The previous histogram puts 100 in a bucket betweeen 86-113 which does
+  // The previous histogram puts 100 in a bucket between 86-113 which does
   // not shed light on if chrome ever things it has more than 100 streams open.
   UMA_HISTOGRAM_BOOLEAN("Net.QuicSession.TooManyOpenStreams",
                         GetNumOpenOutgoingStreams() > 100);

@@ -118,7 +118,7 @@ class NET_EXPORT NetworkQualityEstimatorParams {
     persistent_cache_reading_enabled_ = persistent_cache_reading_enabled;
   }
 
-  // Returns the the minimum interval betweeen consecutive notifications to a
+  // Returns the the minimum interval between consecutive notifications to a
   // single socket watcher.
   base::TimeDelta min_socket_watcher_notification_interval() const {
     return min_socket_watcher_notification_interval_;

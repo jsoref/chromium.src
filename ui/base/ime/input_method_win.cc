@@ -672,7 +672,7 @@ void InputMethodWin::RefreshInputLanguage() {
   if (type_original != GetTextInputType()) {
     // Only update the IME state when necessary.
     // It's unnecessary to report IME state, when:
-    // 1) Switching betweeen 2 top-level windows, and the switched-away window
+    // 1) Switching between 2 top-level windows, and the switched-away window
     //    receives OnInputLocaleChanged.
     // 2) The text input type is not changed by |SetInputLanguage|.
     // Please refer to crbug.com/679564.

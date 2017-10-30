@@ -46,7 +46,7 @@ TEST(IPPatternTest, PerfectMatchPattern) {
   EXPECT_FALSE(pattern_v6.is_ipv4());
   EXPECT_TRUE(CheckForMatch(pattern_v6, ipv6_text1));
 
-  // Also check that there is no confusion betwene v6 and v4, despite having
+  // Also check that there is no confusion between v6 and v4, despite having
   // similar values in some sense.
   EXPECT_FALSE(CheckForMatch(pattern_v4, ipv6_text1));
   EXPECT_FALSE(CheckForMatch(pattern_v6, ipv4_text1));

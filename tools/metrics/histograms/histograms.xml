@@ -68280,7 +68280,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
     Latency of URL-classification API calls from Chrome via
     RemoteSafeBrowsingDatabaseManager, logged per-request. This includes the
     time to go through JNI, check the URL, and return the result and includes
-    several thread hops betwetween IO and UI threads. The resource-load will not
+    several thread hops between IO and UI threads. The resource-load will not
     necessarily be delayed this much (see SB2.Delay for that).
   </summary>
 </histogram>

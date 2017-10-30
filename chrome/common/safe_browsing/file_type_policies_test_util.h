@@ -26,7 +26,7 @@ class FileTypePoliciesTestOverlay {
   FileTypePoliciesTestOverlay();
   ~FileTypePoliciesTestOverlay();
 
-  // Swaps the contents bewtween the existing config and |new_config|.
+  // Swaps the contents between the existing config and |new_config|.
   void SwapConfig(std::unique_ptr<DownloadFileTypeConfig>& new_config) const;
 
   // Return a new copy of the original config.

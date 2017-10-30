@@ -475,7 +475,7 @@ namespace bluetoothLowEnergy {
     // |callback|: Called once the advertisements are reset.
     static void resetAdvertising(ResultCallback callback);
 
-    // Set's the interval betweeen two consecutive advertisements. Note:
+    // Set's the interval between two consecutive advertisements. Note:
     // This is a best effort. The actual interval may vary non-trivially
     // from the requested intervals. On some hardware, there is a minimum
     // interval of 100ms. The minimum and maximum values cannot exceed the

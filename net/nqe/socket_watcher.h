@@ -49,7 +49,7 @@ class NET_EXPORT_PRIVATE SocketWatcher : public SocketPerformanceWatcher {
   // |updated_rtt_observation_callback| on |task_runner| every time a new RTT
   // observation is available. |address_list| is the list of addresses that
   // the socket may connect to. |min_notification_interval| is the minimum
-  // interval betweeen consecutive notifications to this socket watcher.
+  // interval between consecutive notifications to this socket watcher.
   // |allow_rtt_private_address| is true if |updated_rtt_observation_callback|
   // should be called when RTT observation from a socket connected to private
   // address is received. |tick_clock| is guaranteed to be non-null.
@@ -77,7 +77,7 @@ class NET_EXPORT_PRIVATE SocketWatcher : public SocketPerformanceWatcher {
   // Called every time a new RTT observation is available.
   OnUpdatedRTTAvailableCallback updated_rtt_observation_callback_;
 
-  // Minimum interval betweeen consecutive incoming notifications.
+  // Minimum interval between consecutive incoming notifications.
   const base::TimeDelta rtt_notifications_minimum_interval_;
 
   // True if the RTT observations from this socket can be notified using
