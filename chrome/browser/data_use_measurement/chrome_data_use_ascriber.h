@@ -153,7 +153,7 @@ class ChromeDataUseAscriber : public DataUseAscriber {
 
     // Visibility of the main frame, whether it is currently shown to the user.
     // This is updated on WasShownOrHidden(), and passed down to DataUseRecorder
-    // when created. Visibility is used to record data use brokend by tab state
+    // when created. Visibility is used to record data use broken down by tab state
     // histograms.
     bool is_visible;
 
