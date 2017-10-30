@@ -61,7 +61,7 @@ class CONTENT_EXPORT NavigationEntryScreenshotManager {
   int GetScreenshotCount() const;
 
  private:
-  // This is called when the screenshot data has beene encoded to PNG in a
+  // This is called when the screenshot data has been encoded to PNG in a
   // worker thread.
   void OnScreenshotEncodeComplete(int unique_id,
                                   scoped_refptr<ScreenshotData> data);

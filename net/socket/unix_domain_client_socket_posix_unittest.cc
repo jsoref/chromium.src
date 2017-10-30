@@ -225,7 +225,7 @@ TEST_F(UnixDomainClientSocketTest, ConnectWithAbstractNamespace) {
 
   EXPECT_THAT(ConnectSynchronously(&client_socket), IsOk());
   EXPECT_TRUE(client_socket.IsConnected());
-  // Server has not yet beend notified of the connection.
+  // Server has not yet been notified of the connection.
   EXPECT_FALSE(accepted_socket);
 
   EXPECT_THAT(accept_callback.WaitForResult(), IsOk());
