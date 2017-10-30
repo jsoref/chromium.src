@@ -87,7 +87,7 @@ public abstract class CronetEngineBuilderImpl extends ICronetEngineBuilder {
     private boolean mQuicEnabled;
     private boolean mHttp2Enabled;
     private boolean mSdchEnabled;
-    private boolean mBrotiEnabled;
+    private boolean mBrotliEnabled;
     private boolean mDisableCache;
     private int mHttpCacheMode;
     private long mHttpCacheMaxSize;
@@ -192,12 +192,12 @@ public abstract class CronetEngineBuilderImpl extends ICronetEngineBuilder {
 
     @Override
     public CronetEngineBuilderImpl enableBrotli(boolean value) {
-        mBrotiEnabled = value;
+        mBrotliEnabled = value;
         return this;
     }
 
     boolean brotliEnabled() {
-        return mBrotiEnabled;
+        return mBrotliEnabled;
     }
 
     @IntDef({

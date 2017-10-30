@@ -1855,7 +1855,7 @@ TEST_F(DataReductionProxyNetworkDelegateTest, BrotliAdvertisement) {
 }
 
 TEST_F(DataReductionProxyNetworkDelegateTest, IncrementingMainFramePageId) {
-  // This is unaffacted by brotil and insecure proxy.
+  // This is unaffacted by brotli and insecure proxy.
   Init(USE_SECURE_PROXY, false /* enable_brotli_globally */);
 
   io_data()->request_options()->SetSecureSession("new-session");
@@ -1869,7 +1869,7 @@ TEST_F(DataReductionProxyNetworkDelegateTest, IncrementingMainFramePageId) {
 }
 
 TEST_F(DataReductionProxyNetworkDelegateTest, ResetSessionResetsId) {
-  // This is unaffacted by brotil and insecure proxy.
+  // This is unaffacted by brotli and insecure proxy.
   Init(USE_SECURE_PROXY, false /* enable_brotli_globally */);
 
   io_data()->request_options()->SetSecureSession("new-session");
@@ -1884,14 +1884,14 @@ TEST_F(DataReductionProxyNetworkDelegateTest, ResetSessionResetsId) {
 }
 
 TEST_F(DataReductionProxyNetworkDelegateTest, SubResourceNoPageId) {
-  // This is unaffacted by brotil and insecure proxy.
+  // This is unaffacted by brotli and insecure proxy.
   Init(USE_SECURE_PROXY, false /* enable_brotli_globally */);
   io_data()->request_options()->SetSecureSession("new-session");
   FetchURLRequestAndVerifyPageIdDirective(base::Optional<uint64_t>(), false);
 }
 
 TEST_F(DataReductionProxyNetworkDelegateTest, RedirectSharePid) {
-  // This is unaffacted by brotil and insecure proxy.
+  // This is unaffacted by brotli and insecure proxy.
   Init(USE_SECURE_PROXY, false /* enable_brotli_globally */);
 
   io_data()->request_options()->SetSecureSession("new-session");
@@ -1905,7 +1905,7 @@ TEST_F(DataReductionProxyNetworkDelegateTest,
   // This test calls directly into network delegate as it is difficult to mock
   // state changing in between redirects within an URLRequest's lifetime.
 
-  // This is unaffacted by brotil and insecure proxy.
+  // This is unaffacted by brotli and insecure proxy.
   Init(USE_INSECURE_PROXY, false /* enable_brotli_globally */);
   net::ProxyInfo data_reduction_proxy_info;
   data_reduction_proxy_info.UseProxyServer(
