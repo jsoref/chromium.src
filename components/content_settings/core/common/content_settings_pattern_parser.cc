@@ -74,7 +74,7 @@ void PatternParser::Parse(const std::string& pattern_spec,
     return;  // Bad pattern spec.
 
   // Jump to the end of domain wildcards or an IPv6 addresses. IPv6 addresses
-  // contain ':'. So first move to the end of an IPv6 address befor searching
+  // contain ':'. So first move to the end of an IPv6 address before searching
   // for the ':' that separates the port form the host.
   if (pattern_spec[current_pos] == '[')
     current_pos = pattern_spec.find("]", start);
