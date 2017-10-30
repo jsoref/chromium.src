@@ -58,7 +58,7 @@ class TestDataReductionProxyPingbackClient
         override_value_(0.0f),
         current_time_(base::Time::Now()) {}
 
-  // Overrides the bahvior of the random float generator in
+  // Overrides the behavior of the random float generator in
   // DataReductionProxyPingbackClient.
   // If |should_override_random| is true, the typically random value that is
   // compared with reporting fraction will deterministically be
@@ -369,7 +369,7 @@ TEST_F(DataReductionProxyPingbackClientTest, NoPingbackSent) {
   EXPECT_FALSE(factory()->GetFetcherByID(0));
 }
 
-TEST_F(DataReductionProxyPingbackClientTest, VerifyReportingBehvaior) {
+TEST_F(DataReductionProxyPingbackClientTest, VerifyReportingBehavior) {
   Init();
   EXPECT_FALSE(factory()->GetFetcherByID(0));
 

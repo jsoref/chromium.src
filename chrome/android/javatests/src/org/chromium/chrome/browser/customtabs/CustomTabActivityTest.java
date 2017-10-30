@@ -2001,7 +2001,7 @@ public class CustomTabActivityTest {
      * - warmup() + mayLaunchUrl("http://example.com/page.html#first-fragment")
      * - loadUrl("http://example.com/page.html#other-fragment")
      *
-     * There are two parameters changing the bahavior:
+     * There are two parameters changing the behavior:
      * @param ignoreFragments Whether the prerender should be kept.
      * @param wait Whether to wait for the prerender to load.
      *
@@ -2065,7 +2065,7 @@ public class CustomTabActivityTest {
      * - warmup() + mayLaunchUrl("http://example.com/page.html#first-fragment")
      * - loadUrl("http://example.com/page.html#other-fragment")
      *
-     * There are two parameters changing the bahavior:
+     * There are two parameters changing the behavior:
      * @param ignoreFragments Whether the hidden tab should be kept.
      * @param wait Whether to wait for the hidden tab to load.
      */

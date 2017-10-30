@@ -362,7 +362,7 @@ TEST_F(MultiProfileUserControllerTest,
   // be added but tainted users can't.
   LoginUser(1);
 
-  // TODO(xiyuan): Remove the following SetPrefBehavor when default is
+  // TODO(xiyuan): Remove the following SetPrefBehavior when default is
   // changed back to enabled.
   SetPrefBehavior(1, MultiProfileUserController::kBehaviorUnrestricted);
 
@@ -419,7 +419,7 @@ TEST_F(MultiProfileUserControllerTest,
   // then no other users can be added.
   LoginUser(0);
 
-  // TODO(xiyuan): Remove the following SetPrefBehavor when default is
+  // TODO(xiyuan): Remove the following SetPrefBehavior when default is
   // changed back to enabled.
   SetPrefBehavior(0, MultiProfileUserController::kBehaviorUnrestricted);
 

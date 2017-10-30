@@ -1007,7 +1007,7 @@ class ResourceDispatcherHostTest : public testing::Test, public IPC::Sender {
   }
 
   // Sets a particular response for any request from now on. To switch back to
-  // the default bahavior, pass an empty |headers|. |headers| should be CR[LF]
+  // the default behavior, pass an empty |headers|. |headers| should be CR[LF]
   // terminated.
   void SetResponse(const std::string& headers, const std::string& data) {
     response_headers_ = headers;
