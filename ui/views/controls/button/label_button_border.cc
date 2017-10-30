@@ -30,7 +30,7 @@ const int kButtonInsets = 5;
 const int kTextHoveredImages[] = IMAGE_GRID(IDR_TEXTBUTTON_HOVER);
 const int kTextPressedImages[] = IMAGE_GRID(IDR_TEXTBUTTON_PRESSED);
 
-// A helper function to paint the appropriate broder images.
+// A helper function to paint the appropriate border images.
 void PaintHelper(LabelButtonAssetBorder* border,
                  gfx::Canvas* canvas,
                  ui::NativeTheme::State state,
