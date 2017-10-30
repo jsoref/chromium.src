@@ -244,7 +244,7 @@ class LeakDetectorImplTest : public ::testing::Test {
 
   // Stores all pointers to memory allocated by by Alloc() so we can manually
   // free the leaked pointers at the end. This also serves as redundant
-  // bookkeepping: it stores all pointers that have been allocated but not yet
+  // bookkeeping: it stores all pointers that have been allocated but not yet
   // freed.
   std::set<void*> alloced_ptrs_;
 

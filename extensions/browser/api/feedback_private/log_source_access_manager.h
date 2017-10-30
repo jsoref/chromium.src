@@ -21,7 +21,7 @@
 
 namespace extensions {
 
-// Provides bookkeepping for SingleLogSource usage. It ensures that:
+// Provides bookkeeping for SingleLogSource usage. It ensures that:
 // - Each extension can have only one SingleLogSource for a particular source.
 // - A source may not be accessed too frequently by an extension.
 class LogSourceAccessManager {
