@@ -19,7 +19,7 @@ class CastBrowserMainParts;
 // Right now, it almost exactly duplicates the behavior of aura's TestScreen
 // class for necessary methods. The instantiation of CastScreen occurs in
 // CastBrowserMainParts, where its ownership is assigned to CastBrowserProcess.
-// To then subsequently access CastScreen, see CastBrowerProcess.
+// To then subsequently access CastScreen, see CastBrowserProcess.
 class CastScreen : public display::ScreenBase {
  public:
   ~CastScreen() override;

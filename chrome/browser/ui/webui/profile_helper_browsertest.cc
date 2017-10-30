@@ -42,7 +42,7 @@ Profile* CreateProfile() {
   return profile_manager->GetProfileByPath(new_path);
 }
 
-// An observer returns back to test code after brower window associated with
+// An observer returns back to test code after browser window associated with
 // the profile is activated.
 class ExpectBrowserActivationForProfile : public chrome::BrowserListObserver {
  public:

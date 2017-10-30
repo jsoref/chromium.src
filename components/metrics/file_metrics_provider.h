@@ -77,7 +77,7 @@ class FileMetricsProvider : public MetricsProvider,
     // histograms.
     ASSOCIATE_CURRENT_RUN,
 
-    // Associates the metrics in the file with the previous run of the browesr.
+    // Associates the metrics in the file with the previous run of the browser.
     // The reporting will take place as part of the "stability" histograms.
     // This is important when metrics are dumped as part of a crash of the
     // previous run. This can only be used with FILE_HISTOGRAMS_ATOMIC.

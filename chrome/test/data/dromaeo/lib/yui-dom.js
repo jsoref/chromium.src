@@ -21,7 +21,7 @@ version: 2.6.0
     
     YAHOO.env._id_counter = YAHOO.env._id_counter || 0;     // for use with generateId (global to save state if Dom is overwritten)
 
-    // brower detection
+    // browser detection
     var isOpera = YAHOO.env.ua.opera,
         isSafari = YAHOO.env.ua.webkit, 
         isGecko = YAHOO.env.ua.gecko,

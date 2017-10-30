@@ -66,7 +66,7 @@ NSString* const kTitleId = @"title";
 // Add |NSSegmentControl| for source type switch.
 - (void)createTypeButtonAtOrigin:(NSPoint)origin;
 
-// Add |IKImageBrowerView| for screen and window source view.
+// Add |IKImageBrowserView| for screen and window source view.
 // Add |NSTableView| for tab source view.
 - (void)createSourceViewsAtOrigin:(NSPoint)origin;
 

@@ -925,7 +925,7 @@ IN_PROC_BROWSER_TEST_F(SessionRestoreTest, MemoryPressureLoadsNotAllTabs) {
       browser(), GURL(url::kAboutBlankURL),
       WindowOpenDisposition::NEW_FOREGROUND_TAB,
       ui_test_utils::BROWSER_TEST_WAIT_FOR_NAVIGATION);
-  // Restore the brwoser, but instead of directly waiting, we issue a critical
+  // Restore the browser, but instead of directly waiting, we issue a critical
   // memory pressure event and finish then the loading.
   Browser* restored =
       QuitBrowserAndRestoreWithURL(browser(), 1, GURL(), false);

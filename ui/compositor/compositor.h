@@ -291,7 +291,7 @@ class COMPOSITOR_EXPORT Compositor : public cc::LayerTreeHostClient,
   void SetAuthoritativeVSyncInterval(const base::TimeDelta& interval);
 
   // Most platforms set their vsync info via
-  // BrowerCompositorLayerTreeFrameSink::OnUpdateVSyncParametersFromGpu(), but
+  // BrowserCompositorLayerTreeFrameSink::OnUpdateVSyncParametersFromGpu(), but
   // Mac routes vsync info via the browser compositor instead through this path.
   void SetDisplayVSyncParameters(base::TimeTicks timebase,
                                  base::TimeDelta interval);

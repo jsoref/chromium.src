@@ -160,7 +160,7 @@ class BrowserMainRunnerImpl : public BrowserMainRunner {
 #ifdef LEAK_SANITIZER
     // Invoke leak detection now, to avoid dealing with shutdown-only leaks.
     // Normally this will have already happened in
-    // BroserProcessImpl::ReleaseModule(), so this call has no effect. This is
+    // BrowserProcessImpl::ReleaseModule(), so this call has no effect. This is
     // only for processes which do not instantiate a BrowserProcess.
     // If leaks are found, the process will exit here.
     __lsan_do_leak_check();

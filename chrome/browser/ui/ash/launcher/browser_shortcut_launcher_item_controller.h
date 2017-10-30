@@ -29,7 +29,7 @@ class BrowserShortcutLauncherItemController
 
   ~BrowserShortcutLauncherItemController() override;
 
-  // Updates the activation state of the Broswer item.
+  // Updates the activation state of the Browser item.
   void UpdateBrowserItemState();
 
   // Sets the shelf id for the browser window if the browser is represented.

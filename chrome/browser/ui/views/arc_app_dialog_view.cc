@@ -101,7 +101,7 @@ class ArcAppDialogView : public views::DialogDelegateView,
   DISALLOW_COPY_AND_ASSIGN(ArcAppDialogView);
 };
 
-// Browertest use only. Global pointer of ArcAppDialogView which is shown.
+// Browsertest use only. Global pointer of ArcAppDialogView which is shown.
 ArcAppDialogView* g_current_arc_app_dialog_view = nullptr;
 
 ArcAppDialogView::ArcAppDialogView(Profile* profile,

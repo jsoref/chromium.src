@@ -22,7 +22,7 @@ bool SyntheticGestureParams::IsGestureSourceTypeSupported(
     return true;
 
   // These values should change very rarely. We thus hard-code them here rather
-  // than having to query the brower's SyntheticGestureTarget.
+  // than having to query the browser's SyntheticGestureTarget.
 #if defined(USE_AURA)
   return gesture_source_type == TOUCH_INPUT ||
          gesture_source_type == MOUSE_INPUT;

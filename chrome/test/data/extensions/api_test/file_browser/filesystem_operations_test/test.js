@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 /**
- * Component extension that tests the extensions with fileBrowesrPrivate
+ * Component extension that tests the extensions with fileBrowserPrivate
  * permission are able to perform file system operations on external file
  * systems. The test can be run for three different external file system types:
  * local native, restricted local native and drive. Depending on the type,

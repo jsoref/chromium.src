@@ -83,7 +83,7 @@ codesign --display --verbose=5 -r- "${browser_app}"
 # --ignore-resources on the app mode loader because its signature only covers
 # the main executable, not its containing .app bundle. Use --no-strict to
 # verify items that use custom resource rules:
-#  - The outermost brrowser .app
+#  - The outermost browser .app
 #  - The inner .framework, which has a nested component that uses them.
 codesign --verify --verbose=6 --deep --no-strict "${browser_app}"
 codesign --verify --verbose=6 --deep "${crashpad_handler}"

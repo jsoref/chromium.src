@@ -6,7 +6,7 @@ chrome.test.runTests([
   function getRegistrationCodeTest() {
     var expected_code = '';
     // TODO(gauravsh): Mock out StatisticsProvider to make getCouponCode()
-    // return a well known value for brower_tests.
+    // return a well known value for browser_tests.
     chrome.echoPrivate.getRegistrationCode('COUPON_CODE',
         chrome.test.callbackPass(function(result) {
       chrome.test.assertTrue(result == expected_code);

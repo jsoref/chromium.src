@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 //
-// Stores information about the user's brower and system configuration.
+// Stores information about the user's browser and system configuration.
 // The system configuration fields are recorded once per client session.
 
 syntax = "proto2";

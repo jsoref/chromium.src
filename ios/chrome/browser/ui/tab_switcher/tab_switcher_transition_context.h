@@ -57,7 +57,7 @@ tabSwitcherTransitionContextWithCurrent:(BrowserViewController*)currentBVC
 // record) browser view controller.
 @property(nonatomic, retain)
     TabSwitcherTransitionContextContent* regularContent;
-// The tab model of the broswser view controller selected when the transition
+// The tab model of the browser view controller selected when the transition
 // context was created.
 @property(nonatomic, retain) TabModel* initialTabModel;
 

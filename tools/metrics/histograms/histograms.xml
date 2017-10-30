@@ -34126,7 +34126,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 </histogram>
 
 <histogram base="true" name="Memory.OpenFDs" units="files">
-<!-- Name completed by histogram_suffixes name="MemoryFDsBroswerGpuAndRendererProcess" and name="MemoryFDsAllProcesses" -->
+<!-- Name completed by histogram_suffixes name="MemoryFDsBrowserGpuAndRendererProcess" and name="MemoryFDsAllProcesses" -->
 
   <owner>dcastagna@chromium.org</owner>
   <owner>primiano@chromium.org</owner>
@@ -34137,7 +34137,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 </histogram>
 
 <histogram base="true" name="Memory.OpenFDsSoftLimit" units="files">
-<!-- Name completed by histogram_suffixes name="MemoryFDsBroswerGpuAndRendererProcess" -->
+<!-- Name completed by histogram_suffixes name="MemoryFDsBrowserGpuAndRendererProcess" -->
 
   <owner>dcastagna@chromium.org</owner>
   <owner>primiano@chromium.org</owner>
@@ -96518,7 +96518,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <affected-histogram name="Memory.OpenFDs"/>
 </histogram_suffixes>
 
-<histogram_suffixes name="MemoryFDsBroswerGpuAndRendererProcess" separator="."
+<histogram_suffixes name="MemoryFDsBrowserGpuAndRendererProcess" separator="."
     ordering="prefix">
   <suffix name="Browser" label="Browser process"/>
   <suffix name="Gpu" label="GPU process"/>

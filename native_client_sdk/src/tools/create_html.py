@@ -6,7 +6,7 @@
 """Creates simple HTML for running a NaCl module.
 
 This script is designed to make the process of creating running
-Native Client executables in the browers simple by creating
+Native Client executables in the browsers simple by creating
 boilerplate a .html (and optionally a .nmf) file for a given
 Native Client executable (.nexe).
 

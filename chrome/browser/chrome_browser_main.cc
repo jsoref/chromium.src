@@ -974,7 +974,7 @@ int ChromeBrowserMainParts::PreCreateThreadsImpl() {
 
   {
     TRACE_EVENT0("startup",
-      "ChromeBrowserMainParts::PreCreateThreadsImpl:InitBrowswerProcessImpl");
+      "ChromeBrowserMainParts::PreCreateThreadsImpl:InitBrowserProcessImpl");
     browser_process_.reset(new BrowserProcessImpl(local_state_task_runner.get(),
                                                   parsed_command_line()));
   }
