@@ -309,7 +309,7 @@ TEST_F(SynchronizedMinidumpManagerTest, AcquireLockFile_WaitsForOtherThread) {
       FROM_HERE,
       base::Bind(&DoWorkLockedTask, base::Unretained(&sleepy_manager)));
 
-  // Meanwhile, this thread should wait brielfy to allow the other thread to
+  // Meanwhile, this thread should wait briefly to allow the other thread to
   // grab the lock.
   const int concurrency_delay = 50;
   base::PlatformThread::Sleep(
@@ -360,7 +360,7 @@ TEST_F(SynchronizedMinidumpManagerTest,
     return;
   }
 
-  // Meanwhile, this process should wait brielfy to allow the other thread to
+  // Meanwhile, this process should wait briefly to allow the other thread to
   // grab the lock.
   const int concurrency_delay = 50;
   base::PlatformThread::Sleep(
