@@ -13,7 +13,7 @@
 // Sleeps forever. this function is used to be the
 // entry point for the threads created by the thread bombing function.
 // This function never returns.
-DWORD WINAPI MyThreadBombimgFunction(void* param) {
+DWORD WINAPI MyThreadBombingFunction(void* param) {
   Sleep(INFINITE);
   return 0;
 }
@@ -29,7 +29,7 @@ void POCDLL_API TestThreadBombing(HANDLE log) {
     // Create the thread and leak the handle.
     HANDLE thread = ::CreateThread(NULL,  // Default security attributes
                                    NULL,  // Stack size
-                                   MyThreadBombimgFunction,
+                                   MyThreadBombingFunction,
                                    NULL,  // Parameter
                                    0,     // No creation flags
                                    &tid);
