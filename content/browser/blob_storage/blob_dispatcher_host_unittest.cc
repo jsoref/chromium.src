@@ -588,7 +588,7 @@ TEST_F(BlobDispatcherHostTest, BlobReferenceWhileConstructingCancelled) {
 TEST_F(BlobDispatcherHostTest, DecrementRefAfterOnStart) {
   const std::string kId("id");
 
-  // Decrement the refcount while building, after we call OnStartBuildlingBlob.
+  // Decrement the refcount while building, after we call OnStartBuildingBlob.
   DataElement element;
   element.SetToBytesDescription(kDataSize);
   std::vector<DataElement> elements = {element};
@@ -644,7 +644,7 @@ TEST_F(BlobDispatcherHostTest, DecrementRefAfterOnStart) {
 TEST_F(BlobDispatcherHostTest, DecrementRefAfterOnStartWithHandle) {
   const std::string kId("id");
   // Decrement the refcount while building, after we call
-  // OnStartBuildlingBlob, except we have another handle.
+  // OnStartBuildingBlob, except we have another handle.
   DataElement element;
   element.SetToBytesDescription(kDataSize);
   std::vector<DataElement> elements = {element};

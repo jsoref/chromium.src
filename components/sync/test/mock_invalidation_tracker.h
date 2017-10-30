@@ -19,7 +19,7 @@ namespace syncer {
 // TrackableMockInvalidations.
 class MockInvalidationTracker {
  public:
-  // Builers to return new TrackableMockInvalidations associated with this
+  // Builders to return new TrackableMockInvalidations associated with this
   // object.
   std::unique_ptr<TrackableMockInvalidation> IssueUnknownVersionInvalidation();
   std::unique_ptr<TrackableMockInvalidation> IssueInvalidation(

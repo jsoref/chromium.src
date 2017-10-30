@@ -79,7 +79,7 @@ def main():
   try:
     subprocess.check_call(command)
   except subprocess.CalledProcessError:
-    # Work around LD failure for x86 Debug buiilds when it fails with error:
+    # Work around LD failure for x86 Debug builds when it fails with error:
     # ld: scattered reloc r_address too large for architecture i386
     if options.current_cpu == "x86":
       # Combmine input lib with dependencies into output lib.

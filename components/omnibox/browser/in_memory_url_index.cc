@@ -65,7 +65,7 @@ bool InMemoryURLIndex::RebuildPrivateDataFromHistoryDBTask::RunOnDBThread(
 
 void InMemoryURLIndex::RebuildPrivateDataFromHistoryDBTask::
     DoneRunOnMainThread() {
-  index_->DoneRebuidingPrivateDataFromHistoryDB(succeeded_, data_);
+  index_->DoneRebuildingPrivateDataFromHistoryDB(succeeded_, data_);
 }
 
 InMemoryURLIndex::RebuildPrivateDataFromHistoryDBTask::
@@ -281,7 +281,7 @@ void InMemoryURLIndex::ScheduleRebuildFromHistory() {
       &cache_reader_tracker_);
 }
 
-void InMemoryURLIndex::DoneRebuidingPrivateDataFromHistoryDB(
+void InMemoryURLIndex::DoneRebuildingPrivateDataFromHistoryDB(
     bool succeeded,
     scoped_refptr<URLIndexPrivateData> private_data) {
   DCHECK(thread_checker_.CalledOnValidThread());

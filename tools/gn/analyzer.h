@@ -27,7 +27,7 @@ class Analyzer {
   explicit Analyzer(const Builder& builder);
   ~Analyzer();
 
-  // Figures out from a Buider and a JSON-formatted string containing lists
+  // Figures out from a Builder and a JSON-formatted string containing lists
   // of files and targets, which targets would be affected by modifications
   // to the files . See the help text for the analyze command (kAnalyze_Help)
   // for the specification of the input and output string formats and the

@@ -161,7 +161,7 @@ class Builder(object):
     return InnerAddTaskWithNewPath
 
   def RebaseOutputPath(self, builder_relative_path):
-    """Rebases buider relative path."""
+    """Rebases builder relative path."""
     return os.path.join(
         self.output_directory, self._RebaseTaskName(builder_relative_path))
 

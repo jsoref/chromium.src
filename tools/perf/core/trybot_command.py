@@ -34,7 +34,7 @@ ALL_CONFIG_BOTS = [
     'all-android'
 ]
 
-# Default try bot to use incase builbot is unreachable.
+# Default try bot to use incase buildbot is unreachable.
 DEFAULT_TRYBOTS = [
     'linux_perf_bisect',
     'mac_10_11_perf_bisect',
@@ -226,7 +226,7 @@ class Trybot(command_line.ArgParseCommand):
       # socket.timeout, socket.error.
       except Exception:  # pylint: disable=broad-except
         # Incase of any exception return default trybots.
-        print ('WARNING: Unable to reach builbot to retrieve trybot '
+        print ('WARNING: Unable to reach buildbot to retrieve trybot '
                'information, tryjob will use default trybots.')
         cls._builders = DEFAULT_TRYBOTS
       else:

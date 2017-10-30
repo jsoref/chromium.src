@@ -296,7 +296,7 @@ template("cast_test_group") {
 # Parameters
 #   test_groups (required)
 #       The cast_test_group() targets for which this binary is to be created.
-#       The targets referenced here must be cast_test_group targets, or buiding
+#       The targets referenced here must be cast_test_group targets, or building
 #       this target will fail.
 #
 #   build_list_path (required)
