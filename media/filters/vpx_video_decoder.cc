@@ -726,7 +726,7 @@ bool VpxVideoDecoder::VpxDecode(const scoped_refptr<DecoderBuffer>& buffer,
 
   (*video_frame)->set_timestamp(base::TimeDelta::FromMicroseconds(timestamp));
 
-  // Default to the color space from the config, but if the bistream specifies
+  // Default to the color space from the config, but if the bitsream specifies
   // one, prefer that instead.
   ColorSpace color_space = config_.color_space();
   if (vpx_image->cs == VPX_CS_BT_709)

@@ -179,7 +179,7 @@ class MojoVideoEncodeAcceleratorTest : public ::testing::Test {
 TEST_F(MojoVideoEncodeAcceleratorTest, CreateAndDestroy) {}
 
 // This test verifies the Initialize() communication prologue in isolation.
-TEST_F(MojoVideoEncodeAcceleratorTest, InitializeAndRequireBistreamBuffers) {
+TEST_F(MojoVideoEncodeAcceleratorTest, InitializeAndRequireBitsreamBuffers) {
   std::unique_ptr<MockVideoEncodeAcceleratorClient> mock_vea_client =
       base::MakeUnique<MockVideoEncodeAcceleratorClient>();
   Initialize(mock_vea_client.get());

@@ -1376,7 +1376,7 @@ void V4L2SliceVideoDecodeAccelerator::DecodeTask(
   ScheduleDecodeBufferTaskIfNeeded();
 }
 
-bool V4L2SliceVideoDecodeAccelerator::TrySetNewBistreamBuffer() {
+bool V4L2SliceVideoDecodeAccelerator::TrySetNewBitsreamBuffer() {
   DCHECK(decoder_thread_task_runner_->BelongsToCurrentThread());
   DCHECK(!decoder_current_bitstream_buffer_);
 
@@ -1431,7 +1431,7 @@ void V4L2SliceVideoDecodeAccelerator::DecodeBufferTask() {
 
       case AcceleratedVideoDecoder::kRanOutOfStreamData:
         decoder_current_bitstream_buffer_.reset();
-        if (!TrySetNewBistreamBuffer())
+        if (!TrySetNewBitsreamBuffer())
           return;
 
         break;

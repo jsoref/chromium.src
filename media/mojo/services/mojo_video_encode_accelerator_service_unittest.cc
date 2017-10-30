@@ -134,7 +134,7 @@ class MojoVideoEncodeAcceleratorServiceTest : public ::testing::Test {
 // This test verifies the BindAndInitialize() communication prologue in
 // isolation.
 TEST_F(MojoVideoEncodeAcceleratorServiceTest,
-       InitializeAndRequireBistreamBuffers) {
+       InitializeAndRequireBitsreamBuffers) {
   CreateMojoVideoEncodeAccelerator();
   BindAndInitialize();
 }

@@ -968,7 +968,7 @@ void AndroidVideoDecodeAccelerator::Decode(
 
   if (bitstream_buffer.id() < 0) {
     NOTIFY_ERROR(INVALID_ARGUMENT,
-                 "Invalid bistream_buffer, id: " << bitstream_buffer.id());
+                 "Invalid bitsream_buffer, id: " << bitstream_buffer.id());
   } else {
     base::ThreadTaskRunnerHandle::Get()->PostTask(
         FROM_HERE,

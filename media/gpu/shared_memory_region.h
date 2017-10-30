@@ -28,7 +28,7 @@ class SharedMemoryRegion {
                      size_t size,
                      bool read_only);
 
-  // Creates a SharedMemoryRegion from the given |bistream_buffer|.
+  // Creates a SharedMemoryRegion from the given |bitsream_buffer|.
   SharedMemoryRegion(const BitstreamBuffer& bitstream_buffer, bool read_only);
 
   // Maps the shared memory into the caller's address space.

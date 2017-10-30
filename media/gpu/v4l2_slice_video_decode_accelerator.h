@@ -322,7 +322,7 @@ class MEDIA_GPU_EXPORT V4L2SliceVideoDecodeAccelerator
   void ScheduleDecodeBufferTaskIfNeeded();
 
   // Main decoder loop. Keep decoding the current buffer in decoder_, asking
-  // for more stream via TrySetNewBistreamBuffer() if decoder_ requests so,
+  // for more stream via TrySetNewBitsreamBuffer() if decoder_ requests so,
   // and handle other returns from it appropriately.
   void DecodeBufferTask();
 
@@ -331,7 +331,7 @@ class MEDIA_GPU_EXPORT V4L2SliceVideoDecodeAccelerator
   // available, taking it off the queue. Also set the current stream pointer
   // in decoder_, and return true.
   // Return false if no buffers are pending on decoder_input_queue_.
-  bool TrySetNewBistreamBuffer();
+  bool TrySetNewBitsreamBuffer();
 
   // Auto-destruction reference for EGLSync (for message-passing).
   struct EGLSyncKHRRef;

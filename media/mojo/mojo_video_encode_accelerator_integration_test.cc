@@ -197,7 +197,7 @@ TEST_F(MojoVideoEncodeAcceleratorIntegrationTest,
   auto mock_vea_client = base::MakeUnique<MockVideoEncodeAcceleratorClient>();
   Initialize(mock_vea_client.get());
 
-  const int32_t kInvalidBistreamBufferId = -18;
+  const int32_t kInvalidBitsreamBufferId = -18;
 
   const uint64_t kShMemSize = fake_vea()->minimum_output_buffer_size();
   base::SharedMemory shmem;
@@ -206,7 +206,7 @@ TEST_F(MojoVideoEncodeAcceleratorIntegrationTest,
               NotifyError(VideoEncodeAccelerator::kInvalidArgumentError));
 
   mojo_vea()->UseOutputBitstreamBuffer(
-      BitstreamBuffer(kInvalidBistreamBufferId, shmem.handle(), kShMemSize,
+      BitstreamBuffer(kInvalidBitsreamBufferId, shmem.handle(), kShMemSize,
                       0 /* offset */, base::TimeDelta()));
   base::RunLoop().RunUntilIdle();
 }
@@ -217,13 +217,13 @@ TEST_F(MojoVideoEncodeAcceleratorIntegrationTest, EncodeOneFrame) {
   auto mock_vea_client = base::MakeUnique<MockVideoEncodeAcceleratorClient>();
   Initialize(mock_vea_client.get());
 
-  const int32_t kBistreamBufferId = 17;
+  const int32_t kBitsreamBufferId = 17;
   {
     const uint64_t kShMemSize = fake_vea()->minimum_output_buffer_size();
     base::SharedMemory shmem;
     shmem.CreateAnonymous(kShMemSize);
     mojo_vea()->UseOutputBitstreamBuffer(
-        BitstreamBuffer(kBistreamBufferId, shmem.handle(), kShMemSize,
+        BitstreamBuffer(kBitsreamBufferId, shmem.handle(), kShMemSize,
                         0 /* offset */, base::TimeDelta()));
     base::RunLoop().RunUntilIdle();
   }
@@ -239,7 +239,7 @@ TEST_F(MojoVideoEncodeAcceleratorIntegrationTest, EncodeOneFrame) {
     const bool is_keyframe = true;
 
     EXPECT_CALL(*mock_vea_client,
-                BitstreamBufferReady(kBistreamBufferId, _, is_keyframe, _));
+                BitstreamBufferReady(kBitsreamBufferId, _, is_keyframe, _));
 
     mojo_vea()->Encode(video_frame, is_keyframe);
     base::RunLoop().RunUntilIdle();
