@@ -10812,7 +10812,7 @@ should be able to be added at any place in this file.
 <action name="MobileNTPSwitchToBookmarks">
   <owner>ianwen@chromium.org</owner>
   <description>
-    Action indicating the user has clicked the boomkark button on NTP to swith
+    Action indicating the user has clicked the bookmark button on NTP to swith
     to the bookmark manager.
   </description>
 </action>

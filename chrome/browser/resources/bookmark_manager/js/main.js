@@ -124,7 +124,7 @@ function addOneShotEventListener(node, name, handler) {
   node.addEventListener(name, f);
 }
 
-// Get the localized strings from the backend via bookmakrManagerPrivate API.
+// Get the localized strings from the backend via bookmarkManagerPrivate API.
 function loadLocalizedStrings(data) {
   // The strings may contain & which we need to strip.
   for (var key in data) {

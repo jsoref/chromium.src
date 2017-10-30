@@ -17,7 +17,7 @@ namespace history {
 // The table is used to stores the raw url which was passed in from
 // ContentProvider APIs' client.
 //
-// Android BookmarmkCoulmns API allows the url without protocol like
+// Android BookmarkCoulmns API allows the url without protocol like
 // "www.bookmarks.com", but Chrome requires the url to be unique, like
 // "http://www.bookmarks.com/". To support client queries by the orignal URL,
 // the raw URL and corresponding URLID is stored in this table.

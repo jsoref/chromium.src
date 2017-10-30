@@ -1909,7 +1909,7 @@ IN_PROC_BROWSER_TEST_F(TwoClientBookmarksSyncTest, RacyPositionChanges) {
 
 // Trigger the server side creation of Synced Bookmarks. Ensure both clients
 // remain syncing afterwards. Add bookmarks to the synced bookmarks folder
-// and ensure both clients receive the boomkmark.
+// and ensure both clients receive the bookmark.
 IN_PROC_BROWSER_TEST_F(LegacyTwoClientBookmarksSyncTest,
                        CreateSyncedBookmarks) {
   ASSERT_TRUE(SetupSync()) << "SetupSync() failed.";

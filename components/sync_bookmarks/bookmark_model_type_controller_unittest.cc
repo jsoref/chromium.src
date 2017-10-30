@@ -35,7 +35,7 @@ namespace sync_bookmarks {
 
 namespace {
 
-// Fake specializations for BookmarModelTypeController's external dependencies.
+// Fake specializations for BookmarkModelTypeController's external dependencies.
 
 class TestHistoryService : public history::HistoryService {
  public:

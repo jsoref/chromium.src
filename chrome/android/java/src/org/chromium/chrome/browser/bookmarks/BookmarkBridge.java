@@ -436,7 +436,7 @@ public class BookmarkBridge {
     }
 
     /**
-     * @return BokmarkId representing special "desktop" folder, namely "bookmark bar".
+     * @return BookmarkId representing special "desktop" folder, namely "bookmark bar".
      */
     public BookmarkId getDesktopFolderId() {
         assert mIsNativeBookmarkModelLoaded;
@@ -611,7 +611,7 @@ public class BookmarkBridge {
      * Add a new folder to the given parent folder
      *
      * @param parent Folder where to add. Must be a normal editable folder, instead of a partner
-     *               bookmark folder or a managed bookomark folder or root node of the entire
+     *               bookmark folder or a managed bookmark folder or root node of the entire
      *               bookmark model.
      * @param index The position to locate the new folder
      * @param title The title text of the new folder
@@ -630,7 +630,7 @@ public class BookmarkBridge {
      * Add a new bookmark to a specific position below parent
      *
      * @param parent Folder where to add. Must be a normal editable folder, instead of a partner
-     *               bookmark folder or a managed bookomark folder or root node of the entire
+     *               bookmark folder or a managed bookmark folder or root node of the entire
      *               bookmark model.
      * @param index The position where the bookmark will be placed in parent folder
      * @param title Title of the new bookmark. If empty, the URL will be used as the title.

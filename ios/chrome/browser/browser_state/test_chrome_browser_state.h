@@ -66,7 +66,7 @@ class TestChromeBrowserState : public ios::ChromeBrowserState {
   // Creates a WebDataService. If not invoked, the web data service is null.
   void CreateWebDataService();
 
-  // Creates the BookmkarBarModel. If not invoked the bookmark bar model is
+  // Creates the BookmarkBarModel. If not invoked the bookmark bar model is
   // NULL. If |delete_file| is true, the bookmarks file is deleted first, then
   // the model is created. As TestChromeBrowserState deletes the directory
   // containing the files used by HistoryService, the boolean only matters if

@@ -753,7 +753,7 @@ void BookmarksIOFunction::FileSelectionCanceled(void* params) {
 
 void BookmarksIOFunction::MultiFilesSelected(
     const std::vector<base::FilePath>& files, void* params) {
-  Release();  // Balanced in BookmarsIOFunction::SelectFile()
+  Release();  // Balanced in BookmarksIOFunction::SelectFile()
   NOTREACHED() << "Should not be able to select multiple files";
 }
 

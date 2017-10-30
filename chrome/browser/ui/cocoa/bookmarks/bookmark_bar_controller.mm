@@ -351,7 +351,7 @@ bool operator!=(const BookmarkBarLayout& lhs, const BookmarkBarLayout& rhs) {
   // Find the closest parent that is visible on the bar.
   while (node) {
     // Check if we've reached one of the special buttons. Otherwise, if the next
-    // parent is the boomark bar, find the corresponding button.
+    // parent is the bookmark bar, find the corresponding button.
     if ([managedBookmarksButton_ bookmarkNode] == node)
       return managedBookmarksButton_;
 

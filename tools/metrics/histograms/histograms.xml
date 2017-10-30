@@ -17186,7 +17186,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 
 <histogram name="EnhancedBookmarks.AllBookmarksCount">
   <obsolete>
-    Removed 4/2016 after we no longer show &quot;all bookamrks&quot; in bookmark
+    Removed 4/2016 after we no longer show &quot;all bookmarks&quot; in bookmark
     manager.
   </obsolete>
   <owner>ianwen@chromium.org</owner>
@@ -80283,7 +80283,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <owner>zea@chromium.org</owner>
   <summary>
     Time between nudges for bookmarks. Used as estimate of datatype commit
-    frequency. Logged when a sync cycle is performed for boomarks.
+    frequency. Logged when a sync cycle is performed for bookmarks.
   </summary>
 </histogram>
 

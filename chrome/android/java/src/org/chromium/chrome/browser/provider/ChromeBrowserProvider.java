@@ -108,7 +108,7 @@ public class ChromeBrowserProvider extends ContentProvider {
     private static final String HISTORY_PATH = "history";
     private static final String COMBINED_PATH = "combined";
 
-    public static final Uri BROWSER_CONTRACTS_BOOKMAKRS_API_URI = buildContentUri(
+    public static final Uri BROWSER_CONTRACTS_BOOKMARKS_API_URI = buildContentUri(
             BROWSER_CONTRACT_API_AUTHORITY, BOOKMARKS_PATH);
 
     public static final Uri BROWSER_CONTRACTS_SEARCHES_API_URI = buildContentUri(
