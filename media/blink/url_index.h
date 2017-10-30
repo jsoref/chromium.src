@@ -181,7 +181,7 @@ class MEDIA_BLINK_EXPORT UrlData : public base::RefCounted<UrlData> {
   // Does the server support ranges?
   bool range_supported_;
 
-  // Set to false if we have reason to beleive the chrome disk cache
+  // Set to false if we have reason to believe the chrome disk cache
   // will not cache this url.
   bool cacheable_;
 
