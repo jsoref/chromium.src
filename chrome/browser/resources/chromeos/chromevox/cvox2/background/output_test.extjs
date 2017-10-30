@@ -669,7 +669,7 @@ TEST_F('OutputE2ETest', 'ContainerFocus', function() {
   });
 });
 
-TEST_F('OutputE2ETest', 'BraileWhitespace', function() {
+TEST_F('OutputE2ETest', 'BrailleWhitespace', function() {
   this.runWithLoadedTree(function() {/*!
     <p>this is a <em>test</em>of emphasized text</p>
   */},
