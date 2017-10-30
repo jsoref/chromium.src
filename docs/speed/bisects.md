@@ -11,7 +11,7 @@ at once. For these reasons, we need a tool that can bisect the root cause of
 performance regressions over a CL range, descending into third_party
 repositories as necessary. This is what the performance bisect bots do.
 
-The team is currently working on a new version of performance biscect called
+The team is currently working on a new version of performance bisect called
 [pinpoint](https://docs.google.com/document/d/1FKPRNU2kbPJ15p6XHO0itCjYtfvCpGt2IHblriTX1tg/edit)
 
 ## Starting a perf bisect
