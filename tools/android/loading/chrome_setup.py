@@ -7,7 +7,7 @@ import subprocess
 
 # Command line arguments for Chrome for loading performance measurements.
 CHROME_ARGS = [
-    # Disable backgound network requests that may pollute WPR archive, pollute
+    # Disable background network requests that may pollute WPR archive, pollute
     # HTTP cache generation, and introduce noise in loading performance.
     '--disable-background-networking',
     '--disable-default-apps',

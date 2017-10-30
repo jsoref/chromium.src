@@ -33,7 +33,7 @@ document.addEventListener('focus', function(element) {
 });
 
 /**
- * Sends a message to the backgrond script notifying it to
+ * Sends a message to the background script notifying it to
  * enable or disable the context menu item.
  *
  * @param element

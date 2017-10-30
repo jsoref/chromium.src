@@ -784,7 +784,7 @@ IN_PROC_BROWSER_TEST_F(PopupBlockerBrowserTest, ModalPopUnderViaHTTPAuth) {
   }
 }
 
-// Tests that Ctrl+Enter/Cmd+Enter keys on a link open the backgournd tab.
+// Tests that Ctrl+Enter/Cmd+Enter keys on a link open the background tab.
 IN_PROC_BROWSER_TEST_F(PopupBlockerBrowserTest, CtrlEnterKey) {
   WebContents* tab = browser()->tab_strip_model()->GetActiveWebContents();
 
@@ -813,7 +813,7 @@ IN_PROC_BROWSER_TEST_F(PopupBlockerBrowserTest, CtrlEnterKey) {
 }
 
 // Tests that the tapping gesture with cntl/cmd key on a link open the
-// backgournd tab.
+// background tab.
 IN_PROC_BROWSER_TEST_F(PopupBlockerBrowserTest, TapGestureWithCtrlKey) {
   WebContents* tab = browser()->tab_strip_model()->GetActiveWebContents();
 

@@ -11,7 +11,7 @@ import org.chromium.base.Log;
 import java.lang.reflect.Constructor;
 
 /**
- * BakgroundTaskReflection contains functionality to construct {@link BackgroundTask} instances from
+ * BackgroundTaskReflection contains functionality to construct {@link BackgroundTask} instances from
  * their classname and to inspect whether a particular {@link BackgroundTask} has a parameterless
  * constructor, which is required for any {@link BackgroundTask}.
  */

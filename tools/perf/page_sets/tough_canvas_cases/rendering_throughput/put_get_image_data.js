@@ -49,7 +49,7 @@ var stage_put_get_image_data = (function() {
   };
 
   stage.draw = function(context) {
-    // draw backgound
+    // draw background
     var gradient = context.createLinearGradient(0, 0, width, 0);
     gradient.addColorStop(0, "blue");
     gradient.addColorStop(1, "white");

@@ -20,7 +20,7 @@ of the variable "all_tests" in background page's console.
 (components/test/data/password_manager/form_classification_tests).
 
 You might also visit arbitrary sites. Just go to a site, reach the form and 
-put focus into password field. The backgound page will output a Python test to
+put focus into password field. The background page will output a Python test to
 the console, but then the extension will get to the next unvisited site.
 
 See this video for more info: goo.gl/nDTIOc.

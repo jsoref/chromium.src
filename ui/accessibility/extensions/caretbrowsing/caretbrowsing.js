@@ -195,7 +195,7 @@ CaretBrowsing.caretHeight = 0;
 CaretBrowsing.caretForeground = '#000';
 
 /**
- * The backgroundc color.
+ * The background color.
  * @type {string}
  */
 CaretBrowsing.caretBackground = '#fff';

@@ -25,7 +25,7 @@ var windowCreateOptions = {
 };
 
 /**
- * Backgound object. This is necessary for AppWindowWrapper.
+ * Background object. This is necessary for AppWindowWrapper.
  * @type {BackgroundBase}
  */
 var background = new BackgroundBase();

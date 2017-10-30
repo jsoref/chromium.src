@@ -48,7 +48,7 @@
 // status to ensure another listener didn't consume the signal.
 //
 //  Locking:
-//    EventEmitter::<Backgroun IO>
+//    EventEmitter::<Background IO>
 //      *LOCK* EventEmitter::emitter_lock_
 //        EventEmitter::RaiseEvent_Locked
 //          EventListenerSingle::ReceiveEvents

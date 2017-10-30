@@ -351,7 +351,7 @@ def StartFromJsonString(http_body_str):
 
 
 def SpawnTasksOnBackgroundQueue(task_tag):
-  """Spawns Clovis tasks associated with task_tag from the backgound queue.
+  """Spawns Clovis tasks associated with task_tag from the background queue.
 
   This function is mostly a wrapper around SpawnTasks() that catches exceptions.
   It is assumed that a FrontendJob for task_tag exists.

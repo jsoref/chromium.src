@@ -1799,7 +1799,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
       <message name="IDS_BROWSER_ACTIONS_SHARE" desc="Browser Actions menu item to share the url address of the selected link. [CHAR-LIMIT=30]">
         Share...
       </message>
-      <message name="IDS_BROWSER_ACTIONS_OPEN_IN_BACKGROUND_TOAST_MESSAGE" desc="Browser Actions toast message when to open a link in new Chrome tab in the backgoround. [CHAR-LIMIT=30]">
+      <message name="IDS_BROWSER_ACTIONS_OPEN_IN_BACKGROUND_TOAST_MESSAGE" desc="Browser Actions toast message when to open a link in new Chrome tab in the background. [CHAR-LIMIT=30]">
         Link opened in Chrome
       </message>
       <message name="IDS_BROWSER_ACTIONS_SINGLE_LINK_OPEN_NOTIFICATION_TITLE" desc="Content title displayed in the notification when one link is opened in the background from Browser Actions. [CHAR-LIMIT=30]">

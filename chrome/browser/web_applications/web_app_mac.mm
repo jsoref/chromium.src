@@ -326,7 +326,7 @@ base::FilePath GetLocalizableAppShortcutsSubdirName() {
 }
 
 // Creates a canvas the same size as |overlay|, copies the appropriate
-// representation from |backgound| into it (according to Cocoa), then draws
+// representation from |background| into it (according to Cocoa), then draws
 // |overlay| over it using NSCompositeSourceOver.
 NSImageRep* OverlayImageRep(NSImage* background, NSImageRep* overlay) {
   DCHECK(background);

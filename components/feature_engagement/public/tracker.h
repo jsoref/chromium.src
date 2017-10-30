@@ -53,7 +53,7 @@ class Tracker : public KeyedService {
   using OnInitializedCallback = base::Callback<void(bool success)>;
 
   // The |storage_dir| is the path to where all local storage will be.
-  // The |bakground_task_runner| will be used for all disk reads and writes.
+  // The |background_task_runner| will be used for all disk reads and writes.
   static Tracker* Create(
       const base::FilePath& storage_dir,
       const scoped_refptr<base::SequencedTaskRunner>& background_task_runner);
