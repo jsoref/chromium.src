@@ -41580,7 +41580,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
 </histogram>
 
 <histogram name="Net.QuicSession.6PacketsPatternsReceived"
-    units="Binay of Packets ACKed">
+    units="Binary of Packets ACKed">
   <obsolete>
     Deprecated 08/2016.
   </obsolete>
