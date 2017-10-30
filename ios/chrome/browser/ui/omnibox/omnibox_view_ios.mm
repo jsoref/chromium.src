@@ -359,7 +359,7 @@ void OmniboxViewIOS::OnDidBeginEditing() {
   // In the case where the user taps the fakebox on the Google landing page,
   // the WebToolbarController invokes OnSetFocus before calling
   // becomeFirstResponder on OmniboxTextFieldIOS (which leads to this method
-  // beting invoked) so there is no need to call OnSetFocus again. In fact,
+  // being invoked) so there is no need to call OnSetFocus again. In fact,
   // calling OnSetFocus again here would reset the caret visibility to true and
   // it would be impossible to tell that the omnibox was focused by a tap in the
   // fakebox instead of the omnibox.

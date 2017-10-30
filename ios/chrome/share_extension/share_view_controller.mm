@@ -17,7 +17,7 @@
 #endif
 
 // Type for completion handler to fetch the components of the share items.
-// |idResponse| type depends on the element beeing fetched.
+// |idResponse| type depends on the element being fetched.
 using ItemBlock = void (^)(id idResponse, NSError* error);
 
 namespace {

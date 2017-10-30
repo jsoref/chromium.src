@@ -67,7 +67,7 @@ cr.define('login', function() {
     },
 
     /**
-     * Called by login.Screen when the screen is beeing registered.
+     * Called by login.Screen when the screen is being registered.
      */
     decorate: function(screen) {
       this.screen_ = screen;

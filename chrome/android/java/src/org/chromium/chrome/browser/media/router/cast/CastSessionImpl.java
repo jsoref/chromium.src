@@ -79,7 +79,7 @@ public class CastSessionImpl implements MediaNotificationListener, CastSession {
      * @param sessionId The session identifier to use with the Cast SDK.
      * @param origin The origin of the frame requesting the route.
      * @param tabId The id of the tab containing the frame requesting the route.
-     * @param isIncognito Whether the route is beging requested from an Incognito profile.
+     * @param isIncognito Whether the route is being requested from an Incognito profile.
      * @param source The {@link MediaSource} corresponding to this session.
      * @param routeProvider The {@link CastMediaRouteProvider} instance managing this session.
      */

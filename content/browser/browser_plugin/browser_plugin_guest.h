@@ -193,7 +193,7 @@ class CONTENT_EXPORT BrowserPluginGuest : public GuestHost,
   // come). The need for this (hack) is that the input events when passed on to
   // the BrowserPlugin are modified by any CSS transforms applied on the plugin.
   // Therefore, the coordinates of the context menu event with respect to the
-  // container window are modifed with the guest renderer process beiung unaware
+  // container window are modifed with the guest renderer process being unaware
   // of the change. Then eventually, when the context menu event arrives at the
   // browser, it contains the wrong coordinates (BUG=470087).
   // TODO(ekaramad): Find a more fundamental solution and remove this later.
