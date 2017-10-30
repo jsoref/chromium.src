@@ -9,7 +9,7 @@ module device.mojom;
 // platforms, the interface would need to be generalized.
 // Interface for obeserving fingerprint daemon signals.
 interface FingerprintObserver{
-  // Called when biometics device powers up or is restarted.
+  // Called when biometrics device powers up or is restarted.
   OnRestarted();
 
   // Called whenever a user attempts a scan. |scan_result| tells whether the
