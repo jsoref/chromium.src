@@ -38,7 +38,7 @@ class _BaseCastBenchmark(perf_benchmark.PerfBenchmark):
     ])
 
 
-class TraceEventCastBenckmark(_BaseCastBenchmark):
+class TraceEventCastBenchmark(_BaseCastBenchmark):
   """Benchmark for dialog latency from trace event."""
 
   def CreateCoreTimelineBasedMeasurementOptions(self):
@@ -61,7 +61,7 @@ class TraceEventCastBenckmark(_BaseCastBenchmark):
     return not is_first_result
 
 
-class HistogramCastBenckmark(_BaseCastBenchmark):
+class HistogramCastBenchmark(_BaseCastBenchmark):
   """Benchmark for dialog latency from histograms."""
 
   def CreatePageTest(self, options):
@@ -77,7 +77,7 @@ class HistogramCastBenckmark(_BaseCastBenchmark):
     return not is_first_result
 
 
-class CPUMemoryCastBenckmark(_BaseCastBenchmark):
+class CPUMemoryCastBenchmark(_BaseCastBenchmark):
   """Benchmark for CPU and memory usage with Media Router."""
 
   options = {'pageset_repeat': 1}
@@ -92,7 +92,7 @@ class CPUMemoryCastBenckmark(_BaseCastBenchmark):
     return 'media_router.cpu_memory'
 
 
-class CPUMemoryBenckmark(perf_benchmark.PerfBenchmark):
+class CPUMemoryBenchmark(perf_benchmark.PerfBenchmark):
   """Benchmark for CPU and memory usage without Media Router."""
 
   options = {'pageset_repeat': 1}

@@ -171,7 +171,7 @@ class VrCoreFpsTest(android_vr_perf_test.AndroidVrPerfTest):
 
     results = {
         'format_version': '1.0',
-        'benchmarck_name': 'vrcore_fps',
+        'benchmark_name': 'vrcore_fps',
         'benchmark_description': 'Measures VR FPS using VrCore perf logging',
         'charts': charts,
     }
