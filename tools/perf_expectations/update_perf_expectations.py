@@ -5,7 +5,7 @@
 
 """Prepare tests that require re-baselining for input to make_expectations.py.
 
-The regularly running perf-AV tests require re-baselineing of expectations
+The regularly running perf-AV tests require re-baselining of expectations
 about once a week. The steps involved in rebaselining are:
 
 1.) Identify the tests to update, based off reported e-mail results.
