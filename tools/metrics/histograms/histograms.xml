@@ -20275,7 +20275,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <owner>nparker@chromium.org</owner>
   <summary>
     The number of extensions that were blacklisted when already installed,
-    grouped by Extension::Location. Logged when ExtensionService blackists and
+    grouped by Extension::Location. Logged when ExtensionService blacklists and
     unloads an installed extension.
   </summary>
 </histogram>
