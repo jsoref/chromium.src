@@ -296,7 +296,7 @@ void SurfaceTreeHost::SubmitCompositorFrame() {
       gfx::Point(), device_scale_factor, layer_tree_frame_sink_holder_.get(),
       &frame);
   // Surface uses DIP, but the |output_rect| uses pixels, so we need
-  // scale it beased on the |device_scale_factor|.
+  // scale it based on the |device_scale_factor|.
   frame.render_pass_list.back()->output_rect =
       gfx::Rect(gfx::ConvertSizeToPixel(device_scale_factor,
                                         root_surface_->content_size()));

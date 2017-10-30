@@ -704,7 +704,7 @@ void Surface::AppendContentsToFrame(const gfx::Point& origin,
   gfx::Rect quad_rect(current_resource_.size);
 
   // Surface uses DIP, but the |render_pass->damage_rect| uses pixels, so we
-  // need scale it beased on the |device_scale_factor|.
+  // need scale it based on the |device_scale_factor|.
   gfx::Rect damage_rect = gfx::SkIRectToRect(damage_.getBounds());
   damage_rect.set_origin(origin);
   render_pass->damage_rect.Union(
