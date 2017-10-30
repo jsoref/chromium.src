@@ -205,7 +205,7 @@ void ReturnResults(
 // on its corresponding download item. An instance can be in one of three
 // states: waiting for metatada load, waiting for metadata to load after its
 // corresponding DownloadManager has gone down, and not waiting for metadata to
-// load. The instance observes all download items beloing to its manager. While
+// load. The instance observes all download items belonging to its manager. While
 // it is waiting for metadata to load, it records all operations on download
 // items that must be reflected in the metadata. Once the metadata is ready,
 // recorded operations are applied to the metadata. The instance continues to
