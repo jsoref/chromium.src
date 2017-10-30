@@ -1089,7 +1089,7 @@ TEST_F(AlternateProtocolServerPropertiesTest, RemoveExpiredBrokenAltSvc2) {
 
   EXPECT_TRUE(impl_.IsAlternativeServiceBroken(alternative_service2));
 
-  // Advance time by just enough so that |alternative_service2|'s brokennness
+  // Advance time by just enough so that |alternative_service2|'s brokenness
   // expires.
   test_task_runner_->FastForwardBy(BROKEN_ALT_SVC_EXPIRE_DELAYS[0]);
 
