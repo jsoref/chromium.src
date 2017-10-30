@@ -3159,7 +3159,7 @@ TEST_P(InputHandlerProxyTest, NoFlingBoostIfNotAnimated) {
 
   VERIFY_AND_RESET_MOCKS();
 
-  // Should exit scroll bosting on GestureScrollUpdate due to long delay
+  // Should exit scroll boosting on GestureScrollUpdate due to long delay
   // since last animate. Cancel old fling and start new scroll.
   gesture_.SetType(WebInputEvent::kGestureScrollUpdate);
   gesture_.data.scroll_update.delta_y = -40;
