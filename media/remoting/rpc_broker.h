@@ -61,7 +61,7 @@ class RpcBroker {
   // Allows RpcBroker to distribute incoming RPC message to desired components.
   void ProcessMessageFromRemote(std::unique_ptr<pb::RpcMessage> message);
   // Sends RPC message to remote end point. The actually sender which sets
-  // SendMessageCallback to RpcBrokwer will receive RPC message to do actual
+  // SendMessageCallback to RpcBroker will receive RPC message to do actual
   // data transmission.
   void SendMessageToRemote(std::unique_ptr<pb::RpcMessage> message);
 
