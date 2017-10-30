@@ -1149,7 +1149,7 @@ void NavigatorImpl::RequestNavigation(
   // change the renderer live/non-live status and change this result.
   // We don't want to dispatch a beforeunload handler if
   // is_history_navigation_in_new_child is true. This indicates a newly created
-  // child frame which does not have a beforunload handler.
+  // child frame which does not have a beforeunload handler.
   bool should_dispatch_beforeunload =
       !is_same_document_history_load &&
       !is_history_navigation_in_new_child &&

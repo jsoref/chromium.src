@@ -184,7 +184,7 @@ class DevToolsWindow : public DevToolsUIBindings::Delegate,
 
   // Returns true if this contents beforeunload event was intercepted by
   // devtools and false otherwise. If the event was intercepted, caller should
-  // not fire beforeunlaod event on |contents| itself as devtools window will
+  // not fire beforeunload event on |contents| itself as devtools window will
   // take care of it, otherwise caller should continue handling the event as
   // usual.
   static bool InterceptPageBeforeUnload(content::WebContents* contents);
