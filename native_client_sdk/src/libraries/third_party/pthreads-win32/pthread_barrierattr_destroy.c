@@ -56,7 +56,7 @@ pthread_barrierattr_destroy (pthread_barrierattr_t * attr)
       *      no longer be used.
       *
       *      NOTES:
-      *              1)      Does not affect barrieres created using 'attr'
+      *              1)      Does not affect barriers created using 'attr'
       *
       * RESULTS
       *              0               successfully released attr,

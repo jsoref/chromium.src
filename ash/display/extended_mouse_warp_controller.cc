@@ -204,7 +204,7 @@ ExtendedMouseWarpController::CreateWarpRegion(const display::Display& a,
   if (!display::ComputeBoundary(a, b, &a_edge, &b_edge))
     return nullptr;
 
-  // Creates the snap window barrirer only when horizontally connected.
+  // Creates the snap window barrier only when horizontally connected.
   if (a_edge.height() > a_edge.width()) {
     if (drag_source_id == a.id())
       AdjustSourceEdgeBounds(a.bounds(), snap_barrier, &a_edge);
