@@ -82,7 +82,7 @@ class ConvolutionFilter1D {
   //
   // You will probably want to make sure your input is normalized (that is,
   // all entries in |filter_values| sub to one) to prevent affecting the overall
-  // brighness of the image.
+  // brightness of the image.
   //
   // The filter_length must be > 0.
   //
