@@ -35,7 +35,7 @@ class ModeIndicatorController : public InputMethodManager::Observer,
   ~ModeIndicatorController() override;
 
   // Set cursor bounds, which is the base point to display this indicator.
-  // Bacisally this indicator is displayed underneath the cursor.
+  // Basically this indicator is displayed underneath the cursor.
   void SetCursorBounds(const gfx::Rect& cursor_location);
 
   // Notify the focus state to the mode indicator.
