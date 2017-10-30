@@ -217,7 +217,7 @@ bool BeingDebugged() {
 // to cause SIGBUS which is trapped by debuggerd, and we've had great
 // difficulty continuing in a debugger once we stop from SIG triggered by native
 // code, use GDB to set |go| to 1 to resume execution; for X86 platform, use
-// "int3" to setup breakpiont and raise SIGTRAP.
+// "int3" to setup breakpoint and raise SIGTRAP.
 //
 // On other POSIX architectures, except Mac OS X, we use the same logic to
 // ensure that breakpad creates a dump on crashes while it is still possible to
