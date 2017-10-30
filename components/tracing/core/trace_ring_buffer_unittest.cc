@@ -65,7 +65,7 @@ TEST(TraceRingBufferTest, ChunkBankrupcyDoesNotCrash) {
     ASSERT_NE(nullptr, bankrupcy_chunk);
     ASSERT_TRUE(ring_buffer.IsBankrupcyChunkForTesting(bankrupcy_chunk));
 
-    // Make sure that the memory of the bankrupty chunk can be dereferenced.
+    // Make sure that the memory of the bankrupcy chunk can be dereferenced.
     memset(bankrupcy_chunk->begin(), 0, kChunkSize);
   }
   EXPECT_EQ(2u, ring_buffer.GetNumChunksTaken());
