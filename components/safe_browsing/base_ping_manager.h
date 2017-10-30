@@ -42,7 +42,7 @@ class BasePingManager : public net::URLFetcherDelegate {
 
   // Report to Google when a SafeBrowsing warning is shown to the user.
   // |hit_report.threat_type| should be one of the types known by
-  // SafeBrowsingtHitUrl.
+  // SafeBrowsingHitUrl.
   void ReportSafeBrowsingHit(const safe_browsing::HitReport& hit_report);
 
   // Users can opt-in on the SafeBrowsing interstitial to send detailed

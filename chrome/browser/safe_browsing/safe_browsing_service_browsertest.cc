@@ -255,7 +255,7 @@ class FakeSafeBrowsingUIManager : public TestSafeBrowsingUIManager {
   ~FakeSafeBrowsingUIManager() override {}
 };
 
-// A SafeBrowingDatabase class that allows us to inject the malicious URLs.
+// A SafeBrowsingDatabase class that allows us to inject the malicious URLs.
 class TestSafeBrowsingDatabase : public SafeBrowsingDatabase {
  public:
   TestSafeBrowsingDatabase() {}

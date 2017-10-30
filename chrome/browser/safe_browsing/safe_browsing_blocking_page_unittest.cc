@@ -49,7 +49,7 @@ namespace safe_browsing {
 
 namespace {
 
-// A SafeBrowingBlockingPage class that does not create windows.
+// A SafeBrowsingBlockingPage class that does not create windows.
 class TestSafeBrowsingBlockingPage : public SafeBrowsingBlockingPage {
  public:
   TestSafeBrowsingBlockingPage(

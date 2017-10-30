@@ -165,7 +165,7 @@ class FakeSafeBrowsingDatabaseManager : public TestSafeBrowsingDatabaseManager {
   DISALLOW_COPY_AND_ASSIGN(FakeSafeBrowsingDatabaseManager);
 };
 
-// A SafeBrowingUIManager class that allows intercepting malware details.
+// A SafeBrowsingUIManager class that allows intercepting malware details.
 class FakeSafeBrowsingUIManager : public TestSafeBrowsingUIManager {
  public:
   FakeSafeBrowsingUIManager()
@@ -259,7 +259,7 @@ class TestThreatDetailsFactory : public ThreatDetailsFactory {
   ThreatDetails* details_;
 };
 
-// A SafeBrowingBlockingPage class that lets us wait until it's hidden.
+// A SafeBrowsingBlockingPage class that lets us wait until it's hidden.
 class TestSafeBrowsingBlockingPage : public SafeBrowsingBlockingPage {
  public:
   TestSafeBrowsingBlockingPage(

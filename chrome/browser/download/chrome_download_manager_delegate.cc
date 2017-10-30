@@ -91,7 +91,7 @@ namespace {
 
 #if defined(FULL_SAFE_BROWSING)
 
-// String pointer used for identifying safebrowing data associated with
+// String pointer used for identifying safebrowsing data associated with
 // a download item.
 const char kSafeBrowsingUserDataKey[] = "Safe Browsing ID";
 

@@ -202,7 +202,7 @@ class WebViewChromium implements WebViewProvider, WebViewProvider.ScrollDelegate
                 initForReal();
                 if (privateBrowsing) {
                     // Intentionally irreversibly disable the webview instance, so that private
-                    // user data cannot leak through misuse of a non-privateBrowing WebView
+                    // user data cannot leak through misuse of a non-privateBrowsing WebView
                     // instance. Can't just null out mAwContents as we never null-check it
                     // before use.
                     destroy();

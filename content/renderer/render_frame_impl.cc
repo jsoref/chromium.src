@@ -3155,7 +3155,7 @@ blink::WebLocalFrame* RenderFrameImpl::CreateChildFrame(
   // The unique name generation logic was moved out of Blink, so for historical
   // reasons, unique name generation needs to take something called the
   // |fallback_name| into account. Normally, unique names are generated based on
-  // the browing context name. For new frames, the initial browsing context name
+  // the browsing context name. For new frames, the initial browsing context name
   // comes from the name attribute of the browsing context container element.
   //
   // However, when the browsing context name is null, Blink instead uses the

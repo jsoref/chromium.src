@@ -37,7 +37,7 @@ public final class BrowsingDataBridge {
          * @param exampleOrigins Example origins for each domain. These can be used to retrieve
          *                       favicons.
          * @param importantReasons Bitfield of reasons why this domain was selected. Pass this back
-         *                         to clearBrowinsgData so we can record metrics.
+         *                         to clearBrowsingData so we can record metrics.
          * @param dialogDisabled If the important dialog has been ignored too many times and should
          *                       not be shown.
          */
