@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // This code should move into the default Windows shim once the win-specific
-// allocation shim has been removed, and the generic shim has becaome the
+// allocation shim has been removed, and the generic shim has became the
 // default.
 
 #include "winheap_stubs_win.h"

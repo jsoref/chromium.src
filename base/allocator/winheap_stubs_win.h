@@ -4,7 +4,7 @@
 
 // Thin allocation wrappers for the windows heap. This file should be deleted
 // once the win-specific allocation shim has been removed, and the generic shim
-// has becaome the default.
+// has became the default.
 
 #ifndef BASE_ALLOCATOR_WINHEAP_STUBS_H_
 #define BASE_ALLOCATOR_WINHEAP_STUBS_H_
