@@ -12,7 +12,7 @@
 
 namespace chromeos {
 
-// LoginEventRecorder records the bootimes of Chrome OS.
+// LoginEventRecorder records the boottimes of Chrome OS.
 // Actual implementation is handled by delegate.
 class CHROMEOS_EXPORT LoginEventRecorder {
  public:
