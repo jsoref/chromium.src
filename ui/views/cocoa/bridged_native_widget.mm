@@ -693,7 +693,7 @@ Widget::MoveLoopResult BridgedNativeWidget::RunMoveLoop(
 
   // RunMoveLoop caller is responsible for updating the window to be under the
   // mouse, but it does this using possibly outdated coordinate from the mouse
-  // event, and mouse is very likely moved beyound that point.
+  // event, and mouse is very likely moved beyond that point.
 
   // Compensate for mouse drift by shifting the initial mouse position we pass
   // to CocoaWindowMoveLoop, so as it handles incoming move events the window's
