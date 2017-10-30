@@ -27,7 +27,7 @@
 #endif
 
 namespace {
-enum SavedBarButtomItemPositionEnum {
+enum SavedBarButtonItemPositionEnum {
   kUndefinedBarButtonItemPosition,
   kLeftBarButtonItemPosition,
   kRightBarButtonItemPosition
@@ -40,7 +40,7 @@ const CGFloat kActivityIndicatorDimensionIPhone = 56;
 }  // namespace
 
 @implementation SettingsRootCollectionViewController {
-  SavedBarButtomItemPositionEnum savedBarButtonItemPosition_;
+  SavedBarButtonItemPositionEnum savedBarButtonItemPosition_;
   UIBarButtonItem* savedBarButtonItem_;
   UIView* veil_;
 }

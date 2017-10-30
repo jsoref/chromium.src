@@ -19,7 +19,7 @@ class ExitPrompt : public TexturedElement {
  public:
   ExitPrompt(int preferred_width,
              const base::Callback<void()>& primary_button_callback,
-             const base::Callback<void()>& secondary_buttton_callback);
+             const base::Callback<void()>& secondary_button_callback);
   ~ExitPrompt() override;
 
   void SetContentMessageId(int message_id);
@@ -43,7 +43,7 @@ class ExitPrompt : public TexturedElement {
   std::unique_ptr<ExitPromptTexture> texture_;
 
   base::Callback<void()> primary_button_callback_;
-  base::Callback<void()> secondary_buttton_callback_;
+  base::Callback<void()> secondary_button_callback_;
 
   DISALLOW_COPY_AND_ASSIGN(ExitPrompt);
 };

@@ -283,7 +283,7 @@ cr.define('extensions', function() {
     computeDevReloadButtonHidden_: function() {
       // Only display the reload spinner if the extension is unpacked and
       // not terminated (since if it's terminated, we'll show a crashed reload
-      // buton).
+      // button).
       const showIcon =
           this.data.location == chrome.developerPrivate.Location.UNPACKED &&
           this.data.state != chrome.developerPrivate.ExtensionState.TERMINATED;

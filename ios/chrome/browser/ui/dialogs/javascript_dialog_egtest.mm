@@ -348,7 +348,7 @@ void TapSuppressDialogsButton() {
 }
 
 // Tests that a confirmation dialog is shown, and that the completion block is
-// called with the correct value when the OK buton is tapped.
+// called with the correct value when the OK button is tapped.
 - (void)testShowJavaScriptConfirmationOK {
   // Load the blank test page and show a confirmation dialog.
   [self loadBlankTestPage];
@@ -361,7 +361,7 @@ void TapSuppressDialogsButton() {
 }
 
 // Tests that a confirmation dialog is shown, and that the completion block is
-// called with the correct value when the Cancel buton is tapped.
+// called with the correct value when the Cancel button is tapped.
 - (void)testShowJavaScriptConfirmationCancelled {
   // Load the blank test page and show a confirmation dialog.
   [self loadBlankTestPage];
@@ -376,7 +376,7 @@ void TapSuppressDialogsButton() {
 }
 
 // Tests that a prompt dialog is shown, and that the completion block is called
-// with the correct value when the OK buton is tapped.
+// with the correct value when the OK button is tapped.
 - (void)testShowJavaScriptPromptOK {
   // TODO(crbug.com/753098): Re-enable this test on iOS 11 iPad once
   // grey_typeText works on iOS 11.
@@ -398,7 +398,7 @@ void TapSuppressDialogsButton() {
 }
 
 // Tests that a prompt dialog is shown, and that the completion block is called
-// with the correct value when the Cancel buton is tapped.
+// with the correct value when the Cancel button is tapped.
 - (void)testShowJavaScriptPromptCancelled {
   // TODO(crbug.com/753098): Re-enable this test on iOS 11 iPad once
   // grey_typeText works on iOS 11.

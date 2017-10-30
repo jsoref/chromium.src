@@ -33,11 +33,11 @@ using bookmarks::BookmarkNode;
   return nil;
 }
 
-- (void)mouseEnteredButton:(id)buton event:(NSEvent*)event {
+- (void)mouseEnteredButton:(id)button event:(NSEvent*)event {
   entered_++;
 }
 
-- (void)mouseExitedButton:(id)buton event:(NSEvent*)event {
+- (void)mouseExitedButton:(id)button event:(NSEvent*)event {
   exited_++;
 }
 

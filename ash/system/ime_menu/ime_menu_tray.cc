@@ -409,13 +409,13 @@ bool ImeMenuTray::ShouldShowBottomButtons() {
   // 3) login/lock screen.
   // 4) password input client.
   InputMethodManager* input_method_manager = InputMethodManager::Get();
-  bool should_show_buttom_buttoms =
+  bool should_show_button_buttons =
       input_method_manager &&
       input_method_manager->IsEmojiHandwritingVoiceOnImeMenuEnabled() &&
       !ime_controller_->current_ime().third_party && !IsInLoginOrLockScreen() &&
       !IsInPasswordInputContext();
 
-  if (!should_show_buttom_buttoms) {
+  if (!should_show_button_buttons) {
     emoji_enabled_ = handwriting_enabled_ = voice_enabled_ = false;
     return false;
   }

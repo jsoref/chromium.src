@@ -544,7 +544,7 @@ void CustomFrameView::LayoutWindowControls() {
     minimum_title_bar_x_ = std::min(width(), next_button_x);
   }
 
-  // Trailing buttions are laid out in a RTL fashion
+  // Trailing buttons are laid out in a RTL fashion
   next_button_x = width() - FrameBorderThickness();
   for (std::vector<views::FrameButton>::const_reverse_iterator it =
            trailing_buttons.rbegin(); it != trailing_buttons.rend(); ++it) {

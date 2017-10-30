@@ -44,7 +44,7 @@ void VoiceInteractionValuePropScreenHandler::DeclareLocalizedValues(
   builder->Add("voiceInteractionValuePropRetryButton",
                IDS_VOICE_INTERACTION_VALUE_PROP_RETRY_BUTTON);
   builder->Add("voiceInteractionValuePropNextButton",
-               IDS_VOICE_INTERACTION_VALUE_PROP_NEXT_BUTTION);
+               IDS_VOICE_INTERACTION_VALUE_PROP_NEXT_BUTTON);
 }
 
 void VoiceInteractionValuePropScreenHandler::Bind(

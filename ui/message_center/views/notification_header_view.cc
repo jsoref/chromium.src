@@ -39,7 +39,7 @@ constexpr gfx::Insets kHeaderOuterPadding(2, 2, 0, 2);
 
 // Paddings of the views of texts.
 // Top: 9px = 11px (from the mock) - 2px (outer padding)
-// Buttom: 6px from the mock
+// Button: 6px from the mock
 constexpr gfx::Insets kTextViewPadding(9, 0, 6, 0);
 
 // Paddings of the entire header.
@@ -80,7 +80,7 @@ constexpr int64_t kYearInMillis = 364LL * kDayInMillis;
 // "Roboto-Regular, 12sp" is specified in the mock.
 constexpr int kHeaderTextFontSize = 12;
 
-// ExpandButtton forwards all mouse and key events to NotificationHeaderView,
+// ExpandButton forwards all mouse and key events to NotificationHeaderView,
 // but takes tab focus for accessibility purpose.
 class ExpandButton : public views::ImageView {
  public:

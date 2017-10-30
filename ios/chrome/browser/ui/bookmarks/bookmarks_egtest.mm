@@ -68,7 +68,7 @@ id<GREYMatcher> AddBookmarkButton() {
   return ButtonWithAccessibilityLabelId(IDS_BOOKMARK_ADD_EDITOR_TITLE);
 }
 
-// Matcher for the lit star buttom on iPhone that will open the edit button
+// Matcher for the lit star button on iPhone that will open the edit button
 // screen.
 id<GREYMatcher> LitStarButtoniPhone() {
   return ButtonWithAccessibilityLabelId(IDS_IOS_TOOLS_MENU_EDIT_BOOKMARK);

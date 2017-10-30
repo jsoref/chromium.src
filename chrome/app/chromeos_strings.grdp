@@ -5162,7 +5162,7 @@ All users must sign out to continue.
   <message name="IDS_VOICE_INTERACTION_VALUE_PROP_RETRY_BUTTON" desc="Button label for retry loading voice interaction value prop.">
     Retry
   </message>
-  <message name="IDS_VOICE_INTERACTION_VALUE_PROP_NEXT_BUTTION" desc="Button label for accepting voice interaction value proposition.">
+  <message name="IDS_VOICE_INTERACTION_VALUE_PROP_NEXT_BUTTON" desc="Button label for accepting voice interaction value proposition.">
     Next
   </message>
   <message name="IDS_WAIT_FOR_CONTAINER_READY_TITLE" desc="Title of the wait for container ready OOBE screen.">
