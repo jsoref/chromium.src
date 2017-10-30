@@ -7,7 +7,7 @@
 
 This script is designed to make the process of creating running
 Native Client executables in the browers simple by creating
-boilderplate a .html (and optionally a .nmf) file for a given
+boilerplate a .html (and optionally a .nmf) file for a given
 Native Client executable (.nexe).
 
 If the script if given a .nexe file it will produce both html
