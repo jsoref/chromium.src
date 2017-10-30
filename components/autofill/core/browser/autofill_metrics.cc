@@ -105,7 +105,7 @@ ukm::SourceId NewUkmSourceWithUrl(ukm::UkmRecorder* ukm_recorder,
 // }.
 //
 // Clients must ensure that |field_type| is one of the types Chrome supports
-// natively, e.g. |field_type| must not be a billng address.
+// natively, e.g. |field_type| must not be a billing address.
 // NOTE: This is defined outside of the anonymous namespace so that it can be
 // accessed from the unit test file. It is not exposed in the header file,
 // however, because it is not intended for consumption outside of the metrics

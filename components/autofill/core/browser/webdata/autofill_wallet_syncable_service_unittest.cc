@@ -125,7 +125,7 @@ TEST(AutofillWalletSyncableServiceTest,
 
   ASSERT_EQ(1U, wallet_cards.size());
 
-  // Make sure the wallet card replace its billind address id for the one that
+  // Make sure the wallet card replace its billing address id for the one that
   // was saved on disk.
   EXPECT_EQ(cards_on_disk.back().billing_address_id(),
             wallet_cards.back().billing_address_id());

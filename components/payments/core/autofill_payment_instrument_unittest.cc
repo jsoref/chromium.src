@@ -233,7 +233,7 @@ TEST_F(AutofillPaymentInstrumentTest, IsCompleteForPayment_NoNumber) {
 
 // A local card with no billing address id is not a valid instrument for
 // payment.
-TEST_F(AutofillPaymentInstrumentTest, IsCompleteForPayment_NoBillinbAddressId) {
+TEST_F(AutofillPaymentInstrumentTest, IsCompleteForPayment_NoBillingAddressId) {
   autofill::CreditCard& card = local_credit_card();
   card.set_billing_address_id("");
   base::string16 missing_info;
@@ -249,7 +249,7 @@ TEST_F(AutofillPaymentInstrumentTest, IsCompleteForPayment_NoBillinbAddressId) {
 // A local card with an invalid billing address id is not a valid instrument for
 // payment.
 TEST_F(AutofillPaymentInstrumentTest,
-       IsCompleteForPayment_InvalidBillinbAddressId) {
+       IsCompleteForPayment_InvalidBillingAddressId) {
   autofill::CreditCard& card = local_credit_card();
   card.set_billing_address_id("InvalidBillingAddressId");
   base::string16 missing_info;
