@@ -578,7 +578,7 @@ BOOL CGFloatEquals(CGFloat a, CGFloat b) {
   CGFloat verticalDelta =
       webViewScrollViewProxy.contentOffset.y - self.previousContentOffset;
 
-  // Scroll view is scrolled all the way to the top. Ignore the bouce up.
+  // Scroll view is scrolled all the way to the top. Ignore the bounce up.
   BOOL isContentAtTop = webViewScrollViewProxy.contentOffset.y <=
                         -self.topContentInsetCausedByHeader;
   BOOL ignoreScrollAtContentTop = isContentAtTop && (0.0f < verticalDelta);
