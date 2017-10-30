@@ -39,7 +39,7 @@ class UnindexedRulesetReader {
 
   // Reads the next ruleset |chunk| from the |input|. Returns false iff reached
   // the end of the stream or an error occurred. Once returned false, calling
-  // ReadNextChunk is undefined befaviour.
+  // ReadNextChunk is undefined behaviour.
   bool ReadNextChunk(proto::FilteringRules* chunk);
 
   // Returns how many bytes of the |stream| have been consumed.

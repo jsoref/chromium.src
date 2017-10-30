@@ -642,7 +642,7 @@ void BluetoothDeviceBlueZ::CreateGattConnection(
   // TODO(sacomoto): Workaround to retrieve the connection for already connected
   // devices. Currently, BluetoothGattConnection::Disconnect doesn't do
   // anything, the unique underlying physical GATT connection is kept. This
-  // should be removed once the correct behavour is implemented and the GATT
+  // should be removed once the correct behaviour is implemented and the GATT
   // connections are reference counted (see todo below).
   if (IsConnected()) {
     OnCreateGattConnection(callback);
