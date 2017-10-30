@@ -317,7 +317,7 @@ IN_PROC_BROWSER_TEST_P(BlockingLoginTest, LoginBlocksForUser) {
   EXPECT_TRUE(user_manager->IsCurrentUserNew());
 }
 
-const BlockingLoginTestParam kBlockinLoginTestCases[] = {
+const BlockingLoginTestParam kBlockingLoginTestCases[] = {
     {0, kUsername, true},
     {1, kUsername, true},
     {2, kUsername, true},
@@ -340,6 +340,6 @@ const BlockingLoginTestParam kBlockinLoginTestCases[] = {
 
 INSTANTIATE_TEST_CASE_P(BlockingLoginTestInstance,
                         BlockingLoginTest,
-                        testing::ValuesIn(kBlockinLoginTestCases));
+                        testing::ValuesIn(kBlockingLoginTestCases));
 
 }  // namespace chromeos
