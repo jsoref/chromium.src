@@ -2236,7 +2236,7 @@
       <message desc="Space ( ) character description." name="IDS_CHROMEVOX_SPACE">
         {COUNT, plural, =1 {space}other {# spaces}}
       </message>
-      <message desc="Backtcik (`) character description." name="IDS_CHROMEVOX_BACKTICK">
+      <message desc="Backtick (`) character description." name="IDS_CHROMEVOX_BACKTICK">
         {COUNT, plural, =1 {backtick}other {# backticks}}
       </message>
       <message desc="Tilde (~) character description." name="IDS_CHROMEVOX_TILDE">
