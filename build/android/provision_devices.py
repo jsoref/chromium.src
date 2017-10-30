@@ -478,7 +478,7 @@ def KillHostHeartbeat():
   stdout, _ = ps.communicate()
   matches = re.findall('\\n.*host_heartbeat.*', stdout)
   for match in matches:
-    logging.info('An instance of host heart beart running... will kill')
+    logging.info('An instance of host heart beat running... will kill')
     pid = re.findall(r'(\S+)', match)[1]
     subprocess.call(['kill', str(pid)])
 
