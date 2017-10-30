@@ -43,7 +43,7 @@ static const NSTimeInterval kAnimationShowDuration = 0.2;
 
 // Note: due to a bug (?), drawWithFrame:inView: does not call
 // drawBorderAndFillForTheme::::: unless the mouse is inside.  The net
-// effect is that our "fade out" when the mouse leaves becaumes
+// effect is that our "fade out" when the mouse leaves becomes
 // instantaneous.  When I "fixed" it things looked horrible; the
 // hover-overed bookmark button would stay highlit for 0.4 seconds
 // which felt like latency/lag.  I'm leaving the "bug" in place for
