@@ -161,7 +161,7 @@ class TouchExplorationControllerDelegate {
 // Currently, only the right edge is mapped to control the volume. Volume
 // control along the edge of the screen is directly proportional to where the
 // user's finger is located on the screen. The top right corner of the screen
-// automatically sets the volume to 100% and the bottome right corner of the
+// automatically sets the volume to 100% and the bottom right corner of the
 // screen automatically sets the volume to 0% once the user has moved past slop.
 //
 // If the user taps the screen with two fingers and lifts both fingers before

@@ -1095,7 +1095,7 @@ IN_PROC_BROWSER_TEST_F(NavigationHandleImplBrowserTest,
   EXPECT_TRUE(NavigateToURL(shell(), kUrl1));
 
   // To take the path that doesn't run beforeunload, so that
-  // NavigationControllerImpl::NavigateToPendingEntry is on the botttom of the
+  // NavigationControllerImpl::NavigateToPendingEntry is on the bottom of the
   // stack when NavigationHandleImpl::WillStartRequest is called.
   CrashTab(shell()->web_contents());
 

@@ -24,7 +24,7 @@ class TraceEventMemoryOverhead;
 // efficient manner by creating a call tree and writing it as a set of (node,
 // parent) pairs. The tree nodes reference both parent and children. The parent
 // is referenced by index into |frames_|. The children are referenced via a map
-// of |StackFrame|s to index into |frames_|. So there is a trie for bottum-up
+// of |StackFrame|s to index into |frames_|. So there is a trie for bottom-up
 // lookup of a backtrace for deduplication, and a tree for compact storage in
 // the trace log.
 class BASE_EXPORT StackFrameDeduplicator : public ConvertableToTraceFormat {

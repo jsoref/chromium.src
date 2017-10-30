@@ -147,7 +147,7 @@ typedef NS_ENUM(NSInteger, ItemType) {
                                         .collectionViewContentSize.height];
   if (!didSend && [self isMovingToParentViewController]) {
     // The confirmation screen just appeared and there wasn't enough space to
-    // show the full screen (since the scroll hasn't reach the botton). This
+    // show the full screen (since the scroll hasn't reach the bottom). This
     // means the "More" button is actually necessary.
     base::RecordAction(base::UserMetricsAction("Signin_MoreButton_Shown"));
   }

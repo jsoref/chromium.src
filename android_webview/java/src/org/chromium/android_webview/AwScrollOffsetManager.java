@@ -320,7 +320,7 @@ public class AwScrollOffsetManager {
         // in progress. We currently can't tell if one is happening.. should we instead cancel any
         // scroll animation when the size/pageScaleFactor changes?
 
-        // TODO(mkosiba): Take scrollbar width into account in the screenRight/screenBotton
+        // TODO(mkosiba): Take scrollbar width into account in the screenRight/screenBottom
         // calculations. http://crbug.com/269032
 
         final int scrollX = mDelegate.getContainerViewScrollX();
