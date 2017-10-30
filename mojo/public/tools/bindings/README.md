@@ -103,7 +103,7 @@ for message parameters.
 Every Mojom file may optionally specify a single **module** to which it belongs.
 
 This is used strictly for aggregating all defined symbols therein within a
-common Mojom namespace. The specific impact this has on generated binidngs code
+common Mojom namespace. The specific impact this has on generated bindings code
 varies for each target language. For example, if the following Mojom is used to
 generate bindings:
 
