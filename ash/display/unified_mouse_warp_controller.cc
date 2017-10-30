@@ -59,7 +59,7 @@ UnifiedMouseWarpController::~UnifiedMouseWarpController() {}
 
 bool UnifiedMouseWarpController::WarpMouseCursor(ui::MouseEvent* event) {
   // Mirroring windows are created asynchronously, so compute the edge
-  // beounds when we received an event instead of in constructor.
+  // bounds when we received an event instead of in constructor.
   if (first_edge_bounds_in_native_.IsEmpty())
     ComputeBounds();
 

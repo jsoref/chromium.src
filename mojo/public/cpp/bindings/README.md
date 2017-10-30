@@ -9,7 +9,7 @@ The Mojo C++ Bindings API leverages the
 primitives for communicating over Mojo message pipes. Combined with generated
 code from the [Mojom IDL and bindings generator](/mojo/public/tools/bindings),
 users can easily connect interface clients and implementations across arbitrary
-intra- and inter-process bounaries.
+intra- and inter-process boundaries.
 
 This document provides a detailed guide to bindings API usage with example code
 snippets. For a detailed API references please consult the headers in

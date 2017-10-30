@@ -2383,7 +2383,7 @@ TEST_F(WindowTreeClientTest, Transform) {
 }
 
 // TODO(sky): need to better track changes to initial client. For example,
-// that SetBounsdWindows/AddWindow and the like don't result in messages to the
+// that SetBoundsWindows/AddWindow and the like don't result in messages to the
 // originating client.
 
 // TODO(sky): make sure coverage of what was

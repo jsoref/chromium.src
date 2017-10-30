@@ -52,7 +52,7 @@ class LockWindowState : public wm::WindowState::State {
   wm::WindowStateType GetMaximizedOrCenteredWindowType(
       wm::WindowState* window_state);
 
-  // Returns boudns to be used for the provided window.
+  // Returns bounds to be used for the provided window.
   gfx::Rect GetWindowBounds(aura::Window* window);
 
   // Updates the bounds taking virtual keyboard bounds into consideration.

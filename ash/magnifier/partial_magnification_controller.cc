@@ -294,7 +294,7 @@ void PartialMagnificationController::OnLocatedEvent(
 
   // If the previous root window was detached host_widget_ will be null;
   // reconstruct it. We also need to change the root window if the cursor has
-  // crossed display boundries.
+  // crossed display boundaries.
   SwitchTargetRootWindowIfNeeded(GetCurrentRootWindow());
 
   // If that failed for any reason return.

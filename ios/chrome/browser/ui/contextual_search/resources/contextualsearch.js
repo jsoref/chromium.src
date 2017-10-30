@@ -973,7 +973,7 @@ Context.findCharacterPositionInTextFromPoint = function(node, x, y) {
   var start = 0;
   var end = node.textContent.length - 1;
 
-  // Performs a binary search to find a single character whose bouding
+  // Performs a binary search to find a single character whose bounding
   // rectangle contains the given point.
   var range = document.createRange();
   while (!found || (end - start + 1) > 1) {

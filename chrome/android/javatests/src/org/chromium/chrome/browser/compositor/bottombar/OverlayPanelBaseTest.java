@@ -151,10 +151,10 @@ public class OverlayPanelBaseTest {
         final float peekToExpHeight = MOCK_EXPANDED_HEIGHT - MOCK_PEEKED_HEIGHT;
         final float expToMaxHeight = MOCK_MAXIMIZED_HEIGHT - MOCK_EXPANDED_HEIGHT;
 
-        // The boundry for moving to the next state will be different depending on the direction
+        // The boundary for moving to the next state will be different depending on the direction
         // of the swipe and the threshold. In the default case, the threshold is 0.5, meaning the
         // the panel must be half way to the next state in order to animate to it. In other cases
-        // where the threshold is 0.3, for example, the boundry will be closer to the top when
+        // where the threshold is 0.3, for example, the boundary will be closer to the top when
         // swiping down and closer to the bottom when swiping up. Ultimately this means it will
         // take less effort to swipe to a different state.
         // NOTE(mdjones): Consider making these constants to exclude computation from these tests.

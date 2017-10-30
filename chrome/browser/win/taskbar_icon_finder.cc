@@ -76,7 +76,7 @@ class TaskbarIconFinder {
 
   // Finds an item with an automation id matching Chrome's app user model id.
   // Returns the first failure HRESULT, or the final success HRESULT. On
-  // success, |rect| is populated with the bouning rectangle of the icon if
+  // success, |rect| is populated with the bounding rectangle of the icon if
   // found.
   static HRESULT DoOnComThread(gfx::Rect* rect);
 

@@ -63,7 +63,7 @@ TEST_F(QuicStreamSendBufferTest, CopyDataToBuffer) {
   ASSERT_TRUE(send_buffer_.WriteStreamData(2048, 768, &writer));
   EXPECT_EQ(copy4, QuicStringPiece(buf + 3072, 768));
 
-  // Test data piece across boundries.
+  // Test data piece across boundaries.
   QuicDataWriter writer2(4000, buf, Perspective::IS_CLIENT, HOST_BYTE_ORDER);
   string copy5 = string(536, 'a') + string(256, 'b') + string(232, 'c');
   ASSERT_TRUE(send_buffer_.WriteStreamData(1000, 1024, &writer2));
@@ -89,7 +89,7 @@ TEST_F(QuicStreamSendBufferTest, RemoveStreamFrame) {
   EXPECT_EQ(0u, send_buffer_.size());
 }
 
-TEST_F(QuicStreamSendBufferTest, RemoveStreamFrameAcrossBoundries) {
+TEST_F(QuicStreamSendBufferTest, RemoveStreamFrameAcrossBoundaries) {
   send_buffer_.RemoveStreamFrame(2024, 576);
   EXPECT_EQ(4u, send_buffer_.size());
   send_buffer_.RemoveStreamFrame(0, 1000);

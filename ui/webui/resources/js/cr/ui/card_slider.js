@@ -672,7 +672,7 @@ cr.define('cr.ui', function() {
       // Stop listening to any current touch
       this.touchHandler_.cancelTouch();
 
-      // Ensure we're at a card bounary
+      // Ensure we're at a card boundary
       this.transformToCurrentCard_(true);
     },
   };

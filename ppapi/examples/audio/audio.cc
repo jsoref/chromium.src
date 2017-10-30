@@ -83,7 +83,7 @@ class MyInstance : public pp::Instance {
     double delta_r = 2.0 * M_PI * kRightFrequency / sample_rate_ /
         (visible_ ? 1 : 2);
 
-    // Use per channel audio wave value to avoid clicks on buffer boundries.
+    // Use per channel audio wave value to avoid clicks on buffer boundaries.
     double wave_l = audio_wave_l_;
     double wave_r = audio_wave_r_;
     const int16_t max_int16 = std::numeric_limits<int16_t>::max();

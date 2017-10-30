@@ -1875,7 +1875,7 @@ TEST_F(DiskCacheEntryTest, SparseWriteDropped) {
     offset += 1024 * i + 100;
   }
 
-  // The last write started 100 bytes below a bundary, so there should be 80
+  // The last write started 100 bytes below a boundary, so there should be 80
   // bytes after the boundary.
   EXPECT_EQ(80, rv);
   EXPECT_EQ(1024 * 7, start);

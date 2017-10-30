@@ -55,7 +55,7 @@ struct AppLaunchParams {
   // If non-empty, use override_url in place of the application's launch url.
   GURL override_url;
 
-  // If non-empty, use override_boudns in place of the application's default
+  // If non-empty, use override_bounds in place of the application's default
   // position and dimensions.
   gfx::Rect override_bounds;
 
