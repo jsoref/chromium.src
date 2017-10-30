@@ -28,7 +28,7 @@ class CONTENT_EXPORT P2PMessageThrottler {
   virtual ~P2PMessageThrottler();
 
   bool DropNextPacket(size_t packet_len);
-  void SetSendIceBandwidth(int bandwith_kbps);
+  void SetSendIceBandwidth(int bandwidth_kbps);
 
  private:
   std::unique_ptr<rtc::RateLimiter> rate_limiter_;

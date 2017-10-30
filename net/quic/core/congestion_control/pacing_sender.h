@@ -59,7 +59,7 @@ class QUIC_EXPORT_PRIVATE PacingSender {
  private:
   // Underlying sender. Not owned.
   SendAlgorithmInterface* sender_;
-  // If not QuicBandidth::Zero, the maximum rate the PacingSender will use.
+  // If not QuicBandwidth::Zero, the maximum rate the PacingSender will use.
   QuicBandwidth max_pacing_rate_;
 
   // Number of unpaced packets to be sent before packets are delayed.

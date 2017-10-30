@@ -114,7 +114,7 @@ class QUIC_EXPORT_PRIVATE QuicServerSessionBase : public QuicSpdySession {
   // The most recent bandwidth estimate sent to the client.
   QuicBandwidth bandwidth_estimate_sent_to_client_;
 
-  // Text describing server location. Sent to the client as part of the bandwith
+  // Text describing server location. Sent to the client as part of the bandwidth
   // estimate in the source-address token. Optional, can be left empty.
   std::string serving_region_;
 

@@ -193,7 +193,7 @@ class NET_EXPORT NetworkChangeNotifier {
     // Called when a change occurs to the network's maximum bandwidth as
     // defined in http://w3c.github.io/netinfo/. Also called on type change,
     // even if the maximum bandwidth doesn't change. See the documentation of
-    // GetMaxBanwidthAndConnectionType for what to expect for the values of
+    // GetMaxBandwidthAndConnectionType for what to expect for the values of
     // |max_bandwidth_mbps|.
     virtual void OnMaxBandwidthChanged(double max_bandwidth_mbps,
                                        ConnectionType type) = 0;

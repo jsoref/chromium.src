@@ -210,7 +210,7 @@
   // b=AS:XX line to control audio and video bandwidth
   function negotiateOfferWithBLine() {
     createConnections(null);
-    setOfferSdpTransform(addBandwithControl);
+    setOfferSdpTransform(addBandwidthControl);
     navigator.webkitGetUserMedia({audio: true, video: true},
         addStreamToBothConnectionsAndNegotiate, printGetUserMediaError);
     waitForVideo('remote-view-1');
@@ -590,7 +590,7 @@
     return offerSdp;
   }
 
-  function addBandwithControl(offerSdp) {
+  function addBandwidthControl(offerSdp) {
     offerSdp = offerSdp.replace('a=mid:audio\r\n', 'a=mid:audio\r\n'+
                                 'b=AS:16\r\n');
     offerSdp = offerSdp.replace('a=mid:video\r\n', 'a=mid:video\r\n'+

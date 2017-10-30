@@ -57025,7 +57025,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <owner>kouhei@chromium.org</owner>
   <owner>cast-analytics@google.com</owner>
   <summary>
-    Peak memory bandwith (read and write) usage during the last sample interval.
+    Peak memory bandwidth (read and write) usage during the last sample interval.
     The sample interval may vary from seconds to several minutes.
   </summary>
 </histogram>
