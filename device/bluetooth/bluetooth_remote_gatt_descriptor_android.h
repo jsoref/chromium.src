@@ -17,7 +17,7 @@ namespace device {
 
 // BluetoothRemoteGattDescriptorAndroid along with its owned Java class
 // org.chromium.device.bluetooth.ChromeBluetoothRemoteGattDescriptor
-// implement BluetootGattDescriptor.
+// implement BluetoothGattDescriptor.
 class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattDescriptorAndroid
     : public BluetoothRemoteGattDescriptor {
  public:

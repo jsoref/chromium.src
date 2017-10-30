@@ -56,7 +56,7 @@ tests](https://crbug.com/580403).
 client code.
 
 
-## Chrome OS Blueooth Controller Tests
+## Chrome OS Bluetooth Controller Tests
 
 Bluetooth controller system tests generating radio signals are run and managed
 by the Chrome OS team. See:

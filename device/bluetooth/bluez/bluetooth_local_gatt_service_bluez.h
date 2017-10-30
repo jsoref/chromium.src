@@ -21,7 +21,7 @@ namespace bluez {
 class BluetoothAdapterBlueZ;
 class BluetoothLocalGattCharacteristicBlueZ;
 
-// The BluetoothLocalGattServiceBlueZ class implements BluetootGattService
+// The BluetoothLocalGattServiceBlueZ class implements BluetoothGattService
 // for local GATT services for platforms that use BlueZ.
 class BluetoothLocalGattServiceBlueZ
     : public BluetoothGattServiceBlueZ,

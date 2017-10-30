@@ -34,7 +34,7 @@ class BluetoothDeviceBlueZ;
 class BluetoothRemoteGattCharacteristicBlueZ;
 class BluetoothRemoteGattDescriptorBlueZ;
 
-// The BluetoothRemoteGattServiceBlueZ class implements BluetootGattService
+// The BluetoothRemoteGattServiceBlueZ class implements BluetoothGattService
 // for remote GATT services for platforms that use BlueZ.
 class BluetoothRemoteGattServiceBlueZ
     : public BluetoothGattServiceBlueZ,

@@ -472,7 +472,7 @@ BluetoothLowEnergyEventRouter::GetCharacteristics(
   DCHECK(extension);
   DCHECK(out_characteristics);
   if (!adapter_.get()) {
-    VLOG(1) << "BlutoothAdapter not ready.";
+    VLOG(1) << "BluetoothAdapter not ready.";
     return kStatusErrorFailed;
   }
 
@@ -543,7 +543,7 @@ BluetoothLowEnergyEventRouter::GetDescriptors(
   DCHECK(extension);
   DCHECK(out_descriptors);
   if (!adapter_.get()) {
-    VLOG(1) << "BlutoothAdapter not ready.";
+    VLOG(1) << "BluetoothAdapter not ready.";
     return kStatusErrorFailed;
   }
 

@@ -24,7 +24,7 @@ class BluetoothRemoteGattServiceAndroid;
 
 // BluetoothRemoteGattCharacteristicAndroid along with its owned Java class
 // org.chromium.device.bluetooth.ChromeBluetoothRemoteGattCharacteristic
-// implement BluetootGattCharacteristic.
+// implement BluetoothGattCharacteristic.
 class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattCharacteristicAndroid
     : public BluetoothRemoteGattCharacteristic {
  public:

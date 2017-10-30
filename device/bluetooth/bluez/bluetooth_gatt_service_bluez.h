@@ -16,7 +16,7 @@ namespace bluez {
 class BluetoothAdapterBlueZ;
 class BluetoothDeviceBlueZ;
 
-// The BluetoothGattServiceBlueZ class implements BluetootGattService
+// The BluetoothGattServiceBlueZ class implements BluetoothGattService
 // for GATT services on platforms that use BlueZ.
 class BluetoothGattServiceBlueZ : public virtual device::BluetoothGattService {
  public:

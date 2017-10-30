@@ -102,7 +102,7 @@ typedef std::map<uint64_t, AudioDevice> AudioDeviceMap;
 struct AudioDeviceCompare {
   // Rules used to discern which device is higher,
   // 1.) Device Type:
-  //       [Headphones/USB/Bluetooh > HDMI > Internal Speakers]
+  //       [Headphones/USB/Bluetooth > HDMI > Internal Speakers]
   //       [External Mic/USB Mic/Bluetooth > Internal Mic]
   // 2.) Device Plugged in Time:
   //       [Later > Earlier]
