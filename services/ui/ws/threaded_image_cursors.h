@@ -78,7 +78,7 @@ class ThreadedImageCursors {
   // destroyed).
   scoped_refptr<base::SingleThreadTaskRunner> ui_service_task_runner_;
 
-  // Lives on |resource_runner_|'s thread, used to own the object behid
+  // Lives on |resource_runner_|'s thread, used to own the object behind
   // |image_cursors_weak_ptr_|.
   base::WeakPtr<ui::ImageCursorsSet> image_cursors_set_weak_ptr_;
 

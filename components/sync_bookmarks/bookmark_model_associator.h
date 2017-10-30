@@ -136,7 +136,7 @@ class BookmarkModelAssociator : public syncer::AssociatorInterface {
     UNSET,
     // The native version was in sync with the Sync version.
     IN_SYNC,
-    // The native version was behing the sync version which indicates a failure
+    // The native version was behind the sync version which indicates a failure
     // to persist the native bookmarks model.
     BEHIND,
     // The native version was ahead of the sync version which indicates a
