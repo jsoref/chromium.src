@@ -604,7 +604,7 @@ class GoogleLoginAuthentication(Authentication):
         Authentication.__init__(self, credentials, host, request_uri, headers, response, content, http)
         challenge = _parse_www_authenticate(response, 'www-authenticate')
         service = challenge['googlelogin'].get('service', 'xapi')
-        # Bloggger actually returns the service in the challenge
+        # Blogger actually returns the service in the challenge
         # For the rest we guess based on the URI
         if service == 'xapi' and  request_uri.find("calendar") > 0:
             service = "cl"
