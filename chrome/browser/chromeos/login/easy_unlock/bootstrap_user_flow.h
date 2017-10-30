@@ -15,7 +15,7 @@ class Profile;
 
 namespace chromeos {
 
-// BootstrapUserFlow executes post cryptohome mount bootstraping tasks:
+// BootstrapUserFlow executes post cryptohome mount bootstrapping tasks:
 // 1. Performs Easy unlock pairing with the user's phone;
 // 2. Creates easy unlock cryptohome keys;
 // 3. Drops temp random cryptohome key;
