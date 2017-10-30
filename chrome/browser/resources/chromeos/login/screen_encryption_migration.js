@@ -89,7 +89,7 @@ login.createScreen(
          * Updates battery level of the device.
          * @param {number} batteryPercent Battery level in percent.
          * @param {boolean} isEnoughBattery True if the battery is enough.
-         * @param {boolena} isCharging True if the device is connected to power.
+         * @param {boolean} isCharging True if the device is connected to power.
          */
         setBatteryState: function(batteryPercent, isEnoughBattery, isCharging) {
           var element = $('encryption-migration-element');

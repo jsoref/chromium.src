@@ -863,7 +863,7 @@ if (!YAHOO.util.Event) {
              *                             the execution scope of the listener. If an
              *                             object, this object becomes the execution
              *                             scope.
-             * @param {boolen}      capture capture or bubble phase
+             * @param {boolean}      capture capture or bubble phase
              * @return {Boolean} True if the action was successful or defered,
              *                        false if one or more of the elements 
              *                        could not have the listener attached,
@@ -1190,7 +1190,7 @@ return (this.webkit && this.webkit < 419 && ("click"==sType || "dblclick"==sType
              * @param {Function} fn the method the event invokes.  If fn is
              *  undefined, then all event handlers for the type of event are 
              *  removed.
-             * @param {boolen}      capture capture or bubble phase             
+             * @param {boolean}      capture capture or bubble phase             
              * @return {boolean} true if the unbind was successful, false 
              *  otherwise.
              * @static
@@ -1982,7 +1982,7 @@ return (this.webkit && this.webkit < 419 && ("click"==sType || "dblclick"==sType
              * @param {HTMLElement} el      the element to bind the handler to
              * @param {string}      sType   the type of event handler
              * @param {function}    fn      the callback to invoke
-             * @param {boolen}      capture capture or bubble phase
+             * @param {boolean}      capture capture or bubble phase
              * @static
              * @private
              */
@@ -2007,7 +2007,7 @@ return (this.webkit && this.webkit < 419 && ("click"==sType || "dblclick"==sType
              * @param {HTMLElement} el      the element to bind the handler to
              * @param {string}      sType   the type of event handler
              * @param {function}    fn      the callback to invoke
-             * @param {boolen}      capture capture or bubble phase
+             * @param {boolean}      capture capture or bubble phase
              * @static
              * @private
              */

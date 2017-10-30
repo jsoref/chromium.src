@@ -235,7 +235,7 @@ if (__gCrWeb && !__gCrWeb['fillPasswordForm']) {
    * specified parent element.
    * @param {Element} parent The parent of the desired element.
    * @param {string} name The name of the desired element.
-   * @param {boolen} isPassword Whether the field should be a password field;
+   * @param {boolean} isPassword Whether the field should be a password field;
    *     if not supplied, |false| is assumed.
    * @return {Element} The element if found, otherwise null;
    */
