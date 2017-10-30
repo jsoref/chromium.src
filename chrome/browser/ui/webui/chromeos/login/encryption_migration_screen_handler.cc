@@ -423,7 +423,7 @@ void EncryptionMigrationScreenHandler::PowerChanged(
          proto.battery_state() ==
              power_manager::PowerSupplyProperties_BatteryState_CHARGING);
 
-  // If the migration was already requested and the bettery level is enough now,
+  // If the migration was already requested and the battery level is enough now,
   // The migration should start immediately.
   if (*current_battery_percent_ >= arc::kMigrationMinimumBatteryPercent &&
       should_migrate_on_enough_battery_) {
