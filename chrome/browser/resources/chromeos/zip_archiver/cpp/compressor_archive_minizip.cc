@@ -23,7 +23,7 @@ void* CustomArchiveOpen(void* compressor,
 // This function is not called because we don't unpack zip files here.
 uint32_t CustomArchiveRead(void* /*compressor*/,
                            void* /*stream*/,
-                           void* /*buffur*/,
+                           void* /*buffer*/,
                            uint32_t /*size*/) {
   return 0 /* Success */;
 }

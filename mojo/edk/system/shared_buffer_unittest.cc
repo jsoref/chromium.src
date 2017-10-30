@@ -235,7 +235,7 @@ DEFINE_TEST_CLIENT_TEST_WITH_PIPE(ReadAndMapWriteSharedBuffer,
   MojoHandle b;
   EXPECT_EQ("hello", ReadMessageWithHandles(h, &b, 1));
 
-  // Read from the bufer.
+  // Read from the buffer.
   ExpectBufferContents(b, 0, "hello");
 
   // Extract the shared memory handle and try to map it writable.

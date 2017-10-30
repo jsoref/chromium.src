@@ -594,7 +594,7 @@ TEST_F(AudioRendererMixerManagerTest, LatencyMixing) {
   EXPECT_EQ(0, mixer_count());
 }
 
-// Verify output bufer size of the mixer is correctly adjusted for Playback
+// Verify output buffer size of the mixer is correctly adjusted for Playback
 // latency.
 TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyPlayback) {
   // Expecting hardware buffer size of 128 frames
@@ -640,7 +640,7 @@ TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyPlayback) {
   ReturnMixer(mixer);
 }
 
-// Verify output bufer size of the mixer is correctly adjusted for Playback
+// Verify output buffer size of the mixer is correctly adjusted for Playback
 // latency when the device buffer size exceeds 20 ms.
 TEST_F(AudioRendererMixerManagerTest,
        MixerParamsLatencyPlaybackLargeDeviceBufferSize) {
@@ -676,7 +676,7 @@ TEST_F(AudioRendererMixerManagerTest,
   ReturnMixer(mixer);
 }
 
-// Verify output bufer size of the mixer is correctly adjusted for Playback
+// Verify output buffer size of the mixer is correctly adjusted for Playback
 // latency when output audio is fake.
 TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyPlaybackFakeAudio) {
   mock_sink_ = new media::MockAudioRendererSink(
@@ -710,7 +710,7 @@ TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyPlaybackFakeAudio) {
   ReturnMixer(mixer);
 }
 
-// Verify output bufer size of the mixer is correctly adjusted for RTC latency.
+// Verify output buffer size of the mixer is correctly adjusted for RTC latency.
 TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyRtc) {
   // Expecting hardware buffer size of 128 frames
   EXPECT_EQ(44100,
@@ -756,7 +756,7 @@ TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyRtc) {
   ReturnMixer(mixer);
 }
 
-// Verify output bufer size of the mixer is correctly adjusted for RTC latency
+// Verify output buffer size of the mixer is correctly adjusted for RTC latency
 // when output audio is fake.
 TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyRtcFakeAudio) {
   mock_sink_ = new media::MockAudioRendererSink(
@@ -785,7 +785,7 @@ TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyRtcFakeAudio) {
   ReturnMixer(mixer);
 }
 
-// Verify output bufer size of the mixer is correctly adjusted for Interactive
+// Verify output buffer size of the mixer is correctly adjusted for Interactive
 // latency.
 TEST_F(AudioRendererMixerManagerTest, MixerParamsLatencyInteractive) {
   // Expecting hardware buffer size of 128 frames

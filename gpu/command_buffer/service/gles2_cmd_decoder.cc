@@ -1563,7 +1563,7 @@ class GLES2DecoderImpl : public GLES2Decoder, public ErrorStateClient {
   // Wrapper for glFlush.
   void DoFlush();
 
-  // Wrapper for glFramebufferRenderbufffer.
+  // Wrapper for glFramebufferRenderbuffer.
   void DoFramebufferRenderbuffer(
       GLenum target, GLenum attachment, GLenum renderbuffertarget,
       GLuint renderbuffer);

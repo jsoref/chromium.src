@@ -83,7 +83,7 @@ class H264Parser;
 // Reset: V4L2VDA doesn't need to wait for image processor. When image processor
 //   returns an old frame, drop it.
 // Resolution change: V4L2VDA destroy image processor when destroying output
-//   buffrers. We cannot drop any frame during resolution change. So V4L2VDA
+//   buffers. We cannot drop any frame during resolution change. So V4L2VDA
 //   should destroy output buffers after image processor returns all the frames.
 class MEDIA_GPU_EXPORT V4L2VideoDecodeAccelerator
     : public VideoDecodeAccelerator {

@@ -330,7 +330,7 @@ TEST_F(FramebufferInfoTest, AttachRenderbuffer) {
   EXPECT_EQ(static_cast<GLenum>(GL_FRAMEBUFFER_UNSUPPORTED),
             framebuffer_->IsPossiblyComplete(feature_info_.get()));
 
-  // Bind a renderbufer in format DEPTH_STENCIL to depth and stencil
+  // Bind a renderbuffer in format DEPTH_STENCIL to depth and stencil
   // attachment points.
   renderbuffer_manager_->CreateRenderbuffer(
       kRenderbufferClient4Id, kRenderbufferService4Id);
@@ -1515,7 +1515,7 @@ TEST_F(FramebufferInfoTest, GetStatus) {
   // Check a second call for the same type does not call anything.
   framebuffer_->GetStatus(texture_manager_.get(), GL_READ_FRAMEBUFFER);
 
-  // Check changing the format calls CheckFramebuffferStatus.
+  // Check changing the format calls CheckFramebufferStatus.
   TestHelper::SetTexParameteriWithExpectations(gl_.get(),
                                                error_state_.get(),
                                                texture_manager_.get(),

@@ -53,8 +53,8 @@ void transfer_to_fd(int fd_in, int fd_out) {
 }
 
 // Transfer the content of a file descriptor to a buffer.
-int transfer_to_buffer(int fd_in, char* bufffer, size_t size) {
-  char* index = bufffer;
+int transfer_to_buffer(int fd_in, char* buffer, size_t size) {
+  char* index = buffer;
   size_t to_read = size;
   int n;
   while (to_read > 0 && ((n = read(fd_in, index, to_read)) > 0)) {

@@ -73,7 +73,7 @@ class MEDIA_EXPORT AudioShifter {
   // Ideally playout_time is some time in the future, in which case
   // the samples will be buffered until the appropriate time. If
   // playout_time is in the past, everything will still work, and we'll
-  // try to keep the buffring to a minimum.
+  // try to keep the buffering to a minimum.
   void Push(std::unique_ptr<AudioBus> input, base::TimeTicks playout_time);
 
   // Fills out |output| with samples. Tries to stretch/shrink the audio
