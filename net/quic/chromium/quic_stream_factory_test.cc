@@ -529,7 +529,7 @@ class QuicStreamFactoryTestBase {
                          // Value
                          '1', '2', '3', '4', '5', '6', '7', '8'};
 
-    // Create temporary strings becasue Persist() clears string data in |state|.
+    // Create temporary strings because Persist() clears string data in |state|.
     string server_config(reinterpret_cast<const char*>(&scfg), sizeof(scfg));
     string source_address_token("test_source_address_token");
     string cert_sct("test_cert_sct");
@@ -568,7 +568,7 @@ class QuicStreamFactoryTestBase {
                           // Value
                           '8', '7', '3', '4', '5', '6', '2', '1'};
 
-    // Create temporary strings becasue Persist() clears string data in
+    // Create temporary strings because Persist() clears string data in
     // |state2|.
     string server_config2(reinterpret_cast<const char*>(&scfg2), sizeof(scfg2));
     string source_address_token2("test_source_address_token2");

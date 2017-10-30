@@ -465,7 +465,7 @@ void CertPathIter::DoGetNextIssuerComplete() {
   }
 
   switch (next_issuer_.trust.type) {
-    // If the trust for this issuer is "known" (either becuase it is distrusted,
+    // If the trust for this issuer is "known" (either because it is distrusted,
     // or because it is trusted) then stop building and return the path.
     case CertificateTrustType::DISTRUSTED:
     case CertificateTrustType::TRUSTED_ANCHOR:

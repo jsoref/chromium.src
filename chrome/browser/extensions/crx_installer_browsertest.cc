@@ -84,7 +84,7 @@ class MockInstallPrompt;
 // This class holds information about things that happen with a
 // MockInstallPrompt. We create the MockInstallPrompt but need to pass
 // ownership of it to CrxInstaller, so it isn't safe to hang this data on
-// MockInstallPrompt itself becuase we can't guarantee it's lifetime.
+// MockInstallPrompt itself because we can't guarantee it's lifetime.
 class MockPromptProxy {
  public:
   explicit MockPromptProxy(content::WebContents* web_contents);

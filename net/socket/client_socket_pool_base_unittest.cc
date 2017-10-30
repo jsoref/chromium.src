@@ -1836,7 +1836,7 @@ TEST_F(ClientSocketPoolBaseTest, GroupWithPendingRequestsIsNotEmpty) {
 
   // Release the first two sockets from "a".  Because this is a keepalive,
   // the first release will unblock the pending request for "a".  The
-  // second release will unblock a request for "c", becaue it is the next
+  // second release will unblock a request for "c", because it is the next
   // high priority socket.
   EXPECT_TRUE(ReleaseOneConnection(ClientSocketPoolTest::KEEP_ALIVE));
   EXPECT_THAT(histograms.GetAllSamples(kIdleSocketFateHistogram),

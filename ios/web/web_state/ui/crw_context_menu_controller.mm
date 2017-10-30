@@ -96,7 +96,7 @@ void CancelTouches(UIGestureRecognizer* gesture_recognizer) {
   // complete by the time the context menu gesture recognizer is complete.
   // |_contextMenuNeedsDisplay| is set to YES to indicate the
   // |_contextMenuRecognizer| finished, but couldn't yet show the context menu
-  // becuase the DOM element details were not yet available.
+  // because the DOM element details were not yet available.
   BOOL _contextMenuNeedsDisplay;
   // The location of the last reconized long press in the |webView|.
   CGPoint _locationForLastTouch;

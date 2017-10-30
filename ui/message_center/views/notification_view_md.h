@@ -33,7 +33,7 @@ class ItemView;
 class LargeImageContainerView;
 }
 
-// This class is needed in addition to LabelButton mainly becuase we want to set
+// This class is needed in addition to LabelButton mainly because we want to set
 // visible_opacity of InkDropHighlight.
 // This button capitalizes the given label string.
 class NotificationButtonMD : public views::LabelButton {

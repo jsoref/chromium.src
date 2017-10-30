@@ -91,7 +91,7 @@ void MojoDecoderBufferReader::ReadDecoderBuffer(
   if (!consumer_handle_.is_valid()) {
     DVLOG(1)
         << __func__
-        << ": Failed to read DecoderBuffer becuase the pipe is already closed";
+        << ": Failed to read DecoderBuffer because the pipe is already closed";
     std::move(read_cb).Run(nullptr);
     return;
   }
@@ -217,7 +217,7 @@ mojom::DecoderBufferPtr MojoDecoderBufferWriter::WriteDecoderBuffer(
   if (!producer_handle_.is_valid()) {
     DVLOG(1)
         << __func__
-        << ": Failed to write DecoderBuffer becuase the pipe is already closed";
+        << ": Failed to write DecoderBuffer because the pipe is already closed";
     return nullptr;
   }
 

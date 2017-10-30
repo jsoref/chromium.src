@@ -65444,7 +65444,7 @@ http://cs/file:chrome/histograms.xml - but prefer this file for new entries.
   <owner>zhenw@chromium.org</owner>
   <summary>
     A boolean that used to indicate a corner case when certain resources are not
-    written to the Predictor database becuase their URLs are too long. We
+    written to the Predictor database because their URLs are too long. We
     monitor this number to ensure that we do not discard too many resources.
   </summary>
 </histogram>

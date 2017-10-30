@@ -180,7 +180,7 @@ class BASE_EXPORT StackSamplingProfiler {
     TimeDelta sampling_interval = TimeDelta::FromMilliseconds(100);
   };
 
-  // Testing support. These methods are static beause they interact with the
+  // Testing support. These methods are static because they interact with the
   // sampling thread, a singleton used by all StackSamplingProfiler objects.
   // These methods can only be called by the same thread that started the
   // sampling.

@@ -49,7 +49,7 @@ class SubprocessMetricsProviderTest : public testing::Test {
     // Get this first so it isn't created inside a persistent allocator.
     base::PersistentHistogramAllocator::GetCreateHistogramResultHistogram();
 
-    // MergeHistogramDeltas needs to be called beause it uses a histogram
+    // MergeHistogramDeltas needs to be called because it uses a histogram
     // macro which caches a pointer to a histogram. If not done before setting
     // a persistent global allocator, then it would point into memory that
     // will go away.

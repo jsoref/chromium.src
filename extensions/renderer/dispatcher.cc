@@ -208,7 +208,7 @@ int nw_uv_run(void* loop, int mode) {
 
 }  // namespace
 
-// Note that we can't use Blink public APIs in the constructor becase Blink
+// Note that we can't use Blink public APIs in the constructor because Blink
 // is not initialized at the point we create Dispatcher.
 Dispatcher::Dispatcher(DispatcherDelegate* delegate)
     : delegate_(delegate),

@@ -21,7 +21,7 @@ namespace test_utils {
 
 // Converts a UTF-16 string from native wchar_t format to char16 by
 // truncating the high 32 bits. This is different than the conversion function
-// in base bacause it passes invalid UTF-16 characters which is important for
+// in base because it passes invalid UTF-16 characters which is important for
 // test purposes. As a result, this is not meant to handle true UTF-32 encoded
 // strings.
 inline base::string16 TruncateWStringToUTF16(const wchar_t* src) {

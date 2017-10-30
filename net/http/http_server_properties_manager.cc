@@ -1377,7 +1377,7 @@ void HttpServerPropertiesManager::SaveNetworkStatsToServerPrefs(
     const ServerNetworkStats& server_network_stats,
     base::DictionaryValue* server_pref_dict) {
   auto server_network_stats_dict = std::make_unique<base::DictionaryValue>();
-  // Becasue JSON doesn't support int64_t, persist int64_t as a string.
+  // Because JSON doesn't support int64_t, persist int64_t as a string.
   server_network_stats_dict->SetInteger(
       kSrttKey, static_cast<int>(server_network_stats.srtt.InMicroseconds()));
   // TODO(rtenneti): When QUIC starts using bandwidth_estimate, then persist

@@ -688,7 +688,7 @@ void NodeController::DropAllPeers() {
   {
     base::AutoLock lock(parent_lock_);
     if (bootstrap_parent_channel_) {
-      // |bootstrap_parent_channel_| isn't null'd here becuase we rely on its
+      // |bootstrap_parent_channel_| isn't null'd here because we rely on its
       // existence to determine whether or not this is the root node. Once
       // bootstrap_parent_channel_->ShutDown() has been called,
       // |bootstrap_parent_channel_| is essentially a dead object and it doesn't

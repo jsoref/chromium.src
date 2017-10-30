@@ -319,7 +319,7 @@ TEST(BluetoothAdapterTest, GetMergedDiscoveryFilterRssi) {
   df3->SetPathloss(60);
   std::unique_ptr<BluetoothDiscoveryFilter> discovery_filter3(df3);
 
-  // when rssi and pathloss are merged, both should be cleared, becuase there is
+  // when rssi and pathloss are merged, both should be cleared, because there is
   // no way to tell which filter will be more generic
   adapter->InjectFilteredSession(std::move(discovery_filter3));
   resulting_filter = adapter->GetMergedDiscoveryFilter();

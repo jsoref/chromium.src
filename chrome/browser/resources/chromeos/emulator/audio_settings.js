@@ -65,7 +65,7 @@ Polymer({
 
     /**
      * The index of the audio node which is currently being edited.
-     * This is initially set to -1 (i.e. no node selected) becuase no devices
+     * This is initially set to -1 (i.e. no node selected) because no devices
      * have been copied.
      */
     currentEditIndex: {

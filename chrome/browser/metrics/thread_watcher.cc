@@ -374,7 +374,7 @@ void ThreadWatcherList::StartWatchingAll(
                      crash_on_hang_threads),
           base::TimeDelta::FromSeconds(g_initialize_delay_seconds))) {
     // Disarm() the startup timebomb, if we couldn't post the task to start the
-    // ThreadWatcher (becasue WatchDog thread is not running).
+    // ThreadWatcher (because WatchDog thread is not running).
     StartupTimeBomb::DisarmStartupTimeBomb();
   }
 }

@@ -2023,7 +2023,7 @@ TEST_F(LegacyTouchEventQueueTest, SendNextThrottledAsyncTouchMoveAfterAck) {
   EXPECT_EQ(1U, uncancelable_touch_moves_pending_ack_count());
 
   // Send pending_async_touch_move_ when we receive an ack back from render,
-  // but we will not send an ack for pending_async_touch_move_ becasue it is
+  // but we will not send an ack for pending_async_touch_move_ because it is
   // been acked before.
   SendTouchEventAck(INPUT_EVENT_ACK_STATE_NOT_CONSUMED);
   EXPECT_FALSE(HasPendingAsyncTouchMove());
@@ -2259,7 +2259,7 @@ TEST_F(LegacyTouchEventQueueTest, DoNotIncreaseIfClientConsumeAsyncTouchMove) {
   EXPECT_EQ(0U, GetAndResetSentEventCount());
   EXPECT_EQ(1U, GetAndResetAckedEventCount());
 
-  // Dispatch the touch move when sufficient time has passed. Becasue the event
+  // Dispatch the touch move when sufficient time has passed. Because the event
   // is consumed by client already, we would not increase the count and ack to
   // client again.
   AdvanceTouchTime(kMinSecondsBetweenThrottledTouchmoves + 0.1);

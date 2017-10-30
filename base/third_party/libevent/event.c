@@ -880,7 +880,7 @@ timeout_correct(struct event_base *base, struct timeval *tv)
 
 	/*
 	 * We can modify the key element of the node without destroying
-	 * the key, beause we apply it to all in the right order.
+	 * the key, because we apply it to all in the right order.
 	 */
 	pev = base->timeheap.p;
 	size = base->timeheap.n;

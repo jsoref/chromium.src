@@ -127,7 +127,7 @@ class QuicSimpleServerSession : public QuicServerSessionBase {
   //    CloseStreamInner();
   //    StreamDraining();
   // Note that updateFlowControlOnFinalReceivedByteOffset() won't change the
-  // return value becasue all push streams are impossible to become locally
+  // return value because all push streams are impossible to become locally
   // closed. Since a locally preserved stream becomes remotely closed after
   // HandlePromisedPushRequests() starts to process it, and if it is reset
   // locally afterwards, it will be immediately become closed and never get into

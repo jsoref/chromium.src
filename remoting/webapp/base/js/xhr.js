@@ -240,7 +240,7 @@ remoting.Xhr.prototype.onReadyStateChange_ = function() {
 /**
  * The response-related parts of an XMLHttpRequest.  Note that this
  * class is not just a facade for XMLHttpRequest; it saves the value
- * of the |responseText| field becuase once onReadyStateChange_
+ * of the |responseText| field because once onReadyStateChange_
  * (above) returns, the value of |responseText| is reset to the empty
  * string!  This is a documented anti-feature of the XMLHttpRequest
  * API.

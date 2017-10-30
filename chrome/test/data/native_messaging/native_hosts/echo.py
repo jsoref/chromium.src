@@ -72,7 +72,7 @@ def Main():
 
     # "stopHostTest" verifies that Chrome properly handles the case when the
     # host quits before port is closed. When the test receives response it
-    # will try sending second message and it should fail becasue the stdin
+    # will try sending second message and it should fail because the stdin
     # pipe will be closed at that point.
     if 'stopHostTest' in text:
       # Using os.close() here because sys.stdin.close() doesn't really close

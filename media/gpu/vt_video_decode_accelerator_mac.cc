@@ -1162,7 +1162,7 @@ bool VTVideoDecodeAccelerator::ProcessReorderQueue() {
   if (reorder_queue_.empty())
     return false;
 
-  // If the next task is a flush (because there is a pending flush or becuase
+  // If the next task is a flush (because there is a pending flush or because
   // the next frame is an IDR), then we don't need a full reorder buffer to send
   // the next frame.
   bool flushing =

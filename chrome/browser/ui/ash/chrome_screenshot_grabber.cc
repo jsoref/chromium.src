@@ -525,7 +525,7 @@ void ChromeScreenshotGrabber::DecodeScreenshotFileForPreview(
       ->GetConnector()
       ->BindConnectorRequest(std::move(connector_request));
 
-  // Decode the image in sandboxed process becuase decode image_data comes from
+  // Decode the image in sandboxed process because decode image_data comes from
   // external storage.
   data_decoder::DecodeImage(
       connector.get(),

@@ -1320,7 +1320,7 @@ TEST_F(BidirectionalStreamTest, DeleteStreamDuringReadData) {
   // Bytes sent excludes the RST frame.
   EXPECT_EQ(CountWriteBytes(writes, arraysize(writes) - 1),
             delegate->GetTotalSentBytes());
-  // Response body frame isn't read becase stream is deleted once read returns
+  // Response body frame isn't read because stream is deleted once read returns
   // ERR_IO_PENDING.
   EXPECT_EQ(CountReadBytes(reads, arraysize(reads) - 2),
             delegate->GetTotalReceivedBytes());
