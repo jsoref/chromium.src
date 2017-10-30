@@ -168,7 +168,7 @@ class TargetSink {
   bool SerializeInto(BufferSink* sink) const;
 
  private:
-  // Targets are delta-encoded and biaised by 1, stored as unsigned varint.
+  // Targets are delta-encoded and biased by 1, stored as unsigned varint.
   std::vector<uint8_t> extra_targets_;
 
   // We keep track of the compensation needed for next target, taking into
