@@ -72,7 +72,7 @@ enum TranslateBubbleUiEvent {
   // The translate bubble was shown to the user.
   BUBBLE_SHOWN,
 
-  // The translate bugbble could not be shown to the user, for various reasons.
+  // The translate bubble could not be shown to the user, for various reasons.
   BUBBLE_NOT_SHOWN_WINDOW_NOT_VALID,
   BUBBLE_NOT_SHOWN_WINDOW_MINIMIZED,
   BUBBLE_NOT_SHOWN_WINDOW_NOT_ACTIVE,

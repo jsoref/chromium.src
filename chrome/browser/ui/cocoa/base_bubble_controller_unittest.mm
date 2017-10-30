@@ -98,7 +98,7 @@ class BaseBubbleControllerTest : public CocoaTest {
 };
 
 // Test that kAlignEdgeToAnchorEdge and a left bubble arrow correctly aligns the
-// left edge of the buble to the anchor point.
+// left edge of the bubble to the anchor point.
 TEST_F(BaseBubbleControllerTest, LeftAlign) {
   [[controller_ bubble] setArrowLocation:info_bubble::kTopLeading];
   [[controller_ bubble] setAlignment:info_bubble::kAlignEdgeToAnchorEdge];
@@ -114,7 +114,7 @@ TEST_F(BaseBubbleControllerTest, LeftAlign) {
 }
 
 // Test that kAlignEdgeToAnchorEdge and a right bubble arrow correctly aligns
-// the right edge of the buble to the anchor point.
+// the right edge of the bubble to the anchor point.
 TEST_F(BaseBubbleControllerTest, RightAlign) {
   [[controller_ bubble] setArrowLocation:info_bubble::kTopTrailing];
   [[controller_ bubble] setAlignment:info_bubble::kAlignEdgeToAnchorEdge];

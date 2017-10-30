@@ -55,7 +55,7 @@ class ASH_EXPORT FirstRunHelper {
   // this method.
   virtual gfx::Rect GetTrayBubbleBounds() = 0;
 
-  // Returns bounds of help app button from system tray buble. You must open
+  // Returns bounds of help app button from system tray bubble. You must open
   // bubble before calling this method.
   virtual gfx::Rect GetHelpButtonBounds() = 0;
 
