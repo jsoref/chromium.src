@@ -49,7 +49,7 @@ class RequestTrackerDataMemoizingStore {
       item_id = item_iter->second;
     }
 
-    // Update the bidirection request_tracker_id and item_id mappings.
+    // Update the bidirectional request_tracker_id and item_id mappings.
     UpdateMap(&request_tracker_id_to_item_id_, request_tracker_id, item_id);
     UpdateMap(&item_id_to_request_tracker_id_, item_id, request_tracker_id);
 

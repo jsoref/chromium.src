@@ -238,7 +238,7 @@ class NET_EXPORT BidirectionalStream : public BidirectionalStreamImpl::Delegate,
   // HttpStreamRequest used to request a BidirectionalStreamImpl. This is NULL
   // if the request has been canceled or completed.
   std::unique_ptr<HttpStreamRequest> stream_request_;
-  // The underlying BidirectioanlStreamImpl used for this stream. It is
+  // The underlying BidirectionalStreamImpl used for this stream. It is
   // non-NULL, if the |stream_request_| successfully finishes.
   std::unique_ptr<BidirectionalStreamImpl> stream_impl_;
 
