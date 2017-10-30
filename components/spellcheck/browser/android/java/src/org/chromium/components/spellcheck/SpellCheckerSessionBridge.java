@@ -66,7 +66,7 @@ public class SpellCheckerSessionBridge implements SpellCheckerSessionListener {
     }
 
     /**
-     * Reset the native brigde pointer, called when the native counterpart is destroyed.
+     * Reset the native bridge pointer, called when the native counterpart is destroyed.
      */
     @CalledByNative
     private void disconnect() {

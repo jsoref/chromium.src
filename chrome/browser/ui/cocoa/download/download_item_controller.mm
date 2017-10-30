@@ -233,7 +233,7 @@ class DownloadShelfContextMenuMac : public DownloadShelfContextMenu {
 - (void)remove {
   // We are deleted after this!
   // If the download is destroyed before DownloadItemController, then we'd end
-  // up here. Reset the bridege_ so  that it can clean up after itself before
+  // up here. Reset the bridge_ so  that it can clean up after itself before
   // the DownloadItemController is deallocd.
   bridge_.reset();
   [shelf_ remove:self];
